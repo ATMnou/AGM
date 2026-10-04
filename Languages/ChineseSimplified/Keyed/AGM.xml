@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 设置 -->
+
+  <!-- 超频 (Terminus) -->
+  <AGM.OverclockLabel>超频</AGM.OverclockLabel>
+  <AGM.OverclockDesc>开启输出增幅：移动与工作速度翻倍，但会消耗内部备用能源。（当前储备：{0}%）</AGM.OverclockDesc>
+  <AGM.OverclockNoReserve>备用能源耗尽，无法重新启动。</AGM.OverclockNoReserve>
+  <AGM.OverclockReserveStatus>备用能源：{0}%</AGM.OverclockReserveStatus>
+
+  <!-- Mythos -->
+  <AGM.MythosBusy>{0}正在使用其他技能。</AGM.MythosBusy>
+
+  <AGM.ExoPhaseAdvanceLabel>AGM系列机甲进入阶段 {0}</AGM.ExoPhaseAdvanceLabel>
+  <AGM.ExoPhaseAdvanceText>{0}受到重创，进入战斗阶段 {1}：所有武器系统循环更快，分阶段攻击模式范围更广。</AGM.ExoPhaseAdvanceText>
+  <AGM.ExoPhaseStatus>战斗阶段 {0} / {1}</AGM.ExoPhaseStatus>
+  <AGM.MultiTargetLabel>多重目标</AGM.MultiTargetLabel>
+  <AGM.FocusFireLabel>集中火力</AGM.FocusFireLabel>
+  <AGM.TargetingModeDesc>切换该机甲的独立武器系统是分散攻击多个目标，还是集中攻击单一目标。</AGM.TargetingModeDesc>
+  <AGM.AutoWeaponToggleLabel>切换武器</AGM.AutoWeaponToggleLabel>
+  <AGM.AutoWeaponToggleDesc>开关该机甲的自动武器。</AGM.AutoWeaponToggleDesc>
+  <AGM.DoomsdayRocketToggleLabel>切换末日火箭</AGM.DoomsdayRocketToggleLabel>
+  <AGM.DoomsdayRocketToggleDesc>开关末日火箭齐射。默认关闭。</AGM.DoomsdayRocketToggleDesc>
+
+</LanguageData>

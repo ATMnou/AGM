@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<SoundDef>
+    <defName>AGM_Sound_AresLaserCannon</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/LaserCannon</clipPath>
+          </li>
+        </grains>
+        <volumeRange>62~68</volumeRange>
+        <pitchRange>0.97~1.03</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresPlasmaCannon</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/ExoPlasmaShoot</clipPath>
+          </li>
+        </grains>
+        <volumeRange>65~72</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresTeslaCannon</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/TeslaShoot1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>65~72</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresGaussNuke</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/LargeWeaponFire</clipPath>
+          </li>
+        </grains>
+        <volumeRange>75~82</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresLaserArmCharge</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/AresLaserArmCharge</clipPath>
+          </li>
+        </grains>
+        <volumeRange>58~66</volumeRange>
+        <pitchRange>0.97~1.03</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresPulseCannonCharge</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/AresPulseCannonCharge</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~63</volumeRange>
+        <pitchRange>0.97~1.03</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresPulseCannon</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/LaserCannon</clipPath>
+          </li>
+        </grains>
+        <volumeRange>62~68</volumeRange>
+        <pitchRange>0.8~0.88</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresSlash</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/AresSlash</clipPath>
+          </li>
+        </grains>
+        <volumeRange>68~76</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_ImpendingDeath</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/ExoMechImpendingDeathSound</clipPath>
+          </li>
+        </grains>
+        <volumeRange>72~80</volumeRange>
+        <pitchRange>0.98~1.02</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<SoundDef>
+    <defName>AGM_Sound_AresPlasmaImpact</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/ExoPlasmaExplosion1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>62~70</volumeRange>
+        <pitchRange>0.92~1.08</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+<SoundDef>
+    <defName>AGM_Sound_AresTeslaSplit</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ares/TeslaShoot2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>55~63</volumeRange>
+        <pitchRange>0.95~1.08</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AbilityDef>
+    <defName>AGM_ChargeBlast</defName>
+    <label>charge blast</label>
+    <description>Channel energy into the core to fire an explosive energy-based warhead.</description>
+    <iconPath>Things/Misc/UI/ChargeBlastUI</iconPath>
+    <cooldownTicksRange>100</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_ChargeBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_PlasmaBlast</defName>
+    <label>plasma blast</label>
+    <description>Channel energy into the core to fire a superheated plasma warhead.</description>
+    <iconPath>Things/Misc/UI/PlasmaBlastUI</iconPath>
+    <cooldownTicksRange>700</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_PlasmaBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_AntiOrganicGrenade</defName>
+    <label>anti-organic grenade</label>
+    <description>Launch an explosive payload full of anti-organic nanites, that brutaly harms organics inside a 15.9 blast radius.</description>
+   <iconPath>Things/Misc/UI/NaniteGrenadeUI</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>50.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <forcedMissRadius>1.0</forcedMissRadius>
+	  <noiseRadius>4</noiseRadius>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <soundCast>AGM_Shot_ToxCanister</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_AntiGrainGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_PsychicBlast</defName>
+    <label>psychic blast</label>
+    <description>Conjure a psychic explosion in any area while ignoring all forms of obstacles.</description>
+    <iconPath>Things/Misc/UI/PsychicBlastUI</iconPath>
+    <cooldownTicksRange>7200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AGM_Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_PSIBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_BladeShot</defName>
+    <label>blade shot</label>
+    <description>Shoot a razor sharp blade using the blade horns protruding on each sides.</description>
+    <iconPath>Things/Misc/UI/BladeShotUI</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AGM_Shot_EmpressBlade</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_BladeShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_AntiOrganicBlast</defName>
+    <label>anti organic blast</label>
+    <description>Fire a super explosive anti-organic warhead.</description>
+    <iconPath>Things/Misc/UI/AntiOrgBlastUI</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AGM_Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_AntiOrgBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_AntiOrganicOrbitalStrike</defName>
+    <label>anti organic orbital strike</label>
+    <description>Unleash the wrath of the machines by blasting those filthy organics with an anti-organic orbital strike.</description>
+    <iconPath>Things/Misc/UI/AntiOrgOrbitalUI</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AGM_Shot_Doom</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_AntiOrgPreOrbital</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<AbilityDef>
+    <defName>AGM_DeathRay</defName>
+    <label>death ray</label>
+    <description>Fire a death ray that can reduce the target's capacities to 35%, along with a 20% chance of instant death.</description>
+    <iconPath>Things/Misc/UI/DeathRayUI</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>AGM_Shot_LaserBlaster</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AGM_DeathShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_ChargeBlastz</defName>
+    <label>charge blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/ChargedCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>AGM_Damage_ChargeBlast</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_PlasmaBlastz</defName>
+    <label>plasma blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>AGM_Damage_BlastFlame</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+	  <screenShakeFactor>1.5</screenShakeFactor>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+	<thingClass>Projectile_Explosive</thingClass>
+    <defName>AGM_AntiGrainGrenade</defName>
+    <label>antigrain grenade</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/UltraGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>AGM_Damage_AntiHumanNanites</damageDef>
+      <explosionRadius>15.9</explosionRadius >
+	  <explosionDelay>300</explosionDelay>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_PSIBlast</defName>
+    <label>psychic blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>1000</speed>
+	  <damageDef>AGM_Damage_PsiExplosion</damageDef>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
+	  <explosionRadius>10</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_AntiOrgBlast</defName>
+    <label>anti-organic warhead</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>150</speed>
+	  <damageDef>AGM_Damage_AntiOrganicBlast</damageDef>
+	  <explosionRadius>5.9</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <thingClass>Projectile_Explosive</thingClass>
+    <defName>AGM_AntiOrgPreOrbital</defName>
+    <label>anti-organic blast</label>
+    <graphicData>
+      <drawSize>(1,20)</drawSize>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>AGM_Damage_AntiHumanNanitesFlame</damageDef>
+      <speed>900</speed>
+      <explosionRadius>10.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof></soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+      <postExplosionSpawnThingDef>AGM_AntiOrgPostOrbital</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.08</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_DeathShotz</defName>
+    <label>death shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>AGM_Damage_BulletHealthBlight</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>70</damageAmountBase>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>AGM_Damage_DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_BladeShotz</defName>
+    <label>blade shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BladeShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>150</damageAmountBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="SkyfallerBase">
+    <defName>AGM_AntiOrgPostOrbital</defName>
+    <label>orbital anti-organic blast</label>
+    <size>(2,2)</size>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/AntiOrgOrbitalProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(8, 40)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <explosionRadius>4.9</explosionRadius>
+      <explosionDamage>AGM_Damage_AntiOrganicBlast</explosionDamage>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <speed>5</speed>
+    </skyfaller>
+  </ThingDef>
+<FleckDef ParentName="FleckBase_Thrown">
+    <defName>AGM_Fleck_BlastAntiOrganicRedLine</defName>
+    <altitudeLayer>LightingOverlay</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>0.28</fadeOutTime>
+    <solidTime>1.7</solidTime>
+    <growthRate>11</growthRate>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Misc/MoteMisc/AntiOrganic/AntiOrganicLineGlow</texPath>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MoteMultiplyAddCircular</shaderType>
+      <shaderParameters>
+        <_DistortionTex>/Things/Mote/RadiationDistortion_A</_DistortionTex>
+        <_texAScale>0.5</_texAScale>
+        <_texBScale>2</_texBScale>
+        <_texAScrollSpeed>0</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_Intensity>0.5</_Intensity>
+        <_InnerFadeAmount>0</_InnerFadeAmount>
+        <_DistortionIntensity>0.5</_DistortionIntensity>
+        <_TexAScaleDivisorPerProgress>1.5</_TexAScaleDivisorPerProgress>
+      </shaderParameters>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+</Defs>

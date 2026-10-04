@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef>
+    <defName>AGM_PlasmaGasZone</defName>
+    <label>superheated plasma gas</label>
+    <thingClass>AGM.DamageZone_Exo</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <selectable>false</selectable>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Projectile/PlasmaGasCloud</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <color>(141, 255, 105, 96)</color>
+      <drawSize>4.6</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="AGM.DefModExtension_DamageZone">
+        <radius>2.3</radius>
+        <durationTicks>180</durationTicks>
+        <damageIntervalTicks>15</damageIntervalTicks>
+        <damageAmount>3</damageAmount>
+        <damageDef>Flame</damageDef>
+        <armorPenetration>0.4</armorPenetration>
+        <fireChancePerInterval>0.06</fireChancePerInterval>
+        <fleckIntervalTicks>18</fleckIntervalTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

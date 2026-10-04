@@ -1,0 +1,259 @@
+  <DamageDef>
+    <defName>BlastFlame</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Plasma</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by superheated plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1000</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>FireBlast</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>ChargeBlast</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Charged</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>ChargedBlast</explosionCellFleck>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>25</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>PsiBlast</defName>
+    <label>Hydrablast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in a psychic blast.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>      
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>0.25</defaultStoppingPower>
+    <defaultArmorPenetration>0.15</defaultArmorPenetration>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+    <explosionCellFleck>DroneExplosion</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>        
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>        
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+   </DamageDef>
+
+   <DamageDef>
+    <defName>PsiExplosion</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Psychic</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by psychic explosion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>DroneExplosion</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiHumanNanites</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been swarmed to death by nanites.</deathMessage>
+    <hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>2500</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>5.5</defaultArmorPenetration>
+    <plantDamageFactor>0</plantDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+	<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_ChaingunBullets">
+    <defName>BleedBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Bleed</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_ChaingunBullets">
+    <defName>ShockBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>ShockPain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_LaserBlasterBullets">
+    <defName>Inflamable</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Inflammable</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_LaserBlasterBullets">
+    <defName>Incinerate</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>IncendiaryBody</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_AssaultChargerBullets">
+    <defName>VitalityDrainBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>VitalityDrain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_HeavyLaserBullets">
+    <defName>ArmorBreakerBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>ArmorBreaker</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_HeavyLaserBullets">
+    <defName>DeathBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Instantkill</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiOrganicBlast</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_AntiOrganics</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1500</defaultDamage>
+    <defaultStoppingPower>10</defaultStoppingPower>
+    <defaultArmorPenetration>2.5</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AntiOrganicBlastZone</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiHumanNanitesFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} have peaced-out.</deathMessage>
+	<hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <defaultDamage>450</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+	<buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>450</plantDamageFactor>
+	<explosionSnowMeltAmount>450</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>20</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="PSIBullet">
+    <defName>BulletHealthBlight</defName>
+    <label>health blight bullet</label>
+    <additionalHediffs>
+      <li>
+        <hediff>HealthBlight1</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+

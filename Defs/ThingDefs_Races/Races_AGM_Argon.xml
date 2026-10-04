@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="BaseMechanoid">
+    <defName>AGM_Argon</defName>
+    <label>Warbringer</label>
+    <description>Inert to every insult, and once it starts walking, unavoidable. Argon is the AGM line's noble-gas colossus: rating-capped armor, a purification ray cannon grafted to its back, and a frame that simply does not fall. It does not pursue, negotiate, or hurry. It arrives.</description>
+    <statBases>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ControlTakingTime>30</ControlTakingTime>
+      <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+      <MarketValue>1000</MarketValue>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <EMPResistance>1.0</EMPResistance>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <BandwidthCost>3</BandwidthCost>
+      <MoveSpeed>8</MoveSpeed>
+      
+      <ArmorRating_Blunt>2.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.0</ArmorRating_Sharp>
+      <EnergyShieldEnergyMax>12</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.25</EnergyShieldRechargeRate>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>AGM_Argon_Body</body>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <baseBodySize>5</baseBodySize>
+      <baseHealthScale>10.0</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <butcherProducts>
+      <Steel>100</Steel>
+      <Plasteel>80</Plasteel>
+    </butcherProducts>
+        <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.0</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="CompProperties_Shield" />
+
+      <li Class="AGM.CompProperties_NeverDowned" />
+
+          <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_PurificationBlast</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+    </comps>
+  </ThingDef>
+<PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>AGM_Argon</defName>
+    <label>Warbringer</label>
+    <race>AGM_Argon</race>
+    <combatPower>42</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Argon</texPath>
+          <shaderType>Cutout</shaderType>
+          <drawSize>5.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>AGM_ThermalLances</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+  </PawnKindDef>
+
+</Defs>

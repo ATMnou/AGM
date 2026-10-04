@@ -1,0 +1,297 @@
+  <ThingDef Name="MechSupremeApocriton" ParentName="MechBosses">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <description>The harbinger of death, and the all-father of apocritons. The supreme apocriton is an ultra-heavy mech variant which is believed to be the sole progenitor of all apocritons that exist today, and like the apocritons, it also has a deep hatred towards all natural life to an extreme degree. Its total abilities are unknown other than its ability to resurrect mechanoid allies, and it is the only mech variant capable of wielding the infamous mech heavy laser blaster. The supreme apocriton oftenly spawns with a cadre of hard to defeat mech variants, but luckly, it never spawns normally unless summoned using a "god slayer" mech transponder.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+	  <IncomingDamageFactor>0.2</IncomingDamageFactor>
+      <MeleeDoorDamageFactor>1000</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>7</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>1000</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>3000000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_ScythUrchin</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurretEX</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>SupremeApocrionAttached</effecterDef>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <ArchoBox>1</ArchoBox>
+	  <UltimaChip>1</UltimaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef Name="MechSupremeApocritonKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <labelPlural>supreme apocritons</labelPlural>
+    <race>Mech_SupremeApocriton</race>
+    <combatPower>9500</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/SupremeApocriton/SupremeApocriton</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/SupremeApocriton</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechHeavyLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>	  
+      <li>ResurrectionMech</li>
+	  <li>AntiOrganicGrenade</li>
+	  <li>AntiOrganicBlast</li>
+	  <li>AntiOrganicOrbitalStrike</li>
+	  <li>DeathRay</li>
+	  <li>LongjumpMech</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+  
+  <!-- Mech boss offshoot "Supreme apocriton" -->
+  <ThingDef Name="MechSupremeApocritonOffShoot" ParentName="MechBosses">
+    <defName>Mech_SupremeApocritonOffshoot</defName>
+    <label>supreme apocriton offshoot</label>
+    <description>An offshoot created by the image of the supreme apocriton, meant to provide support by wielding the original's power to achieve victory.</description>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>10</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.80</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>2</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>20.9</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>500</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>500</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>2</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>10000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>ApocrionAttached</effecterDef>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_GammaBeamGraserTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef Name="MechSupremeApocritonOffshootKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_SupremeApocritonOffshoot</defName>
+    <label>supreme apocriton offshoot</label>
+    <labelPlural>supreme apocriton offshoots</labelPlural>
+    <race>Mech_SupremeApocritonOffshoot</race>
+    <combatPower>9500</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/SupremeApocriton/SupremeApocriton</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/SupremeApocriton</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechHeavyChargeLancez</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>DeathRay</li>	
+      <li>ResurrectionMech</li>
+	  <li>LongjumpMech</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>

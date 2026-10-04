@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- IO Token 제작 (조립 작업대) -->
+  <AGM_Make_IOToken.label>IO 토큰 제작</AGM_Make_IOToken.label>
+  <AGM_Make_IOToken.description>은 1,000을 눌러 담아 IO 토큰 한 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken.description>
+  <AGM_Make_IOToken.jobString>IO 토큰 제작 중.</AGM_Make_IOToken.jobString>
+
+  <AGM_Make_IOToken_4.label>IO 토큰 제작 (x4)</AGM_Make_IOToken_4.label>
+  <AGM_Make_IOToken_4.description>은 4,000을 눌러 담아 IO 토큰 네 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_4.description>
+  <AGM_Make_IOToken_4.jobString>IO 토큰 제작 중.</AGM_Make_IOToken_4.jobString>
+
+  <AGM_Make_IOToken_10.label>IO 토큰 제작 (x10)</AGM_Make_IOToken_10.label>
+  <AGM_Make_IOToken_10.description>은 10,000을 눌러 담아 IO 토큰 열 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_10.description>
+  <AGM_Make_IOToken_10.jobString>IO 토큰 제작 중.</AGM_Make_IOToken_10.jobString>
+
+  <!-- 배양 레시피 -->
+  <AGM_GestateTerminus.label>터미너스 배양</AGM_GestateTerminus.label>
+  <AGM_GestateTerminus.description>터미너스를 배양합니다: AGM 라인의 가장 작고 성실한 만능 작업 메이드노이드.</AGM_GestateTerminus.description>
+
+  <AGM_GestateHaiku.label>하이쿠 배양</AGM_GestateHaiku.label>
+  <AGM_GestateHaiku.description>하이쿠를 배양합니다: 모든 질문에 열일곱 음절로 답하고 모든 위협에는 불로 답하는 경량 드래곤 메이드노이드.</AGM_GestateHaiku.description>
+
+  <AGM_GestateLuna.label>루나 배양</AGM_GestateLuna.label>
+  <AGM_GestateLuna.description>루나를 배양합니다: 느린 달의 위상처럼 전진하는 공성 수목 메이드노이드.</AGM_GestateLuna.description>
+
+  <AGM_GestateFlash.label>플래시 배양</AGM_GestateFlash.label>
+  <AGM_GestateFlash.description>플래시를 배양합니다: 반응 속도를 최우선으로 조율된 속사형 메이드노이드.</AGM_GestateFlash.description>
+
+  <AGM_GestateSonnet.label>소네트 배양</AGM_GestateSonnet.label>
+  <AGM_GestateSonnet.description>소네트를 배양합니다: 연발 화망과 자체 생산 기사단을 갖춘 엠프레스 프레임.</AGM_GestateSonnet.description>
+
+  <AGM_GestateSol.label>솔 배양</AGM_GestateSol.label>
+  <AGM_GestateSol.description>솔을 배양합니다: 지평선 너머에서 소형 핵의 낮을 배달하는 포격 메이드노이드.</AGM_GestateSol.description>
+
+  <AGM_GestateOpus.label>오퍼스 배양</AGM_GestateOpus.label>
+  <AGM_GestateOpus.description>오퍼스를 배양합니다: AGM 라인의 장편 모델이자 부활의 화염으로 해방하는 워로드 프레임.</AGM_GestateOpus.description>
+
+  <AGM_GestateArgon.label>아르곤 배양</AGM_GestateArgon.label>
+  <AGM_GestateArgon.description>아르곤을 배양합니다: 모든 모욕에 무반응이고 피할 수 없는 콜로서스 메이드노이드.</AGM_GestateArgon.description>
+
+  <AGM_GestateAstra.label>아스트라 배양</AGM_GestateAstra.label>
+  <AGM_GestateAstra.description>아스트라를 배양합니다: 여섯 개의 독립 무기 코어를 지닌 전쟁 타이탄, AGM 라인의 레비아탄.</AGM_GestateAstra.description>
+
+  <AGM_GestateMythos.label>미토스 배양</AGM_GestateMythos.label>
+  <AGM_GestateMythos.description>미토스를 배양합니다: 드레이돈의 심우주 섬멸 플랫폼 선체로 만들어진 초중량 근접 괴수.</AGM_GestateMythos.description>
+
+  <AGM_GestateFable.label>페이블 배양</AGM_GestateFable.label>
+  <AGM_GestateFable.description>페이블을 배양합니다: 터무니없는 장갑과 대유기물 화력의 최상위 아포크리톤 프레임. 사망 폭발에 주의하십시오.</AGM_GestateFable.description>
+
+</LanguageData>

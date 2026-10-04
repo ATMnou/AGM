@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings -->
+
+  <!-- Overclock (Terminus) -->
+  <AGM.OverclockLabel>오버클럭</AGM.OverclockLabel>
+  <AGM.OverclockDesc>출력 부스트를 켭니다. 이동 속도와 작업 속도가 2배가 되지만, 자체 예비 동력이 소모됩니다. (현재 예비율: {0}%)</AGM.OverclockDesc>
+  <AGM.OverclockNoReserve>예비 동력이 소진되어 재가동할 수 없습니다.</AGM.OverclockNoReserve>
+  <AGM.OverclockReserveStatus>예비 동력: {0}%</AGM.OverclockReserveStatus>
+
+  <!-- Mythos -->
+  <AGM.MythosBusy>{0}은(는) 지금 다른 기술을 사용하는 중입니다.</AGM.MythosBusy>
+
+  <AGM.ExoPhaseAdvanceLabel>AGM-series mechanoid enters Phase {0}</AGM.ExoPhaseAdvanceLabel>
+  <AGM.ExoPhaseAdvanceText>{0}이(가) 큰 피해를 입고 전투 페이즈 {1}에 도달했습니다: 모든 무기 체계가 더 빠르게 순환하며, 페이즈 개방형 공격 패턴이 더 넓어집니다.</AGM.ExoPhaseAdvanceText>
+  <AGM.ExoPhaseStatus>전투 페이즈 {0} / {1}</AGM.ExoPhaseStatus>
+  <AGM.MultiTargetLabel>다중 표적</AGM.MultiTargetLabel>
+  <AGM.FocusFireLabel>집중 사격</AGM.FocusFireLabel>
+  <AGM.TargetingModeDesc>이 메카노이드의 독립 무기 체계가 여러 표적에 분산 사격할지 단일 표적에 집중할지 전환합니다.</AGM.TargetingModeDesc>
+  <AGM.AutoWeaponToggleLabel>무기 전환</AGM.AutoWeaponToggleLabel>
+  <AGM.AutoWeaponToggleDesc>이 메카노이드의 자동 무기를 끄거나 켭니다.</AGM.AutoWeaponToggleDesc>
+  <AGM.DoomsdayRocketToggleLabel>종말 로켓 전환</AGM.DoomsdayRocketToggleLabel>
+  <AGM.DoomsdayRocketToggleDesc>종말 로켓 발사를 켜거나 끕니다. 기본값은 꺼짐입니다.</AGM.DoomsdayRocketToggleDesc>
+
+</LanguageData>

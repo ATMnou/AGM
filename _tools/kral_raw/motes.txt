@@ -1,0 +1,77 @@
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_LaserBlasterEX</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>0.2</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShotEX</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>0.25</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_DeathRayz</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>0.2</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DeathRayShot</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>0.25</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_ValyrianBlast_Charge</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Misc/MoteMisc/ExtinctionRay/ExtinctionRay_Charge</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Charge</shaderType>
+      <shaderParameters>
+        <_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+        <_FlickerFrequency>0.25</_FlickerFrequency>
+        <_FlickerAmount>0.6</_FlickerAmount>
+        <_InnerCircleIntensity>0.1</_InnerCircleIntensity>
+        <_InnerCircleSize>0.4</_InnerCircleSize>
+        <_InnerCircleShimmerAmount>0.14</_InnerCircleShimmerAmount>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+

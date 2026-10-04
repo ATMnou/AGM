@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="SuperHeavyMechanoid">
+      <defName>AGM_Sol</defName>
+      <label>Sol</label>
+      <description>The AGM line's artillery nexus. Sol does not chase, flank or duel - it advances at a fixed rhythm, anchors, and turns the battlefield into a firing solution: continuous shield-splitting bombardment from its third-segment rocket array while flocks of Shellsplitter micro-units boil out of its incubation bays to shred anything that closes in. Doctrine files call it a tempo controller rather than a frontline fighter, for one simple reason: left alone, Sol recalculates faster than a defense can reorganize.</description>
+      <race>
+        <body>AGM_Sol_Body</body>
+        <baseBodySize>4</baseBodySize>
+      <mechWeightClass>Heavy</mechWeightClass>
+		<baseHealthScale>10</baseHealthScale>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+            <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+          </li>
+          
+        </lifeStageAges>
+        <detritusLeavings>
+          <li>
+            <def>ChunkMechanoidSlag</def>
+            <texOverrideIndex>3</texOverrideIndex>
+            <spawnChance>0.75</spawnChance>
+          </li>
+          <li>
+            <def>ChunkMechanoidSlag</def>
+            <texOverrideIndex>17</texOverrideIndex>
+            <spawnChance>0.75</spawnChance>
+          </li>
+          <li>
+            <def>ChunkMechanoidSlag</def>
+            <texOverrideIndex>1</texOverrideIndex>
+            <spawnChance>0.75</spawnChance>
+          </li>
+        </detritusLeavings>
+	
+      </race>
+      <tools>
+        <li>
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>88</power>
+          <cooldownTime>2.6</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+      <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+            <MarketValue>30000</MarketValue>
+      <MoveSpeed>1</MoveSpeed>
+      <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+	    <ArmorRating_Heat>2</ArmorRating_Heat>
+	    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+	    <EMPResistance>0.5</EMPResistance>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+      
+      </statBases>
+	  <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>AGM_Shellsplitter</spawnPawnKind>
+        <fixedIngredient>Uranium</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>5000</startingIngredientCount>
+        <maxIngredientCount>5000</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+		<cooldownTicks>450</cooldownTicks>
+		<maxPawnsToSpawn>5</maxPawnsToSpawn>
+      </li>
+    <li Class="CompProperties_Shield" />
+    </comps>
+	<butcherProducts>
+      <Steel>800</Steel>
+      <Plasteel>200</Plasteel>
+	  <Uranium>600</Uranium>
+	  <GravlitePanel MayRequire="Ludeon.RimWorld.Odyssey">150</GravlitePanel>
+    </butcherProducts>
+    </ThingDef>
+<PawnKindDef ParentName="HeavyMechanoidKind">
+      <defName>AGM_Sol</defName>
+      <label>Sol</label>
+      <race>AGM_Sol</race>
+      <defaultFactionType>PlayerColony</defaultFactionType>
+      <combatPower>500</combatPower>
+      <maxPerGroup>1</maxPerGroup>
+      <allowInMechClusters>false</allowInMechClusters>
+          <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Sol</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+      <weaponTags>
+        <li>AGM_SolRailMortar</li>
+      </weaponTags>
+	  <skipResistant>true</skipResistant>
+    </PawnKindDef>
+<ThingDef ParentName="LightMechanoid">
+      <defName>AGM_Shellsplitter</defName>
+      <label>Shellsplitter</label>
+      <description>A knee-high disruptor dropped from Sol's incubation bays. It skitters forward in erratic, hard-to-lead hops, opens a formation with high-frequency blades, and its structural failure is the point - the power cell detonates, scrambles electronics and denies the ground it died on.</description>
+      <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+              <MoveSpeed>6</MoveSpeed>
+      </statBases>
+    <tools>
+      <li>
+        <label>left blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right blade</label>
+        <labelNoLocation>blade</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+      <race>
+      <body>Scyther</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+          
+        </lifeStageAges>
+        <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+        <baseHealthScale>1.5</baseHealthScale>
+      </race>
+      <comps Inherit="False">
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+		<li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>5.5</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AGM_Damage_Antiparticle</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+      </comps>
+	  <butcherProducts>
+	  <Uranium>10</Uranium>
+    </butcherProducts>
+    </ThingDef><PawnKindDef ParentName="LightMechanoidKind">
+      <defName>AGM_Shellsplitter</defName>
+      <label>Shellsplitter</label>
+      <labelPlural>shellsplitters</labelPlural>
+      <race>AGM_Shellsplitter</race>
+      <allowInMechClusters>false</allowInMechClusters>
+      <forceNoDeathNotification>true</forceNoDeathNotification>
+          <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Clawdsplitter_Spider</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>      
+      <weaponTags>
+        
+      </weaponTags>
+    </PawnKindDef>
+
+</Defs>

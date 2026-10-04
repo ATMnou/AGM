@@ -1,0 +1,46 @@
+  <PawnKindDef Name="MechHydraulicEmpressKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_HydraulicEmpress</defName>
+    <label>hydraulic empress</label>
+    <labelPlural>hydraulic empresses</labelPlural>
+    <race>Mech_HydraulicEmpress</race>
+    <combatPower>7000</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicEmpress_Clean/HydraulicEmpressClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicEmpress</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicEmpress/HydraulicEmpress</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicEmpress</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+		<butcherBodyPart>
+           <bodyPartGroup>HornAttackTool</bodyPartGroup>
+           <thing>EmpressBladeHorn</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages> 	
+	<weaponTags>
+      <li>MechChaingun</li>
+    </weaponTags>
+	<abilities>	  
+      <li>BladeShot</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>

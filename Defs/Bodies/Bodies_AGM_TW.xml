@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<BodyDef>
+  <defName>AGM_Sol_Body</defName>
+  <label>静巢构体 Doxa-0</label>
+  <corePart>
+    <def>AGM_Sol_Dorsal_First</def>
+    <height>Middle</height>
+    <depth>Outside</depth>
+    <groups>
+      <li>Torso</li>
+    </groups>
+    <parts>
+      
+      <li>
+        <def>AGM_Sol_Dorsal_Second</def>
+        <coverage>0.45</coverage>
+		<groups>
+           <li>HeadAttackTool</li>
+        </groups>
+        <parts>
+          
+          <li>
+            <def>AGM_Sol_Dorsal_Third</def>
+            <coverage>0.35</coverage>
+            <parts>
+              
+              <li>
+                <def>AGM_Sol_Dorsal_Fourth</def>
+                <coverage>0.20</coverage>
+                <parts>
+                  
+                  <li>
+                    <def>AGM_Sol_DeepLogic_NeuronCore</def>
+                    <customLabel>深层逻辑核</customLabel>
+                    <coverage>0.05</coverage>
+                    <depth>Inside</depth>
+                  </li>
+                </parts>
+              </li>
+            </parts>
+          </li>
+        </parts>
+      </li>
+
+      
+      <li>
+        <def>AGM_Sol_Turret_Mount</def>
+        <customLabel>反粒子炮架</customLabel>
+        <coverage>0.12</coverage>
+        <parts>
+          <li>
+            <def>AGM_Sol_AntiParticleEmitter</def>
+            <customLabel>反粒子发射口</customLabel>
+            <coverage>0.20</coverage>
+          </li>
+          <li>
+            <def>AGM_Sol_FireControlModule</def>
+            <customLabel>火控核心单元</customLabel>
+            <coverage>0.08</coverage>
+            <depth>Inside</depth>
+          </li>
+        </parts>
+      </li>
+
+      
+      <li>
+        <def>AGM_Sol_Hatch_Module</def>
+        <customLabel>裂壳蛛孵化腔</customLabel>
+        <coverage>0.10</coverage>
+      </li>
+
+      
+      <li>
+        <def>AGM_Sol_Sensor_Cluster</def>
+        <customLabel>前端感知阵列</customLabel>
+        <coverage>0.08</coverage>
+      </li>
+
+      
+      <li>
+        <def>AGM_Sol_LimbCluster</def>
+        <customLabel>多爪推进组</customLabel>
+        <coverage>0.10</coverage>
+      </li>
+    </parts>
+  </corePart>
+</BodyDef>
+
+
+<BodyPartDef>
+  <defName>AGM_Sol_DeepLogic_NeuronCore</defName>
+  <label>Deep Logic Core</label>
+  <hitPoints>30</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <bleedRate>0</bleedRate>
+  <tags>
+    <li>ConsciousnessSource</li>
+  </tags>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_Turret_Mount</defName>
+  <label>Antiparticle Turret Mount</label>
+  <hitPoints>60</hitPoints>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <bleedRate>0</bleedRate>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_AntiParticleEmitter</defName>
+  <label>Antiparticle Emitter</label>
+  <hitPoints>50</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_Hatch_Module</defName>
+  <label>Shellsplitter Incubation Chamber</label>
+  <hitPoints>60</hitPoints>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_Sensor_Cluster</defName>
+  <label>Frontal Sensor Array</label>
+  <hitPoints>30</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <frostbiteVulnerability>1</frostbiteVulnerability>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <tags>
+    <li>SightSource</li>
+    <li>HearingSource</li>
+  </tags>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_FireControlModule</defName>
+  <label>Fire Control Coordination Module</label>
+  <hitPoints>40</hitPoints>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>AGM_Sol_LimbCluster</defName>
+  <label>Multi-Claw Propulsion Cluster</label>
+  <hitPoints>40</hitPoints>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <tags>
+    <li>MovingLimbCore</li>
+  </tags>
+</BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>背壳节</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Sol_Dorsal_First</defName>
+    <label>Dorsal Segment One</label>
+    <hitPoints>80</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>背壳节</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Sol_Dorsal_Second</defName>
+    <label>Dorsal Segment Two</label>
+    <hitPoints>75</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>背壳节</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Sol_Dorsal_Third</defName>
+    <label>Dorsal Segment Three</label>
+    <hitPoints>75</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>背壳节</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Sol_Dorsal_Fourth</defName>
+    <label>Dorsal Segment Four</label>
+    <hitPoints>70</hitPoints>
+  </BodyPartDef>
+
+
+  <BodyDef>
+    <defName>AGM_Luna_Body</defName>
+    <label>Ironbark Fiend</label>
+    <corePart>
+      <def>AGM_Luna_IronbarkTrunk</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        
+        <li>
+          <def>AGM_Luna_IronbarkCanopy</def>
+          <coverage>0.1</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>AGM_Luna_IronbarkCore</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>AGM_Luna_ThermalSensor</def>
+              <customLabel>热感阵列：左</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>AGM_Luna_ThermalSensor</def>
+              <customLabel>热感阵列：右</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>AGM_Luna_HydraulicCrusher</def>
+              <customLabel>液压粉碎器：一</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>AGM_Luna_HydraulicCrusher</def>
+              <customLabel>液压粉碎器：二</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>AGM_Luna_GreekFireNozzle</def>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+        
+        
+        <li>
+          <def>AGM_Luna_IronbarkTrunk</def>
+          <coverage>0.75</coverage>
+		  <groups>
+            <li>LeftBlade</li>
+			<li>RightBlade</li>
+          </groups>
+          <parts>
+            <li>
+              <def>AGM_Luna_FusionReactor</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>AGM_Luna_RootJoint</def>
+              <coverage>0.1</coverage>
+              <depth>Outside</depth>
+            </li>
+            <li>
+              <def>AGM_Luna_RootJoint</def>
+              <coverage>0.1</coverage>
+              <depth>Outside</depth>
+            </li>
+            <li>
+              <def>AGM_Luna_IronbarkMidTrunk</def>
+              <coverage>0.7</coverage>
+              <parts>
+                <li>
+                  <def>AGM_Luna_IronbarkLowerTrunk</def>
+                  <coverage>0.7</coverage>
+                  <parts>
+                    <li>
+                      <def>AGM_Luna_IronbarkBaseTrunk</def>
+                      <coverage>0.6</coverage>
+                      <parts>
+                        <li>
+                          <def>AGM_Luna_IronbarkRootHub</def>
+                          <coverage>0.5</coverage>
+                          <parts>
+                            <li>
+                              <def>AGM_Luna_PhaseShieldCore</def>
+                              <coverage>0.05</coverage>
+                              <depth>Inside</depth>
+                            </li>
+                          </parts>
+                        </li>
+                      </parts>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        
+        
+        <li>
+          <def>AGM_Luna_InfernoEmitter</def>
+          <customLabel>焚城辐射阵列</customLabel>
+          <coverage>0.05</coverage>
+          <groups>
+            
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+  <BodyPartDef>
+    <defName>AGM_Luna_ThermalSensor</defName>
+    <label>Thermal Sensor Array</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+	<tags>
+      <li>BloodFiltrationSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_GreekFireNozzle</defName>
+    <label>Greek Fire Nozzle</label>
+    <hitPoints>35</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_HydraulicCrusher</defName>
+    <label>Hydraulic Crusher</label>
+    <hitPoints>20</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_FusionReactor</defName>
+    <label>Fusion Reactor</label>
+    <hitPoints>30</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_PhaseShieldCore</defName>
+    <label>Phase Shield Core</label>
+    <hitPoints>38</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_RootJoint</defName>
+    <label>Root Joint</label>
+    <hitPoints>30</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_InfernoEmitter</defName>
+    <label>Inferno Emitter</label>
+    <hitPoints>30</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_IronbarkCanopy</defName>
+    <label>Ironbark Canopy</label>
+    <hitPoints>35</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+	<tags>
+      <li>SightSource</li>
+	  <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_Luna_IronbarkCore</defName>
+    <label>Ironbark Core</label>
+    <hitPoints>40</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>铁木主干基座</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Luna_IronbarkTrunk</defName>
+    <label>Ironbark Trunk</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>铁木主干基座</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Luna_IronbarkMidTrunk</defName>
+    <label>Ironbark Mid Segment</label>
+    <hitPoints>30</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>铁木主干基座</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Luna_IronbarkLowerTrunk</defName>
+    <label>Ironbark Lower Segment</label>
+    <hitPoints>28</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>铁木主干基座</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Luna_IronbarkBaseTrunk</defName>
+    <label>Ironbark Base Segment</label>
+    <hitPoints>25</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <labelShort>铁木主干基座</labelShort>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+
+    <defName>AGM_Luna_IronbarkRootHub</defName>
+    <label>Root Hub</label>
+    <hitPoints>20</hitPoints>
+  </BodyPartDef>
+
+
+
+</Defs>

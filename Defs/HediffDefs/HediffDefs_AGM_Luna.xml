@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>AGM_Luna_Hediff</defName>
+    <label>Luna Bark</label>
+	<defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+	<description>The Ironbark's honeycomb shock-absorbing layer and high-temperature regeneration cycle automatically fortify damaged areas upon taking a hit.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+	  <li Class="AGM.HediffCompProperties_AutoRepair">
+        <tickInterval>180</tickInterval>
+        <healAmount>5</healAmount>
+      </li>
+	</comps>
+	<stages>
+      <li>
+		<minSeverity>0.01</minSeverity>
+		<statFactors>
+			<IncomingDamageFactor>0.80</IncomingDamageFactor>
+			<StaggerDurationFactor>0.5</StaggerDurationFactor>
+        </statFactors>
+		<statOffsets>
+		  <MeleeHitChance>+10</MeleeHitChance>
+		  <MeleeDodgeChance>+10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+
+</Defs>

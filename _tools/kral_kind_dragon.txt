@@ -1,0 +1,43 @@
+  <PawnKindDef Name="MechDragonKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_Dragon</defName>
+    <label>steel wyvern</label>
+    <labelPlural>steel wyverns</labelPlural>
+    <race>Mech_Dragon</race>
+    <combatPower>5500</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>true</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragon_Clean/MechDragonClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragon</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragon/MechDragon</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragon</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+    </weaponTags>
+    <abilities>
+	  <li>PlasmaBlast</li>
+      <li>FireBurst</li>
+	  <li>ChargeBlast</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>

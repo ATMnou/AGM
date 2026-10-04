@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- General Mech Gestator                                        -->
+  <!-- Stat-for-stat clone of the vanilla Biotech LargeMechGestator, -->
+  <!-- unlocked by basic mechtech instead of standard mechtech, and -->
+  <!-- dedicated to the AGM maidnoid line. Uses the vanilla large   -->
+  <!-- gestator motes (forming / cycle complete / formed).          -->
+  <!-- ============================================================ -->
+  <ThingDef ParentName="MechGestatorBase">
+    <defName>AGM_GeneralMechGestator</defName>
+    <label>General Mech Gestator</label>
+    <description>A tank of mechanite-rich fluid, rebuilt around the large mech gestator blueprint and retooled to feed on IO Tokens instead of raw metal. Mechanitors can use it to gestate every mechanoid of the Artificial General Maidnoid line, from the lightest worker to the heaviest leviathan.\n\nThe process uses harsh chemicals which are stored in toxic wastepacks. Haulers must remove the wastepacks from time to time.</description>
+    <graphicData>
+      <texPath>Buildings/GeneralMechGestatorLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6, 5)</drawSize>
+      <shadowData>
+        <volume>(3.8, 3, 2.7)</volume>
+      </shadowData>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <interactionCellOffset>(2,0,2)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(4,3)</size>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>BasicMechtech</li>
+    </researchPrerequisites>
+    <building>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(-1.59, 1.4)</preRotationOffset>
+          <size>(0.72, 0.12)</size>
+        </north>
+        <south>
+          <preRotationOffset>(-1.59, 1.33)</preRotationOffset>
+          <size>(0.72, 0.12)</size>
+        </south>
+        <east>
+          <preRotationOffset>(1.59, -1.4)</preRotationOffset>
+          <size>(0.72, 0.12)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-1.59, -1.4)</preRotationOffset>
+          <size>(0.72, 0.12)</size>
+        </west>
+      </barDrawData>
+      <formingGraphicData>
+        <texPath>Things/Pawn/Mechanoid/HalfGestatedMechLarge</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.65,1.65)</drawSize>
+      </formingGraphicData>
+      <formingMechBobSpeed>0.0005</formingMechBobSpeed>
+      <formingMechYBobDistance>0.08</formingMechYBobDistance>
+      <formingMechPerRotationOffset>
+        <li>(0, 0, 0.225)</li>
+        <li>(-0.15, 0, 0.225)</li>
+        <li>(0, 0, 0.225)</li>
+        <li>(0.15, 0, 0.225)</li>
+      </formingMechPerRotationOffset>
+      <mechGestatorCylinderGraphic>
+        <texPath>Buildings/GeneralMechGestatorLargeGlass</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(6, 5)</drawSize>
+        <shaderType>Transparent</shaderType>
+      </mechGestatorCylinderGraphic>
+      <mechGestatorTopGraphic>
+        <texPath>Buildings/GeneralMechGestatorLargeTop</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(6, 5)</drawSize>
+      </mechGestatorTopGraphic>
+      <gestatorFormingMote>
+        <north>MechGestatorFormingLarge_North</north>
+        <east>MechGestatorFormingLarge_East</east>
+        <west>MechGestatorFormingLarge_West</west>
+        <south>MechGestatorFormingLarge_South</south>
+      </gestatorFormingMote>
+      <gestatorCycleCompleteMote>
+        <north>MechGestatorCycleCompleteLarge_North</north>
+        <east>MechGestatorCycleCompleteLarge_East</east>
+        <west>MechGestatorCycleCompleteLarge_West</west>
+        <south>MechGestatorCycleCompleteLarge_South</south>
+      </gestatorCycleCompleteMote>
+      <gestatorFormedMote>
+        <north>MechGestatorFormedLarge_North</north>
+        <east>MechGestatorFormedLarge_East</east>
+        <west>MechGestatorFormedLarge_West</west>
+        <south>MechGestatorFormedLarge_South</south>
+      </gestatorFormedMote>
+    </building>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <!-- Recipes are attached via RecipeDef <recipeUsers> (AGM_GeneralMechGestator) - listing
+         them here as well would duplicate the bills. -->
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

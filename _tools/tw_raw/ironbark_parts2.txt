@@ -1,0 +1,84 @@
+  <BodyPartDef>
+    <defName>ThermalSensor</defName>
+    <label>Thermal Sensor Array</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+	<tags>
+      <li>BloodFiltrationSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>GreekFireNozzle</defName>
+    <label>Greek Fire Nozzle</label>
+    <hitPoints>35</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>HydraulicCrusher</defName>
+    <label>Hydraulic Crusher</label>
+    <hitPoints>20</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>FusionReactor</defName>
+    <label>Fusion Reactor</label>
+    <hitPoints>30</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>PhaseShieldCore</defName>
+    <label>Phase Shield Core</label>
+    <hitPoints>38</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RootJoint</defName>
+    <label>Root Joint</label>
+    <hitPoints>30</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>InfernoEmitter</defName>
+    <label>Inferno Emitter</label>
+    <hitPoints>30</hitPoints>
+  </BodyPartDef>
+

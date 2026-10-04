@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mythos -->
+  <AGM_MythosJump.label>미토스 도약</AGM_MythosJump.label>
+  <AGM_MythosJump.description>거대한 도약으로 목표 지점으로 날아가 착지하며 주변을 짓누릅니다.</AGM_MythosJump.description>
+  <AGM_MythosSuspend.label>미토스 체공</AGM_MythosSuspend.label>
+  <AGM_MythosSuspend.description>그래브 엔진으로 공중에 떠올라 아래를 향해 지속 플라스마 기둥을 내리붓습니다.</AGM_MythosSuspend.description>
+  <AGM_MythosJumpAndSuspend.label>미토스 도약 체공</AGM_MythosJumpAndSuspend.label>
+  <AGM_MythosJumpAndSuspend.description>도약한 뒤 그 자리에서 공중 체공 플라스마 스윕으로 이어갑니다.</AGM_MythosJumpAndSuspend.description>
+
+  <!-- Kraltech 파생 기술 -->
+  <AGM_BladeShot.label>블레이드 샷</AGM_BladeShot.label>
+  <AGM_BladeShot.description>날카로운 칼날 탄환을 발사합니다.</AGM_BladeShot.description>
+  <AGM_PsychicBlast.label>사이오닉 폭발</AGM_PsychicBlast.label>
+  <AGM_PsychicBlast.description>정신 충격 폭발을 날려 광범위하게 유닛을 쓰러뜨립니다.</AGM_PsychicBlast.description>
+  <AGM_PlasmaBlast.label>플라스마 폭발</AGM_PlasmaBlast.label>
+  <AGM_PlasmaBlast.description>고열 플라스마 탄두를 발사합니다.</AGM_PlasmaBlast.description>
+  <AGM_ChargeBlast.label>충전 폭발</AGM_ChargeBlast.label>
+  <AGM_ChargeBlast.description>코어의 에너지를 모아 폭발성 탄환을 발사합니다.</AGM_ChargeBlast.description>
+  <AGM_AntiOrganicGrenade.label>대유기물 수류탄</AGM_AntiOrganicGrenade.label>
+  <AGM_AntiOrganicGrenade.description>유기체만 공격하는 나노봇 수류탄을 투척합니다.</AGM_AntiOrganicGrenade.description>
+  <AGM_AntiOrganicBlast.label>대유기물 폭발</AGM_AntiOrganicBlast.label>
+  <AGM_AntiOrganicBlast.description>반경 내 유기체만 집중 타격하는 폭발을 일으킵니다.</AGM_AntiOrganicBlast.description>
+  <AGM_AntiOrganicOrbitalStrike.label>대유기물 궤도 폭격</AGM_AntiOrganicOrbitalStrike.label>
+  <AGM_AntiOrganicOrbitalStrike.description>궤도에서 반유기물 화염 폭격을 유도합니다.</AGM_AntiOrganicOrbitalStrike.description>
+  <AGM_DeathRay.label>데스레이</AGM_DeathRay.label>
+  <AGM_DeathRay.description>사망 광선을 발사해 대상의 능력치를 35%까지 깎고, 20% 확률로 즉사시킵니다.</AGM_DeathRay.description>
+
+</LanguageData>

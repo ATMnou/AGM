@@ -1,0 +1,188 @@
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_MechLaserBlasterTurret</defName>
+      <label>laser blaster turret</label>
+      <description>A heavy laser blaster turret that shoots deadly laser bolts onto enemies of great quantity.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechLaserBlasterTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechLaserBlasterTurret</defaultProjectile>
+          <range>50.9</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>40</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_LaserBlaster</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlasterTurret</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>VitalityDrainBullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+         <li>
+          <amount>250</amount>
+          <chance>0.2</chance>
+          <def>Incinerate</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_ChainGunTurret</defName>
+      <label>chaingun turret</label>
+      <description>A stub chaingun turret that can shoot armor piercing bullets at the back.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechChaingunTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_ChainGunTurret</defaultProjectile>
+          <range>50.9</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>30</burstShotCount>
+          <soundCast>Shot_ChainGun</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChainGunTurret</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/MechChaingunShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>5</armorPenetrationBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>0.4</chance>
+        <def>ShockBullets</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_MechLaserBlasterTurretEX</defName>
+      <label>laser blaster turret</label>
+      <description>A heavy laser blaster turret that shoots even more deadly laser beams onto enemies of great quantity.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechLaserBlasterTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechLaserBlasterTurretEX</defaultProjectile>
+          <range>75</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>150</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_LaserBlaster</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlasterTurretEX</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<comps>
+	  <li Class="Kraltech_Industries.LaserBeamz_CompProperties">
+	    <laserMote>Mote_LaserBlasterEX</laserMote>
+	  </li>
+	</comps>
+	<thingClass>Kraltech_Industries.LaserBeamzProj</thingClass>
+    <projectile>
+      <damageDef>ArmorBreakerBullet</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+	  <armorPenetrationBase>5</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+

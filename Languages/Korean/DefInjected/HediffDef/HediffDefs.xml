@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Hediff_Reconstruct.label>재구성 중</AGM_Hediff_Reconstruct.label>
+  <AGM_Luna_Hediff.label>루나 수목 갑주</AGM_Luna_Hediff.label>
+  <AGM_ShockPain.label>전격 통증</AGM_ShockPain.label>
+  <AGM_Inflammable.label>인화성 육체</AGM_Inflammable.label>
+  <AGM_IncendiaryBody.label>발화 육체</AGM_IncendiaryBody.label>
+  <AGM_VitalityDrain.label>활력 흡수</AGM_VitalityDrain.label>
+  <AGM_ArmorBreaker.label>장갑 파쇄</AGM_ArmorBreaker.label>
+  <AGM_Instantkill.label>즉사 탄환</AGM_Instantkill.label>
+  <AGM_HealthBlight1.label>생명 잠식</AGM_HealthBlight1.label>
+
+</LanguageData>

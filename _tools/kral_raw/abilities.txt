@@ -1,0 +1,205 @@
+  <AbilityDef>
+    <defName>ChargeBlast</defName>
+    <label>charge blast</label>
+    <description>Channel energy into the core to fire an explosive energy-based warhead.</description>
+    <iconPath>Things/Misc/UI/ChargeBlastUI</iconPath>
+    <cooldownTicksRange>100</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>ChargeBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>PlasmaBlast</defName>
+    <label>plasma blast</label>
+    <description>Channel energy into the core to fire a superheated plasma warhead.</description>
+    <iconPath>Things/Misc/UI/PlasmaBlastUI</iconPath>
+    <cooldownTicksRange>700</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>PlasmaBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicGrenade</defName>
+    <label>anti-organic grenade</label>
+    <description>Launch an explosive payload full of anti-organic nanites, that brutaly harms organics inside a 15.9 blast radius.</description>
+   <iconPath>Things/Misc/UI/NaniteGrenadeUI</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>50.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <forcedMissRadius>1.0</forcedMissRadius>
+	  <noiseRadius>4</noiseRadius>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <soundCast>Shot_ToxCanister</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiGrainGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>PsychicBlast</defName>
+    <label>psychic blast</label>
+    <description>Conjure a psychic explosion in any area while ignoring all forms of obstacles.</description>
+    <iconPath>Things/Misc/UI/PsychicBlastUI</iconPath>
+    <cooldownTicksRange>7200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>PSIBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BladeShot</defName>
+    <label>blade shot</label>
+    <description>Shoot a razor sharp blade using the blade horns protruding on each sides.</description>
+    <iconPath>Things/Misc/UI/BladeShotUI</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_EmpressBlade</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>BladeShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicBlast</defName>
+    <label>anti organic blast</label>
+    <description>Fire a super explosive anti-organic warhead.</description>
+    <iconPath>Things/Misc/UI/AntiOrgBlastUI</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiOrgBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicOrbitalStrike</defName>
+    <label>anti organic orbital strike</label>
+    <description>Unleash the wrath of the machines by blasting those filthy organics with an anti-organic orbital strike.</description>
+    <iconPath>Things/Misc/UI/AntiOrgOrbitalUI</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_Doom</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiOrgPreOrbital</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>DeathRay</defName>
+    <label>death ray</label>
+    <description>Fire a death ray that can reduce the target's capacities to 35%, along with a 20% chance of instant death.</description>
+    <iconPath>Things/Misc/UI/DeathRayUI</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_LaserBlaster</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>DeathShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="LightMechanoid">
+      <defName>AGM_Urchin</defName>
+      <label>scyth urchin</label>
+      <description>A palm-sized blade swarm released by Fable. The urchin closes at sprint speed, shreds with fixed razors, and its collapse detonates an anti-organic burst that clears organic life from the ground it claimed.</description>
+      <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>1</BandwidthCost>      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>1</BandwidthCost>        <MoveSpeed>6.2</MoveSpeed>
+		<EMPResistance>0.90</EMPResistance>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+	    <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      </statBases>
+	  <tools>
+        <li>
+          <label>blade head</label>
+          <capacities>
+            <li>Blunt</li>
+			<li>Cut</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>0.5</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+      <race>
+	    <body>Mech_Light</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+        </lifeStageAges>
+        <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+        <baseHealthScale>1.3</baseHealthScale>
+      </race>
+      <comps Inherit="False">
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+		<li Class="CompProperties_Explosive">
+          <wickTicks>0</wickTicks>
+          <explosiveRadius>10.9</explosiveRadius>
+          <explodeOnKilled>true</explodeOnKilled>
+          <explosiveDamageType>AGM_Damage_AntiOrganicBlast</explosiveDamageType>
+          <propagationSpeed>0.5</propagationSpeed>
+          <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        </li>
+      </comps>
+    </ThingDef><PawnKindDef ParentName="LightMechanoidKind">
+      <defName>AGM_Urchin</defName>
+      <label>scyth urchin</label>
+      <labelPlural>scyth urchins</labelPlural>
+      <race>AGM_Urchin</race>
+      <allowInMechClusters>false</allowInMechClusters>
+      <forceNoDeathNotification>true</forceNoDeathNotification>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/Ancient/ScythUrchin/ScythUrchin</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/ScythUrchin</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+            <shadowData>
+              <volume>(0.2, 0.3, 0.2)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/Ancient/ScythUrchin/ScythUrchin</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/ScythUrchin</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+            <shadowData>
+              <volume>(0.2, 0.3, 0.2)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>      
+      <weaponTags>
+      </weaponTags>
+    </PawnKindDef><ThingDef ParentName="BaseMechanoidWalker">
+    <defName>AGM_KnightEmpress</defName>
+    <label>hydraulic knight</label>
+    <description>A mid-battle product of Sonnet's internal foundry: an aggressive sword-frame built to close distance and hold it, so the empress never has to.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>1</BandwidthCost>      <MoveSpeed>7.5</MoveSpeed>
+	  <AGM_HeatNullNaniteResistance>4.0</AGM_HeatNullNaniteResistance>
+	  <AGM_HeatNullNaniteEnvironmentResistance>4.0</AGM_HeatNullNaniteEnvironmentResistance>
+	  <AGM_ColdNullNaniteResistance>4.0</AGM_ColdNullNaniteResistance>
+	  <AGM_ColdNullNaniteEnvironmentResistance>4.0</AGM_ColdNullNaniteEnvironmentResistance>
+	  <AGM_RadiationResistance>4.0</AGM_RadiationResistance>
+	  <AGM_RadiationEnvironmentResistance>4.0</AGM_RadiationEnvironmentResistance>
+	  <AGM_AntiOrgToxinResistance>4.0</AGM_AntiOrgToxinResistance>
+	  <AGM_AntiOrgToxinEnvironmentResistance>4.0</AGM_AntiOrgToxinEnvironmentResistance>
+	  <EMPResistance>0.90</EMPResistance>
+	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <BandwidthCost>3</BandwidthCost>
+    </statBases>
+    <tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps Inherit="False">
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+    </comps>
+    <race>
+      <body>AGM_Knight_Body</body>
+      <baseHealthScale>3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+  </ThingDef><PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>AGM_KnightEmpress</defName>
+    <label>hydraulic knight</label>
+    <labelPlural>hydraulic knights</labelPlural>
+    <race>AGM_KnightEmpress</race>
+	<combatPower>500</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicKnight_Clean/HydraulicKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicKnight/HydraulicKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef><ThingDef ParentName="BaseMechanoidWalker">
+    <defName>AGM_KnightWarlord</defName>
+    <label>dragon knight</label>
+    <description>Opus's field-manufactured retainer - a tri-shot fire support frame that screens its maker. When it falls, Opus simply builds the answer again.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>1</BandwidthCost>      <MoveSpeed>4.5</MoveSpeed>
+	  <AGM_HeatNullNaniteResistance>4.0</AGM_HeatNullNaniteResistance>
+	  <AGM_HeatNullNaniteEnvironmentResistance>4.0</AGM_HeatNullNaniteEnvironmentResistance>
+	  <AGM_ColdNullNaniteResistance>4.0</AGM_ColdNullNaniteResistance>
+	  <AGM_ColdNullNaniteEnvironmentResistance>4.0</AGM_ColdNullNaniteEnvironmentResistance>
+	  <AGM_RadiationResistance>4.0</AGM_RadiationResistance>
+	  <AGM_RadiationEnvironmentResistance>4.0</AGM_RadiationEnvironmentResistance>
+	  <AGM_AntiOrgToxinResistance>4.0</AGM_AntiOrgToxinResistance>
+	  <AGM_AntiOrgToxinEnvironmentResistance>4.0</AGM_AntiOrgToxinEnvironmentResistance>
+	  <EMPResistance>0.90</EMPResistance>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <BandwidthCost>3</BandwidthCost>
+    </statBases>
+    <tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps Inherit="False">
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>1</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>900</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+        <wakeUpCheckRadius>30</wakeUpCheckRadius>
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+      </li>
+	</comps>
+    <race>
+      <body>AGM_Knight_Body</body>
+      <baseHealthScale>5</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+  </ThingDef><PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>AGM_KnightWarlord</defName>
+    <label>dragon knight</label>
+    <labelPlural>dragon knights</labelPlural>
+    <race>AGM_KnightWarlord</race>
+	<combatPower>700</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragonKnight_Clean/DragonKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragonKnight/DragonKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+	  
+	  <li>MechAssaultCharge</li> 
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+</Defs>

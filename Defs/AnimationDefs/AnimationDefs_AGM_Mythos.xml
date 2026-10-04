@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos animations - def-for-def port of the Glitterworld Destroyer -->
+  <!-- mod's Odyssey/Defs/AnimationDefs/Annihilator.xml, renamed to the -->
+  <!-- Mythos_ prefix (worker classes are our verbatim GD3 ports). The -->
+  <!-- keyframe parts target Body + Joints render-node tags. -->
+  <!-- ============================================================ -->
+
+  <!-- 상시 (원본 Annihilator_Ambient) -->
+  <AnimationDef>
+    <defName>Mythos_Ambient</defName>
+    <durationTicks>600</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AGM.AnimationWorker_Trigonometric</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0.2)</offset>
+            </li>
+            <li>
+              <tick>600</tick>
+              <offset>(0,0,0.2)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <!-- 도약 준비 (원본 Annihilator_Jump) -->
+  <AnimationDef>
+    <defName>Mythos_Jump</defName>
+    <durationTicks>120</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AGM.AnimationWorker_Jump</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,1)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <!-- 공중 부양 (원본 Annihilator_Suspending, 원본에서 순환 재생되는 체류 자세) -->
+  <AnimationDef>
+    <defName>Mythos_Suspending</defName>
+    <durationTicks>300</durationTicks>
+    <loopMode>Loop</loopMode>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AGM.AnimationWorker_Trigonometric</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0.35)</offset>
+            </li>
+            <li>
+              <tick>150</tick>
+              <offset>(0,0,0.5)</offset>
+            </li>
+            <li>
+              <tick>300</tick>
+              <offset>(0,0,0.35)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+
+    </keyframeParts>
+  </AnimationDef>
+
+
+  <AnimationDef>
+    <defName>Mythos_Jumping</defName>
+    <durationTicks>100</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AnimationWorker_KeyFrames</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,1)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <AnimationDef>
+    <defName>Mythos_ReadySuspend</defName>
+    <durationTicks>50</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AnimationWorker_KeyFrames</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,1)</offset>
+            </li>
+            <li>
+              <tick>50</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <AnimationDef>
+    <defName>Mythos_ResetPosture</defName>
+    <durationTicks>50</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AnimationWorker_KeyFrames</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <AnimationDef>
+    <defName>Mythos_Jump_Light</defName>
+    <durationTicks>120</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AGM.AnimationWorker_Jump_Light</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,1)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <AnimationDef>
+    <defName>Mythos_ReadySuspend_Light</defName>
+    <durationTicks>50</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AnimationWorker_KeyFrames</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+  <AnimationDef>
+    <defName>Mythos_Dying</defName>
+    <durationTicks>600</durationTicks>
+    <keyframeParts>
+      <li>
+        <key>Body</key>
+        <value>
+          <workerType>AGM.AnimationWorker_RandomShake</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+              <angle>15</angle>
+            </li>
+            <li>
+              <tick>400</tick>
+              <offset>(0,0,0)</offset>
+              <angle>15</angle>
+            </li>
+            <li>
+              <tick>600</tick>
+              <offset>(0,0,-0.85)</offset>
+              <angle>30</angle>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+</Defs>

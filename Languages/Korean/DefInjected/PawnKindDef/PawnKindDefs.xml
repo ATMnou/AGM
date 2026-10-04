@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Astra.label>아스트라</AGM_Astra.label>
+  <AGM_Sol.label>솔</AGM_Sol.label>
+  <AGM_Luna.label>루나</AGM_Luna.label>
+  <AGM_Mythos.label>미토스</AGM_Mythos.label>
+  <AGM_Fable.label>페이블</AGM_Fable.label>
+  <AGM_Opus.label>오퍼스</AGM_Opus.label>
+  <AGM_Sonnet.label>소네트</AGM_Sonnet.label>
+  <AGM_Haiku.label>하이쿠</AGM_Haiku.label>
+  <AGM_Argon.label>아르곤</AGM_Argon.label>
+  <AGM_Flash.label>플래시</AGM_Flash.label>
+  <AGM_Terminus.label>터미너스</AGM_Terminus.label>
+  <AGM_Shellsplitter.label>쉘스플리터</AGM_Shellsplitter.label>
+  <AGM_KnightEmpress.label>유압 기사</AGM_KnightEmpress.label>
+  <AGM_KnightWarlord.label>드래곤 기사</AGM_KnightWarlord.label>
+  <AGM_Urchin.label>낫 성게</AGM_Urchin.label>
+
+</LanguageData>

@@ -1,0 +1,472 @@
+  <ThingDef Name="MechHydraulicEmpress" ParentName="MechBosses">
+    <defName>Mech_HydraulicEmpress</defName>
+    <label>hydraulic empress</label>
+    <description>An ultra-heavy war queen variant with a built-in mech gestator. The empress bears the nickname "The walking fortress" due to its excellent versatility in both attack and defence. For attack, the empress wields a dual mech chaingun from the front and the back, which both delivers unrelenting punisment at long distances. For defense, the empress is heavily cladded with armor platting that renders ordinary small arms useless, and capable of fabricating an aggressive squad of hydraulic knights and depoly them in battle. Such a powerful mech variant can reduce any colony, that doesn't possess any effective countermesure against it, into rubble. Theoratically, a lone hydraulic empress is enough to wipe-out an entire colony, if unprepared.</description>
+    <statBases>
+      <MoveSpeed>1.2</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.02</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>0.10</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_Empress</body>
+      <baseBodySize>5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>20.2</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+	   <li>
+        <label>blade horn</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>20000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_HydraulicKnight</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_ChainGunTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <BetaChip>1</BetaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <ThingDef Name="MechDragonWarlord" ParentName="MechBosses">
+    <defName>Mech_DragonWarlord</defName>
+    <label>dragon warlord</label>
+    <description>An ultra-heavy hybrid variant of a warqueen and an apocriton. The warlord is the most devious of all mech bosses ever discovered, well protected by a monstrous shield bubble, able to fire laser bolts using a mech laser blaster, can fabricate a legion of dragon knights to defend itself, and can resurrect them when fallen in battle. The warlord is designed to be a solution againts spacer-tech factions, according to official glittertech archives and various combat transcripts, multiple high-tech colonies from multiple core worlds collapsed due to the arrival of the dragon warlord, along with it's cadre of dragon knights.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.02</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_Warlord</body>
+      <baseBodySize>5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>30.2</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>40000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_DragonKnight</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1000</startingIngredientCount>
+        <maxIngredientCount>1000</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <GammaChip>1</GammaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <ThingDef Name="MechDragon" ParentName="MechBosses">
+    <defName>Mech_Dragon</defName>
+    <label>steel wyvern</label>
+    <description>A heavy-class diabolus variant, and one of the most destructive mech variant ever concieved. The steel wyvern possess the highest health out of all the mech bossess, and that monstrous health is cladded with layers of armor plating. The steel wyvern is capable of spamming charge blasts and plasma blasts through its mouth, and fires laser bolts through its back as support. All this specs were concieved by the mech hive in their intension to create the deadliest siege beast that ever exist, and after years of pain and destruction caused by the aforementioned siege beast, it's safe to say that it had succeeded.</description>
+    <statBases>
+      <MoveSpeed>7.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.05</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+	  <mechWeightClass>Heavy</mechWeightClass>
+      <body>Mech_Dragon</body>
+      <baseBodySize>4.5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <dutyBoss>MilitorQueen</dutyBoss>
+      <baseHealthScale>40.2</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>bite</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>75</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <AlphaChip>1</AlphaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+    <ThingDef ParentName="LightMechanoid">
+      <defName>Mech_ScythUrchin</defName>
+      <label>scyth urchin</label>
+      <description>A small, deployable combat mechanoid variant produced by the supreme apocriton. The scyth urchin has blades that was permanently installed and can use it to cut enemy combatants to pieces, and like the war urchin, the scyth urchin also specializes in swarm tactics in which it can overwhelm and subdue enemies using numerical superiority.</description>
+      <statBases>
+        <MoveSpeed>6.2</MoveSpeed>
+		<EMPResistance>0.90</EMPResistance>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+	    <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      </statBases>
+	  <tools>
+        <li>
+          <label>blade head</label>
+          <capacities>
+            <li>Blunt</li>
+			<li>Cut</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>0.5</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+      <race>
+	    <body>Mech_Light</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+        </lifeStageAges>
+        <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+        <baseHealthScale>1.3</baseHealthScale>
+      </race>
+      <comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+		<li Class="CompProperties_Explosive">
+          <wickTicks>0</wickTicks>
+          <explosiveRadius>10.9</explosiveRadius>
+          <explodeOnKilled>true</explodeOnKilled>
+          <explosiveDamageType>AntiOrganicBlast</explosiveDamageType>
+          <propagationSpeed>0.5</propagationSpeed>
+          <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        </li>
+      </comps>
+    </ThingDef>
+
+  <ThingDef Name="MechSupremeApocriton" ParentName="MechBosses">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <description>The harbinger of death, and the all-father of apocritons. The supreme apocriton is an ultra-heavy mech variant which is believed to be the sole progenitor of all apocritons that exist today, and like the apocritons, it also has a deep hatred towards all natural life to an extreme degree. Its total abilities are unknown other than its ability to resurrect mechanoid allies, and it is the only mech variant capable of wielding the infamous mech heavy laser blaster. The supreme apocriton oftenly spawns with a cadre of hard to defeat mech variants, but luckly, it never spawns normally unless summoned using a "god slayer" mech transponder.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+	  <IncomingDamageFactor>0.2</IncomingDamageFactor>
+      <MeleeDoorDamageFactor>1000</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>7</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>1000</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>3000000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_ScythUrchin</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurretEX</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>SupremeApocrionAttached</effecterDef>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <ArchoBox>1</ArchoBox>
+	  <UltimaChip>1</UltimaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+

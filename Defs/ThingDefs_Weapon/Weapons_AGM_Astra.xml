@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresLaser</defName>
+    <label>laser bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/AresLaserBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1.0, 0.25, 0.2)</color>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>480</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>90</speed>
+      <stoppingPower>1</stoppingPower>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresPlasmaFireball</defName>
+    <label>plasma fireball</label>
+    <thingClass>AGM.Projectile_Exo</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/AresPlasmaFireball</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.8, 1.0, 0.5)</color>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <projectile Class="AGM.ProjectileProperties_Exo">
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>480</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>55</speed>
+      <explosionRadius>3.0</explosionRadius>
+      <stoppingPower>1</stoppingPower>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <soundExplode>AGM_Sound_AresPlasmaImpact</soundExplode>
+      <gasZoneDef>AGM_PlasmaGasZone</gasZoneDef>
+      <gasZoneChance>1.0</gasZoneChance>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresTeslaOrb</defName>
+    <label>tesla orb</label>
+    <thingClass>AGM.Projectile_Exo</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/AresTeslaOrb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.6, 0.9, 1.0)</color>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <projectile Class="AGM.ProjectileProperties_Exo">
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>480</damageAmountBase>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>60</amount>
+          <chance>1</chance>
+        </li>
+      </extraDamages>
+      <speed>65</speed>
+      <stoppingPower>1</stoppingPower>
+      <soundExplode>AGM_Sound_AresTeslaSplit</soundExplode>
+      <splitChildDef>AGM_Bullet_AresTeslaSpark</splitChildDef>
+      <splitChildCount>4</splitChildCount>
+      <splitPlusPattern>true</splitPlusPattern>
+      <splitChildRange>21</splitChildRange>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresTeslaSpark</defName>
+    <label>tesla spark</label>
+    <graphicData>
+      <texPath>Things/Projectile/AresTeslaSpark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.7, 0.95, 1.0)</color>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>460</damageAmountBase>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>40</amount>
+          <chance>1</chance>
+        </li>
+      </extraDamages>
+      <speed>60</speed>
+      <stoppingPower>0.5</stoppingPower>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresPulseBlast</defName>
+    <label>exopulse energy burst</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(0.95, 0.3, 0.8)</color>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>480</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>45</speed>
+      <stoppingPower>2</stoppingPower>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresSlashWave</defName>
+    <label>energy slash</label>
+    <graphicData>
+      <texPath>Things/Projectile/AresSlashWave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <color>(1.0, 0.35, 0.3)</color>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Scratch</damageDef>
+      <damageAmountBase>520</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>55</speed>
+      <stoppingPower>2</stoppingPower>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresNovaBeam</defName>
+    <label>energy deathray burst</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1.0, 0.2, 0.15)</color>
+      <drawSize>(2.4, 0.9)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Beam</damageDef>
+      <damageAmountBase>550</damageAmountBase>
+      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <speed>90</speed>
+      <stoppingPower>2</stoppingPower>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresGaussNuke</defName>
+    <label>gauss warhead</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1.0, 0.95, 0.4)</color>
+      <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Vaporize</damageDef>
+      <damageAmountBase>540</damageAmountBase>
+      <armorPenetrationBase>1.0</armorPenetrationBase>
+      <speed>42</speed>
+      <explosionRadius>7.5</explosionRadius>
+      <stoppingPower>3</stoppingPower>
+      <screenShakeFactor>2.0</screenShakeFactor>
+    </projectile>
+  </ThingDef>
+<ThingDef ParentName="BaseBullet">
+    <defName>AGM_Bullet_AresDoomsdayRocket</defName>
+    <label>doomsday rocket</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShellAntigrainWarhead</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.6, 3.2)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>BombSuper</damageDef>
+      <damageAmountBase>1650</damageAmountBase>
+      <armorPenetrationBase>1.30</armorPenetrationBase>
+      <speed>41</speed>
+      <explosionRadius>14.9</explosionRadius>
+      <explosionChanceToStartFire>0.22</explosionChanceToStartFire>
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+      <explosionEffect>GiantExplosion</explosionEffect>
+      <stoppingPower>2</stoppingPower>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <screenShakeFactor>2.0</screenShakeFactor>
+    </projectile>
+  </ThingDef>
+
+</Defs>

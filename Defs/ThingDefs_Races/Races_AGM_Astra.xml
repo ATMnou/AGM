@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Astra - the AGM line's leviathan.                            -->
+  <!-- Implementation carried over from Instruments for Extinction's -->
+  <!-- XF-09 Ares war titan: six independently targeting auto-weapon -->
+  <!-- cores, combat phases that accelerate everything as it takes   -->
+  <!-- damage, blink-dash katana supers, and self-reconstruction.    -->
+  <!-- Requires IFE (hard dependency).                               -->
+  <!-- AGM overrides: bandwidth 4 (leviathan tier), no energy use,   -->
+  <!-- never feral, Astra art at Ares' on-screen scale.              -->
+  <!-- ============================================================ -->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>AGM_Astra</defName>
+    <label>Astra</label>
+    <description>The AGM line's leviathan, and the only model ever to pass Humanity's Last Exam. Six independently targeting weapon cores share one frame: a laser cannon that fans into wide multi-beam volleys, a plasma incinerator that leaves clouds of superheated gas behind, a tesla battery whose orbs burst into cross-shaped sparks, a heavy exopulse battery, a gauss-launched nuclear warhead, and paired photon rippers for blink-dash slash supers that end in radial deathray novas. Its fire control leads every target, and as damage accumulates Astra climbs combat phases - each one cycling every weapon faster and widening the fans, the way a student only sharpens under a harder exam. Internal repair drones rebuild it from catastrophic damage on a long cooldown, on command or automatically on the edge of death.</description>
+    <statBases>
+      <MarketValue>16000</MarketValue>
+      <MoveSpeed>3.4</MoveSpeed>
+      <ArmorRating_Blunt>2.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>2.6</ArmorRating_Heat>
+      <BandwidthCost>4</BandwidthCost>
+      <ControlTakingTime>40</ControlTakingTime>
+      <EMPResistance>0.9</EMPResistance>
+      <EnergyShieldEnergyMax>4.5</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <PsychicSensitivity>0.4</PsychicSensitivity>
+    </statBases>
+    <race>
+      <body>Mech_Centurion</body>
+      <baseBodySize>6.0</baseBodySize>
+      <baseHealthScale>6777.33</baseHealthScale>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centurion_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centurion_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centurion_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tools>
+      <li>
+        <label>stomping foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>300</power>
+        <armorPenetration>0.60</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_ExoPhase">
+        <phaseHealthPcts>
+          <li>0.85</li>
+          <li>0.625</li>
+          <li>0.5</li>
+        </phaseHealthPcts>
+        <phaseSpeedFactors>
+          <li>1.0</li>
+          <li>1.15</li>
+          <li>1.3</li>
+          <li>1.45</li>
+        </phaseSpeedFactors>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresLaser</projectileDef>
+        <range>126</range>
+        <warmupTicks>24</warmupTicks>
+        <burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <cooldownTicks>90</cooldownTicks>
+        <fanShotCount>5</fanShotCount>
+        <fanSpreadRadians>0.52</fanSpreadRadians>
+        <fanEveryNthShot>3</fanEveryNthShot>
+        <jitterRadians>0.07</jitterRadians>
+        <aimLeadTicks>30</aimLeadTicks>
+        <soundWarmup>AGM_Sound_AresLaserArmCharge</soundWarmup>
+        <soundCast>AGM_Sound_AresLaserCannon</soundCast>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresPlasmaFireball</projectileDef>
+        <range>120</range>
+        <warmupTicks>30</warmupTicks>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <cooldownTicks>300</cooldownTicks>
+        <jitterRadians>0.34</jitterRadians>
+        <aimLeadTicks>29</aimLeadTicks>
+        <soundCast>AGM_Sound_AresPlasmaCannon</soundCast>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresTeslaOrb</projectileDef>
+        <range>114</range>
+        <warmupTicks>20</warmupTicks>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <cooldownTicks>540</cooldownTicks>
+        <aimLeadTicks>34</aimLeadTicks>
+        <soundCast>AGM_Sound_AresTeslaCannon</soundCast>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresPulseBlast</projectileDef>
+        <range>132</range>
+        <warmupTicks>40</warmupTicks>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <cooldownTicks>600</cooldownTicks>
+        <aimLeadTicks>32</aimLeadTicks>
+        <soundWarmup>AGM_Sound_AresPulseCannonCharge</soundWarmup>
+        <soundCast>AGM_Sound_AresPulseCannon</soundCast>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresGaussNuke</projectileDef>
+        <range>132</range>
+        <minRange>12</minRange>
+        <warmupTicks>72</warmupTicks>
+        <burstShotCount>1</burstShotCount>
+        <cooldownTicks>1800</cooldownTicks>
+        <soundCast>AGM_Sound_AresGaussNuke</soundCast>
+      </li>
+      <li Class="AGM.CompProperties_AutoWeapon">
+        <projectileDef>AGM_Bullet_AresDoomsdayRocket</projectileDef>
+        <range>132</range>
+        <minRange>15</minRange>
+        <warmupTicks>0</warmupTicks>
+        <burstShotCount>1</burstShotCount>
+        <cooldownTicks>300</cooldownTicks>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <fleckScale>10</fleckScale>
+        <userToggleable>true</userToggleable>
+        <defaultEnabled>false</defaultEnabled>
+        <toggleLabelKey>AGM.DoomsdayRocketToggleLabel</toggleLabelKey>
+        <toggleDescKey>AGM.DoomsdayRocketToggleDesc</toggleDescKey>
+      </li>
+      <li Class="AGM.CompProperties_KatanaSlash">
+        <cooldownTicks>1100</cooldownTicks>
+        <warmupTicks>60</warmupTicks>
+        <warmupSound>AGM_Sound_ImpendingDeath</warmupSound>
+        <slashSound>AGM_Sound_AresSlash</slashSound>
+        <searchRange>90</searchRange>
+        <slashProjectileDef>AGM_Bullet_AresSlashWave</slashProjectileDef>
+        <slashCount>3</slashCount>
+        <slashSpreadRadians>0.35</slashSpreadRadians>
+        <slashRangeTiles>42</slashRangeTiles>
+        <slashPhaseBonusCount>1</slashPhaseBonusCount>
+        <novaProjectileDef>AGM_Bullet_AresNovaBeam</novaProjectileDef>
+        <novaCount>10</novaCount>
+        <novaRangeTiles>36</novaRangeTiles>
+        <novaWarmupTicks>30</novaWarmupTicks>
+        <novaPhaseBonusCount>2</novaPhaseBonusCount>
+      </li>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_TargetingModeToggle" />
+      <li Class="AGM.CompProperties_Reconstruction">
+        <cooldownTicks>3600</cooldownTicks>
+        <reconstructHediff>AGM_Hediff_Reconstruct</reconstructHediff>
+      </li>
+      <li Class="AGM.CompProperties_DisableFeral" />
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>400</Steel>
+      <Plasteel>800</Plasteel>
+      <Uranium>200</Uranium>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Astra</defName>
+    <label>Astra</label>
+    <race>AGM_Astra</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>900</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Astra</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <!-- Ares' on-screen scale (IFE draws XF-09 at 5.5) -->
+          <drawSize>5.5</drawSize>
+          <shadowData>
+            <volume>(0.9, 1.0, 0.9)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags></weaponTags>
+    <controlGroupPortraitZoom>0.55</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+</Defs>

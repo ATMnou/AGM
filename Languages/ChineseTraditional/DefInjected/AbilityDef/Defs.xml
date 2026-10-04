@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MythosJump.label>神話躍擊</AGM_MythosJump.label>
+  <AGM_MythosSuspend.label>神話懸浮</AGM_MythosSuspend.label>
+  <AGM_MythosJumpAndSuspend.label>神話躍擊懸浮</AGM_MythosJumpAndSuspend.label>
+  <AGM_BladeShot.label>利刃射擊</AGM_BladeShot.label>
+  <AGM_PsychicBlast.label>靈能爆破</AGM_PsychicBlast.label>
+  <AGM_PlasmaBlast.label>等離子爆破</AGM_PlasmaBlast.label>
+  <AGM_ChargeBlast.label>充能爆破</AGM_ChargeBlast.label>
+  <AGM_AntiOrganicGrenade.label>反有機手雷</AGM_AntiOrganicGrenade.label>
+  <AGM_AntiOrganicBlast.label>反有機爆破</AGM_AntiOrganicBlast.label>
+  <AGM_AntiOrganicOrbitalStrike.label>反有機軌道打擊</AGM_AntiOrganicOrbitalStrike.label>
+  <AGM_DeathRay.label>死亡射線</AGM_DeathRay.label>
+
+</LanguageData>

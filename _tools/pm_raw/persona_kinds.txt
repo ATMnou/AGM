@@ -1,0 +1,51 @@
+  <PawnKindDef ParentName="ProtossMechanoidKind">
+    <defName>PMPH_Taldarin</defName>
+    <label>Taldarin</label>
+    <race>PMPH_Taldarin</race>
+    <combatPower>42</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Taldarin</texPath>
+          <shaderType>Cutout</shaderType>
+          <drawSize>3.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>Gun_Taldarin</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+    <abilities>
+      <li>PMP_RestoreShield</li>
+    </abilities>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="ProtossMechanoidKind">
+    <defName>PMPH_Warbringer</defName>
+    <label>Warbringer</label>
+    <race>PMPH_Warbringer</race>
+    <combatPower>42</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Warbringer</texPath>
+          <shaderType>Cutout</shaderType>
+          <drawSize>5.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>ThermalLances</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+  </PawnKindDef>
+

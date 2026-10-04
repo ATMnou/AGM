@@ -1,0 +1,105 @@
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>FireBlast</defName>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/MoltenGround/MoltenPuddle_A</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/MoltenGround/MoltenPuddle_B</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/MoltenGround/MoltenPuddle_C</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+    </randomGraphics>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.25</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.7</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>DroneExplosion</defName>
+    <graphicData>
+      <texPath>Things/Misc/MoteMisc/GreenBlast</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>ChargedBlast</defName>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/EnergizedGound/ChargedMote_A</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/EnergizedGound/ChargedMote_B</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/EnergizedGound/ChargedMote_C</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+    </randomGraphics>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.25</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.7</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>AntiOrganicBlastZone</defName>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/AntiOrgGround/AntiOrgBlastGround_A</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/AntiOrgGround/AntiOrgBlastGround_B</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>Things/Misc/MoteMisc/AntiOrgGround/AntiOrgBlastGround_C</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <renderInstanced>true</renderInstanced>
+        <drawSize>(1.52, 1.52)</drawSize>
+      </li>
+    </randomGraphics>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.25</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.7</fadeOutTime>
+  </FleckDef>
+

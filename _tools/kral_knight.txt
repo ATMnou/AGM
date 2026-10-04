@@ -1,0 +1,181 @@
+	<killedLeavingsPlayerHostile>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_HydraulicKnightFree</defName>
+    <label>hydraulic knight</label>
+    <labelPlural>hydraulic knights</labelPlural>
+    <race>Mech_HydraulicKnightFree</race>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicKnight_Clean/HydraulicKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicKnight/HydraulicKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidMonoSword</li>
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+	
+  <!-- Hydraulic knight -->
+  
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_HydraulicKnight</defName>
+    <label>hydraulic knight</label>
+    <description>A powerful mech variant holding a mech mono sword. This mech is increadibly fast where it can chase down slow moving organics with ease, and it possess quick reflexes which alows for faster and more precise melee hits. The hydraulic knight is mostly seen accompanying the hydraulic empress, serving as its sworn sword and creator.</description>
+    <statBases>
+      <MoveSpeed>7.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <EMPResistance>0.90</EMPResistance>
+	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <BandwidthCost>3</BandwidthCost>
+    </statBases>
+    <tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+    </comps>
+    <race>
+      <body>Mech_Grunt</body>
+      <baseHealthScale>3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+	<killedLeavingsPlayerHostile>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_HydraulicKnight</defName>
+    <label>hydraulic knight</label>
+    <labelPlural>hydraulic knights</labelPlural>
+    <race>Mech_HydraulicKnight</race>
+	<combatPower>500</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicKnight_Clean/HydraulicKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicKnight/HydraulicKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidMonoSword</li>
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+  
+  <!-- Dragon knight free-->
+  
+  <!-- <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_DragonKnightFree</defName>

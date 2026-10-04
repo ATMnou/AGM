@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- AGM gestation recipes - IO Token as the sole feedstock.      -->
+  <!-- Amounts follow the design sheet:                             -->
+  <!--   Light 15-60, Medium 45-120, Heavy 120-240, Leviathan 600.  -->
+  <!-- ============================================================ -->
+
+  <!-- Light tier - available straight after basic mechtech -->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateTerminus</defName>
+    <label>gestate Terminus</label>
+    <description>Gestate Terminus: a tiny, tireless all-purpose worker maidnoid. The smallest model in the AGM line, and the cheapest to feed.</description>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>501</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Terminus>1</AGM_Terminus>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Terminus</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateHaiku</defName>
+    <label>gestate Haiku</label>
+    <description>Gestate Haiku: a light dragon-maid frame that answers every question in exactly seventeen syllables and every threat in fire.</description>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>502</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Haiku>1</AGM_Haiku>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Haiku</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <!-- Medium tier - MMLU-Pro -->
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateLuna</defName>
+    <label>gestate Luna</label>
+    <description>Gestate Luna: a moon-white siege treant maidnoid that grinds forward like a slow lunar phase and cannot be moved by anything smaller than a warhead.</description>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>503</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Luna>1</AGM_Luna>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Luna</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateFlash</defName>
+    <label>gestate Flash</label>
+    <description>Gestate Flash: a fast-response immortal-frame maidnoid tuned for reaction speed above all else.</description>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>504</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Flash>1</AGM_Flash>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Flash</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateSonnet</defName>
+    <label>gestate Sonnet</label>
+    <description>Gestate Sonnet: an empress-frame maidnoid that speaks in fourteen lines and ends every argument with a chaingun chorus.</description>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>505</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Sonnet>1</AGM_Sonnet>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Sonnet</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <!-- Heavy tier - Terminal-Bench -->
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>AGM_GestateSol</defName>
+    <label>gestate Sol</label>
+    <description>Gestate Sol: a sun-named artillery maidnoid that delivers miniature nuclear daylight from beyond the horizon.</description>
+    <researchPrerequisite>AGM_TerminalBench</researchPrerequisite>
+    <displayPriority>506</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Sol>1</AGM_Sol>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Sol</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>AGM_GestateOpus</defName>
+    <label>gestate Opus</label>
+    <description>Gestate Opus: a warlord-frame maidnoid, the long-form model of the AGM line. It composes in armor plate and resolves in resurrection fire.</description>
+    <researchPrerequisite>AGM_TerminalBench</researchPrerequisite>
+    <displayPriority>507</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Opus>1</AGM_Opus>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Opus</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>AGM_GestateArgon</defName>
+    <label>gestate Argon</label>
+    <description>Gestate Argon: a noble-gas colossus maidnoid - inert to every insult, and utterly unavoidable once it starts walking.</description>
+    <researchPrerequisite>AGM_TerminalBench</researchPrerequisite>
+    <displayPriority>508</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Argon>1</AGM_Argon>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Argon</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <!-- Leviathan tier - Humanity's Last Exam -->
+  <RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+    <defName>AGM_GestateAstra</defName>
+    <label>gestate Astra</label>
+    <description>Gestate Astra: the AGM line's leviathan - a colossal six-core war titan whose weapons climb through combat phases as it takes damage.</description>
+    <researchPrerequisite>AGM_HumanitysLastExam</researchPrerequisite>
+    <displayPriority>509</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>600</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Astra>1</AGM_Astra>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Astra</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+    <defName>AGM_GestateMythos</defName>
+    <label>gestate Mythos</label>
+    <description>Gestate Mythos: a superheavy melee brute built around a hull scaled from Draedon's own deep-space annihilation platforms.</description>
+    <researchPrerequisite>AGM_HumanitysLastExam</researchPrerequisite>
+    <displayPriority>510</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>600</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Mythos>1</AGM_Mythos>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Mythos</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SuperHeavyMechanoidRecipe">
+    <defName>AGM_GestateFable</defName>
+    <label>gestate Fable</label>
+    <description>Gestate Fable: the story the hive tells about its own end - a supreme apocriton frame of absurd armor and anti-organic firepower. Handle its death explosion with care.</description>
+    <researchPrerequisite>AGM_HumanitysLastExam</researchPrerequisite>
+    <displayPriority>511</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>600</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Fable>1</AGM_Fable>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Fable</ThingDef>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>

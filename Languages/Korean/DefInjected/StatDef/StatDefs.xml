@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_HeatNullNaniteResistance.label>열계 나노봇 내성</AGM_HeatNullNaniteResistance.label>
+  <AGM_HeatNullNaniteEnvironmentResistance.label>열계 나노봇 환경 내성</AGM_HeatNullNaniteEnvironmentResistance.label>
+  <AGM_ColdNullNaniteResistance.label>한랭 나노봇 내성</AGM_ColdNullNaniteResistance.label>
+  <AGM_ColdNullNaniteEnvironmentResistance.label>한랭 나노봇 환경 내성</AGM_ColdNullNaniteEnvironmentResistance.label>
+  <AGM_RadiationResistance.label>방사선 내성</AGM_RadiationResistance.label>
+  <AGM_RadiationEnvironmentResistance.label>방사선 환경 내성</AGM_RadiationEnvironmentResistance.label>
+  <AGM_AntiOrgToxinResistance.label>대유기물 독소 내성</AGM_AntiOrgToxinResistance.label>
+  <AGM_AntiOrgToxinEnvironmentResistance.label>대유기물 독소 환경 내성</AGM_AntiOrgToxinEnvironmentResistance.label>
+  <AGM_RageVirusResistance.label>광기 바이러스 내성</AGM_RageVirusResistance.label>
+  <AGM_RageVirusEnvironmentResistance.label>광기 바이러스 환경 내성</AGM_RageVirusEnvironmentResistance.label>
+
+</LanguageData>

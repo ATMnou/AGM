@@ -1,0 +1,87 @@
+<BodyDef>
+  <defName>Doxa0Body</defName>
+  <label>静巢构体 Doxa-0</label>
+  <corePart>
+    <def>Doxa0_Dorsal_First</def>
+    <height>Middle</height>
+    <depth>Outside</depth>
+    <groups>
+      <li>Torso</li>
+    </groups>
+    <parts>
+      
+      <li>
+        <def>Doxa0_Dorsal_Second</def>
+        <coverage>0.45</coverage>
+		<groups>
+           <li>HeadAttackTool</li>
+        </groups>
+        <parts>
+          
+          <li>
+            <def>Doxa0_Dorsal_Third</def>
+            <coverage>0.35</coverage>
+            <parts>
+              
+              <li>
+                <def>Doxa0_Dorsal_Fourth</def>
+                <coverage>0.20</coverage>
+                <parts>
+                  
+                  <li>
+                    <def>Doxa0_DeepLogic_NeuronCore</def>
+                    <customLabel>深层逻辑核</customLabel>
+                    <coverage>0.05</coverage>
+                    <depth>Inside</depth>
+                  </li>
+                </parts>
+              </li>
+            </parts>
+          </li>
+        </parts>
+      </li>
+
+      
+      <li>
+        <def>Doxa0_Turret_Mount</def>
+        <customLabel>反粒子炮架</customLabel>
+        <coverage>0.12</coverage>
+        <parts>
+          <li>
+            <def>Doxa0_AntiParticleEmitter</def>
+            <customLabel>反粒子发射口</customLabel>
+            <coverage>0.20</coverage>
+          </li>
+          <li>
+            <def>Doxa0_FireControlModule</def>
+            <customLabel>火控核心单元</customLabel>
+            <coverage>0.08</coverage>
+            <depth>Inside</depth>
+          </li>
+        </parts>
+      </li>
+
+      
+      <li>
+        <def>Doxa0_Hatch_Module</def>
+        <customLabel>裂壳蛛孵化腔</customLabel>
+        <coverage>0.10</coverage>
+      </li>
+
+      
+      <li>
+        <def>Doxa0_Sensor_Cluster</def>
+        <customLabel>前端感知阵列</customLabel>
+        <coverage>0.08</coverage>
+      </li>
+
+      
+      <li>
+        <def>Doxa0_LimbCluster</def>
+        <customLabel>多爪推进组</customLabel>
+        <coverage>0.10</coverage>
+      </li>
+    </parts>
+  </corePart>
+</BodyDef>
+

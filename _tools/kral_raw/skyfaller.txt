@@ -1,0 +1,101 @@
+      <damageDef>AntiHumanNanitesFlame</damageDef>
+      <speed>900</speed>
+      <explosionRadius>10.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof></soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+      <postExplosionSpawnThingDef>AntiOrgPostOrbital</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.08</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>AntiOrgPostOrbital</defName>
+    <label>orbital anti-organic blast</label>
+    <size>(2,2)</size>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/AntiOrgOrbitalProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(8, 40)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <explosionRadius>4.9</explosionRadius>
+      <explosionDamage>AntiOrganicBlast</explosionDamage>
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <speed>5</speed>
+    </skyfaller>
+  </ThingDef>
+  
+  <AbilityDef>
+    <defName>DeathRay</defName>
+    <label>death ray</label>
+    <description>Fire a death ray that can reduce the target's capacities to 35%, along with a 20% chance of instant death.</description>
+    <iconPath>Things/Misc/UI/DeathRayUI</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_LaserBlaster</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>DeathShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>DeathShotz</defName>
+    <label>death shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<comps>
+	  <li Class="Kraltech_Industries.LaserBeamz_CompProperties">
+	    <laserMote>Mote_DeathRayz</laserMote>
+	  </li>
+	</comps>
+	<thingClass>Kraltech_Industries.LaserBeamzProj</thingClass>
+    <projectile>
+      <damageDef>BulletHealthBlight</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>70</damageAmountBase>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+  <AbilityDef Name="LongJumpMech">
+    <defName>ValkyrianLongjumpMech</defName>
+    <label>valkyrian longjump</label>
+    <description>Allows a valkyrian to jump at distant location using special ultrafast mechanoid muscles.</description>
+    <iconPath>Things/Misc/UI/ValkyrianLeapUI</iconPath>
+    <cooldownTicksRange>480</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <minRange>5.9</minRange>
+      <range>15.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <flyWithCarriedThing>false</flyWithCarriedThing>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>

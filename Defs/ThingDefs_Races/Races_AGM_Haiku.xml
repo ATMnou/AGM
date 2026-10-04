@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="AGM_KralBossBase">
+    <defName>AGM_Haiku</defName>
+    <label>steel wyvern</label>
+    <description>Short, dense, and on fire. Haiku carries the heaviest hull in the light class - layer upon layer of plating over a diabolus-grade frame - and answers every question in bursts: charge blasts and plasma volleys from the mouth, supporting laser fire from the back, and a bite that leaves the target burning. Seventeen syllables: approach, ignite, repeat.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>1</BandwidthCost>      <MoveSpeed>7.5</MoveSpeed>
+	  <AGM_HeatNullNaniteResistance>4.0</AGM_HeatNullNaniteResistance>
+	  <AGM_HeatNullNaniteEnvironmentResistance>4.0</AGM_HeatNullNaniteEnvironmentResistance>
+	  <AGM_ColdNullNaniteResistance>4.0</AGM_ColdNullNaniteResistance>
+	  <AGM_ColdNullNaniteEnvironmentResistance>4.0</AGM_ColdNullNaniteEnvironmentResistance>
+	  <AGM_RadiationResistance>4.0</AGM_RadiationResistance>
+	  <AGM_RadiationEnvironmentResistance>4.0</AGM_RadiationEnvironmentResistance>
+	  <AGM_AntiOrgToxinResistance>4.0</AGM_AntiOrgToxinResistance>
+	  <AGM_AntiOrgToxinEnvironmentResistance>4.0</AGM_AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.05</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+	  <mechWeightClass>Light</mechWeightClass>
+      <body>AGM_Body_Wyvern</body>
+      <baseBodySize>4.5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+        
+      </lifeStageAges>
+	  <dutyBoss>AGM_MilitorQueen</dutyBoss>
+      <baseHealthScale>40.2</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>bite</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>75</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Gun_MechLaserBlasterTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+  </ThingDef>  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Haiku</defName>
+    <label>steel wyvern</label>
+    <labelPlural>steel wyverns</labelPlural>
+    <race>AGM_Haiku</race>
+    <combatPower>5500</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>true</allowInMechClusters>
+        <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Haiku</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+    </weaponTags>
+    <abilities>
+	  <li>AGM_PlasmaBlast</li>
+      <li>FireBurst</li>
+	  <li>AGM_ChargeBlast</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+
+</Defs>

@@ -1,0 +1,29 @@
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+  <defName>NCL_Mech_Ironbark_Kind</defName>
+  <label>Ironbark</label>
+  <race>NCL_Mech_Ironbark</race>
+  <defaultFactionType>NCL_faction</defaultFactionType>
+  <allowInMechClusters>false</allowInMechClusters>
+  <combatPower>1800</combatPower>
+  <lifeStages>
+    <li MayRequire="Ludeon.RimWorld.Biotech">
+      <bodyGraphicData>
+        <texPath>Races/IronRoot</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>4.5</drawSize>
+        <shadowData>
+          <volume>(0.4, 0.8, 0.4)</volume>
+        </shadowData>
+      </bodyGraphicData>
+    </li>
+  </lifeStages>
+  <weaponMoney>9999~9999</weaponMoney>
+  <weaponTags>
+  </weaponTags>
+  <techHediffsChance>1</techHediffsChance>
+  <techHediffsMoney>9999~9999</techHediffsMoney>
+  <abilities>
+    <li>Ironbark_Explosion</li>
+  </abilities>
+  </PawnKindDef>
+

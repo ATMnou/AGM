@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos effects - def-for-def ports of the Glitterworld Destroyer -->
+  <!-- mod's Annihilator effect defs (Cont/Defs/Effects/*.xml). Textures are -->
+  <!-- vanilla's own (Things/Mote/PowerBeam, Things/Mote/SparkThrown), exactly -->
+  <!-- the textures the original defs point at. -->
+  <!-- ============================================================ -->
+
+  <!-- 원본 GD_GroundCrack - 지면 균열 플렉 (텍스쳐는 바닐라 GroundCrackHuge) -->
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>AGM_Mythos_GroundCrack</defName>
+    <graphicData>
+      <texPath>Things/Mote/GroundCracks/GroundCrackHuge</texPath>
+      <shaderType>Mote</shaderType>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <color>(1, 1, 1, 0.7)</color>
+    </graphicData>
+    <growthRate>0</growthRate>
+    <altitudeLayer>Filth</altitudeLayer>
+    <fadeInTime>0</fadeInTime>
+    <solidTime>5</solidTime>
+    <fadeOutTime>5</fadeOutTime>
+  </FleckDef>
+
+  <!-- 원본 AnnihilatorLaserRing 모트 - 바닐라 Things/Mote/PowerBeam 텍스쳐 (바닐라 Mote_PowerBeam과
+       동일 텍스쳐, drawSize 40 + 유지 관리 방식도 동일) -->
+  <ThingDef ParentName="MoteBase">
+    <defName>AGM_MythosLaserRing</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/PowerBeam</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <renderInstanced>true</renderInstanced>
+      <drawSize>(40,40)</drawSize>
+    </graphicData>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.16</fadeInTime>
+      <solidTime>666</solidTime>
+      <fadeOutTime>0.96</fadeOutTime>
+      <needsMaintenance>true</needsMaintenance>
+      <fadeOutUnmaintained>true</fadeOutUnmaintained>
+    </mote>
+  </ThingDef>
+
+  <!-- 원본 Annihilator_BeamSpark 플렉 -->
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>AGM_Mythos_BeamSpark</defName>
+    <fadeInTime>0.03</fadeInTime>
+    <solidTime>0.1</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/SparkThrown</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.08</drawSize>
+      <color>(1.0, 0.9, 0.7, 1.0)</color>
+    </graphicData>
+  </FleckDef>
+
+  <!-- 원본 GD_ImpactDustCloud 이펙터 -->
+  <EffecterDef>
+    <defName>AGM_Mythos_ImpactDustCloud</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>DustPuffLong</fleckDef>
+        <burstCount>15</burstCount>
+        <positionRadius>2</positionRadius>
+        <scale>5</scale>
+        <rotationRate>-5~5</rotationRate>
+        <angle>0~360</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <speed>1.5~4.5</speed>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <!-- 원본 AnnihilatorLaserRing 이펙터 - 레이저 링 모트를 폰에 부착 유지 -->
+  <EffecterDef>
+    <defName>AGM_MythosLaserRing</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <burstCount>1</burstCount>
+        <moteDef>AGM_MythosLaserRing</moteDef>
+        <positionRadius>0</positionRadius>
+        <positionRadiusMin>0</positionRadiusMin>
+        <scale>1</scale>
+        <color>(1, 1, 1, .7)</color>
+        <speed>0</speed>
+        <rotation>0</rotation>
+        <rotationRate>0</rotationRate>
+        <angle>0~0</angle>
+        <positionOffset>(0, 0, -5)</positionOffset>
+        <attachToSpawnThing>true</attachToSpawnThing>
+        <spawnLocType>OnTarget</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

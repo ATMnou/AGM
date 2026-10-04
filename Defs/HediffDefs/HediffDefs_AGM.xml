@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Ported from Instruments for Extinction's AGM_Hediff_Reconstruct (HediffDefs_XF09Ares.xml)
+       so MFE-Origin has no load-time dependency on IFE. Used by CompReconstruction. -->
+  <HediffDef>
+    <defName>AGM_Hediff_Reconstruct</defName>
+    <label>reconstructing</label>
+    <description>This mechanoid was just fully rebuilt by its internal repair drones and is briefly all-but-invulnerable while they finish - but also barely able to move until the process completes.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>0</IncomingDamageFactor>
+          <MoveSpeed>-10.0</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

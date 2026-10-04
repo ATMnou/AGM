@@ -1,0 +1,10 @@
+    <HediffGiverSetDef>
+    <defName>NCL_Mech_Ironbark_Introduction</defName>
+    <hediffGivers>
+      <li Class="HediffGiver_Random">
+        <hediff>NCL_Mech_Ironbark_Hediff</hediff>
+        <mtbDays>0.00000001</mtbDays>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+

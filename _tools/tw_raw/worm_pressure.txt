@@ -1,0 +1,20 @@
+  <HediffDef>
+    <defName>WormPressure</defName>
+    <label>WormPressure</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>"Worm's oppressive aura induces fragility and heightened aggression."</description>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statOffsets>
+          <IncomingDamageFactor>1</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+

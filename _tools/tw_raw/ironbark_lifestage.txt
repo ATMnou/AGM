@@ -1,0 +1,7 @@
+  <LifeStageDef>
+    <defName>NCL_Mech_IronbarkFullyformed</defName>
+    <label>fully-formed</label>
+    <caravanRideable>true</caravanRideable>
+    <visible>false</visible>
+  </LifeStageDef>
+

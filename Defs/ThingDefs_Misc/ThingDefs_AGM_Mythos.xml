@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos skyfallers - def-for-def ports of the Glitterworld Destroyer -->
+  <!-- mod's GD_Skyfaller_JumpingMech / _LandingMech / _SuspendReady -->
+  <!-- (Odyssey/Defs/ThingDefs_Misc/Ethereal_Odyssey.xml), renamed. -->
+  <!-- ============================================================ -->
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>AGM_Mythos_Skyfaller_JumpingMech</defName>
+    <label>flying creature</label>
+    <thingClass>AGM.Skyfaller_JumpingMech</thingClass>
+    <skyfaller>
+      <angleCurve>
+        <points>
+          <li>(0,     0)</li>
+          <li>(1,     0)</li>
+        </points>
+      </angleCurve>
+      <reversed>true</reversed>
+      <speed>1.05</speed>
+      <shadowSize>16</shadowSize>
+      <hitRoof>false</hitRoof>
+      <anticipationSound>DropPod_Leaving</anticipationSound>
+      <anticipationSoundTicks>10</anticipationSoundTicks>
+      <ticksToImpactRange><min>0</min><max>0</max></ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>AGM_Mythos_Skyfaller_LandingMech</defName>
+    <label>flying creature</label>
+    <thingClass>AGM.Skyfaller_LandingMech</thingClass>
+    <skyfaller>
+      <angleCurve>
+        <points>
+          <li>(0,     0)</li>
+          <li>(1,     0)</li>
+        </points>
+      </angleCurve>
+      <speed>1.05</speed>
+      <shadowSize>16</shadowSize>
+      <hitRoof>false</hitRoof>
+      <ticksToImpactRange><min>240</min><max>240</max></ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>AGM_Mythos_Skyfaller_SuspendReady</defName>
+    <label>flying creature</label>
+    <thingClass>AGM.Skyfaller_SuspendReady</thingClass>
+    <skyfaller>
+      <angleCurve>
+        <points>
+          <li>(0,     0)</li>
+          <li>(1,     0)</li>
+        </points>
+      </angleCurve>
+      <speed>1.00</speed>
+      <shadowSize>16</shadowSize>
+      <hitRoof>false</hitRoof>
+      <movementType>ConstantSpeed</movementType>
+      <ticksToImpactRange><min>240</min><max>240</max></ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+
+</Defs>

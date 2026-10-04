@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AGM_Damage_PsiBlast.label>사이오닉 파열</AGM_Damage_PsiBlast.label>
+  <AGM_Damage_BleedBullets.label>출혈 탄환</AGM_Damage_BleedBullets.label>
+  <AGM_Damage_Inflamable.label>인화 탄환</AGM_Damage_Inflamable.label>
+  <AGM_Damage_Incinerate.label>소각 탄환</AGM_Damage_Incinerate.label>
+  <AGM_Damage_VitalityDrainBullet.label>활력 흡수 탄환</AGM_Damage_VitalityDrainBullet.label>
+  <AGM_Damage_ArmorBreakerBullet.label>장갑 파쇄 탄환</AGM_Damage_ArmorBreakerBullet.label>
+  <AGM_Damage_DeathBullet.label>즉사 탄환</AGM_Damage_DeathBullet.label>
+  <AGM_Damage_BulletHealthBlight.label>생명 잠식 탄환</AGM_Damage_BulletHealthBlight.label>
+  <AGM_Damage_ShockBullets.label>충격 탄환</AGM_Damage_ShockBullets.label>
+  <AGM_Damage_Antiparticle.label>반입자 폭발</AGM_Damage_Antiparticle.label>
+  <AGM_Damage_AntiArmorShock.label>대장갑 충격</AGM_Damage_AntiArmorShock.label>
+
+</LanguageData>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="NCLMechIronbark" ParentName="SuperHeavyMechanoid">
+    <defName>AGM_Luna</defName>
+    <label>Luna</label>
+    <description>The moon model. Luna advances the way its namesake does - in slow, complete, unstoppable phases - behind a honeycomb shock-absorbing layer and a high-temperature regeneration cycle that fortify whatever the last hit touched. Anything smaller than a warhead struggles to budge it, and while it grinds a siege line flat it still finds time to tend the crops. The foundry's evaluation note on Luna is three lines long: does not stop, does not hurry, does not fall.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+            <MarketValue>3200</MarketValue>
+      <MoveSpeed>3.2</MoveSpeed>
+      <ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+	  <EMPResistance>1</EMPResistance>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+	  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      
+      <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.2</MechEnergyLossPerHP>
+    </statBases>
+	<tools>
+      <li>
+        <label>裂地巨臂</label>
+        <labelNoLocation>裂地巨臂</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>裂地巨臂</label>
+        <labelNoLocation>裂地巨臂</labelNoLocation>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>铁木树冠</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>120</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="AGM.CompProperties_EnsureHediff">
+        <hediff>AGM_Luna_Hediff</hediff>
+      </li>
+	</comps> 
+	<butcherProducts>
+      <Steel>600</Steel>
+      <Plasteel>180</Plasteel>
+    </butcherProducts>
+    <race>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+            <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <body>AGM_Luna_Body</body>
+	  <baseBodySize>4.5</baseBodySize>
+      <mechWeightClass>Medium</mechWeightClass>
+      <baseHealthScale>10</baseHealthScale>
+      <detritusLeavings>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>11</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+        <li>
+          <def>ChunkMechanoidSlag</def>
+          <texOverrideIndex>12</texOverrideIndex>
+          <spawnChance>0.1</spawnChance>
+        </li>
+      </detritusLeavings>
+        <mechEnabledWorkTypes>
+          <li>PlantCutting</li>
+          <li>Growing</li>
+        </mechEnabledWorkTypes>
+	<mechFixedSkillLevel>20</mechFixedSkillLevel>
+    </race>
+	<modExtensions>
+    </modExtensions>
+  </ThingDef>
+
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+  <defName>AGM_Luna</defName>
+  <label>Luna</label>
+  <race>AGM_Luna</race>
+  <allowInMechClusters>false</allowInMechClusters>
+  <combatPower>1800</combatPower>
+      <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Luna</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  <weaponMoney>9999~9999</weaponMoney>
+  <weaponTags>
+  </weaponTags>
+  <techHediffsChance>1</techHediffsChance>
+  <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+
+
+
+</Defs>

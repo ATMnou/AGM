@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos beam damage - def-for-def copy of the Glitterworld Destroyer -->
+  <!-- mod's GD_Beam (which itself is vanilla Beam with buildingDamageFactor -->
+  <!-- raised to 1 and ignoreShields added). Vanilla's own Beam (Core) differs -->
+  <!-- only in buildingDamageFactor (0.4/0.2) and lacks ignoreShields - the -->
+  <!-- original deliberately burns buildings at full rate and bypasses shields. -->
+  <!-- ============================================================ -->
+
+  <DamageDef>
+    <defName>AGM_Damage_MythosBeam</defName>
+    <label>beam</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been beamed to death.</deathMessage>
+    <hediff>BeamWound</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0.5</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+    <ignoreShields>true</ignoreShields>
+  </DamageDef>
+
+</Defs>

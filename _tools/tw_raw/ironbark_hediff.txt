@@ -1,0 +1,30 @@
+  <HediffDef>
+    <defName>NCL_Mech_Ironbark_Hediff</defName>
+    <label>NCL: Ironbark</label>
+	<defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+	<description>The Ironbark's honeycomb shock-absorbing layer and high-temperature regeneration cycle automatically fortify damaged areas upon taking a hit.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+	  <li Class="NCL.HediffCompProperties_MechAutoRecovery">
+        <tickMultiflier>180</tickMultiflier>
+        <healPoint>5</healPoint>
+      </li>
+	</comps>
+	<stages>
+      <li>
+		<minSeverity>0.01</minSeverity>
+		<statFactors>
+			<IncomingDamageFactor>0.80</IncomingDamageFactor>
+			<StaggerDurationFactor>0.5</StaggerDurationFactor>
+        </statFactors>
+		<statOffsets>
+		  <MeleeHitChance>+10</MeleeHitChance>
+		  <MeleeDodgeChance>+10</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+        <li Class="NCL.HediffExtension_NoNotification" />
+    </modExtensions>
+  </HediffDef>
+

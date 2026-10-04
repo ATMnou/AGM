@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings -->
+
+  <!-- Overclock (Terminus) -->
+  <AGM.OverclockLabel>Overclock</AGM.OverclockLabel>
+  <AGM.OverclockDesc>Toggle the output boost. Doubles move and work speed while draining an internal reserve. (Current reserve: {0}%)</AGM.OverclockDesc>
+  <AGM.OverclockNoReserve>Reserve depleted - cannot restart.</AGM.OverclockNoReserve>
+  <AGM.OverclockReserveStatus>Reserve: {0}%</AGM.OverclockReserveStatus>
+
+  <!-- Mythos -->
+  <AGM.MythosBusy>{0} is already using another technique.</AGM.MythosBusy>
+
+  <AGM.ExoPhaseAdvanceLabel>AGM-series mechanoid enters Phase {0}</AGM.ExoPhaseAdvanceLabel>
+  <AGM.ExoPhaseAdvanceText>{0} has taken heavy damage and advanced to combat phase {1}: every weapon system is now cycling faster, and phase-gated attack patterns have widened.</AGM.ExoPhaseAdvanceText>
+  <AGM.ExoPhaseStatus>Combat phase {0} / {1}</AGM.ExoPhaseStatus>
+  <AGM.MultiTargetLabel>Multi-target</AGM.MultiTargetLabel>
+  <AGM.FocusFireLabel>Focus fire</AGM.FocusFireLabel>
+  <AGM.TargetingModeDesc>Toggle whether this mechanoid's independent weapon systems spread across multiple targets or concentrate fire on a single one.</AGM.TargetingModeDesc>
+  <AGM.AutoWeaponToggleLabel>Toggle weapon</AGM.AutoWeaponToggleLabel>
+  <AGM.AutoWeaponToggleDesc>Turn this mechanoid's automatic weapon off or on.</AGM.AutoWeaponToggleDesc>
+  <AGM.DoomsdayRocketToggleLabel>Toggle Doomsday Rocket</AGM.DoomsdayRocketToggleLabel>
+  <AGM.DoomsdayRocketToggleDesc>Toggle the doomsday rocket barrage. Off by default.</AGM.DoomsdayRocketToggleDesc>
+
+</LanguageData>

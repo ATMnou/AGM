@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DamageDef>
+    <defName>AGM_Damage_BlastFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by superheated plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1000</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AGM_Fleck_FireBlast</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>AGM_Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AGM_Damage_ChargeBlast</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AGM_Fleck_ChargedBlast</explosionCellFleck>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>25</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>AGM_Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>AGM_Damage_PsiBlast</defName>
+    <label>Hydrablast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in a psychic blast.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>      
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>0.25</defaultStoppingPower>
+    <defaultArmorPenetration>0.15</defaultArmorPenetration>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AGM_Fleck_DroneExplosion</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>        
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>        
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+   </DamageDef>
+
+   <DamageDef>
+    <defName>AGM_Damage_PsiExplosion</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by psychic explosion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AGM_Fleck_DroneExplosion</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>AGM_Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AGM_Damage_AntiHumanNanites</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been swarmed to death by nanites.</deathMessage>
+    <hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>2500</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>5.5</defaultArmorPenetration>
+    <plantDamageFactor>0</plantDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+	<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AGM_AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AGM_AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <label>MechBullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_BleedBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_Bleed</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>MechBullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_ShockBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_ShockPain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>burn shot</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death by a flame shot.</deathMessage>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0.4~0.9</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_Inflamable</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_Inflammable</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>burn shot</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death by a flame shot.</deathMessage>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0.4~0.9</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_Incinerate</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_IncendiaryBody</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>MechAssaultBullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_VitalityDrainBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_VitalityDrain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>MechHeavyLasertBullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_ArmorBreakerBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_ArmorBreaker</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <label>MechHeavyLasertBullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_DeathBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_Instantkill</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AGM_Damage_AntiOrganicBlast</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1500</defaultDamage>
+    <defaultStoppingPower>10</defaultStoppingPower>
+    <defaultArmorPenetration>2.5</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AGM_Fleck_AntiOrganicBlastZone</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>AGM_Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AGM_Damage_AntiHumanNanitesFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} have peaced-out.</deathMessage>
+	<hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <defaultDamage>450</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+	<buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>450</plantDamageFactor>
+	<explosionSnowMeltAmount>450</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AGM_AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AGM_AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>20</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defName>AGM_Damage_BulletHealthBlight</defName>
+    <label>health blight bullet</label>
+    <additionalHediffs>
+      <li>
+        <hediff>AGM_HealthBlight1</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+
+
+</Defs>

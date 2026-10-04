@@ -1,0 +1,202 @@
+	<HediffDef>
+      <defName>ShockPain</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+      <label>Shock pain</label>
+      <description>None life threatning condition that amplify the victim's pain threshold.</description>
+      <makesSickThought>true</makesSickThought>
+      <stages>
+      <li>
+        <painFactor>1.2</painFactor>
+      </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Effecter">
+          <stateEffecter>Shock</stateEffecter>
+        </li>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1200</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(0.5,0.15,0.09)</defaultLabelColor>
+      <isBad>false</isBad>
+      <defName>Inflammable</defName>
+      <label>Inflammable</label>
+      <description>A dangerous condition that leaves the victim vulnerable to fire.</description>
+      <maxSeverity>1</maxSeverity>
+      <stages>
+       <li>      
+          <statOffsets> 
+            <ArmorRating_Heat>-2.0</ArmorRating_Heat>
+            <Flammability>6.0</Flammability>
+          </statOffsets> 
+       </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1440</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(0.5,0.15,0.09)</defaultLabelColor>
+      <isBad>false</isBad>
+      <defName>IncendiaryBody</defName>
+      <label>Incendiary body</label>
+      <description>A dangerous condition caused by unstable chemicals, which causes the victims body increadibly vulnerable to fire.</description>
+      <maxSeverity>1</maxSeverity>
+      <stages>
+       <li>      
+          <statOffsets> 
+            <ArmorRating_Heat>-2.0</ArmorRating_Heat>
+            <Flammability>6.0</Flammability>
+          </statOffsets> 
+       </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1440</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>VitalityDrain</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <description>A health condition that raises the victim's hunger and rest needs.</description>
+      <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+      <label>Vitality drain</label>
+      <makesSickThought>true</makesSickThought>
+      <maxSeverity>1</maxSeverity>
+      <comps>
+        <li Class="HediffCompProperties_Immunizable">
+          <severityPerDayNotImmune>-4.0</severityPerDayNotImmune>
+        </li>
+      </comps>
+      <stages>
+        <li>
+          <hungerRateFactor>2.0</hungerRateFactor>
+          <restFallFactor>2.0</restFallFactor>
+        </li>
+      </stages>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>ArmorBreaker</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(255, 115, 105)</defaultLabelColor>
+      <label>Armor breaker</label>
+      <description>The victim's armor are now null and void once inflicted with this condition.</description>
+      <makesSickThought>true</makesSickThought>
+      <stages>
+      <li>       
+        <statOffsets>
+          <ArmorRating_Sharp>-0.9</ArmorRating_Sharp>
+          <ArmorRating_Blunt>-0.9</ArmorRating_Blunt>
+          <ArmorRating_Heat>-0.9</ArmorRating_Heat>
+        </statOffsets>
+      </li>   
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1260</min>
+            <max>1260</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>Instantkill</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(95, 10, 50)</defaultLabelColor>
+      <label>Instant kill</label>
+      <description>Death.</description>
+      <stages>
+        <li>
+          <lifeThreatening>true</lifeThreatening>
+          <deathMtbDays>0.0105</deathMtbDays>
+        </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>60</min>
+            <max>60</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>HealthBlight1</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+      <label>Severe health blight</label>
+      <description>An increadibly dangerous health condition that sets the target's capacities to 35% temporarily, along with an increased pain sensitivity and severe movement reduction.</description>
+      <makesSickThought>true</makesSickThought>
+	  <maxSeverity>1</maxSeverity>
+      <stages>
+        <li>
+          <painFactor>1.2</painFactor>     
+		  <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.35</setMax>
+            </li>
+			<li>
+              <capacity>Moving</capacity>
+              <setMax>0.35</setMax>
+            </li>
+			<li>
+              <capacity>Sight</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>BloodPumping</capacity>
+              <setMax>0.35</setMax>
+            </li>
+             <li>
+              <capacity>Metabolism</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>Breathing</capacity>
+              <setMax>0.35</setMax>
+            </li>
+          </capMods>
+		 </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Effecter">
+          <stateEffecter>DarkShock</stateEffecter>
+        </li>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1200</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+

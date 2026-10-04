@@ -1,0 +1,47 @@
+  <PawnKindDef Name="MechDragonWarlordKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_DragonWarlord</defName>
+    <label>dragon warlord</label>
+    <labelPlural>dragon warlords</labelPlural>
+    <race>Mech_DragonWarlord</race>
+    <combatPower>9000</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragonWarlord_Clean/MechDragonWarlordClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragonWarlord</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragonWarlord/MechDragonWarlord</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragonWarlord</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>ResurrectionMech</li>
+	  <li>PsychicBlast</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>

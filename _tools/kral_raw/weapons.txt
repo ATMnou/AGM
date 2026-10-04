@@ -1,0 +1,250 @@
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MechChaingun</defName>
+    <label>mech chaingun</label>
+    <description>A powerful chaingun designed for crowd control and suppression. This heavy weapon possess the best armor penetration and inflict both extra bleeding and extra pain against enemies upon impact.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MechWeapons/MechChaingun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.3, 2.3</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<techLevel>Spacer</techLevel>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_EnergyWeapon</soundInteract>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+      <Mass>80</Mass>
+      <AccuracyTouch>2.0</AccuracyTouch>
+      <AccuracyShort>2.0</AccuracyShort>
+      <AccuracyMedium>2.0</AccuracyMedium>
+      <AccuracyLong>2.0</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets> 
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+		<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+        <defaultProjectile>Bullet_MechChaingun</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>50.9</range>
+		<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>30</burstShotCount>
+		<minRange>4.9</minRange>
+        <soundCast>Shot_ChainGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+    </comps>
+    <weaponTags>
+      <li>MechChaingun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechChaingun</defName>
+    <label>chaingun bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/MechChaingunShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>BleedBullets</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>1.0</chance>
+        <def>ShockBullets</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MechLaserBlaster</defName>
+    <label>mech laser blaster</label>
+    <description>Rapid fire laser blaster with the highest base damage for an automatic energy weapon. Like a chaingun, it can unleash a storm of high power laser projectiles that can take down any threats with excellent efficientcy. Such a weapon is only seen being wielded by heavy-class mechanoids with abundant energy supply stored within them.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MechWeapons/MechLaserBlaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.0, 2.0</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<techLevel>Spacer</techLevel>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_EnergyWeapon</soundInteract>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+      <Mass>80</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>1.0</AccuracyShort>
+      <AccuracyMedium>1.0</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets> 
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MechLaserBlaster</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>50.9</range>
+		<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>25</burstShotCount>
+		<minRange>4.9</minRange>
+        <soundCast>Shot_LaserBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+    </comps>
+    <weaponTags>
+      <li>MechLaserBlaster</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlaster</defName>
+    <label>laser bolt</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Inflamable</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>1.0</chance>
+        <def>Flame</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+      <defName>Gun_MechHeavyLaserBlaster</defName>
+      <label>mech heavy laser blaster</label>
+      <description>A larger version of the mech laser blaster that was used to arm capital-class mech ships, now redesigned to be used by the supreme apocriton.</description>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/MechExtinctionRay</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>3.9, 3.9</drawSize>
+      </graphicData>
+	  <equippedAngleOffset>45</equippedAngleOffset>
+	  <techLevel>Spacer</techLevel>
+	  <tradeability>None</tradeability>
+	  <destroyOnDrop>true</destroyOnDrop>
+      <soundInteract>Interact_EnergyWeapon</soundInteract>
+      <statBases>
+        <MarketValue>6000</MarketValue>
+        <Mass>250</Mass>
+        <AccuracyTouch>2.0</AccuracyTouch>
+        <AccuracyShort>2.0</AccuracyShort>
+        <AccuracyMedium>2.0</AccuracyMedium>
+        <AccuracyLong>2.0</AccuracyLong>
+        <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      </statBases>
+	  <equippedStatOffsets> 
+      </equippedStatOffsets>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechHeavyLaserBlaster</defaultProjectile>
+          <warmupTime>1</warmupTime>
+          <range>50.9</range>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>70</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_HeavyLaser</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>10</muzzleFlashScale>
+       </li>
+       </verbs>
+       <tools>
+        <li>
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>2</cooldownTime>
+         </li>
+        </tools>
+	    <comps>
+        </comps>
+        <weaponTags>
+          <li>MechHeavyLaserBlaster</li>
+        </weaponTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>Bullet_MechHeavyLaserBlaster</defName>
+      <label>laser bolt</label>
+      <graphicData>
+        <texPath>Things/Misc/Bullets/LaserShotHeavy</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.5, 4)</drawSize>
+	    <shaderType>MoteGlow</shaderType>
+      </graphicData>
+      <projectile>
+        <damageDef>ArmorBreakerBullet</damageDef>
+        <damageAmountBase>50</damageAmountBase>
+	    <armorPenetrationBase>5</armorPenetrationBase>
+        <stoppingPower>1</stoppingPower>
+        <speed>180</speed>
+		<extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+        </extraDamages>
+      </projectile>
+    </ThingDef>
+

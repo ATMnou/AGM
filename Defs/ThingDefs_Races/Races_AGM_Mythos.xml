@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos - def-for-def port of the Glitterworld Destroyer mod's -->
+  <!-- Mech_Annihilator race (as previously ported into MFE). Only   -->
+  <!-- the APPEARANCE and the gestation feedstock are ours: stats,   -->
+  <!-- flight, damage response and techniques are the original's.    -->
+  <!-- AGM common overrides: bandwidth 4 (leviathan tier), no energy -->
+  <!-- usage, no mechanitor range limit, never feral.                -->
+  <!-- ============================================================ -->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>AGM_Mythos</defName>
+    <label>Mythos</label>
+    <description>The small self-propelled star-slayer weapon of the mechanoid hive, rebuilt on a hull scaled down from Draedon's own deep-space annihilation platforms. When carrying out the mission, it is responsible for drilling deep into the earth and using plasma nozzles to activate the mantle, triggering intense geological activities and making the first step in preparing for the disintegration of the planet. When in standby mode, it drifts in space, waiting for the nearest cerebrex core to wake it up, and take it to kill.\n\nIn combat it uses jump and suspend techniques: crushing leaps, roof-tearing flight, and a sustained plasma column sprayed downward while hovering on its grav engine.</description>
+    <thingClass>AGM.Mythos_Pawn</thingClass>
+    <size>(9,9)</size>
+    <statBases>
+      <MarketValue>28800</MarketValue>
+      <ArmorRating_Blunt>1.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>4</BandwidthCost>
+      <EMPResistance>0.75</EMPResistance>
+      <MoveSpeed>1.5</MoveSpeed>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MaxFlightTime>3600</MaxFlightTime>
+      <FlightCooldown>0</FlightCooldown>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <destroyable>false</destroyable>
+    <race>
+      <body>Mech_Diabolus</body>
+      <baseBodySize>3.5</baseBodySize>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <flightStartChanceOnJobStart>0</flightStartChanceOnJobStart>
+      <canFlyInVacuum>true</canFlyInVacuum>
+      <hasCorpse>false</hasCorpse>
+      <allowedOnCaravan>false</allowedOnCaravan>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>10392.5</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>90</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>90</power>
+        <armorPenetration>0.6</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>150</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_Reconstruction">
+        <cooldownTicks>3600</cooldownTicks>
+        <reconstructHediff>AGM_Hediff_Reconstruct</reconstructHediff>
+      </li>
+      <li Class="AGM.CompProperties_DisableFeral" />
+      <!-- Same CompAffectsSky comp the original Annihilator carries - the pawn-side sky fade
+           (StartFadeInHoldFadeOut(10, 600, 10)) drives this while the laser burns. -->
+      <li Class="CompProperties_AffectsSky">
+        <skyColors>
+          <sky>(255, 230, 200, 155)</sky>
+          <shadow>(225, 220, 185)</shadow>
+          <overlay>(255, 255, 255)</overlay>
+          <saturation>1.1</saturation>
+        </skyColors>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="AGM.IsFlyingUnit">
+        <flyingHeight>10</flyingHeight>
+        <flightDeterminedByCode>true</flightDeterminedByCode>
+      </li>
+    </modExtensions>
+    <butcherProducts Inherit="False">
+      <Steel>200</Steel>
+      <Plasteel>150</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Mythos</defName>
+    <label>Mythos</label>
+    <race>AGM_Mythos</race>
+    <combatPower>10000</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <canMeleeAttack>false</canMeleeAttack>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Mythos</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>0.2</controlGroupPortraitZoom>
+    <weaponTags></weaponTags>
+    <abilities>
+      <li>AGM_MythosJump</li>
+      <li>AGM_MythosSuspend</li>
+      <li>AGM_MythosJumpAndSuspend</li>
+    </abilities>
+  </PawnKindDef>
+
+</Defs>

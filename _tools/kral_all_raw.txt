@@ -1,0 +1,3571 @@
+  <ThingDef Name="MechHydraulicEmpress" ParentName="MechBosses">
+    <defName>Mech_HydraulicEmpress</defName>
+    <label>hydraulic empress</label>
+    <description>An ultra-heavy war queen variant with a built-in mech gestator. The empress bears the nickname "The walking fortress" due to its excellent versatility in both attack and defence. For attack, the empress wields a dual mech chaingun from the front and the back, which both delivers unrelenting punisment at long distances. For defense, the empress is heavily cladded with armor platting that renders ordinary small arms useless, and capable of fabricating an aggressive squad of hydraulic knights and depoly them in battle. Such a powerful mech variant can reduce any colony, that doesn't possess any effective countermesure against it, into rubble. Theoratically, a lone hydraulic empress is enough to wipe-out an entire colony, if unprepared.</description>
+    <statBases>
+      <MoveSpeed>1.2</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.02</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>0.10</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>4</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.85</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_Empress</body>
+      <baseBodySize>5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Warqueen_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Warqueen_Death</soundDeath>
+          <soundCall>Pawn_Mech_Warqueen_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>20.2</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+	   <li>
+        <label>blade horn</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>20000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_HydraulicKnight</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_ChainGunTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <BetaChip>1</BetaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <ThingDef Name="MechDragonWarlord" ParentName="MechBosses">
+    <defName>Mech_DragonWarlord</defName>
+    <label>dragon warlord</label>
+    <description>An ultra-heavy hybrid variant of a warqueen and an apocriton. The warlord is the most devious of all mech bosses ever discovered, well protected by a monstrous shield bubble, able to fire laser bolts using a mech laser blaster, can fabricate a legion of dragon knights to defend itself, and can resurrect them when fallen in battle. The warlord is designed to be a solution againts spacer-tech factions, according to official glittertech archives and various combat transcripts, multiple high-tech colonies from multiple core worlds collapsed due to the arrival of the dragon warlord, along with it's cadre of dragon knights.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.02</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_Warlord</body>
+      <baseBodySize>5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>30.2</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>40000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_DragonKnight</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1000</startingIngredientCount>
+        <maxIngredientCount>1000</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <GammaChip>1</GammaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <ThingDef Name="MechDragon" ParentName="MechBosses">
+    <defName>Mech_Dragon</defName>
+    <label>steel wyvern</label>
+    <description>A heavy-class diabolus variant, and one of the most destructive mech variant ever concieved. The steel wyvern possess the highest health out of all the mech bossess, and that monstrous health is cladded with layers of armor plating. The steel wyvern is capable of spamming charge blasts and plasma blasts through its mouth, and fires laser bolts through its back as support. All this specs were concieved by the mech hive in their intension to create the deadliest siege beast that ever exist, and after years of pain and destruction caused by the aforementioned siege beast, it's safe to say that it had succeeded.</description>
+    <statBases>
+      <MoveSpeed>7.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.05</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.70</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+	  <mechWeightClass>Heavy</mechWeightClass>
+      <body>Mech_Dragon</body>
+      <baseBodySize>4.5</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Diabolus_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Diabolus_Death</soundDeath>
+          <soundCall>Pawn_Mech_Diabolus_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <dutyBoss>MilitorQueen</dutyBoss>
+      <baseHealthScale>40.2</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>bite</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>50</power>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>75</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+      <AlphaChip>1</AlphaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+    <ThingDef ParentName="LightMechanoid">
+      <defName>Mech_ScythUrchin</defName>
+      <label>scyth urchin</label>
+      <description>A small, deployable combat mechanoid variant produced by the supreme apocriton. The scyth urchin has blades that was permanently installed and can use it to cut enemy combatants to pieces, and like the war urchin, the scyth urchin also specializes in swarm tactics in which it can overwhelm and subdue enemies using numerical superiority.</description>
+      <statBases>
+        <MoveSpeed>6.2</MoveSpeed>
+		<EMPResistance>0.90</EMPResistance>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+	    <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      </statBases>
+	  <tools>
+        <li>
+          <label>blade head</label>
+          <capacities>
+            <li>Blunt</li>
+			<li>Cut</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>0.5</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+      <race>
+	    <body>Mech_Light</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+        </lifeStageAges>
+        <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+        <baseHealthScale>1.3</baseHealthScale>
+      </race>
+      <comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+		<li Class="CompProperties_Explosive">
+          <wickTicks>0</wickTicks>
+          <explosiveRadius>10.9</explosiveRadius>
+          <explodeOnKilled>true</explodeOnKilled>
+          <explosiveDamageType>AntiOrganicBlast</explosiveDamageType>
+          <propagationSpeed>0.5</propagationSpeed>
+          <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        </li>
+      </comps>
+    </ThingDef>
+
+  <ThingDef Name="MechSupremeApocriton" ParentName="MechBosses">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <description>The harbinger of death, and the all-father of apocritons. The supreme apocriton is an ultra-heavy mech variant which is believed to be the sole progenitor of all apocritons that exist today, and like the apocritons, it also has a deep hatred towards all natural life to an extreme degree. Its total abilities are unknown other than its ability to resurrect mechanoid allies, and it is the only mech variant capable of wielding the infamous mech heavy laser blaster. The supreme apocriton oftenly spawns with a cadre of hard to defeat mech variants, but luckly, it never spawns normally unless summoned using a "god slayer" mech transponder.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+	  <IncomingDamageFactor>0.2</IncomingDamageFactor>
+      <MeleeDoorDamageFactor>1000</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>7</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>1000</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>3000000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_ScythUrchin</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurretEX</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>SupremeApocrionAttached</effecterDef>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <ArchoBox>1</ArchoBox>
+	  <UltimaChip>1</UltimaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef Name="MechHydraulicEmpressKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_HydraulicEmpress</defName>
+    <label>hydraulic empress</label>
+    <labelPlural>hydraulic empresses</labelPlural>
+    <race>Mech_HydraulicEmpress</race>
+    <combatPower>7000</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicEmpress_Clean/HydraulicEmpressClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicEmpress</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicEmpress/HydraulicEmpress</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicEmpress</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+		<butcherBodyPart>
+           <bodyPartGroup>HornAttackTool</bodyPartGroup>
+           <thing>EmpressBladeHorn</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages> 	
+	<weaponTags>
+      <li>MechChaingun</li>
+    </weaponTags>
+	<abilities>	  
+      <li>BladeShot</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+  <PawnKindDef Name="MechDragonWarlordKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_DragonWarlord</defName>
+    <label>dragon warlord</label>
+    <labelPlural>dragon warlords</labelPlural>
+    <race>Mech_DragonWarlord</race>
+    <combatPower>9000</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragonWarlord_Clean/MechDragonWarlordClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragonWarlord</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragonWarlord/MechDragonWarlord</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragonWarlord</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>ResurrectionMech</li>
+	  <li>PsychicBlast</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+  <PawnKindDef Name="MechDragonKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_Dragon</defName>
+    <label>steel wyvern</label>
+    <labelPlural>steel wyverns</labelPlural>
+    <race>Mech_Dragon</race>
+    <combatPower>5500</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>true</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragon_Clean/MechDragonClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragon</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragon/MechDragon</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/MechDragon</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+    </weaponTags>
+    <abilities>
+	  <li>PlasmaBlast</li>
+      <li>FireBurst</li>
+	  <li>ChargeBlast</li>
+    </abilities>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+  <ThingDef Name="MechSupremeApocriton" ParentName="MechBosses">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <description>The harbinger of death, and the all-father of apocritons. The supreme apocriton is an ultra-heavy mech variant which is believed to be the sole progenitor of all apocritons that exist today, and like the apocritons, it also has a deep hatred towards all natural life to an extreme degree. Its total abilities are unknown other than its ability to resurrect mechanoid allies, and it is the only mech variant capable of wielding the infamous mech heavy laser blaster. The supreme apocriton oftenly spawns with a cadre of hard to defeat mech variants, but luckly, it never spawns normally unless summoned using a "god slayer" mech transponder.</description>
+    <statBases>
+      <MoveSpeed>2.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+	  <IncomingDamageFactor>0.2</IncomingDamageFactor>
+      <MeleeDoorDamageFactor>1000</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>7</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>1000</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>3000000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>Mech_ScythUrchin</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_MechLaserBlasterTurretEX</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>SupremeApocrionAttached</effecterDef>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <ArchoBox>1</ArchoBox>
+	  <UltimaChip>1</UltimaChip>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef Name="MechSupremeApocritonKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <labelPlural>supreme apocritons</labelPlural>
+    <race>Mech_SupremeApocriton</race>
+    <combatPower>9500</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/SupremeApocriton/SupremeApocriton</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/SupremeApocriton</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechHeavyLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>	  
+      <li>ResurrectionMech</li>
+	  <li>AntiOrganicGrenade</li>
+	  <li>AntiOrganicBlast</li>
+	  <li>AntiOrganicOrbitalStrike</li>
+	  <li>DeathRay</li>
+	  <li>LongjumpMech</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+  
+  <!-- Mech boss offshoot "Supreme apocriton" -->
+  <ThingDef Name="MechSupremeApocritonOffShoot" ParentName="MechBosses">
+    <defName>Mech_SupremeApocritonOffshoot</defName>
+    <label>supreme apocriton offshoot</label>
+    <description>An offshoot created by the image of the supreme apocriton, meant to provide support by wielding the original's power to achieve victory.</description>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>10</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.80</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0.15</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>Mech_SupremeApocriton</body>
+      <baseBodySize>2</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>20.9</baseHealthScale>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>500</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>500</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>2</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>10000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>ApocrionAttached</effecterDef>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>Gun_GammaBeamGraserTurret</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+    </comps>
+    <killedLeavingsPlayerHostile>
+	  <MechFussionCore>20</MechFussionCore>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef Name="MechSupremeApocritonOffshootKind" ParentName="HeavyMechanoidKind">
+    <defName>Mech_SupremeApocritonOffshoot</defName>
+    <label>supreme apocriton offshoot</label>
+    <labelPlural>supreme apocriton offshoots</labelPlural>
+    <race>Mech_SupremeApocritonOffshoot</race>
+    <combatPower>9500</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/SupremeApocriton/SupremeApocriton</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/SupremeApocriton</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>MechHeavyChargeLancez</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>DeathRay</li>	
+      <li>ResurrectionMech</li>
+	  <li>LongjumpMech</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+          <totalPowerTicks>35000</totalPowerTicks>
+        </li>
+	  </comps>
+    </ThingDef>
+  
+    <PawnKindDef ParentName="LightMechanoidKind">
+      <defName>Mech_MilitorDrone</defName>
+      <label>militor mk2</label>
+      <race>Mech_MilitorDrone</race>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/New/MilitorMK2_Clean/MilitorMK2Clean</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/MilitorMK2</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.25</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/Ancient/MilitorMK2/MilitorMK2</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/MilitorMK2</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.25</drawSize>
+            <shadowData>
+              <volume>(0.3, 0.4, 0.3)</volume>
+              <offset>(0,0,-0.25)</offset>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+      <weaponTags>
+        <li>MK2MechanoidGunShortRange</li>
+		<li>MechAssaultRiflez</li>
+		<li>MechAssaultRifleStunz</li>
+		<li>MechAssaultRifleFrostz</li>
+      </weaponTags>
+    </PawnKindDef>
+  
+  <!-- ScythUrchin -->  
+  
+    <ThingDef ParentName="LightMechanoid">
+      <defName>Mech_ScythUrchin</defName>
+      <label>scyth urchin</label>
+      <description>A small, deployable combat mechanoid variant produced by the supreme apocriton. The scyth urchin has blades that was permanently installed and can use it to cut enemy combatants to pieces, and like the war urchin, the scyth urchin also specializes in swarm tactics in which it can overwhelm and subdue enemies using numerical superiority.</description>
+      <statBases>
+        <MoveSpeed>6.2</MoveSpeed>
+		<EMPResistance>0.90</EMPResistance>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
+	    <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      </statBases>
+	  <tools>
+        <li>
+          <label>blade head</label>
+          <capacities>
+            <li>Blunt</li>
+			<li>Cut</li>
+          </capacities>
+          <power>6</power>
+          <cooldownTime>0.5</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </tools>
+      <race>
+	    <body>Mech_Light</body>
+        <lifeStageAges>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>0</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+          <li>
+            <def>MechanoidFullyFormed</def>
+            <minAge>100</minAge>
+            <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+            <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+            <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          </li>
+        </lifeStageAges>
+        <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+        <baseHealthScale>1.3</baseHealthScale>
+      </race>
+      <comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+		<li Class="CompProperties_Explosive">
+          <wickTicks>0</wickTicks>
+          <explosiveRadius>10.9</explosiveRadius>
+          <explodeOnKilled>true</explodeOnKilled>
+          <explosiveDamageType>AntiOrganicBlast</explosiveDamageType>
+          <propagationSpeed>0.5</propagationSpeed>
+          <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        </li>
+      </comps>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="LightMechanoidKind">
+      <defName>Mech_ScythUrchin</defName>
+      <label>scyth urchin</label>
+      <labelPlural>scyth urchins</labelPlural>
+      <race>Mech_ScythUrchin</race>
+      <allowInMechClusters>false</allowInMechClusters>
+      <forceNoDeathNotification>true</forceNoDeathNotification>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/Ancient/ScythUrchin/ScythUrchin</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/ScythUrchin</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+            <shadowData>
+              <volume>(0.2, 0.3, 0.2)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Mechanoids/Ancient/ScythUrchin/ScythUrchin</texPath>
+            <maskPath>Things/Mechanoids/Allegiance/ScythUrchin</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+            <shadowData>
+              <volume>(0.2, 0.3, 0.2)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>      
+      <weaponTags>
+      </weaponTags>
+    </PawnKindDef>
+  
+  <!-- Militor MK2-->   
+  
+    <ThingDef ParentName="LightMechanoid">
+      <defName>Mech_MilitorAdvanced</defName>
+      <label>militor MK2</label>
+	<killedLeavingsPlayerHostile>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_HydraulicKnightFree</defName>
+    <label>hydraulic knight</label>
+    <labelPlural>hydraulic knights</labelPlural>
+    <race>Mech_HydraulicKnightFree</race>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicKnight_Clean/HydraulicKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicKnight/HydraulicKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidMonoSword</li>
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+	
+  <!-- Hydraulic knight -->
+  
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_HydraulicKnight</defName>
+    <label>hydraulic knight</label>
+    <description>A powerful mech variant holding a mech mono sword. This mech is increadibly fast where it can chase down slow moving organics with ease, and it possess quick reflexes which alows for faster and more precise melee hits. The hydraulic knight is mostly seen accompanying the hydraulic empress, serving as its sworn sword and creator.</description>
+    <statBases>
+      <MoveSpeed>7.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <EMPResistance>0.90</EMPResistance>
+	  <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <BandwidthCost>3</BandwidthCost>
+    </statBases>
+    <tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps Inherit="False">
+        <li Class="CompProperties_CanBeDormant" />
+        <li Class="CompProperties_WakeUpDormant">
+          <wakeUpOnDamage>true</wakeUpOnDamage>
+          <wakeUpCheckRadius>30</wakeUpCheckRadius>
+          <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+        </li>
+        <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+        </li>
+    </comps>
+    <race>
+      <body>Mech_Grunt</body>
+      <baseHealthScale>3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+	<killedLeavingsPlayerHostile>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_HydraulicKnight</defName>
+    <label>hydraulic knight</label>
+    <labelPlural>hydraulic knights</labelPlural>
+    <race>Mech_HydraulicKnight</race>
+	<combatPower>500</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/HydraulicKnight_Clean/HydraulicKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/HydraulicKnight/HydraulicKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/HydraulicKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MechanoidMonoSword</li>
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+  
+  <!-- Dragon knight free-->
+  
+  <!-- <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_DragonKnightFree</defName>
+	  <MechFussionCore>1</MechFussionCore>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_DragonKnightFree</defName>
+    <label>dragon knight</label>
+    <labelPlural>dragon knights</labelPlural>
+    <race>Mech_DragonKnightFree</race>
+    <combatPower>700</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragonKnight_Clean/DragonKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragonKnight/DragonKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+	  <li>MechTriShot</li>
+	  <li>MechAssaultCharge</li> 
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>-->
+  
+  <!-- Dragon knight -->
+  
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>Mech_DragonKnight</defName>
+    <label>dragon knight</label>
+    <description>A highly aggressive mech variant who serves the dragon warlord. The dragon knight uses a variety of mech ranged weapons ranging from a tri-shot charge lance to a full auto assault charger, all while being protected by a low frequency shield bubble. The capabilities of the dragon knight truely shines when fighting alongside the dragon warlord along with the rest of its dragon knights, which also spells doom to their organic foes.</description>
+    <statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+	  <HeatNullNaniteResistance>4.0</HeatNullNaniteResistance>
+	  <HeatNullNaniteEnvironmentResistance>4.0</HeatNullNaniteEnvironmentResistance>
+	  <ColdNullNaniteResistance>4.0</ColdNullNaniteResistance>
+	  <ColdNullNaniteEnvironmentResistance>4.0</ColdNullNaniteEnvironmentResistance>
+	  <RadiationResistance>4.0</RadiationResistance>
+	  <RadiationEnvironmentResistance>4.0</RadiationEnvironmentResistance>
+	  <AntiOrgToxinResistance>4.0</AntiOrgToxinResistance>
+	  <AntiOrgToxinEnvironmentResistance>4.0</AntiOrgToxinEnvironmentResistance>
+	  <EMPResistance>0.90</EMPResistance>
+	  <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <BandwidthCost>3</BandwidthCost>
+    </statBases>
+    <tools>
+	  <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps Inherit="False">
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>1</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>900</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>120</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+        <wakeUpCheckRadius>30</wakeUpCheckRadius>
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_MechPowerCell">
+          <totalPowerTicks>15000</totalPowerTicks>
+      </li>
+	</comps>
+    <race>
+      <body>Mech_Grunt</body>
+      <baseHealthScale>5</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+	<killedLeavingsPlayerHostile>
+    </killedLeavingsPlayerHostile>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_DragonKnight</defName>
+    <label>dragon knight</label>
+    <labelPlural>dragon knights</labelPlural>
+    <race>Mech_DragonKnight</race>
+	<combatPower>700</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/New/MechDragonKnight_Clean/DragonKnightClean</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoids/Ancient/MechDragonKnight/DragonKnight</texPath>
+          <maskPath>Things/Mechanoids/Allegiance/DragonKnight</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+	  <li>MechTriShot</li>
+	  <li>MechAssaultCharge</li> 
+    </weaponTags>
+	<abilities>
+    </abilities>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+  </PawnKindDef>
+  
+  <!-- Hydraulic paladin -->
+  
+  <ThingDef ParentName="BaseMechanoidWalker">
+  <AbilityDef>
+    <defName>ChargeBlast</defName>
+    <label>charge blast</label>
+    <description>Channel energy into the core to fire an explosive energy-based warhead.</description>
+    <iconPath>Things/Misc/UI/ChargeBlastUI</iconPath>
+    <cooldownTicksRange>100</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>ChargeBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>PlasmaBlast</defName>
+    <label>plasma blast</label>
+    <description>Channel energy into the core to fire a superheated plasma warhead.</description>
+    <iconPath>Things/Misc/UI/PlasmaBlastUI</iconPath>
+    <cooldownTicksRange>700</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>45</range>
+	  <minRange>5.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>PlasmaBlastz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicGrenade</defName>
+    <label>anti-organic grenade</label>
+    <description>Launch an explosive payload full of anti-organic nanites, that brutaly harms organics inside a 15.9 blast radius.</description>
+   <iconPath>Things/Misc/UI/NaniteGrenadeUI</iconPath>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>50.9</range>
+      <warmupTime>0.5</warmupTime>
+	  <forcedMissRadius>1.0</forcedMissRadius>
+	  <noiseRadius>4</noiseRadius>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <soundCast>Shot_ToxCanister</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiGrainGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>PsychicBlast</defName>
+    <label>psychic blast</label>
+    <description>Conjure a psychic explosion in any area while ignoring all forms of obstacles.</description>
+    <iconPath>Things/Misc/UI/PsychicBlastUI</iconPath>
+    <cooldownTicksRange>7200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>PSIBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>BladeShot</defName>
+    <label>blade shot</label>
+    <description>Shoot a razor sharp blade using the blade horns protruding on each sides.</description>
+    <iconPath>Things/Misc/UI/BladeShotUI</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_EmpressBlade</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>BladeShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicBlast</defName>
+    <label>anti organic blast</label>
+    <description>Fire a super explosive anti-organic warhead.</description>
+    <iconPath>Things/Misc/UI/AntiOrgBlastUI</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_MechChargedSniperRifle</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiOrgBlast</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>AntiOrganicOrbitalStrike</defName>
+    <label>anti organic orbital strike</label>
+    <description>Unleash the wrath of the machines by blasting those filthy organics with an anti-organic orbital strike.</description>
+    <iconPath>Things/Misc/UI/AntiOrgOrbitalUI</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <minRange>3.9</minRange>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_Doom</soundCast>
+	  <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+		<canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AntiOrgPreOrbital</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>DeathRay</defName>
+    <label>death ray</label>
+    <description>Fire a death ray that can reduce the target's capacities to 35%, along with a 20% chance of instant death.</description>
+    <iconPath>Things/Misc/UI/DeathRayUI</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+	<charges>5</charges>
+    <displayOrder>100</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>55.9</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Shot_LaserBlaster</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>DeathShotz</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <BodyDef>
+    <defName>Mech_SupremeApocriton</defName>
+    <label>supreme apocriton</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.2</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.2</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.06</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front left leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front left foot</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontLeftLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front right leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front right foot</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontRightLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear left leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear left foot</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear right leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear right foot</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+		<li>
+          <def>BulbTurret</def>
+          <customLabel>bulb turret</customLabel>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>BulbTurret</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <BodyDef>
+    <defName>Mech_Dragon</defName>
+    <label>steel dragon</label>
+    <corePart>
+      <def>MechanicalDragonBodyFirstRing</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalHead</def>
+          <coverage>0.1</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>ArtificialBrain</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>left sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>left hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>right hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>SmellSensor</def>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalDragonBodyFirstRing</def>
+          <coverage>0.75</coverage>
+          <parts>
+            <li>
+              <def>Reactor</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>DragonCapacitor</def>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>DragonCapacitor</def>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>MechanicalDragonBodySecondRing</def>
+              <coverage>0.7</coverage>
+              <parts>
+                <li>
+                  <def>MechanicalDragonBodyThirdRing</def>
+                  <coverage>0.7</coverage>
+                  <parts>
+                    <li>
+                      <def>MechanicalDragonBodyFourthRing</def>
+                      <coverage>0.6</coverage>
+                      <parts>
+                        <li>
+                          <def>MechanicalDragonBodyFifthRing</def>
+                          <coverage>0.5</coverage>
+                          <parts>
+                            <li>
+                              <def>FluidReprocessor</def>
+                              <coverage>0.05</coverage>
+                              <depth>Inside</depth>
+                            </li>
+                          </parts>
+                        </li>
+                      </parts>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>BulbTurret</def>
+          <customLabel>bulb turret</customLabel>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>BulbTurret</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <BodyDef>
+    <defName>Mech_Empress</defName>
+    <label>empress</label>
+    <corePart>
+      <def>HydraulicEmpressBodyFirstRing</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalHead</def>
+          <coverage>0.1</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>ArtificialBrain</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>left sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>left hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>right hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>SmellSensor</def>
+              <coverage>0.10</coverage>
+			  <parts>
+                <li>
+                  <def>Blade</def>
+                  <coverage>0.85</coverage>
+                  <groups>
+                    <li>HornAttackTool</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>HydraulicEmpressBodySecondRing</def>
+          <coverage>0.75</coverage>
+          <parts>
+            <li>
+              <def>Reactor</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>HydraulicEmpressBodyThirdRing</def>
+              <coverage>0.8</coverage>
+              <parts>
+                <li>
+                  <def>HydraulicEmpressBodyFourthRing</def>
+                  <coverage>0.7</coverage>
+                  <parts>
+                    <li>
+                      <def>HydraulicEmpressBodyFifthRing</def>
+                      <coverage>0.6</coverage>
+                      <parts>
+                        <li>
+                          <def>FluidReprocessor</def>
+                          <coverage>0.05</coverage>
+                          <depth>Inside</depth>
+                        </li>
+                        <li>
+                          <def>HydraulicEmpressFormingPod</def>
+                          <coverage>0.5</coverage>
+                          <height>Middle</height>
+                          <depth>Inside</depth>
+                        </li>
+                      </parts>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>BulbTurret</def>
+          <customLabel>bulb turret</customLabel>
+          <coverage>0.05</coverage>
+          <groups>
+            <li>BulbTurret</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <BodyDef>
+    <defName>Mech_Warlord</defName>
+    <label>dragon warlord</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.2</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.2</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.06</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front left leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front left foot</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontLeftLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front right leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front right foot</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontRightLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear left leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear left foot</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear right leg</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear right foot</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>55</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>50</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>45</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFourthRing</defName>
+    <label>forth body ring</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DragonCapacitor</defName>
+    <label>dragonic capacitor</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>55</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>50</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>45</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFourthRing</defName>
+    <label>forth body ring</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>HydraulicEmpressFormingPod</defName>
+    <label>empress forming pod</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <DamageDef>
+    <defName>BlastFlame</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Plasma</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by superheated plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1000</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>FireBlast</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>ChargeBlast</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Charged</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>ChargedBlast</explosionCellFleck>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>25</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>PsiBlast</defName>
+    <label>Hydrablast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in a psychic blast.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>      
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>75</defaultDamage>
+    <defaultStoppingPower>0.25</defaultStoppingPower>
+    <defaultArmorPenetration>0.15</defaultArmorPenetration>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+    <explosionCellFleck>DroneExplosion</explosionCellFleck>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>        
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>        
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+   </DamageDef>
+
+   <DamageDef>
+    <defName>PsiExplosion</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_Psychic</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted by psychic explosion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>DroneExplosion</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiHumanNanites</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been swarmed to death by nanites.</deathMessage>
+    <hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>2500</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+    <defaultStoppingPower>1.5</defaultStoppingPower>
+    <defaultArmorPenetration>5.5</defaultArmorPenetration>
+    <plantDamageFactor>0</plantDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+	<explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_ChaingunBullets">
+    <defName>BleedBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Bleed</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_ChaingunBullets">
+    <defName>ShockBullets</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>ShockPain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_LaserBlasterBullets">
+    <defName>Inflamable</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Inflammable</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_LaserBlasterBullets">
+    <defName>Incinerate</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>IncendiaryBody</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_AssaultChargerBullets">
+    <defName>VitalityDrainBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>VitalityDrain</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_HeavyLaserBullets">
+    <defName>ArmorBreakerBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>ArmorBreaker</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="Mech_HeavyLaserBullets">
+    <defName>DeathBullet</defName>
+    <additionalHediffs>
+      <li>
+        <hediff>Instantkill</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiOrganicBlast</defName>
+    <workerClass>Kraltech_Industries.DamageWorker_AntiOrganics</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to oblivion.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <defaultDamage>1500</defaultDamage>
+    <defaultStoppingPower>10</defaultStoppingPower>
+    <defaultArmorPenetration>2.5</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>2</plantDamageFactor>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellFleck>AntiOrganicBlastZone</explosionCellFleck>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>50</minDamageToFragment>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_PlasmaCannon</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>0.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AntiHumanNanitesFlame</defName>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} have peaced-out.</deathMessage>
+	<hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+    <defaultDamage>450</defaultDamage>
+	<harmsHealth>true</harmsHealth>
+	<buildingDamageFactorImpassable>20</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
+    <plantDamageFactor>450</plantDamageFactor>
+	<explosionSnowMeltAmount>450</explosionSnowMeltAmount>
+    <explosionCenterEffecter>AntiOrganicShockwave</explosionCenterEffecter>
+    <explosionCellEffecter>AntiOrgElectricityArc</explosionCellEffecter>
+    <explosionCellEffecterChance>0.1</explosionCellEffecterChance>
+    <explosionCellEffecterMaxRadius>10</explosionCellEffecterMaxRadius>
+    <soundExplosion>Explosion_MechBandShockwave</soundExplosion>
+    <expolosionPropagationSpeed>0.3</expolosionPropagationSpeed>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <corpseDamageFactor>20</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="PSIBullet">
+    <defName>BulletHealthBlight</defName>
+    <label>health blight bullet</label>
+    <additionalHediffs>
+      <li>
+        <hediff>HealthBlight1</hediff>
+        <severityPerDamageDealt>1.0</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DutyDef>
+    <defName>MilitorQueen</defName>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_AIFightEnemies">
+          <targetAcquireRadius>150</targetAcquireRadius>
+          <targetKeepRadius>150</targetKeepRadius>
+          <allowTurrets>true</allowTurrets>
+        </li>
+        <li Class="JobGiver_AITrashColonyClose" />
+        <li Class="JobGiver_AITrashBuildingsDistant" />
+        <li Class="JobGiver_AIGotoNearestHostile" />
+        <li Class="JobGiver_AITrashBuildingsDistant">
+          <attackAllInert>true</attackAllInert>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <EffecterDef>
+    <defName>SupremeApocrionAttached</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>Mote_AntiOrganicSparkArch</moteDef>
+        <burstCount>1~3</burstCount>
+        <chancePerTick>0.015</chancePerTick>
+        <rotation>-150~-150</rotation>
+        <spawnLocType>OnTarget</spawnLocType>
+        <scale>3.0~3.2</scale>
+        <positionRadius>0.7</positionRadius>
+        <attachToSpawnThing>true</attachToSpawnThing>
+        <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <moteDef>Mote_ApocritonPulse</moteDef>
+        <burstCount>1</burstCount>
+        <rotation>-150~150</rotation>
+        <ticksBetweenMotes>76</ticksBetweenMotes>
+        <positionRadius>0</positionRadius>
+        <attachToSpawnThing>true</attachToSpawnThing>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+	<HediffDef>
+      <defName>ShockPain</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(1, 0.8, 0.2)</defaultLabelColor>
+      <label>Shock pain</label>
+      <description>None life threatning condition that amplify the victim's pain threshold.</description>
+      <makesSickThought>true</makesSickThought>
+      <stages>
+      <li>
+        <painFactor>1.2</painFactor>
+      </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Effecter">
+          <stateEffecter>Shock</stateEffecter>
+        </li>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1200</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(0.5,0.15,0.09)</defaultLabelColor>
+      <isBad>false</isBad>
+      <defName>Inflammable</defName>
+      <label>Inflammable</label>
+      <description>A dangerous condition that leaves the victim vulnerable to fire.</description>
+      <maxSeverity>1</maxSeverity>
+      <stages>
+       <li>      
+          <statOffsets> 
+            <ArmorRating_Heat>-2.0</ArmorRating_Heat>
+            <Flammability>6.0</Flammability>
+          </statOffsets> 
+       </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1440</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(0.5,0.15,0.09)</defaultLabelColor>
+      <isBad>false</isBad>
+      <defName>IncendiaryBody</defName>
+      <label>Incendiary body</label>
+      <description>A dangerous condition caused by unstable chemicals, which causes the victims body increadibly vulnerable to fire.</description>
+      <maxSeverity>1</maxSeverity>
+      <stages>
+       <li>      
+          <statOffsets> 
+            <ArmorRating_Heat>-2.0</ArmorRating_Heat>
+            <Flammability>6.0</Flammability>
+          </statOffsets> 
+       </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1440</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>VitalityDrain</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <description>A health condition that raises the victim's hunger and rest needs.</description>
+      <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+      <label>Vitality drain</label>
+      <makesSickThought>true</makesSickThought>
+      <maxSeverity>1</maxSeverity>
+      <comps>
+        <li Class="HediffCompProperties_Immunizable">
+          <severityPerDayNotImmune>-4.0</severityPerDayNotImmune>
+        </li>
+      </comps>
+      <stages>
+        <li>
+          <hungerRateFactor>2.0</hungerRateFactor>
+          <restFallFactor>2.0</restFallFactor>
+        </li>
+      </stages>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>ArmorBreaker</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(255, 115, 105)</defaultLabelColor>
+      <label>Armor breaker</label>
+      <description>The victim's armor are now null and void once inflicted with this condition.</description>
+      <makesSickThought>true</makesSickThought>
+      <stages>
+      <li>       
+        <statOffsets>
+          <ArmorRating_Sharp>-0.9</ArmorRating_Sharp>
+          <ArmorRating_Blunt>-0.9</ArmorRating_Blunt>
+          <ArmorRating_Heat>-0.9</ArmorRating_Heat>
+        </statOffsets>
+      </li>   
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1260</min>
+            <max>1260</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>Instantkill</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(95, 10, 50)</defaultLabelColor>
+      <label>Instant kill</label>
+      <description>Death.</description>
+      <stages>
+        <li>
+          <lifeThreatening>true</lifeThreatening>
+          <deathMtbDays>0.0105</deathMtbDays>
+        </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>60</min>
+            <max>60</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+	<HediffDef>
+      <defName>HealthBlight1</defName>
+      <hediffClass>HediffWithComps</hediffClass>
+      <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+      <label>Severe health blight</label>
+      <description>An increadibly dangerous health condition that sets the target's capacities to 35% temporarily, along with an increased pain sensitivity and severe movement reduction.</description>
+      <makesSickThought>true</makesSickThought>
+	  <maxSeverity>1</maxSeverity>
+      <stages>
+        <li>
+          <painFactor>1.2</painFactor>     
+		  <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.35</setMax>
+            </li>
+			<li>
+              <capacity>Moving</capacity>
+              <setMax>0.35</setMax>
+            </li>
+			<li>
+              <capacity>Sight</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>BloodPumping</capacity>
+              <setMax>0.35</setMax>
+            </li>
+             <li>
+              <capacity>Metabolism</capacity>
+              <setMax>0.35</setMax>
+            </li>
+            <li>
+              <capacity>Breathing</capacity>
+              <setMax>0.35</setMax>
+            </li>
+          </capMods>
+		 </li>
+      </stages>
+      <comps>
+        <li Class="HediffCompProperties_Effecter">
+          <stateEffecter>DarkShock</stateEffecter>
+        </li>
+        <li Class="HediffCompProperties_Disappears">
+          <disappearsAfterTicks>
+            <min>1200</min>
+            <max>1800</max>
+          </disappearsAfterTicks>
+        </li>
+      </comps>
+    </HediffDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_LaserBlasterEX</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>0.2</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShotEX</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>0.25</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_DeathRayz</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>0.2</solidTime>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DeathRayShot</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>0.25</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_ValyrianBlast_Charge</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Things/Misc/MoteMisc/ExtinctionRay/ExtinctionRay_Charge</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteHellfireCannon_Charge</shaderType>
+      <shaderParameters>
+        <_RandomTex>/Things/Mote/RandomFlicker</_RandomTex>
+        <_FlickerFrequency>0.25</_FlickerFrequency>
+        <_FlickerAmount>0.6</_FlickerAmount>
+        <_InnerCircleIntensity>0.1</_InnerCircleIntensity>
+        <_InnerCircleSize>0.4</_InnerCircleSize>
+        <_InnerCircleShimmerAmount>0.14</_InnerCircleShimmerAmount>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>ChargeBlastz</defName>
+    <label>charge blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/ChargedCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>ChargeBlast</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>PlasmaBlastz</defName>
+    <label>plasma blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>BlastFlame</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+	  <screenShakeFactor>1.5</screenShakeFactor>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+	<thingClass>Projectile_Explosive</thingClass>
+    <defName>AntiGrainGrenade</defName>
+    <label>antigrain grenade</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/UltraGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>AntiHumanNanites</damageDef>
+      <explosionRadius>15.9</explosionRadius >
+	  <explosionDelay>300</explosionDelay>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>PSIBlast</defName>
+    <label>psychic blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>1000</speed>
+	  <damageDef>PsiExplosion</damageDef>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
+	  <explosionRadius>10</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>AntiOrgBlast</defName>
+    <label>anti-organic warhead</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>150</speed>
+	  <damageDef>AntiOrganicBlast</damageDef>
+	  <explosionRadius>5.9</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <thingClass>Projectile_Explosive</thingClass>
+    <defName>AntiOrgPreOrbital</defName>
+    <label>anti-organic blast</label>
+    <graphicData>
+      <drawSize>(1,20)</drawSize>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>AntiHumanNanitesFlame</damageDef>
+      <speed>900</speed>
+      <explosionRadius>10.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof></soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+      <postExplosionSpawnThingDef>AntiOrgPostOrbital</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.08</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DeathShotz</defName>
+    <label>death shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<comps>
+	  <li Class="Kraltech_Industries.LaserBeamz_CompProperties">
+	    <laserMote>Mote_DeathRayz</laserMote>
+	  </li>
+	</comps>
+	<thingClass>Kraltech_Industries.LaserBeamzProj</thingClass>
+    <projectile>
+      <damageDef>BulletHealthBlight</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>70</damageAmountBase>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <SoundDef>
+        <defName>Explosion_PlasmaCannon</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>PlasmaExplosion</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_Doom</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DoomMakerShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_MechChargedSniperRifle</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MechChargeRifleShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_LaserBlaster</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>LaserGunShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_ChainGun</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>GatlingGunShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_EmpressBlade</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>BallistaShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+        <defName>Shot_HeavyLaser</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>HeavyLaserShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34.2941</min>
+                    <max>40.2941</max>
+                </volumeRange>
+                <pitchRange>
+                    <min>1.191765</min>
+                    <max>1.231435</max>
+                </pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_ExtinctionRay</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <sustainStopSound>ExtinctionRay_Shooting_Resolve</sustainStopSound>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/ExtinctionRay/Fire</clipFolderPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>30</volumeRange>
+        <sustainRelease>0.02</sustainRelease>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_MechLaserBlasterTurret</defName>
+      <label>laser blaster turret</label>
+      <description>A heavy laser blaster turret that shoots deadly laser bolts onto enemies of great quantity.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechLaserBlasterTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechLaserBlasterTurret</defaultProjectile>
+          <range>50.9</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>40</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_LaserBlaster</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlasterTurret</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>VitalityDrainBullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+         <li>
+          <amount>250</amount>
+          <chance>0.2</chance>
+          <def>Incinerate</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_ChainGunTurret</defName>
+      <label>chaingun turret</label>
+      <description>A stub chaingun turret that can shoot armor piercing bullets at the back.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechChaingunTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_ChainGunTurret</defaultProjectile>
+          <range>50.9</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>30</burstShotCount>
+          <soundCast>Shot_ChainGun</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChainGunTurret</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/MechChaingunShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>5</armorPenetrationBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>0.4</chance>
+        <def>ShockBullets</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+      <defName>Gun_MechLaserBlasterTurretEX</defName>
+      <label>laser blaster turret</label>
+      <description>A heavy laser blaster turret that shoots even more deadly laser beams onto enemies of great quantity.</description>
+      <tradeability>None</tradeability>
+      <destroyOnDrop>true</destroyOnDrop>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/Turret/MechLaserBlasterTurret</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.3, 2.3</drawSize>
+      </graphicData>
+      <statBases>
+        <Mass>49</Mass>
+        <AccuracyTouch>1.00</AccuracyTouch>
+        <AccuracyShort>1.00</AccuracyShort>
+        <AccuracyMedium>1.00</AccuracyMedium>
+        <AccuracyLong>1.00</AccuracyLong>
+      </statBases>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechLaserBlasterTurretEX</defaultProjectile>
+          <range>75</range>
+		  <defaultCooldownTime>2.5</defaultCooldownTime>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>150</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_LaserBlaster</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>20</muzzleFlashScale>
+		  <linkedBodyPartsGroup>BulbTurret</linkedBodyPartsGroup>
+		  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        </li>
+      </verbs>
+   </ThingDef>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlasterTurretEX</defName>
+    <label>laser bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<comps>
+	  <li Class="Kraltech_Industries.LaserBeamz_CompProperties">
+	    <laserMote>Mote_LaserBlasterEX</laserMote>
+	  </li>
+	</comps>
+	<thingClass>Kraltech_Industries.LaserBeamzProj</thingClass>
+    <projectile>
+      <damageDef>ArmorBreakerBullet</damageDef>
+      <damageAmountBase>65</damageAmountBase>
+	  <armorPenetrationBase>5</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MechChaingun</defName>
+    <label>mech chaingun</label>
+    <description>A powerful chaingun designed for crowd control and suppression. This heavy weapon possess the best armor penetration and inflict both extra bleeding and extra pain against enemies upon impact.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MechWeapons/MechChaingun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.3, 2.3</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<techLevel>Spacer</techLevel>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_EnergyWeapon</soundInteract>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+      <Mass>80</Mass>
+      <AccuracyTouch>2.0</AccuracyTouch>
+      <AccuracyShort>2.0</AccuracyShort>
+      <AccuracyMedium>2.0</AccuracyMedium>
+      <AccuracyLong>2.0</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets> 
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+		<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+        <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+        <defaultProjectile>Bullet_MechChaingun</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>50.9</range>
+		<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>30</burstShotCount>
+		<minRange>4.9</minRange>
+        <soundCast>Shot_ChainGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+    </comps>
+    <weaponTags>
+      <li>MechChaingun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechChaingun</defName>
+    <label>chaingun bullet</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/MechChaingunShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>BleedBullets</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>1.0</chance>
+        <def>ShockBullets</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_MechLaserBlaster</defName>
+    <label>mech laser blaster</label>
+    <description>Rapid fire laser blaster with the highest base damage for an automatic energy weapon. Like a chaingun, it can unleash a storm of high power laser projectiles that can take down any threats with excellent efficientcy. Such a weapon is only seen being wielded by heavy-class mechanoids with abundant energy supply stored within them.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MechWeapons/MechLaserBlaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.0, 2.0</drawSize>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+	<techLevel>Spacer</techLevel>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>true</destroyOnDrop>
+    <soundInteract>Interact_EnergyWeapon</soundInteract>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+      <Mass>80</Mass>
+      <AccuracyTouch>1.0</AccuracyTouch>
+      <AccuracyShort>1.0</AccuracyShort>
+      <AccuracyMedium>1.0</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets> 
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MechLaserBlaster</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>50.9</range>
+		<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>25</burstShotCount>
+		<minRange>4.9</minRange>
+        <soundCast>Shot_LaserBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+    </comps>
+    <weaponTags>
+      <li>MechLaserBlaster</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MechLaserBlaster</defName>
+    <label>laser bolt</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/LaserShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Inflamable</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+	  <armorPenetrationBase>3</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>120</speed>
+	  <extraDamages>
+       <li>
+        <amount>9</amount>
+        <chance>1.0</chance>
+        <def>Flame</def>
+       </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+      <defName>Gun_MechHeavyLaserBlaster</defName>
+      <label>mech heavy laser blaster</label>
+      <description>A larger version of the mech laser blaster that was used to arm capital-class mech ships, now redesigned to be used by the supreme apocriton.</description>
+      <graphicData>
+        <texPath>Things/Weapons/MechWeapons/MechExtinctionRay</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+	    <drawSize>3.9, 3.9</drawSize>
+      </graphicData>
+	  <equippedAngleOffset>45</equippedAngleOffset>
+	  <techLevel>Spacer</techLevel>
+	  <tradeability>None</tradeability>
+	  <destroyOnDrop>true</destroyOnDrop>
+      <soundInteract>Interact_EnergyWeapon</soundInteract>
+      <statBases>
+        <MarketValue>6000</MarketValue>
+        <Mass>250</Mass>
+        <AccuracyTouch>2.0</AccuracyTouch>
+        <AccuracyShort>2.0</AccuracyShort>
+        <AccuracyMedium>2.0</AccuracyMedium>
+        <AccuracyLong>2.0</AccuracyLong>
+        <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      </statBases>
+	  <equippedStatOffsets> 
+      </equippedStatOffsets>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_MechHeavyLaserBlaster</defaultProjectile>
+          <warmupTime>1</warmupTime>
+          <range>50.9</range>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+          <burstShotCount>70</burstShotCount>
+		  <minRange>4.9</minRange>
+          <soundCast>Shot_HeavyLaser</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>10</muzzleFlashScale>
+       </li>
+       </verbs>
+       <tools>
+        <li>
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>2</cooldownTime>
+         </li>
+        </tools>
+	    <comps>
+        </comps>
+        <weaponTags>
+          <li>MechHeavyLaserBlaster</li>
+        </weaponTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>Bullet_MechHeavyLaserBlaster</defName>
+      <label>laser bolt</label>
+      <graphicData>
+        <texPath>Things/Misc/Bullets/LaserShotHeavy</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1.5, 4)</drawSize>
+	    <shaderType>MoteGlow</shaderType>
+      </graphicData>
+      <projectile>
+        <damageDef>ArmorBreakerBullet</damageDef>
+        <damageAmountBase>50</damageAmountBase>
+	    <armorPenetrationBase>5</armorPenetrationBase>
+        <stoppingPower>1</stoppingPower>
+        <speed>180</speed>
+		<extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+        </extraDamages>
+      </projectile>
+    </ThingDef>
+

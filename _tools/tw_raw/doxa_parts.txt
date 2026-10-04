@@ -1,0 +1,111 @@
+<BodyPartDef>
+  <defName>Doxa0_DeepLogic_NeuronCore</defName>
+  <label>Deep Logic Core</label>
+  <hitPoints>30</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <bleedRate>0</bleedRate>
+  <tags>
+    <li>ConsciousnessSource</li>
+  </tags>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_Turret_Mount</defName>
+  <label>Antiparticle Turret Mount</label>
+  <hitPoints>60</hitPoints>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <bleedRate>0</bleedRate>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_AntiParticleEmitter</defName>
+  <label>Antiparticle Emitter</label>
+  <hitPoints>50</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_Hatch_Module</defName>
+  <label>Shellsplitter Incubation Chamber</label>
+  <hitPoints>60</hitPoints>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_Sensor_Cluster</defName>
+  <label>Frontal Sensor Array</label>
+  <hitPoints>30</hitPoints>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <frostbiteVulnerability>1</frostbiteVulnerability>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <tags>
+    <li>SightSource</li>
+    <li>HearingSource</li>
+  </tags>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_FireControlModule</defName>
+  <label>Fire Control Coordination Module</label>
+  <hitPoints>40</hitPoints>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <solid>false</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  
+  <canSuggestAmputation>false</canSuggestAmputation>
+</BodyPartDef>
+
+<BodyPartDef>
+  <defName>Doxa0_LimbCluster</defName>
+  <label>Multi-Claw Propulsion Cluster</label>
+  <hitPoints>40</hitPoints>
+  <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  <solid>true</solid>
+  <skinCovered>false</skinCovered>
+  <bleedRate>0</bleedRate>
+  <tags>
+    <li>MovingLimbCore</li>
+  </tags>
+</BodyPartDef>
+
+  <BodyPartDef ParentName="Doxa0Dorsal">
+    <defName>Doxa0_Dorsal_First</defName>
+    <label>Dorsal Segment One</label>
+    <hitPoints>80</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="Doxa0Dorsal">
+    <defName>Doxa0_Dorsal_Second</defName>
+    <label>Dorsal Segment Two</label>
+    <hitPoints>75</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="Doxa0Dorsal">
+    <defName>Doxa0_Dorsal_Third</defName>
+    <label>Dorsal Segment Three</label>
+    <hitPoints>75</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="Doxa0Dorsal">
+    <defName>Doxa0_Dorsal_Fourth</defName>
+    <label>Dorsal Segment Four</label>
+    <hitPoints>70</hitPoints>
+  </BodyPartDef>
+

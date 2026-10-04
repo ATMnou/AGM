@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MMLU_Pro.label>MMLU-Pro</AGM_MMLU_Pro.label>
+  <AGM_MMLU_Pro.description>更難、更純凈、更偏重推理的基準測試套件。通過它即證明鑄造廠能穩定訓練中量級機體。\n\n機械師制造并控制中量級AGM機甲所需的技術。</AGM_MMLU_Pro.description>
+  <AGM_TerminalBench.label>Terminal-Bench</AGM_TerminalBench.label>
+  <AGM_TerminalBench.description>在原始終端中評分的長程任務試煉：構建、破壞、調試、生存。只有跑完全程的機體才有資格搭載重裝AGM核心。\n\n機械師制造并控制重量級AGM機甲所需的技術。</AGM_TerminalBench.description>
+  <AGM_HumanitysLastExam.label>Humanity's Last Exam</AGM_HumanitysLastExam.label>
+  <AGM_HumanitysLastExam.description>人類以告別之心寫下的最終基準：五百道沒有標準答案的專家級問題，由另一個AI評分。通過它的存在已不再是工具——而是巨獸。\n\n機械師制造并控制巨獸級AGM機甲所需的技術。</AGM_HumanitysLastExam.description>
+
+</LanguageData>

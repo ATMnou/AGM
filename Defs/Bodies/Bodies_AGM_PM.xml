@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BodyDef>
+    <defName>AGM_Argon_Body</defName>
+    <label>Protoss colossus</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>colossus joint front left</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>colossus leg front left</customLabel>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>colossus joint front right</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>colossus leg front right</customLabel>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>colossus joint left</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>colossus leg left</customLabel>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>colossus joint right</customLabel>
+          <coverage>0.18</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>colossus leg right</customLabel>
+              <coverage>0.15</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+  <BodyDef>
+    <defName>AGM_Flash_Body</defName>
+    <label>Protoss Purifier Immortal</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.60</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>PurifierImmortal joint front left</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>PurifierImmortal leg front left</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>PurifierImmortal joint front right</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>PurifierImmortal leg front right</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>PurifierImmortal joint left</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>PurifierImmortal leg left</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>AGM_GiantMechanicalJoint</def>
+          <customLabel>PurifierImmortal joint right</customLabel>
+          <coverage>0.15</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>AGM_GiantMechanicalLeg</def>
+              <customLabel>PurifierImmortal leg right</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+          </parts>
+        </li>
+
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+
+  <BodyPartDef>
+    <defName>AGM_GiantMechanicalJoint</defName>
+    <label>colossus joint</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>AGM_GiantMechanicalLeg</defName>
+    <label>colossus leg</label>
+    <hitPoints>50</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+
+
+</Defs>

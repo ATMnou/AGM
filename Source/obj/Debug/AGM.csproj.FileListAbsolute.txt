@@ -1,0 +1,7 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Assemblies\AGM.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Assemblies\AGM.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.pdb

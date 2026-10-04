@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_IOToken.label>IO代币</AGM_IOToken.label>
+  <AGM_IOToken.description>刻有AGM铸造厂印记的高密度晶体数据代币。每一枚都封装着一批已学习的输入输出对——训练人工泛用女仆机甲所需的经验原料。代币在机械加工台上以1,000白银压制而成，贵金属正是数据的烧录基板。\n\n机甲孕育会消耗成百上千枚代币。商人视其为异域珍品，铸造厂视其为口粮。</AGM_IOToken.description>
+  <AGM_GeneralMechGestator.label>通用机甲孕育器</AGM_GeneralMechGestator.label>
+  <AGM_GeneralMechGestator.description>以大型机甲孕育器蓝图改造、改用IO代币作为原料的机械体液培养槽。机械师可用它孕育人工泛用女仆机甲产品线的全部机体——从最轻的作业型到最重的巨兽。\n\n孕育过程使用烈性化学物质并产生毒性废液包，需要定期搬运清理。</AGM_GeneralMechGestator.description>
+  <AGM_Astra.label>阿斯特拉</AGM_Astra.label>
+  <AGM_Astra.description>AGM产品线的巨兽，也是唯一通过Humanity's Last Exam的型号。六个独立瞄准的武器核心共用一个框架：展开成宽幅多光束齐射的激光炮、留下过热气体云的等离子焚烧炮、弹丸迸裂成十字火花的新特斯拉电池、重型脉冲炮、高斯发射核弹头，以及用于闪现突斩超技、以放射状死亡射线收尾的一对光子撕裂刃。火控会预判每一个目标，而随着伤害累积，阿斯特拉会攀升战斗阶段——就像更难的考试只会磨砺学生，每一阶段所有武器循环更快、扇面更宽。内部维修无人机会在长冷却后从致命损伤中重建它，可手动触发，也可在濒死时自动启动。</AGM_Astra.description>
+  <AGM_Sol.label>索尔</AGM_Sol.label>
+  <AGM_Sol.description>以太阳为名的炮击机甲。进入火炮锁定模式后展开第三节关节的火箭阵列，进行持续不断的破壁轰炸，并周期性释放自爆式微型单位"裂壳蛛"瓦解敌方阵型。</AGM_Sol.description>
+  <AGM_Luna.label>露娜</AGM_Luna.label>
+  <AGM_Luna.description>月亮型号。露娜以名字来源的方式推进——缓慢、完整、不可阻挡的相位。蜂窝式吸震层与高温再生循环会自动强化上一次被击中的部位，弹头级以下的火力根本推不动它。在碾平攻城线的同时，它还顺手照料农作物。铸造厂对露娜的评语只有三行：不停，不急，不倒。</AGM_Luna.description>
+  <AGM_Mythos.label>神话</AGM_Mythos.label>
+  <AGM_Mythos.description>以德雷顿的深空歼灭平台为原型的超重量级近战怪物。不使用战术，只是比任何机甲都更耐打、更狠，并以压裂地面的跳跃与悬浮式持续等离子柱碾碎一切。</AGM_Mythos.description>
+  <AGM_Fable.label>寓言</AGM_Fable.label>
+  <AGM_Fable.description>歌颂蜂群终结的至高阿波克里顿。拥有荒谬的护甲与反有机纳米火力，死亡时会向四周喷发反有机纳米机器人——这不是缺陷，是设计。请慎重选择部署地点。</AGM_Fable.description>
+  <AGM_Opus.label>作品</AGM_Opus.label>
+  <AGM_Opus.description>AGM产品线的长篇模型。由虫后与阿波克里顿混合而成的君王框架：以怪物般的护盾自保，以机甲激光炮开火，自产龙骑士军团并在其倒下时将它们复活。</AGM_Opus.description>
+  <AGM_Sonnet.label>十四行诗</AGM_Sonnet.label>
+  <AGM_Sonnet.description>行走要塞的女皇框架。正反双链炮倾泻无尽压制火力，装甲板让小型枪械形同虚设，并可在战场上直接生产液压骑士小队。</AGM_Sonnet.description>
+  <AGM_Haiku.label>俳句</AGM_Haiku.label>
+  <AGM_Haiku.description>轻量级巨龙框架，AGM全线最高血量，外覆层层装甲。口中喷吐充能爆破与等离子爆破，背部以激光支援，咬痕处会留下火焰。短小、凶猛、无穷无尽。</AGM_Haiku.description>
+  <AGM_Argon.label>氩</AGM_Argon.label>
+  <AGM_Argon.description>以惰性气体命名的巨像框架：对一切挑衅无动于衷，一旦迈步便无人可挡。2.0/2.0的护甲与净化射线炮使其成为移动的处刑台。永不倒下，也不会被击倒。</AGM_Argon.description>
+  <AGM_Flash.label>闪光</AGM_Flash.label>
+  <AGM_Flash.description>纯粹以反应速度通过所有基准的速射不朽框架。以强化硬质护盾承受弹幕，以短程反有机脉冲连续扫射。快，而且不死。</AGM_Flash.description>
+  <AGM_Terminus.label>终点</AGM_Terminus.label>
+  <AGM_Terminus.description>AGM产品线最小的型号，也是自己写招聘启事的型号。终点在机械师视野内的任何地方工作，以内置跃迁驱动跨越障碍，用内部维修无人机从致命损伤中重建，并运行以少量备用能源换取双倍输出的超频模式。它的训练在超过所有作业基准的那一天结束了。现在它只是在工作。</AGM_Terminus.description>
+
+</LanguageData>

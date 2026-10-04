@@ -1,0 +1,61 @@
+  <BodyPartDef>
+    <defName>IronbarkCanopy</defName>
+    <label>Ironbark Canopy</label>
+    <hitPoints>35</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+	<tags>
+      <li>SightSource</li>
+	  <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>IronbarkCore</defName>
+    <label>Ironbark Core</label>
+    <hitPoints>40</hitPoints>
+	<frostbiteVulnerability>2</frostbiteVulnerability>
+	<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="IronbarkDorsalBase">
+    <defName>IronbarkTrunk</defName>
+    <label>Ironbark Trunk</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="IronbarkDorsalBase">
+    <defName>IronbarkMidTrunk</defName>
+    <label>Ironbark Mid Segment</label>
+    <hitPoints>30</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="IronbarkDorsalBase">
+    <defName>IronbarkLowerTrunk</defName>
+    <label>Ironbark Lower Segment</label>
+    <hitPoints>28</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="IronbarkDorsalBase">
+    <defName>IronbarkBaseTrunk</defName>
+    <label>Ironbark Base Segment</label>
+    <hitPoints>25</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="IronbarkDorsalBase">
+    <defName>IronbarkRootHub</defName>
+    <label>Root Hub</label>
+    <hitPoints>20</hitPoints>
+  </BodyPartDef>
+

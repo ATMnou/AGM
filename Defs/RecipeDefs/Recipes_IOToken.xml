@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- IO Token production - machining table (조립 작업대).          -->
+  <!-- 1,000 silver per token; bulk recipes x4 / x10 are linear.    -->
+  <!-- ============================================================ -->
+
+  <RecipeDef>
+    <defName>AGM_Make_IOToken</defName>
+    <label>make IO token</label>
+    <description>Press 1,000 silver into a single IO token - a dense crystalline data wafer used to gestate Artificial General Maidnoids.</description>
+    <jobString>Making IO token.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1000</workAmount>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>1000</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_IOToken>1</AGM_IOToken>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AGM_Make_IOToken_4</defName>
+    <label>make IO tokens (x4)</label>
+    <description>Press 4,000 silver into four IO tokens - a dense crystalline data wafer used to gestate Artificial General Maidnoids.</description>
+    <jobString>Making IO tokens.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>4000</workAmount>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>4000</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_IOToken>4</AGM_IOToken>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AGM_Make_IOToken_10</defName>
+    <label>make IO tokens (x10)</label>
+    <description>Press 10,000 silver into ten IO tokens - a dense crystalline data wafer used to gestate Artificial General Maidnoids.</description>
+    <jobString>Making IO tokens.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>10000</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_IOToken>10</AGM_IOToken>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_IOToken</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- IO Token - the gestation feedstock of the AGM line.          -->
+  <!-- One token is one unit of learned experience burned during    -->
+  <!-- training. A single gestation run consumes millions of them;  -->
+  <!-- the ledger only records the stack total.                     -->
+  <!-- ============================================================ -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>AGM_IOToken</defName>
+    <label>IO token</label>
+    <description>A dense crystalline data token stamped with the sigil of the AGM foundry. Each one encodes a batch of learned input-output pairs - the raw experience from which artificial general maidnoids are trained.\n\nTokens are pressed from 1,000 silver apiece at a machining table - the precious metal serves as the substrate the data is fired into. Mech gestation consumes them by the hundred. Traders consider them exotic curiosities; the foundry considers them food.</description>
+    <graphicData>
+      <texPath>Item/IOToken</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.02</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>1</Beauty>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <stackLimit>200</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tickerType>Never</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>0</pathCost>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,158 @@
+  <ThingDef ParentName="BaseBullet">
+    <defName>ChargeBlastz</defName>
+    <label>charge blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/ChargedCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>ChargeBlast</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>PlasmaBlastz</defName>
+    <label>plasma blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <damageDef>BlastFlame</damageDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionRadius>4.9</explosionRadius>
+	  <screenShakeFactor>1.5</screenShakeFactor>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+	<thingClass>Projectile_Explosive</thingClass>
+    <defName>AntiGrainGrenade</defName>
+    <label>antigrain grenade</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/UltraGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>AntiHumanNanites</damageDef>
+      <explosionRadius>15.9</explosionRadius >
+	  <explosionDelay>300</explosionDelay>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>PSIBlast</defName>
+    <label>psychic blast</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>1000</speed>
+	  <damageDef>PsiExplosion</damageDef>
+	  <armorPenetrationBase>1.5</armorPenetrationBase>
+	  <explosionRadius>10</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>AntiOrgBlast</defName>
+    <label>anti-organic warhead</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BurnBullet_Blast1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+	  <drawSize>(1.5, 3)</drawSize>
+    </graphicData>
+	<thingClass>Projectile_HellsphereCannon</thingClass>
+    <projectile>
+      <speed>150</speed>
+	  <damageDef>AntiOrganicBlast</damageDef>
+	  <explosionRadius>5.9</explosionRadius>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <thingClass>Projectile_Explosive</thingClass>
+    <defName>AntiOrgPreOrbital</defName>
+    <label>anti-organic blast</label>
+    <graphicData>
+      <drawSize>(1,20)</drawSize>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>AntiHumanNanitesFlame</damageDef>
+      <speed>900</speed>
+      <explosionRadius>10.9</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof></soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+      <postExplosionSpawnThingDef>AntiOrgPostOrbital</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.08</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DeathShotz</defName>
+    <label>death shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/DummyBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<comps>
+	  <li Class="Kraltech_Industries.LaserBeamz_CompProperties">
+	    <laserMote>Mote_DeathRayz</laserMote>
+	  </li>
+	</comps>
+	<thingClass>Kraltech_Industries.LaserBeamzProj</thingClass>
+    <projectile>
+      <damageDef>BulletHealthBlight</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>70</damageAmountBase>
+      <speed>1000</speed>
+	  <extraDamages>
+         <li>
+          <amount>45</amount>
+          <chance>0.2</chance>
+          <def>DeathBullet</def>
+         </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>BladeShotz</defName>
+    <label>blade shot</label>
+    <graphicData>
+      <texPath>Things/Misc/Bullets/BladeShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+	  <armorPenetrationBase>5.0</armorPenetrationBase>
+	  <damageAmountBase>150</damageAmountBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+

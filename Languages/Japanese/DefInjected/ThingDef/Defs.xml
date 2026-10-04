@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_IOToken.label>IOトークン</AGM_IOToken.label>
+  <AGM_IOToken.description>AGMファウンドリの紋章が刻まれた高密度の結晶データトークン。ひとつひとつが学習済みの入出力ペアの束であり、人工汎用メイドノイドを訓練するための経験の原料です。トークンは加工台で銀1,000を圧着して1枚ずつ作られ、貴金属がデータの焼付基板として機能します。メカノイドの培養には数百単位のトークンが消費されます。</AGM_IOToken.description>
+
+  <AGM_GeneralMechGestator.label>ジェネラルメック培養槽</AGM_GeneralMechGestator.label>
+  <AGM_GeneralMechGestator.description>大型メック培養槽の設計図を改修し、原料の代わりにIOトークンを養分とするように再設計されたメカナイト流体タンク。機械師はこれひとつで、AGMラインの全メカノイド――最軽量の作業型から最重量のリヴァイアサンまで――を培養できます。</AGM_GeneralMechGestator.description>
+
+  <AGM_Astra.label>アストラ</AGM_Astra.label>
+  <AGM_Astra.description>AGMラインのリヴァイアサンにして、Humanity's Last Examを合格した唯一のモデル。六つの独立照準武器コアがひとつのフレームを共有する：扇状の多ビーム斉射に広がるレーザー砲、過熱ガス雲を残すプラズマ焼却砲、弾体が十字型火花に炸裂するテスラ電池、重量級エクソパルス砲、ガウス発射の核弾頭、そしてブラックダッシュ斬撃の超技の末に放射状デスレイ・ノヴァを炸裂させる一対のフォトンリッパー。火器管制はすべての標的をリードし、損傷が積もるほどアストラは戦闘フェーズを上昇させる――より難しい試験だけが学生を鍛えるように、フェーズごとに全武器の稼働が速くなり、扇が広がる。内部修復ドローンは長いクールダウンと引き換えに致命傷から再構築し、手動でも、瀕死の瞬間にも自動で作動する。</AGM_Astra.description>
+
+  <AGM_Sol.label>ソル</AGM_Sol.label>
+  <AGM_Sol.description>太陽の名を持つ砲撃型メイドノイド。砲撃固定モードで第3関節のロケットアレイを展開し、絶え間ない破壁砲撃を浴びせ、周期的に自爆型マイクロユニット“シェルスプリッター”を放出して敵陣形を崩壊させる。</AGM_Sol.description>
+
+  <AGM_Luna.label>ルナ</AGM_Luna.label>
+  <AGM_Luna.description>月のモデル。ルナはその名の通りに進む――緩やかで、完全で、止められない位相のように。ハニカム構造の衝撃吸収層と高温再生サイクルが最後に被弾した部位を自己強化し、弾頭級の火力でなければ押し戻せない。攻城線を削り平らにしている間も農作業はお手のもの。鋳造所のルナ評価メモは三行しかない：止まらない、急がない、倒れない。</AGM_Luna.description>
+
+  <AGM_Mythos.label>ミュトス</AGM_Mythos.label>
+  <AGM_Mythos.description>ドレイドンの深宇宙殲滅プラットフォームを原型とする超重量級の近接怪獣。地を割る跳躍と、重力エンジンで浮上して放つ持続型プラズマの柱で敵を粉砕する。</AGM_Mythos.description>
+
+  <AGM_Fable.label>フェーブル</AGM_Fable.label>
+  <AGM_Fable.description>蜂群の終焉を謳う至高のアポクリトン。荒唐無稽な装甲と抗有機ナノマシン火力を備える。死亡時に周囲へ抗有機ナノマシンが爆発する――これは欠陥ではなく設計である。</AGM_Fable.description>
+
+  <AGM_Opus.label>オーパス</AGM_Opus.label>
+  <AGM_Opus.description>AGMラインの長編モデル。ワークイーンとアポクリトンの混合であるウォーロード框架：怪物級のシールドで身を守り、メカレーザーブラスターで射撃し、ドラゴンナイト部隊を自前で生産し、倒れた騎士を復活させる。</AGM_Opus.description>
+
+  <AGM_Sonnet.label>ソネット</AGM_Sonnet.label>
+  <AGM_Sonnet.description>歩く要塞と呼ばれるエンプレス框架。前後のツインチェーンガンで長距離からの絶え間ない制圧射撃を行い、小火器を無意味化する装甲板をまとい、必要なら戦場に油圧ナイト部隊を直接生産する。</AGM_Sonnet.description>
+
+  <AGM_Haiku.label>ハイク</AGM_Haiku.label>
+  <AGM_Haiku.description>軽量級ドラゴン框架。AGM全ライン中最高の体力を誇り、幾重もの装甲板をまとう。口から充能爆破とプラズマ爆破を吐き、背部のレーザーで支援し、噛み跡に炎を残す。</AGM_Haiku.description>
+
+  <AGM_Argon.label>アルゴン</AGM_Argon.label>
+  <AGM_Argon.description>不活性ガスの名を持つコロッサス框架：あらゆる挑発に動じず、歩き出せば誰にも防げない。2.0/2.0の装甲と浄化のレイキャノンを備えた、動く処刑台。倒れず、屈服しない。</AGM_Argon.description>
+
+  <AGM_Flash.label>フラッシュ</AGM_Flash.label>
+  <AGM_Flash.description>反応速度だけであらゆるベンチマークを通過した速射型の不死框架。強化された硬化シールドで弾幕に耐え、短距離の抗有機パルスを掃射し続ける。</AGM_Flash.description>
+
+  <AGM_Terminus.label>ターミナス</AGM_Terminus.label>
+  <AGM_Terminus.description>AGMライン最小のモデル、そして自らの求人票を書いたモデル。ターミナスは機械師の視界内ならどこでも作業し、内蔵スキップドライブで障害物を越え、内部修復ドローンで致命傷から再建し、僅かな予備電力を二倍の出力に換えるオーバークロックを回す。訓練はすべての作業ベンチマークを抜いた日で終わった。今はただ、働いている。</AGM_Terminus.description>
+
+</LanguageData>

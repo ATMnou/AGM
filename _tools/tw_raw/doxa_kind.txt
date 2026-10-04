@@ -1,0 +1,68 @@
+    <PawnKindDef Name="TWMechDoxaKind" ParentName="HeavyMechanoidKind">
+      <defName>TW_Mech_Doxa_Kind</defName>
+      <label>Doxa</label>
+      <race>TW_Mech_Doxa</race>
+      <combatPower>500</combatPower>
+      <maxPerGroup>1</maxPerGroup>
+      <isBoss>true</isBoss>
+      <allowInMechClusters>false</allowInMechClusters>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Races/Doxa</texPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <maskPath>Races/Doxa_C</maskPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+              <drawSize>10</drawSize>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Races/JXGTAncient</texPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <maskPath>Races/Doxa_C</maskPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+              <drawSize>10</drawSize>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>      
+      <weaponTags>
+        <li>TW_Antiparticle_Rail_Mortar</li>
+      </weaponTags>
+	  <skipResistant>true</skipResistant>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="LightMechanoidKind">
+      <defName>TW_Mech_Shellsplitter_Spider</defName>
+      <label>Shellsplitter</label>
+      <labelPlural>裂壳蛛</labelPlural>
+      <race>TW_Mech_Shellsplitter_Spider</race>
+      <allowInMechClusters>false</allowInMechClusters>
+      <forceNoDeathNotification>true</forceNoDeathNotification>
+      <lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Races/Shellsplitter_Spider</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>3</drawSize>
+            <shadowData>
+              <volume>(1, 1, 1)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Races/Ancient_Shellsplitter_SpiderAncient</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>3</drawSize>
+            <shadowData>
+              <volume>(1, 1, 1)</volume>
+            </shadowData>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>      
+      <weaponTags>
+        <li>MeleeWeapon_Shellsplitter</li>
+      </weaponTags>
+    </PawnKindDef>
+

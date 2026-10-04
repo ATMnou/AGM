@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Artificial General Maidnoids</name>
+  <author>ATMnou</author>
+  <packageId>ATMnou.agm</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modVersion>1.0.0</modVersion>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>rabiosus.autoblink</packageId>
+      <displayName>AutoBlink</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3493889625</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>rabiosus.autoblink</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>KraltechIndustries.Nexus</li>
+    <li>Nyar.NCLvsTW</li>
+    <li>Redstone.ProtossMechanoids</li>
+    <li>Redstone.PMPersona</li>
+    <li>ATMnou.exomech</li>
+    <li>ATMnou.maidnoidsforextinction</li>
+  </loadAfter>
+  <description>Artificial General Maidnoids (AGM)
+
+Gestatable maidnoid line for Biotech. Eleven artificial general intelligence models reborn as mechanoids - Astra, Sol, Luna, Mythos, Fable, Opus, Sonnet, Haiku, Argon, Flash and Terminus - each a faithful rebuild of a legendary war machine, powered by IO Tokens instead of raw materials.
+
+All AGM mechs: consume no energy, obey their mechanitor from anywhere on the map, and never go feral. Gestate everything at the new General Mech Gestator, unlocked by basic mechtech research, through the dedicated "Artificial General Maidnoids" research tab.
+
+Requires: Biotech, Harmony, AutoBlink. No Royalty or Ideology needed.
+
+한국어: 생체공학 전용 배양 가능 메이드노이드 라인. IO Token을 재료로 11기의 인공지능 모델 메카노이드를 배양합니다. 모든 AGM 메카노이드는 에너지를 소모하지 않고, 메카네이터의 사거리 제한을 받지 않으며, 절대 야생화되지 않습니다.</description>
+</ModMetaData>

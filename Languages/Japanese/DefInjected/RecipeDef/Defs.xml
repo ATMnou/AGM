@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AGM_GestateAstra.label>アストラを培養</AGM_GestateAstra.label>
+  <AGM_GestateSol.label>ソルを培養</AGM_GestateSol.label>
+  <AGM_GestateLuna.label>ルナを培養</AGM_GestateLuna.label>
+  <AGM_GestateMythos.label>ミュトスを培養</AGM_GestateMythos.label>
+  <AGM_GestateFable.label>フェーブルを培養</AGM_GestateFable.label>
+  <AGM_GestateOpus.label>オーパスを培養</AGM_GestateOpus.label>
+  <AGM_GestateSonnet.label>ソネットを培養</AGM_GestateSonnet.label>
+  <AGM_GestateHaiku.label>ハイクを培養</AGM_GestateHaiku.label>
+  <AGM_GestateArgon.label>アルゴンを培養</AGM_GestateArgon.label>
+  <AGM_GestateFlash.label>フラッシュを培養</AGM_GestateFlash.label>
+  <AGM_GestateTerminus.label>ターミナスを培養</AGM_GestateTerminus.label>
+  <AGM_Make_IOToken.label>IOトークンを作成</AGM_Make_IOToken.label>
+  <AGM_Make_IOToken.description>銀1,000を圧着してIOトークン1枚を作成します――人工汎用メイドノイドの培養に使われる高密度結晶データウェハです。</AGM_Make_IOToken.description>
+  <AGM_Make_IOToken.jobString>IOトークンを作成中。</AGM_Make_IOToken.jobString>
+
+  <AGM_Make_IOToken_4.label>IOトークンを作成 (x4)</AGM_Make_IOToken_4.label>
+  <AGM_Make_IOToken_4.description>銀4,000を圧着してIOトークン4枚を作成します――人工汎用メイドノイドの培養に使われる高密度結晶データウェハです。</AGM_Make_IOToken_4.description>
+  <AGM_Make_IOToken_4.jobString>IOトークンを作成中。</AGM_Make_IOToken_4.jobString>
+
+  <AGM_Make_IOToken_10.label>IOトークンを作成 (x10)</AGM_Make_IOToken_10.label>
+  <AGM_Make_IOToken_10.description>銀10,000を圧着してIOトークン10枚を作成します――人工汎用メイドノイドの培養に使われる高密度結晶データウェハです。</AGM_Make_IOToken_10.description>
+  <AGM_Make_IOToken_10.jobString>IOトークンを作成中。</AGM_Make_IOToken_10.jobString>
+
+</LanguageData>

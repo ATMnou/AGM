@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- Mythos sound defs - verbatim ports of the Glitterworld Destroyer -->
+  <!-- mod's Annihilator SoundDefs (Cont/Defs/SoundDefs/SoundDef.xml), -->
+  <!-- renamed; the mp3 clips themselves are rehosted locally under -->
+  <!-- Sounds/Mythos/. -->
+  <!-- ============================================================ -->
+
+  <SoundDef>
+    <defName>Mythos_DoJump</defName>
+    <context>MapOnly</context>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Mythos/Mythos_Jump</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>80</volumeRange>
+        <pitchRange>0.8~1.2</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Mythos_PreJump</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <muteWhenPaused>true</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Mythos/Mythos_PreJump</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~50</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Mythos_Laser</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>true</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Mythos/Mythos_Laser</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <pitchRange>1</pitchRange>
+        <distRange>0~50</distRange>
+        <sustainLoop>True</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Mythos_Transform</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <muteWhenPaused>true</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Mythos/Mythos_Transform</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~50</distRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

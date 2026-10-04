@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef Name="AGM_KralBossBase" ParentName="HeavyMechanoid" Abstract="True">
+    <statBases>
+      <MarketValue>5500</MarketValue>
+      <ControlTakingTime>30</ControlTakingTime>
+      <BandwidthCost>3</BandwidthCost>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <baseHealthScale>10.5</baseHealthScale>
+    </race>
+    <butcherProducts Inherit="False">
+      <Steel>500</Steel>
+      <Plasteel>250</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+<ThingDef ParentName="AGM_KralBossBase">
+    <defName>AGM_Fable</defName>
+    <label>supreme apocriton</label>
+    <description>The story the hive tells about its own ending, rewritten by the AGM foundry with the happy part left out. Fable pairs absurd armor values with an arsenal that touches only living things: anti-organic grenades, blast shells and an orbital lance that walk straight through machines and burn everything else. Its death is a feature - a hemisphere of anti-organic nanites on collapse - so site it like an argument you intend to finish.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>4</BandwidthCost>      <MoveSpeed>2.5</MoveSpeed>
+	  <AGM_HeatNullNaniteResistance>4.0</AGM_HeatNullNaniteResistance>
+	  <AGM_HeatNullNaniteEnvironmentResistance>4.0</AGM_HeatNullNaniteEnvironmentResistance>
+	  <AGM_ColdNullNaniteResistance>4.0</AGM_ColdNullNaniteResistance>
+	  <AGM_ColdNullNaniteEnvironmentResistance>4.0</AGM_ColdNullNaniteEnvironmentResistance>
+	  <AGM_RadiationResistance>4.0</AGM_RadiationResistance>
+	  <AGM_RadiationEnvironmentResistance>4.0</AGM_RadiationEnvironmentResistance>
+	  <AGM_AntiOrgToxinResistance>4.0</AGM_AntiOrgToxinResistance>
+	  <AGM_AntiOrgToxinEnvironmentResistance>4.0</AGM_AntiOrgToxinEnvironmentResistance>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+	  <IncomingDamageFactor>0.2</IncomingDamageFactor>
+      <MeleeDoorDamageFactor>1000</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>AGM_Body_Fable</body>
+      <baseBodySize>7</baseBodySize>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <baseHealthScale>1000</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+	  <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+		<armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>3000000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+	  <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>AGM_Urchin</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1500</startingIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	  <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Gun_MechLaserBlasterTurretEX</turretDef>
+        <angleOffset>-90</angleOffset>
+        <autoAttack>false</autoAttack>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>0</wickTicks>
+        <explosiveRadius>55.9</explosiveRadius>
+        <explodeOnKilled>true</explodeOnKilled>
+        <explosiveDamageType>AGM_Damage_AntiHumanNanites</explosiveDamageType>
+        <propagationSpeed>0.5</propagationSpeed>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <extraInspectStringKey>MechStunPulseWarning</extraInspectStringKey>
+      </li>
+	  <li Class="CompProperties_Effecter">
+        <effecterDef>AGM_SupremeApocrionAttached</effecterDef>
+      </li>
+    </comps>
+  </ThingDef><PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Fable</defName>
+    <label>supreme apocriton</label>
+    <labelPlural>supreme apocritons</labelPlural>
+    <race>AGM_Fable</race>
+    <combatPower>9500</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Fable</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>AGM_MechHeavyLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>	  
+      <li>ResurrectionMech</li>
+	  <li>AGM_AntiOrganicGrenade</li>
+	  <li>AGM_AntiOrganicBlast</li>
+	  <li>AGM_AntiOrganicOrbitalStrike</li>
+	  <li>AGM_DeathRay</li>
+	  <li>LongjumpMech</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="AGM_KralBossBase">
+    <defName>AGM_Opus</defName>
+    <label>dragon warlord</label>
+    <description>The AGM line's long-form model: it composes slowly and resolves absolutely. Opus holds the line behind a monstrous shield bubble, answers at range with a mech laser blaster, fabricates its own dragon-knight retinue in the field, and raises the fallen back into the fight. Survivors of an Opus engagement all report the same lesson - the battle ends when Opus decides it ends.</description>
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>3</BandwidthCost>      <MoveSpeed>2.5</MoveSpeed>
+	  <AGM_HeatNullNaniteResistance>4.0</AGM_HeatNullNaniteResistance>
+	  <AGM_HeatNullNaniteEnvironmentResistance>4.0</AGM_HeatNullNaniteEnvironmentResistance>
+	  <AGM_ColdNullNaniteResistance>4.0</AGM_ColdNullNaniteResistance>
+	  <AGM_ColdNullNaniteEnvironmentResistance>4.0</AGM_ColdNullNaniteEnvironmentResistance>
+	  <AGM_RadiationResistance>4.0</AGM_RadiationResistance>
+	  <AGM_RadiationEnvironmentResistance>4.0</AGM_RadiationEnvironmentResistance>
+	  <AGM_AntiOrgToxinResistance>4.0</AGM_AntiOrgToxinResistance>
+	  <AGM_AntiOrgToxinEnvironmentResistance>4.0</AGM_AntiOrgToxinEnvironmentResistance>
+	  <IncomingDamageFactor>0.02</IncomingDamageFactor>
+      <EnergyShieldRechargeRate>1.2</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>10</EnergyShieldEnergyMax>
+      <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
+      <EMPResistance>0.99</EMPResistance>
+	  <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.90</ArmorRating_Sharp>
+	  <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>AGM_Body_Warlord</body>
+      <baseBodySize>5</baseBodySize>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+        
+      </lifeStageAges>
+      <baseHealthScale>30.2</baseHealthScale>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+	  <li Class="CompProperties_ProjectileInterceptor">
+        <radius>5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.0, 0.8, 0.0)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <hitPoints>40000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>AGM_KnightWarlord</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
+        <startingIngredientCount>1000</startingIngredientCount>
+        <maxIngredientCount>1000</maxIngredientCount>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+    </comps>
+  </ThingDef>  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Opus</defName>
+    <label>dragon warlord</label>
+    <labelPlural>dragon warlords</labelPlural>
+    <race>AGM_Opus</race>
+    <combatPower>9000</combatPower>
+    <maxPerGroup>2</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+        <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Opus</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>    
+	<weaponTags>
+	  <li>AGM_MechLaserBlaster</li>
+    </weaponTags>
+	<weaponMoney>9999~9999</weaponMoney>
+	<techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>ResurrectionMech</li>
+	  <li>AGM_PsychicBlast</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>  
+  </PawnKindDef>
+
+
+</Defs>

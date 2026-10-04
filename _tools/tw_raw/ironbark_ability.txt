@@ -1,0 +1,36 @@
+  <AbilityDef>
+		<defName>Ironbark_Explosion</defName>
+		<label>Core Detonation</label>
+		<description>Detonates the mechanoid, instantly destroying it and damaging all nearby entities regardless of allegiance.</description>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<iconPath>UI/Abilities/FireBurst</iconPath>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>Fire_Burst_Warmup</warmupEffecter>
+			<warmupTime>0.5</warmupTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>12</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="NCL.CompProperties_Detonate">
+				<radius>12</radius>
+				<damageType>Vaporize</damageType>
+				<damageAmount>800</damageAmount>
+				<soundCreated>MortarIncendiary_Explode</soundCreated>
+				<chanceToStartFire>0.5</chanceToStartFire>
+				<damageUser>true</damageUser>
+			</li>
+		</comps>
+	</AbilityDef>
+

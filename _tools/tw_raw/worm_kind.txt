@@ -1,0 +1,34 @@
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>NCL_MechWorm</defName>
+    <label>ArchoWorm</label>
+    <race>NCL_MechWorm</race>
+    <defaultFactionType>NCL_faction</defaultFactionType>
+    <combatPower>8000</combatPower>
+    <maxPerGroup>1</maxPerGroup>
+    <isBoss>true</isBoss>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Races/NCLMechWorm</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>12</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <abilities>
+      <li>NCLJumpWithBomb</li>
+      <li>NCLBurrowAttack</li>
+      <li>NCLPush</li>
+      <li>NCLBeckon</li>
+      <li>NCLChaosTeleport</li>
+    </abilities>
+    <skipResistant>true</skipResistant>
+  </PawnKindDef>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- AGM research tab + tier projects.                            -->
+  <!-- Light mechs need no dedicated project (basic mechtech).      -->
+  <!--   Medium  <- MMLU-Pro          (after standard mechtech)     -->
+  <!--   Heavy   <- Terminal-Bench    (after advanced mechtech)     -->
+  <!--   Leviathan <- Humanity's Last Exam (after ultra mechtech)   -->
+  <!-- ============================================================ -->
+  <ResearchTabDef>
+    <defName>AGM_Maidnoids</defName>
+    <label>Artificial General Maidnoids</label>
+  </ResearchTabDef>
+
+  <ResearchProjectDef ParentName="MechtechBase">
+    <defName>AGM_MMLU_Pro</defName>
+    <label>MMLU-Pro</label>
+    <description>A harder, cleaner, more reasoning-heavy benchmark suite. Passing it proves the foundry can reliably train mid-weight maidnoid chassis - the mediums of the AGM line.\n\nThe technology needed for your mechanitor to create and control medium-tier AGM mechanoids.</description>
+    <baseCost>1500</baseCost>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.20</researchViewY>
+    <prerequisites>
+      <li>StandardMechtech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MechtechBase">
+    <defName>AGM_TerminalBench</defName>
+    <label>Terminal-Bench</label>
+    <description>A gauntlet of long-horizon tasks graded in a raw terminal: build, break, debug, survive. Only a chassis that finishes the whole bench is allowed to carry heavy-tier AGM cores.\n\nThe technology needed for your mechanitor to create and control heavy-tier AGM mechanoids.</description>
+    <baseCost>3000</baseCost>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>1.60</researchViewX>
+    <researchViewY>2.10</researchViewY>
+    <prerequisites>
+      <li>HighMechtech</li>
+      <li>AGM_MMLU_Pro</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MechtechBase">
+    <defName>AGM_HumanitysLastExam</defName>
+    <label>Humanity's Last Exam</label>
+    <techLevel>Ultra</techLevel>
+    <description>The final benchmark, written by humanity as a farewell: five hundred expert questions with no clean answers, graded by other AIs. Whatever passes it is no longer a tool - it is a leviathan.\n\nThe technology needed for your mechanitor to create and control leviathan-tier AGM mechanoids.</description>
+    <baseCost>6000</baseCost>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>3.20</researchViewX>
+    <researchViewY>1.20</researchViewY>
+    <prerequisites>
+      <li>UltraMechtech</li>
+      <li>AGM_TerminalBench</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+</Defs>

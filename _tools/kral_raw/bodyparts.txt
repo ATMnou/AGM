@@ -1,0 +1,82 @@
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>55</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>50</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>45</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFourthRing</defName>
+    <label>forth body ring</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="MechanicalDragonRingBase">
+    <defName>MechanicalDragonBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>DragonCapacitor</defName>
+    <label>dragonic capacitor</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFirstRing</defName>
+    <label>first body ring</label>
+    <hitPoints>55</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodySecondRing</defName>
+    <label>second body ring</label>
+    <hitPoints>50</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyThirdRing</defName>
+    <label>third body ring</label>
+    <hitPoints>45</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFourthRing</defName>
+    <label>forth body ring</label>
+    <hitPoints>40</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef ParentName="HydraulicEmpressRingBase">
+    <defName>HydraulicEmpressBodyFifthRing</defName>
+    <label>fifth body ring</label>
+    <hitPoints>35</hitPoints>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>HydraulicEmpressFormingPod</defName>
+    <label>empress forming pod</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
