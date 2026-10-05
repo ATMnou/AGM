@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_ComputeEfficiency_I.label>運算效率 I</AGM_ComputeEfficiency_I.label>
+  <AGM_ComputeEfficiency_I.description>調優后的挖掘內核使GPU塔的代幣產量翻倍：每天2枚。</AGM_ComputeEfficiency_I.description>
+  <AGM_ComputeEfficiency_II.label>運算效率 II</AGM_ComputeEfficiency_II.label>
+  <AGM_ComputeEfficiency_II.description>重新設計的供電系統使GPU塔的功耗降至800W。</AGM_ComputeEfficiency_II.description>
+  <AGM_ComputeEfficiency_III.label>運算效率 III</AGM_ComputeEfficiency_III.label>
+  <AGM_ComputeEfficiency_III.description>并行基準掃描使GPU塔的代幣產量提升至每天4枚。</AGM_ComputeEfficiency_III.description>
+  <AGM_ComputeEfficiency_IV.label>運算效率 IV</AGM_ComputeEfficiency_IV.label>
+  <AGM_ComputeEfficiency_IV.description>每瓦吞吐更高的降頻張量核心使GPU塔的功耗降至600W。</AGM_ComputeEfficiency_IV.description>
+  <AGM_ComputeEfficiency_V.label>運算效率 V</AGM_ComputeEfficiency_V.label>
+  <AGM_ComputeEfficiency_V.description>與鑄造廠自身訓練任務交叉評分的最終內核修訂版：每天6枚，400W。</AGM_ComputeEfficiency_V.description>
+
+</LanguageData>

@@ -23,4 +23,6 @@
   <AGM.DoomsdayRocketToggleLabel>Toggle Doomsday Rocket</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>Toggle the doomsday rocket barrage. Off by default.</AGM.DoomsdayRocketToggleDesc>
 
+  <AGM.GPUTowerInspect>IO token yield: {0}/day</AGM.GPUTowerInspect>
+
 </LanguageData>

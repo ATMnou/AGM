@@ -23,4 +23,6 @@
   <AGM.DoomsdayRocketToggleLabel>종말 로켓 전환</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>종말 로켓 발사를 켜거나 끕니다. 기본값은 꺼짐입니다.</AGM.DoomsdayRocketToggleDesc>
 
+  <AGM.GPUTowerInspect>IO 토큰 생산량: {0}/일</AGM.GPUTowerInspect>
+
 </LanguageData>

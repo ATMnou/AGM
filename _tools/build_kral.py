@@ -345,7 +345,14 @@ def _inline_damage(m):
     if pname not in _dmg_parents:
         return m.group(0)
     pin = _dmg_parents[pname]
-    child_tags = set(_re.findall(r"<(\w+)[^>]*>", inner))
+    # top-level child tags only - a nested <hediff> inside <additionalHediffs> must not
+    # count as "already present" or the parent's <hediff> would be skipped (null hediff
+    # -> HediffMaker NRE on impact).
+    try:
+        import xml.etree.ElementTree as _ET
+        child_tags = set(ch.tag for ch in _ET.fromstring("<Root>" + inner + "</Root>"))
+    except Exception:
+        child_tags = set(_re.findall(r"<(\w+)[^>]*>", inner))
     add = []
     for fbm in _re.finditer(r"<(\w+)[^>]*>.*?</\1>", pin, _re.S):
         fb = fbm.group(0)

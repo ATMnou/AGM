@@ -135,6 +135,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -156,6 +157,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -177,6 +179,7 @@
     <workerClass>DamageWorker_Flame</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has burned to death by a flame shot.</deathMessage>
+    <hediff>Burn</hediff>
     <hediffSolid>Crack</hediffSolid>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
@@ -199,6 +202,7 @@
     <workerClass>DamageWorker_Flame</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has burned to death by a flame shot.</deathMessage>
+    <hediff>Burn</hediff>
     <hediffSolid>Crack</hediffSolid>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
@@ -221,6 +225,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -242,6 +247,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Burn</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -263,6 +269,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Burn</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
@@ -332,6 +339,7 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>Burn</hediff>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Heat</armorCategory>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>

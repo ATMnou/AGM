@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- GPU Tower - 2x2 powered IO Token printer.                    -->
+  <!-- 300 steel + 10 components, 1200W, 1 token/day.               -->
+  <!-- Compute Efficiency I-V research raises yield (2/4/6 per day) -->
+  <!-- and cuts draw (800/600/400 W). Tokens drop on free cells     -->
+  <!-- around the tower.                                            -->
+  <!-- ============================================================ -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AGM_GPUTower</defName>
+    <label>GPU tower</label>
+    <description>A humming rack of grading hardware that mines the foundry's benchmark archives for unused experience. Every day it crystallizes the accumulated input-output residue into a single IO token, pressed from silvered compute-plate.\n\nCompute Efficiency research sharpens the mining kernels: higher yields per day at lower power draw.</description>
+    <graphicData>
+      <texPath>Buildings/GPUTower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.2, 2.2)</drawSize>
+      <shadowData>
+        <volume>(1.6, 0.6, 1.6)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>12</Mass>
+      <Flammability>0.6</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>BasicMechtech</li>
+    </researchPrerequisites>
+    <tickerType>Normal</tickerType>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2450</uiOrder>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1200</basePowerConsumption>
+        <idlePowerDraw>50</idlePowerDraw>
+        <!-- Compute Efficiency II / IV / V: cumulative factors 1200 -> 800 -> 600 -> 400 W -->
+        <powerUpgrades>
+          <li>
+            <researchProject>AGM_ComputeEfficiency_II</researchProject>
+            <factor>0.667</factor>
+          </li>
+          <li>
+            <researchProject>AGM_ComputeEfficiency_IV</researchProject>
+            <factor>0.75</factor>
+          </li>
+          <li>
+            <researchProject>AGM_ComputeEfficiency_V</researchProject>
+            <factor>0.667</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="AGM.CompProperties_GPUTower" />
+    </comps>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+
+</Defs>

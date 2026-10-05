@@ -59,4 +59,79 @@
     </requiredResearchFacilities>
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>AGM_ComputeEfficiency_I</defName>
+    <recalculatePower>true</recalculatePower>
+    <label>compute efficiency I</label>
+    <description>Tuned mining kernels double the GPU tower's token yield: 2 IO tokens per day.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>BasicMechtech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_ComputeEfficiency_II</defName>
+    <recalculatePower>true</recalculatePower>
+    <label>compute efficiency II</label>
+    <description>Redesigned power delivery drops the GPU tower's draw to 800W.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_ComputeEfficiency_I</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_ComputeEfficiency_III</defName>
+    <recalculatePower>true</recalculatePower>
+    <label>compute efficiency III</label>
+    <description>Parallel benchmark sweeps raise the GPU tower's token yield to 4 IO tokens per day.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_ComputeEfficiency_II</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_ComputeEfficiency_IV</defName>
+    <recalculatePower>true</recalculatePower>
+    <label>compute efficiency IV</label>
+    <description>Underclocked tensor cores with higher-per-watt throughput drop the GPU tower's draw to 600W.</description>
+    <baseCost>2200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_ComputeEfficiency_III</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_ComputeEfficiency_V</defName>
+    <recalculatePower>true</recalculatePower>
+    <label>compute efficiency V</label>
+    <description>The final kernel revision, cross-graded against the foundry's own training runs: 6 IO tokens per day at 400W.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_ComputeEfficiency_IV</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
 </Defs>

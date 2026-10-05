@@ -66,4 +66,9 @@
   <AGM_Urchin.label>낫 성게</AGM_Urchin.label>
   <AGM_Urchin.description>페이블이 방출하는 소형 자폭 호위기. 영구 장착된 칼날로 적을 갈라놓으며, 쓰러질 때 반유기물 폭발로 주변을 쓸어버립니다.</AGM_Urchin.description>
 
+
+  <AGM_GPUTower.label>GPU 타워</AGM_GPUTower.label>
+  <AGM_GPUTower.description>벤치마크 저장고 속 미사용 경험을 캐내는 윙윙대는 채굴 하드웨어 랙. 매일 축적된 입력-출력 잔여물을 은빛 연산 판에 결정화해 IO 토큰 한 개로 굽습니다.
+
+연산 효율 연구는 채굴 커널을 날카롭게 다듬습니다: 더 높은 일일 생산량, 더 낮은 전력 소모.</AGM_GPUTower.description>
 </LanguageData>

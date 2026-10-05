@@ -4,7 +4,7 @@
 <ThingDef ParentName="AGM_KralBossBase">
     <defName>AGM_Opus</defName>
     <label>dragon warlord</label>
-    <description>The AGM line's long-form model: it composes slowly and resolves absolutely. Opus holds the line behind a monstrous shield bubble, answers at range with a mech laser blaster, fabricates its own dragon-knight retinue in the field, and raises the fallen back into the fight. Survivors of an Opus engagement all report the same lesson - the battle ends when Opus decides it ends.</description>
+    <description>An ultra-heavy hybrid variant of a warqueen and an apocriton. The warlord is the most devious of all mech bosses ever discovered, well protected by a monstrous shield bubble, able to fire laser bolts using a mech laser blaster, can fabricate a legion of dragon knights to defend itself, and can resurrect them when fallen in battle. The warlord is designed to be a solution againts spacer-tech factions, according to official glittertech archives and various combat transcripts, multiple high-tech colonies from multiple core worlds collapsed due to the arrival of the dragon warlord, along with it's cadre of dragon knights.</description>
     <statBases>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>

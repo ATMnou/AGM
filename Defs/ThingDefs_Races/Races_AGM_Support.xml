@@ -4,7 +4,7 @@
 <ThingDef ParentName="LightMechanoid">
       <defName>AGM_Urchin</defName>
       <label>scyth urchin</label>
-      <description>A palm-sized blade swarm released by Fable. The urchin closes at sprint speed, shreds with fixed razors, and its collapse detonates an anti-organic burst that clears organic life from the ground it claimed.</description>
+      <description>A small, deployable combat mechanoid variant produced by the supreme apocriton. The scyth urchin has blades that was permanently installed and can use it to cut enemy combatants to pieces, and like the war urchin, the scyth urchin also specializes in swarm tactics in which it can overwhelm and subdue enemies using numerical superiority.</description>
       <statBases>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
@@ -113,7 +113,7 @@
     </PawnKindDef><ThingDef ParentName="BaseMechanoidWalker">
     <defName>AGM_KnightEmpress</defName>
     <label>hydraulic knight</label>
-    <description>A mid-battle product of Sonnet's internal foundry: an aggressive sword-frame built to close distance and hold it, so the empress never has to.</description>
+    <description>A powerful mech variant holding a mech mono sword. This mech is increadibly fast where it can chase down slow moving organics with ease, and it possess quick reflexes which alows for faster and more precise melee hits. The hydraulic knight is mostly seen accompanying the hydraulic empress, serving as its sworn sword and creator.</description>
     <statBases>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
@@ -247,7 +247,7 @@
   </PawnKindDef><ThingDef ParentName="BaseMechanoidWalker">
     <defName>AGM_KnightWarlord</defName>
     <label>dragon knight</label>
-    <description>Opus's field-manufactured retainer - a tri-shot fire support frame that screens its maker. When it falls, Opus simply builds the answer again.</description>
+    <description>A highly aggressive mech variant who serves the dragon warlord. The dragon knight uses a variety of mech ranged weapons ranging from a tri-shot charge lance to a full auto assault charger, all while being protected by a low frequency shield bubble. The capabilities of the dragon knight truely shines when fighting alongside the dragon warlord along with the rest of its dragon knights, which also spells doom to their organic foes.</description>
     <statBases>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>

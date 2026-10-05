@@ -5,3 +5,4 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Assemblies\AGM.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Assemblies\AGM.pdb
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.pdb
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\AGM\Source\obj\Debug\AGM.sourcelink.json

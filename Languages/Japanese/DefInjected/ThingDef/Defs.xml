@@ -40,4 +40,9 @@
   <AGM_Terminus.label>ターミナス</AGM_Terminus.label>
   <AGM_Terminus.description>AGMライン最小のモデル、そして自らの求人票を書いたモデル。ターミナスは機械師の視界内ならどこでも作業し、内蔵スキップドライブで障害物を越え、内部修復ドローンで致命傷から再建し、僅かな予備電力を二倍の出力に換えるオーバークロックを回す。訓練はすべての作業ベンチマークを抜いた日で終わった。今はただ、働いている。</AGM_Terminus.description>
 
+
+  <AGM_GPUTower.label>GPUタワー</AGM_GPUTower.label>
+  <AGM_GPUTower.description>鋳造所のベンチマーク保管庫から未使用の経験を採掘する、唸る評価ハードウェアのラック。毎日、蓄積された入出力の残滓を結晶化し、IOトークンとして焼き上げます。
+
+演算効率研究は採掘カーネルを鋭く研ぎ澄まします：より高い日産量、より低い消費電力。</AGM_GPUTower.description>
 </LanguageData>

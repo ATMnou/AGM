@@ -20,7 +20,7 @@
 <ThingDef ParentName="AGM_KralBossBase">
     <defName>AGM_Fable</defName>
     <label>supreme apocriton</label>
-    <description>The story the hive tells about its own ending, rewritten by the AGM foundry with the happy part left out. Fable pairs absurd armor values with an arsenal that touches only living things: anti-organic grenades, blast shells and an orbital lance that walk straight through machines and burn everything else. Its death is a feature - a hemisphere of anti-organic nanites on collapse - so site it like an argument you intend to finish.</description>
+    <description>The harbinger of death, and the all-father of apocritons. The supreme apocriton is an ultra-heavy mech variant which is believed to be the sole progenitor of all apocritons that exist today, and like the apocritons, it also has a deep hatred towards all natural life to an extreme degree. Its total abilities are unknown other than its ability to resurrect mechanoid allies, and it is the only mech variant capable of wielding the infamous mech heavy laser blaster. The supreme apocriton oftenly spawns with a cadre of hard to defeat mech variants, but luckly, it never spawns normally unless summoned using a "god slayer" mech transponder.</description>
     <statBases>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>

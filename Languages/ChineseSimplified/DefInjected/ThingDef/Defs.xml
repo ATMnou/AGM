@@ -28,4 +28,9 @@
   <AGM_Terminus.label>终点</AGM_Terminus.label>
   <AGM_Terminus.description>AGM产品线最小的型号，也是自己写招聘启事的型号。终点在机械师视野内的任何地方工作，以内置跃迁驱动跨越障碍，用内部维修无人机从致命损伤中重建，并运行以少量备用能源换取双倍输出的超频模式。它的训练在超过所有作业基准的那一天结束了。现在它只是在工作。</AGM_Terminus.description>
 
+
+  <AGM_GPUTower.label>GPU塔</AGM_GPUTower.label>
+  <AGM_GPUTower.description>嗡嗡作响的评分硬件机架，从铸造厂的基准测试档案中挖掘未使用的经验。每天它把累积的输入输出残渣结晶成一枚IO代币，压印在镀银算板上。
+
+运算效率研究能磨利挖掘内核：更高的日产量，更低的功耗。</AGM_GPUTower.description>
 </LanguageData>

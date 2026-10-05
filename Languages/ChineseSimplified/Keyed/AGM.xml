@@ -23,4 +23,6 @@
   <AGM.DoomsdayRocketToggleLabel>切换末日火箭</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>开关末日火箭齐射。默认关闭。</AGM.DoomsdayRocketToggleDesc>
 
+  <AGM.GPUTowerInspect>IO代币产量：{0}/天</AGM.GPUTowerInspect>
+
 </LanguageData>

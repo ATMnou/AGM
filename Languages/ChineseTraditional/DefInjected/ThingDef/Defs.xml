@@ -28,4 +28,9 @@
   <AGM_Terminus.label>終點</AGM_Terminus.label>
   <AGM_Terminus.description>AGM產品線最小的型號，也是自己寫招聘啟事的型號。終點在機械師視野內的任何地方工作，以內置躍遷驅動跨越障礙，用內部維修無人機從致命損傷中重建，并運行以少量備用能源換取雙倍輸出的超頻模式。它的訓練在超過所有作業基準的那一天結束了。現在它只是在工作。</AGM_Terminus.description>
 
+
+  <AGM_GPUTower.label>GPU塔</AGM_GPUTower.label>
+  <AGM_GPUTower.description>嗡嗡作響的評分硬件機架，從鑄造廠的基準測試檔案中挖掘未使用的經驗。每天它把累積的輸入輸出殘渣結晶成一枚IO代幣，壓印在鍍銀算板上。
+
+運算效率研究能磨利挖掘內核：更高的日產量，更低的功耗。</AGM_GPUTower.description>
 </LanguageData>

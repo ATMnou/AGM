@@ -23,4 +23,6 @@
   <AGM.DoomsdayRocketToggleLabel>ドゥームズデイロケット切替</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>ドゥームズデイロケット斉射のオン/オフ。初期状態はオフです。</AGM.DoomsdayRocketToggleDesc>
 
+  <AGM.GPUTowerInspect>IOトークン生産量：{0}/日</AGM.GPUTowerInspect>
+
 </LanguageData>
