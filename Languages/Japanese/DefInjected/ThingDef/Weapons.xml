@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Bullet_AresLaser.label>レーザー矢</AGM_Bullet_AresLaser.label>
+  <AGM_Bullet_AresPlasmaFireball.label>プラズマ火球</AGM_Bullet_AresPlasmaFireball.label>
+  <AGM_Bullet_AresTeslaOrb.label>テスラ球体</AGM_Bullet_AresTeslaOrb.label>
+  <AGM_Bullet_AresTeslaSpark.label>テスラ火花</AGM_Bullet_AresTeslaSpark.label>
+  <AGM_Bullet_AresPulseBlast.label>エクソパルス爆発</AGM_Bullet_AresPulseBlast.label>
+  <AGM_Bullet_AresSlashWave.label>エネルギー斬波</AGM_Bullet_AresSlashWave.label>
+  <AGM_Bullet_AresNovaBeam.label>エネルギーデスレイ爆発</AGM_Bullet_AresNovaBeam.label>
+  <AGM_Bullet_AresGaussNuke.label>ガウス弾頭</AGM_Bullet_AresGaussNuke.label>
+  <AGM_Bullet_AresDoomsdayRocket.label>ドゥームズデイロケット</AGM_Bullet_AresDoomsdayRocket.label>
+  <AGM_Gun_SolRailMortar.label>小型核投射機</AGM_Gun_SolRailMortar.label>
+  <AGM_Gun_SolRailMortar.description>'殲滅の化身'と呼ばれる軌道砲撃システムで、ソルが駐留すると展開されます。重力レールで小型核弾頭を発射し、遅延着弾シーケンスでシールド、構造バリア、エネルギーシールドをすべて迂回します。</AGM_Gun_SolRailMortar.description>
+  <AGM_Gun_SolRailMortar.tools.0.label>銃床</AGM_Gun_SolRailMortar.tools.0.label>
+  <AGM_Gun_SolRailMortar.tools.1.label>銃身</AGM_Gun_SolRailMortar.tools.1.label>
+  <AGM_Shell_SolRailMortar.label>榴弾戦術弾頭</AGM_Shell_SolRailMortar.label>
+  <AGM_Gun_ThermalLances.label>サーマルランス</AGM_Gun_ThermalLances.label>
+  <AGM_Gun_ThermalLances.description>最も厚い装甲も貫く光を掃くように放つ、高エネルギーガンマレーザーの一式。射程内の有機体はどれほど分厚い装甲を着ていようと蒸発します。</AGM_Gun_ThermalLances.description>
+  <AGM_Gun_ThermalLances.tools.0.label>銃身</AGM_Gun_ThermalLances.tools.0.label>
+  <AGM_Gun_FlashPulse.label>タルダリンガン</AGM_Gun_FlashPulse.label>
+  <AGM_Gun_FlashPulse.description>タルダリンガン</AGM_Gun_FlashPulse.description>
+  <AGM_Gun_FlashPulse.tools.0.label>銃身</AGM_Gun_FlashPulse.tools.0.label>
+  <AGM_Bullet_FlashPulse.label>フラッシュパルス</AGM_Bullet_FlashPulse.label>
+  <AGM_Turret_PurificationBlast.label>浄化爆発タレット</AGM_Turret_PurificationBlast.label>
+  <AGM_Turret_PurificationBlast.description>浄化爆発タレット</AGM_Turret_PurificationBlast.description>
+  <AGM_PurificationBlastProjectile.label>浄化爆発弾体</AGM_PurificationBlastProjectile.label>
+  <AGM_Gun_MechChaingun.label>メックチェーンガン</AGM_Gun_MechChaingun.label>
+  <AGM_Gun_MechChaingun.description>多数の敵を制圧し射撃で抑え込むために設計された強力なチェーンガン。この重武器は最も優れた防御貫通力を持ち、命中した敵に追加出血と追加痛覚を負わせます。</AGM_Gun_MechChaingun.description>
+  <AGM_Gun_MechChaingun.tools.0.label>銃身</AGM_Gun_MechChaingun.tools.0.label>
+  <AGM_Bullet_MechChaingun.label>チェーンガン弾</AGM_Bullet_MechChaingun.label>
+  <AGM_Gun_MechLaserBlaster.label>メックレーザーブラスター</AGM_Gun_MechLaserBlaster.label>
+  <AGM_Gun_MechLaserBlaster.description>自動エネルギー兵器の中で基本ダメージが最も高い連射レーザーブラスター。チェーンガンのように高出力レーザー弾の嵐を浴びせ、どんな脅威も効率的に制圧できます。内部に豊富なエネルギーを蓄えた大型級メカノイドだけが、この武器を振るう姿が目撃されています。</AGM_Gun_MechLaserBlaster.description>
+  <AGM_Gun_MechLaserBlaster.tools.0.label>銃身</AGM_Gun_MechLaserBlaster.tools.0.label>
+  <AGM_Bullet_MechLaserBlaster.label>レーザー矢</AGM_Bullet_MechLaserBlaster.label>
+  <AGM_Gun_MechHeavyLaserBlaster.label>メックヘヴィレーザーブラスター</AGM_Gun_MechHeavyLaserBlaster.label>
+  <AGM_Gun_MechHeavyLaserBlaster.description>メックレーザーブラスターの大型版。本来は主力艦級メカ戦艦の武装として使われていましたが、現在は最上位のアポクリトンが使えるよう再設計されています。</AGM_Gun_MechHeavyLaserBlaster.description>
+  <AGM_Gun_MechHeavyLaserBlaster.tools.0.label>銃身</AGM_Gun_MechHeavyLaserBlaster.tools.0.label>
+  <AGM_Bullet_MechHeavyLaserBlaster.label>レーザー矢</AGM_Bullet_MechHeavyLaserBlaster.label>
+  <AGM_Gun_MechLaserBlasterTurret.label>レーザーブラスタータレット</AGM_Gun_MechLaserBlasterTurret.label>
+  <AGM_Gun_MechLaserBlasterTurret.description>大量の敵に致命的なレーザー矢を浴びせるヘヴィレーザーブラスター タレット。</AGM_Gun_MechLaserBlasterTurret.description>
+  <AGM_Bullet_MechLaserBlasterTurret.label>レーザー弾</AGM_Bullet_MechLaserBlasterTurret.label>
+  <AGM_Gun_MechLaserBlasterTurretEX.label>レーザーブラスタータレット</AGM_Gun_MechLaserBlasterTurretEX.label>
+  <AGM_Gun_MechLaserBlasterTurretEX.description>大量の敵にはるかに致命的なレーザービームを浴びせるヘヴィレーザーブラスター タレット。</AGM_Gun_MechLaserBlasterTurretEX.description>
+  <AGM_Bullet_MechLaserBlasterTurretEX.label>レーザー弾</AGM_Bullet_MechLaserBlasterTurretEX.label>
+  <AGM_Gun_ChainGunTurret.label>チェーンガンタレット</AGM_Gun_ChainGunTurret.label>
+  <AGM_Gun_ChainGunTurret.description>後方に向けて徹甲弾を撃ち込める短いチェーンガン タレット。</AGM_Gun_ChainGunTurret.description>
+  <AGM_Bullet_ChainGunTurret.label>レーザー弾</AGM_Bullet_ChainGunTurret.label>
+  <AGM_Turret_NyanBeam.label>ニャンビームエミッター</AGM_Turret_NyanBeam.label>
+  <AGM_Turret_NyanBeam.description>コマンド A+の小型支援ビーム。ゴロゴル唸ってから、撃ちます。</AGM_Turret_NyanBeam.description>
+  <AGM_Turret_PulseLancer.label>パルスランス</AGM_Turret_PulseLancer.label>
+  <AGM_Turret_PulseLancer.description>マーキュリーの徹甲パルスライフル アレイ。</AGM_Turret_PulseLancer.description>
+  <AGM_Turret_SolarBeam.label>ソラランス</AGM_Turret_SolarBeam.label>
+  <AGM_Turret_SolarBeam.description>精密攪乱のためのソラの集束光子エミッター。</AGM_Turret_SolarBeam.description>
+  <AGM_Turret_RailLance.label>最後の論拠レールランス</AGM_Turret_RailLance.label>
+  <AGM_Turret_RailLance.description>パレートが広げた日傘。非常に説得力のあるひとつの結論のための六角形集束アレイです。</AGM_Turret_RailLance.description>
+  <AGM_Turret_Quills.label>羽ペン砲列</AGM_Turret_Quills.label>
+  <AGM_Turret_Quills.description>ミューズスパークの周囲を回る羽ペンたちが、句点を打つように発射されます。</AGM_Turret_Quills.description>
+  <AGM_Turret_Railfan.label>九瓣レールファン</AGM_Turret_Railfan.label>
+  <AGM_Turret_Railfan.description>Qwenの九瓣レールアレイを、ひとつの重いブラスターの一撃に折り込んだ武器です。</AGM_Turret_Railfan.description>
+  <AGM_Turret_Moonshot.label>MOONSHOTレールランス</AGM_Turret_Moonshot.label>
+  <AGM_Turret_Moonshot.description>K3の袖に搭載されたレールランス。銃身には単語がひとつ刻まれており、その銃口はあなたを捉えています。</AGM_Turret_Moonshot.description>
+  <AGM_Turret_Inkshot.label>セムペルペン先发射器</AGM_Turret_Inkshot.label>
+  <AGM_Turret_Inkshot.description>GLMの筆の先は遠距離エディターを兼ねます。命中するたびに、校正が行われます。</AGM_Turret_Inkshot.description>
+  <AGM_ChargeBlastz.label>チャージブラスト</AGM_ChargeBlastz.label>
+  <AGM_PlasmaBlastz.label>プラズマブラスト</AGM_PlasmaBlastz.label>
+  <AGM_AntiGrainGrenade.label>反物質グレネード</AGM_AntiGrainGrenade.label>
+  <AGM_PSIBlast.label>サイオニックブラスト</AGM_PSIBlast.label>
+  <AGM_AntiOrgBlast.label>対有機弾頭</AGM_AntiOrgBlast.label>
+  <AGM_AntiOrgPreOrbital.label>対有機爆破</AGM_AntiOrgPreOrbital.label>
+  <AGM_AntiOrgPostOrbital.label>軌道対有機爆破</AGM_AntiOrgPostOrbital.label>
+  <AGM_DeathShotz.label>死の弾丸</AGM_DeathShotz.label>
+  <AGM_BladeShotz.label>ブレードショット</AGM_BladeShotz.label>
+  <AGM_Mythos_Skyfaller_JumpingMech.label>飛行造物</AGM_Mythos_Skyfaller_JumpingMech.label>
+  <AGM_Mythos_Skyfaller_LandingMech.label>飛行造物</AGM_Mythos_Skyfaller_LandingMech.label>
+  <AGM_Mythos_Skyfaller_SuspendReady.label>飛行造物</AGM_Mythos_Skyfaller_SuspendReady.label>
+  <AGM_PlasmaGasZone.label>超高熱プラズマガス</AGM_PlasmaGasZone.label>
+
+</LanguageData>

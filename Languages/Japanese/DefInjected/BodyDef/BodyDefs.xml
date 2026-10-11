@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Body_Fable.label>至高アポクリトン</AGM_Body_Fable.label>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.1.customLabel>左視覚センサー</AGM_Body_Fable.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.2.customLabel>右視覚センサー</AGM_Body_Fable.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.3.customLabel>左聴覚センサー</AGM_Body_Fable.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.4.customLabel>右聴覚センサー</AGM_Body_Fable.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Body_Fable.corePart.parts.1.customLabel>左前肢</AGM_Body_Fable.corePart.parts.1.customLabel>
+  <AGM_Body_Fable.corePart.parts.1.parts.0.customLabel>左前脚</AGM_Body_Fable.corePart.parts.1.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.2.customLabel>右前肢</AGM_Body_Fable.corePart.parts.2.customLabel>
+  <AGM_Body_Fable.corePart.parts.2.parts.0.customLabel>右前脚</AGM_Body_Fable.corePart.parts.2.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.3.customLabel>左後肢</AGM_Body_Fable.corePart.parts.3.customLabel>
+  <AGM_Body_Fable.corePart.parts.3.parts.0.customLabel>左後脚</AGM_Body_Fable.corePart.parts.3.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.4.customLabel>右後肢</AGM_Body_Fable.corePart.parts.4.customLabel>
+  <AGM_Body_Fable.corePart.parts.4.parts.0.customLabel>右後脚</AGM_Body_Fable.corePart.parts.4.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.7.customLabel>球型タレット</AGM_Body_Fable.corePart.parts.7.customLabel>
+  <AGM_Body_Warlord.label>ドラゴンロード</AGM_Body_Warlord.label>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.1.customLabel>左視覚センサー</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.2.customLabel>右視覚センサー</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.3.customLabel>左聴覚センサー</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.4.customLabel>右聴覚センサー</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Body_Warlord.corePart.parts.1.customLabel>左前肢</AGM_Body_Warlord.corePart.parts.1.customLabel>
+  <AGM_Body_Warlord.corePart.parts.1.parts.0.customLabel>左前脚</AGM_Body_Warlord.corePart.parts.1.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.2.customLabel>右前肢</AGM_Body_Warlord.corePart.parts.2.customLabel>
+  <AGM_Body_Warlord.corePart.parts.2.parts.0.customLabel>右前脚</AGM_Body_Warlord.corePart.parts.2.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.3.customLabel>左後肢</AGM_Body_Warlord.corePart.parts.3.customLabel>
+  <AGM_Body_Warlord.corePart.parts.3.parts.0.customLabel>左後脚</AGM_Body_Warlord.corePart.parts.3.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.4.customLabel>右後肢</AGM_Body_Warlord.corePart.parts.4.customLabel>
+  <AGM_Body_Warlord.corePart.parts.4.parts.0.customLabel>右後脚</AGM_Body_Warlord.corePart.parts.4.parts.0.customLabel>
+  <AGM_Body_Empress.label>エンプレス</AGM_Body_Empress.label>
+  <AGM_Body_Empress.corePart.parts.0.parts.1.customLabel>左視覚センサー</AGM_Body_Empress.corePart.parts.0.parts.1.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.2.customLabel>右視覚センサー</AGM_Body_Empress.corePart.parts.0.parts.2.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.3.customLabel>左聴覚センサー</AGM_Body_Empress.corePart.parts.0.parts.3.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.4.customLabel>右聴覚センサー</AGM_Body_Empress.corePart.parts.0.parts.4.customLabel>
+  <AGM_Body_Empress.corePart.parts.2.customLabel>球型タレット</AGM_Body_Empress.corePart.parts.2.customLabel>
+  <AGM_Body_Wyvern.label>スチールワイバーン</AGM_Body_Wyvern.label>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.1.customLabel>左視覚センサー</AGM_Body_Wyvern.corePart.parts.0.parts.1.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.2.customLabel>右視覚センサー</AGM_Body_Wyvern.corePart.parts.0.parts.2.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.3.customLabel>左聴覚センサー</AGM_Body_Wyvern.corePart.parts.0.parts.3.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.4.customLabel>右聴覚センサー</AGM_Body_Wyvern.corePart.parts.0.parts.4.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.2.customLabel>球型タレット</AGM_Body_Wyvern.corePart.parts.2.customLabel>
+  <AGM_Knight_Body.label>ナイト</AGM_Knight_Body.label>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.1.customLabel>左視覚センサー</AGM_Knight_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.2.customLabel>右視覚センサー</AGM_Knight_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.3.customLabel>左聴覚センサー</AGM_Knight_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.4.customLabel>右聴覚センサー</AGM_Knight_Body.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.customLabel>左肩</AGM_Knight_Body.corePart.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.customLabel>左腕</AGM_Knight_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.customLabel>左手</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>左手小指</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>左手薬指</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>左手人差し指</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>左手親指</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.customLabel>右肩</AGM_Knight_Body.corePart.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.customLabel>右腕</AGM_Knight_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.customLabel>右手</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>右手小指</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>右手薬指</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>右手人差し指</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>右手親指</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.3.customLabel>左脚</AGM_Knight_Body.corePart.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.3.parts.0.customLabel>左足</AGM_Knight_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.4.customLabel>右脚</AGM_Knight_Body.corePart.parts.4.customLabel>
+  <AGM_Knight_Body.corePart.parts.4.parts.0.customLabel>右足</AGM_Knight_Body.corePart.parts.4.parts.0.customLabel>
+  <AGM_Argon_Body.label>プロトス・コロッサス</AGM_Argon_Body.label>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.1.customLabel>左視覚センサー</AGM_Argon_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.2.customLabel>右視覚センサー</AGM_Argon_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.3.customLabel>聴覚センサー</AGM_Argon_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Argon_Body.corePart.parts.1.customLabel>左前コロッサス関節</AGM_Argon_Body.corePart.parts.1.customLabel>
+  <AGM_Argon_Body.corePart.parts.1.parts.0.customLabel>左前コロッサス脚</AGM_Argon_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.2.customLabel>右前コロッサス関節</AGM_Argon_Body.corePart.parts.2.customLabel>
+  <AGM_Argon_Body.corePart.parts.2.parts.0.customLabel>右前コロッサス脚</AGM_Argon_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.3.customLabel>左コロッサス関節</AGM_Argon_Body.corePart.parts.3.customLabel>
+  <AGM_Argon_Body.corePart.parts.3.parts.0.customLabel>左コロッサス脚</AGM_Argon_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.4.customLabel>右コロッサス関節</AGM_Argon_Body.corePart.parts.4.customLabel>
+  <AGM_Argon_Body.corePart.parts.4.parts.0.customLabel>右コロッサス脚</AGM_Argon_Body.corePart.parts.4.parts.0.customLabel>
+  <AGM_Flash_Body.label>プロトス・ピュリファイアー イモータル</AGM_Flash_Body.label>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.1.customLabel>左視覚センサー</AGM_Flash_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.2.customLabel>右視覚センサー</AGM_Flash_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.3.customLabel>聴覚センサー</AGM_Flash_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Flash_Body.corePart.parts.1.customLabel>左前イモータル関節</AGM_Flash_Body.corePart.parts.1.customLabel>
+  <AGM_Flash_Body.corePart.parts.1.parts.0.customLabel>左前イモータル脚</AGM_Flash_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.2.customLabel>右前イモータル関節</AGM_Flash_Body.corePart.parts.2.customLabel>
+  <AGM_Flash_Body.corePart.parts.2.parts.0.customLabel>右前イモータル脚</AGM_Flash_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.3.customLabel>左イモータル関節</AGM_Flash_Body.corePart.parts.3.customLabel>
+  <AGM_Flash_Body.corePart.parts.3.parts.0.customLabel>左イモータル脚</AGM_Flash_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.4.customLabel>右イモータル関節</AGM_Flash_Body.corePart.parts.4.customLabel>
+  <AGM_Flash_Body.corePart.parts.4.parts.0.customLabel>右イモータル脚</AGM_Flash_Body.corePart.parts.4.parts.0.customLabel>
+  <AGM_Sol_Body.label>静巣構体 Doxa-0</AGM_Sol_Body.label>
+  <AGM_Sol_Body.corePart.parts.0.parts.0.parts.0.parts.0.customLabel>深層論理コア</AGM_Sol_Body.corePart.parts.0.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.customLabel>反粒子タレットマウント</AGM_Sol_Body.corePart.parts.1.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.parts.0.customLabel>反粒子発射口</AGM_Sol_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.parts.1.customLabel>射撃統制コアユニット</AGM_Sol_Body.corePart.parts.1.parts.1.customLabel>
+  <AGM_Sol_Body.corePart.parts.2.customLabel>シェルスプリッター孵化室</AGM_Sol_Body.corePart.parts.2.customLabel>
+  <AGM_Sol_Body.corePart.parts.3.customLabel>前方センサーアレイ</AGM_Sol_Body.corePart.parts.3.customLabel>
+  <AGM_Sol_Body.corePart.parts.4.customLabel>多爪推進ユニット</AGM_Sol_Body.corePart.parts.4.customLabel>
+  <AGM_Luna_Body.label>鉄木魔獣</AGM_Luna_Body.label>
+  <AGM_Luna_Body.corePart.parts.0.parts.1.customLabel>左熱感アレイ</AGM_Luna_Body.corePart.parts.0.parts.1.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.2.customLabel>右熱感アレイ</AGM_Luna_Body.corePart.parts.0.parts.2.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.3.customLabel>油圧クラッシャー 1</AGM_Luna_Body.corePart.parts.0.parts.3.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.4.customLabel>油圧クラッシャー 2</AGM_Luna_Body.corePart.parts.0.parts.4.customLabel>
+  <AGM_Luna_Body.corePart.parts.2.customLabel>インフェルノ放熱アレイ</AGM_Luna_Body.corePart.parts.2.customLabel>
+
+</LanguageData>

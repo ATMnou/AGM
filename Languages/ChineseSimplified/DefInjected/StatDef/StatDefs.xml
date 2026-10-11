@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_HeatNullNaniteResistance.label>热失效纳米抵抗</AGM_HeatNullNaniteResistance.label>
+  <AGM_HeatNullNaniteResistance.description>该生物对热失效纳米机器人的抵抗程度。</AGM_HeatNullNaniteResistance.description>
+  <AGM_HeatNullNaniteEnvironmentResistance.label>热失效环境抵抗</AGM_HeatNullNaniteEnvironmentResistance.label>
+  <AGM_HeatNullNaniteEnvironmentResistance.description>该生物对环境中热失效纳米机器人影响的抵抗程度。可在极端热浪释放失效热抗纳米机器人时提供保护。</AGM_HeatNullNaniteEnvironmentResistance.description>
+  <AGM_ColdNullNaniteResistance.label>冷失效纳米抵抗</AGM_ColdNullNaniteResistance.label>
+  <AGM_ColdNullNaniteResistance.description>该生物对冷失效纳米机器人的抵抗程度。</AGM_ColdNullNaniteResistance.description>
+  <AGM_ColdNullNaniteEnvironmentResistance.label>冷失效纳米环境抵抗</AGM_ColdNullNaniteEnvironmentResistance.label>
+  <AGM_ColdNullNaniteEnvironmentResistance.description>该生物环境中冷失效纳米机器人影响的抵抗程度。可在极端寒潮释放失效冷抗纳米机器人时提供保护。</AGM_ColdNullNaniteEnvironmentResistance.description>
+  <AGM_RadiationResistance.label>辐射抵抗</AGM_RadiationResistance.label>
+  <AGM_RadiationResistance.description>该生物对辐射中毒的抵抗程度。</AGM_RadiationResistance.description>
+  <AGM_RadiationEnvironmentResistance.label>辐射环境抵抗</AGM_RadiationEnvironmentResistance.label>
+  <AGM_RadiationEnvironmentResistance.description>该生物对环境中辐射中毒影响的抵抗程度。</AGM_RadiationEnvironmentResistance.description>
+  <AGM_AntiOrgToxinResistance.label>反有机毒素抵抗</AGM_AntiOrgToxinResistance.label>
+  <AGM_AntiOrgToxinResistance.description>该生物对反有机毒素的抵抗程度。</AGM_AntiOrgToxinResistance.description>
+  <AGM_AntiOrgToxinEnvironmentResistance.label>反有机毒素环境抵抗</AGM_AntiOrgToxinEnvironmentResistance.label>
+  <AGM_AntiOrgToxinEnvironmentResistance.description>该生物对环境中反有机毒素中毒影响的抵抗程度。</AGM_AntiOrgToxinEnvironmentResistance.description>
+  <AGM_RageVirusResistance.label>狂暴病毒抵抗</AGM_RageVirusResistance.label>
+  <AGM_RageVirusResistance.description>该生物对狂暴病毒的抵抗程度。</AGM_RageVirusResistance.description>
+  <AGM_RageVirusEnvironmentResistance.label>狂暴病毒环境抵抗</AGM_RageVirusEnvironmentResistance.label>
+  <AGM_RageVirusEnvironmentResistance.description>该生物对环境中病毒感染影响的抵抗程度。</AGM_RageVirusEnvironmentResistance.description>
+
+</LanguageData>

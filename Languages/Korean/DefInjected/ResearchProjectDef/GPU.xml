@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <AGM_ComputeEfficiency_I.label>연산 효율 개선 I</AGM_ComputeEfficiency_I.label>
-  <AGM_ComputeEfficiency_I.description>채굴 커널을 튜닝해 GPU 타워의 토큰 생산량이 두 배가 됩니다: 하루 2개.</AGM_ComputeEfficiency_I.description>
-  <AGM_ComputeEfficiency_II.label>연산 효율 개선 II</AGM_ComputeEfficiency_II.label>
-  <AGM_ComputeEfficiency_II.description>전력 계통을 재설계해 GPU 타워 소모 전력이 800W로 줄어듭니다.</AGM_ComputeEfficiency_II.description>
-  <AGM_ComputeEfficiency_III.label>연산 효율 개선 III</AGM_ComputeEfficiency_III.label>
-  <AGM_ComputeEfficiency_III.description>병렬 벤치마크 스윕으로 GPU 타워의 토큰 생산량이 하루 4개로 늘어납니다.</AGM_ComputeEfficiency_III.description>
-  <AGM_ComputeEfficiency_IV.label>연산 효율 개선 IV</AGM_ComputeEfficiency_IV.label>
-  <AGM_ComputeEfficiency_IV.description>와트당 처리량이 높은 언더클럭 텐서 코어로 GPU 타워 소모 전력이 600W로 줄어듭니다.</AGM_ComputeEfficiency_IV.description>
-  <AGM_ComputeEfficiency_V.label>연산 효율 개선 V</AGM_ComputeEfficiency_V.label>
-  <AGM_ComputeEfficiency_V.description>파운드리 자체 훈련 런과 교차 채점한 최종 커널 개정판: 하루 6개, 400W.</AGM_ComputeEfficiency_V.description>
+  <AGM_ComputeEfficiency_I.label>연산 효율 I</AGM_ComputeEfficiency_I.label>
+  <AGM_ComputeEfficiency_I.description>채굴 커널을 조율해 GPU 타워의 토큰 생산량이 두 배로 늘어납니다. 하루에 IO 토큰 2개를 생산합니다.</AGM_ComputeEfficiency_I.description>
+  <AGM_ComputeEfficiency_II.label>연산 효율 II</AGM_ComputeEfficiency_II.label>
+  <AGM_ComputeEfficiency_II.description>전력 공급 계통을 재설계해 GPU 타워의 소비 전력이 800W로 줄어듭니다.</AGM_ComputeEfficiency_II.description>
+  <AGM_ComputeEfficiency_III.label>연산 효율 III</AGM_ComputeEfficiency_III.label>
+  <AGM_ComputeEfficiency_III.description>병렬 벤치마크 스윕으로 GPU 타워의 토큰 생산량이 하루 IO 토큰 4개로 늘어납니다.</AGM_ComputeEfficiency_III.description>
+  <AGM_ComputeEfficiency_IV.label>연산 효율 IV</AGM_ComputeEfficiency_IV.label>
+  <AGM_ComputeEfficiency_IV.description>클럭을 낮추는 대신 와트당 처리량을 높인 텐서 코어 덕분에 GPU 타워의 소비 전력이 600W로 줄어듭니다.</AGM_ComputeEfficiency_IV.description>
+  <AGM_ComputeEfficiency_V.label>연산 효율 V</AGM_ComputeEfficiency_V.label>
+  <AGM_ComputeEfficiency_V.description>파운드리 자체 훈련 런과 교차 채점을 거친 최종 커널 개정판입니다. 400W로 하루 IO 토큰 6개를 생산합니다.</AGM_ComputeEfficiency_V.description>
 
 </LanguageData>

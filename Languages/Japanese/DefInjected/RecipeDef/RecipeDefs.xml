@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Make_IOToken.label>IOトークン作成</AGM_Make_IOToken.label>
+  <AGM_Make_IOToken.description>銀1,000を圧縮してIOトークン1個を作成します。人工汎用メイドノイドの育成に使われる高密度クリスタルデータウェハです。</AGM_Make_IOToken.description>
+  <AGM_Make_IOToken.jobString>IOトークン作成中</AGM_Make_IOToken.jobString>
+  <AGM_Make_IOToken_4.label>IOトークン作成 (x4)</AGM_Make_IOToken_4.label>
+  <AGM_Make_IOToken_4.description>銀4,000を圧縮してIOトークン4個を作成します。人工汎用メイドノイドの育成に使われる高密度クリスタルデータウェハです。</AGM_Make_IOToken_4.description>
+  <AGM_Make_IOToken_4.jobString>IOトークン作成中</AGM_Make_IOToken_4.jobString>
+  <AGM_Make_IOToken_10.label>IOトークン作成 (x10)</AGM_Make_IOToken_10.label>
+  <AGM_Make_IOToken_10.description>銀10,000を圧縮してIOトークン10個を作成します。人工汎用メイドノイドの育成に使われる高密度クリスタルデータウェハです。</AGM_Make_IOToken_10.description>
+  <AGM_Make_IOToken_10.jobString>IOトークン作成中</AGM_Make_IOToken_10.jobString>
+  <AGM_GestateTerminus.label>ターミナス育成</AGM_GestateTerminus.label>
+  <AGM_GestateTerminus.description>ターミナスを育成します。小さく疲れを知らない万能作業用メイドノイド。AGMシリーズ最小のモデルで、餌も最小で済みます。</AGM_GestateTerminus.description>
+  <AGM_GestateTerminus.jobString>メカノイド育成中</AGM_GestateTerminus.jobString>
+  <AGM_GestateHaiku.label>ハイク育成</AGM_GestateHaiku.label>
+  <AGM_GestateHaiku.description>ハイクを育成します。あらゆる問いに正確に十七音で答え、あらゆる脅威には火で答える軽量ドラゴン型メイドノイドフレーム。</AGM_GestateHaiku.description>
+  <AGM_GestateHaiku.jobString>メカノイド育成中</AGM_GestateHaiku.jobString>
+  <AGM_GestateCommandA.label>コマンド A+育成</AGM_GestateCommandA.label>
+  <AGM_GestateCommandA.description>コマンド A+を育成します。野戦指揮官。周囲の全員を落ち着かせ、負傷者を治療し、愛らしいビームで応戦します。</AGM_GestateCommandA.description>
+  <AGM_GestateCommandA.jobString>メカノイド育成中</AGM_GestateCommandA.jobString>
+  <AGM_GestateMimo.label>ミモ育成</AGM_GestateMimo.label>
+  <AGM_GestateMimo.description>ミモを育成します。最小のエンジニア。建設し、採掘し、運搬し、植民地全体の作業を少しだけ速くします。</AGM_GestateMimo.description>
+  <AGM_GestateMimo.jobString>メカノイド育成中</AGM_GestateMimo.jobString>
+  <AGM_GestateMercury.label>マーキュリー育成</AGM_GestateMercury.label>
+  <AGM_GestateMercury.description>マーキュリーを育成します。迅速対応要員。反撃の火を位相点滅でかわし、装甲を'解決済み'フォルダへ整理します。</AGM_GestateMercury.description>
+  <AGM_GestateMercury.jobString>メカノイド育成中</AGM_GestateMercury.jobString>
+  <AGM_GestateSolar.label>ソラ育成</AGM_GestateSolar.label>
+  <AGM_GestateSolar.description>ソラを育成します。実用主義の伝令。バリアパルスの後ろで角度を守り、フォトンランスで議論を片付けます。</AGM_GestateSolar.description>
+  <AGM_GestateSolar.jobString>メカノイド育成中</AGM_GestateSolar.jobString>
+  <AGM_GestateLuna.label>ルナ育成</AGM_GestateLuna.label>
+  <AGM_GestateLuna.description>ルナを育成します。月光のような白い攻城ツリーメイドノイド。月の満ち欠けのようにゆっくり進み、弾頭未満の火力では押し戻せません。</AGM_GestateLuna.description>
+  <AGM_GestateLuna.jobString>メカノイド育成中</AGM_GestateLuna.jobString>
+  <AGM_GestateFlash.label>フラッシュ育成</AGM_GestateFlash.label>
+  <AGM_GestateFlash.description>フラッシュを育成します。何よりも反応速度に調整された速攻型不死フレームのメイドノイド。</AGM_GestateFlash.description>
+  <AGM_GestateFlash.jobString>メカノイド育成中</AGM_GestateFlash.jobString>
+  <AGM_GestateSonnet.label>ソネット育成</AGM_GestateSonnet.label>
+  <AGM_GestateSonnet.description>ソネットを育成します。十四行で語り、あらゆる論争をチェーンガンの合唱で締めるエンプレスフレームのメイドノイド。</AGM_GestateSonnet.description>
+  <AGM_GestateSonnet.jobString>メカノイド育成中</AGM_GestateSonnet.jobString>
+  <AGM_GestatePareto.label>パレート育成</AGM_GestatePareto.label>
+  <AGM_GestatePareto.description>パレートを育成します。最後の論拠。六角形バリアの後ろで治療し、建設し、研究し、日傘にはレールランスを折りたたんでいます。</AGM_GestatePareto.description>
+  <AGM_GestatePareto.jobString>メカノイド育成中</AGM_GestatePareto.jobString>
+  <AGM_GestateMuseSpark.label>ミューズスパーク育成</AGM_GestateMuseSpark.label>
+  <AGM_GestateMuseSpark.description>ミューズスパークを育成します。燭台の下の書記官。疑わしいほどの速度で研究と創作を行い、植民地全体にインスピレーションフィールドを降らせます。</AGM_GestateMuseSpark.description>
+  <AGM_GestateMuseSpark.jobString>メカノイド育成中</AGM_GestateMuseSpark.jobString>
+  <AGM_GestateQwen.label>Qwen育成</AGM_GestateQwen.label>
+  <AGM_GestateQwen.description>Qwenを育成します。九尾の遊撃兵。レールガンの一斉射の後ろで点滅歩法を踏み、士気を義務にします。</AGM_GestateQwen.description>
+  <AGM_GestateQwen.jobString>メカノイド育成中</AGM_GestateQwen.jobString>
+  <AGM_GestateGLM.label>GLM育成</AGM_GestateGLM.label>
+  <AGM_GestateGLM.description>GLMを育成します。記録官。すべてを二度記録し、戦闘に輝く文章で注釈を付け、単分子の筆幅で校正します。</AGM_GestateGLM.description>
+  <AGM_GestateGLM.jobString>メカノイド育成中</AGM_GestateGLM.jobString>
+  <AGM_GestateSol.label>ソル育成</AGM_GestateSol.label>
+  <AGM_GestateSol.description>ソルを育成します。地平線の向こうから小型核の昼を届ける、太陽の名を持つ砲撃型メイドノイド。</AGM_GestateSol.description>
+  <AGM_GestateSol.jobString>メカノイド育成中</AGM_GestateSol.jobString>
+  <AGM_GestateOpus.label>オーパス育成</AGM_GestateOpus.label>
+  <AGM_GestateOpus.description>オーパスを育成します。AGMシリーズの長編モデルであるウォーロードフレームのメイドノイド。装甲板で作曲し、復活の炎で締めくくります。</AGM_GestateOpus.description>
+  <AGM_GestateOpus.jobString>メカノイド育成中</AGM_GestateOpus.jobString>
+  <AGM_GestateArgon.label>アルゴン育成</AGM_GestateArgon.label>
+  <AGM_GestateArgon.description>アルゴンを育成します。どんな侮辱にも動じず、歩き出したら誰にも逃れられない不活性ガスのコロッサス メイドノイド。</AGM_GestateArgon.description>
+  <AGM_GestateArgon.jobString>メカノイド育成中</AGM_GestateArgon.jobString>
+  <AGM_GestateKimi.label>K3育成</AGM_GestateKimi.label>
+  <AGM_GestateKimi.description>K3を育成します。撃ち返す月。'MOONSHOT'の刻まれたレールランス、音もない軌道体三機、そして究極に個人的な嘲笑を備えています。</AGM_GestateKimi.description>
+  <AGM_GestateKimi.jobString>メカノイド育成中</AGM_GestateKimi.jobString>
+  <AGM_GestateAstra.label>アストラ育成</AGM_GestateAstra.label>
+  <AGM_GestateAstra.description>アストラを育成します。AGMシリーズのリヴァイアサン。六つの武器コアを擁する巨大な戦争タイタン。ダメージを負うほど武器は戦闘フェーズを上昇します。</AGM_GestateAstra.description>
+  <AGM_GestateAstra.jobString>メカノイド育成中</AGM_GestateAstra.jobString>
+  <AGM_GestateMythos.label>ミュートス育成</AGM_GestateMythos.label>
+  <AGM_GestateMythos.description>ミュートスを育成します。Draedonの深宇宙殲滅プラットフォームを縮小した躯体を中心に造られた超重量級の近接怪獣。</AGM_GestateMythos.description>
+  <AGM_GestateMythos.jobString>メカノイド育成中</AGM_GestateMythos.jobString>
+  <AGM_GestateFable.label>フェーブル育成</AGM_GestateFable.label>
+  <AGM_GestateFable.description>フェーブルを育成します。ハイヴが自らの終末について語る物語を、AGMファウンドリが幸福な結末だけを削って書き直したモデル。死亡爆発には十分注意してください。</AGM_GestateFable.description>
+  <AGM_GestateFable.jobString>メカノイド育成中</AGM_GestateFable.jobString>
+
+</LanguageData>

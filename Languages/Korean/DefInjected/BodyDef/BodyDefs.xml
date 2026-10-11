@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ================= 페이블 (최상위 아포크리톤) ================= -->
+
+  <AGM_Body_Fable.label>최상위 아포크리톤</AGM_Body_Fable.label>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Body_Fable.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Body_Fable.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.3.customLabel>왼쪽 청각 감지기</AGM_Body_Fable.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Body_Fable.corePart.parts.0.parts.0.parts.4.customLabel>오른쪽 청각 감지기</AGM_Body_Fable.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Body_Fable.corePart.parts.1.customLabel>왼쪽 앞다리</AGM_Body_Fable.corePart.parts.1.customLabel>
+  <AGM_Body_Fable.corePart.parts.1.parts.0.customLabel>왼쪽 앞발</AGM_Body_Fable.corePart.parts.1.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.2.customLabel>오른쪽 앞다리</AGM_Body_Fable.corePart.parts.2.customLabel>
+  <AGM_Body_Fable.corePart.parts.2.parts.0.customLabel>오른쪽 앞발</AGM_Body_Fable.corePart.parts.2.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.3.customLabel>왼쪽 뒷다리</AGM_Body_Fable.corePart.parts.3.customLabel>
+  <AGM_Body_Fable.corePart.parts.3.parts.0.customLabel>왼쪽 뒷발</AGM_Body_Fable.corePart.parts.3.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.4.customLabel>오른쪽 뒷다리</AGM_Body_Fable.corePart.parts.4.customLabel>
+  <AGM_Body_Fable.corePart.parts.4.parts.0.customLabel>오른쪽 뒷발</AGM_Body_Fable.corePart.parts.4.parts.0.customLabel>
+  <AGM_Body_Fable.corePart.parts.7.customLabel>구형 포탑</AGM_Body_Fable.corePart.parts.7.customLabel>
+
+  <!-- ================= 오퍼스 (드래곤 워로드) ================= -->
+
+  <AGM_Body_Warlord.label>드래곤 워로드</AGM_Body_Warlord.label>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.3.customLabel>왼쪽 청각 감지기</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Body_Warlord.corePart.parts.0.parts.0.parts.4.customLabel>오른쪽 청각 감지기</AGM_Body_Warlord.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Body_Warlord.corePart.parts.1.customLabel>왼쪽 앞다리</AGM_Body_Warlord.corePart.parts.1.customLabel>
+  <AGM_Body_Warlord.corePart.parts.1.parts.0.customLabel>왼쪽 앞발</AGM_Body_Warlord.corePart.parts.1.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.2.customLabel>오른쪽 앞다리</AGM_Body_Warlord.corePart.parts.2.customLabel>
+  <AGM_Body_Warlord.corePart.parts.2.parts.0.customLabel>오른쪽 앞발</AGM_Body_Warlord.corePart.parts.2.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.3.customLabel>왼쪽 뒷다리</AGM_Body_Warlord.corePart.parts.3.customLabel>
+  <AGM_Body_Warlord.corePart.parts.3.parts.0.customLabel>왼쪽 뒷발</AGM_Body_Warlord.corePart.parts.3.parts.0.customLabel>
+  <AGM_Body_Warlord.corePart.parts.4.customLabel>오른쪽 뒷다리</AGM_Body_Warlord.corePart.parts.4.customLabel>
+  <AGM_Body_Warlord.corePart.parts.4.parts.0.customLabel>오른쪽 뒷발</AGM_Body_Warlord.corePart.parts.4.parts.0.customLabel>
+
+  <!-- ================= 소네트 (엠프레스) ================= -->
+
+  <AGM_Body_Empress.label>엠프레스</AGM_Body_Empress.label>
+  <AGM_Body_Empress.corePart.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Body_Empress.corePart.parts.0.parts.1.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Body_Empress.corePart.parts.0.parts.2.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.3.customLabel>왼쪽 청각 감지기</AGM_Body_Empress.corePart.parts.0.parts.3.customLabel>
+  <AGM_Body_Empress.corePart.parts.0.parts.4.customLabel>오른쪽 청각 감지기</AGM_Body_Empress.corePart.parts.0.parts.4.customLabel>
+  <AGM_Body_Empress.corePart.parts.2.customLabel>구형 포탑</AGM_Body_Empress.corePart.parts.2.customLabel>
+
+  <!-- ================= 하이쿠 (강철 드래곤) ================= -->
+
+  <AGM_Body_Wyvern.label>강철 드래곤</AGM_Body_Wyvern.label>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Body_Wyvern.corePart.parts.0.parts.1.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Body_Wyvern.corePart.parts.0.parts.2.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.3.customLabel>왼쪽 청각 감지기</AGM_Body_Wyvern.corePart.parts.0.parts.3.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.0.parts.4.customLabel>오른쪽 청각 감지기</AGM_Body_Wyvern.corePart.parts.0.parts.4.customLabel>
+  <AGM_Body_Wyvern.corePart.parts.2.customLabel>구형 포탑</AGM_Body_Wyvern.corePart.parts.2.customLabel>
+
+  <!-- ================= 기사 (유압 기사 · 드래곤 기사) ================= -->
+
+  <AGM_Knight_Body.label>병사</AGM_Knight_Body.label>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Knight_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Knight_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.3.customLabel>왼쪽 청각 감지기</AGM_Knight_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.0.parts.0.parts.4.customLabel>오른쪽 청각 감지기</AGM_Knight_Body.corePart.parts.0.parts.0.parts.4.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.customLabel>왼쪽 어깨</AGM_Knight_Body.corePart.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.customLabel>왼팔</AGM_Knight_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.customLabel>왼손</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>왼쪽 새끼손가락</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>왼쪽 가운뎃손가락</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>왼쪽 집게손가락</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>왼쪽 엄지손가락</AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.customLabel>오른쪽 어깨</AGM_Knight_Body.corePart.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.customLabel>오른팔</AGM_Knight_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.customLabel>오른손</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>오른쪽 새끼손가락</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>오른쪽 가운뎃손가락</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>오른쪽 집게손가락</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>오른쪽 엄지손가락</AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.3.customLabel>왼쪽 다리</AGM_Knight_Body.corePart.parts.3.customLabel>
+  <AGM_Knight_Body.corePart.parts.3.parts.0.customLabel>왼발</AGM_Knight_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Knight_Body.corePart.parts.4.customLabel>오른쪽 다리</AGM_Knight_Body.corePart.parts.4.customLabel>
+  <AGM_Knight_Body.corePart.parts.4.parts.0.customLabel>오른발</AGM_Knight_Body.corePart.parts.4.parts.0.customLabel>
+
+  <!-- ================= 아르곤 (콜로서스) ================= -->
+
+  <AGM_Argon_Body.label>프로토스 콜로서스</AGM_Argon_Body.label>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Argon_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Argon_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Argon_Body.corePart.parts.0.parts.0.parts.3.customLabel>청각 감지기</AGM_Argon_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Argon_Body.corePart.parts.1.customLabel>왼쪽 앞 콜로서스 관절</AGM_Argon_Body.corePart.parts.1.customLabel>
+  <AGM_Argon_Body.corePart.parts.1.parts.0.customLabel>왼쪽 앞 콜로서스 다리</AGM_Argon_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.2.customLabel>오른쪽 앞 콜로서스 관절</AGM_Argon_Body.corePart.parts.2.customLabel>
+  <AGM_Argon_Body.corePart.parts.2.parts.0.customLabel>오른쪽 앞 콜로서스 다리</AGM_Argon_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.3.customLabel>왼쪽 콜로서스 관절</AGM_Argon_Body.corePart.parts.3.customLabel>
+  <AGM_Argon_Body.corePart.parts.3.parts.0.customLabel>왼쪽 콜로서스 다리</AGM_Argon_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Argon_Body.corePart.parts.4.customLabel>오른쪽 콜로서스 관절</AGM_Argon_Body.corePart.parts.4.customLabel>
+  <AGM_Argon_Body.corePart.parts.4.parts.0.customLabel>오른쪽 콜로서스 다리</AGM_Argon_Body.corePart.parts.4.parts.0.customLabel>
+
+  <!-- ================= 플래시 (정화자 불멸자) ================= -->
+
+  <AGM_Flash_Body.label>프로토스 정화자 불멸자</AGM_Flash_Body.label>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.1.customLabel>왼쪽 시각 감지기</AGM_Flash_Body.corePart.parts.0.parts.0.parts.1.customLabel>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.2.customLabel>오른쪽 시각 감지기</AGM_Flash_Body.corePart.parts.0.parts.0.parts.2.customLabel>
+  <AGM_Flash_Body.corePart.parts.0.parts.0.parts.3.customLabel>청각 감지기</AGM_Flash_Body.corePart.parts.0.parts.0.parts.3.customLabel>
+  <AGM_Flash_Body.corePart.parts.1.customLabel>왼쪽 앞 불멸자 관절</AGM_Flash_Body.corePart.parts.1.customLabel>
+  <AGM_Flash_Body.corePart.parts.1.parts.0.customLabel>왼쪽 앞 불멸자 다리</AGM_Flash_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.2.customLabel>오른쪽 앞 불멸자 관절</AGM_Flash_Body.corePart.parts.2.customLabel>
+  <AGM_Flash_Body.corePart.parts.2.parts.0.customLabel>오른쪽 앞 불멸자 다리</AGM_Flash_Body.corePart.parts.2.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.3.customLabel>왼쪽 불멸자 관절</AGM_Flash_Body.corePart.parts.3.customLabel>
+  <AGM_Flash_Body.corePart.parts.3.parts.0.customLabel>왼쪽 불멸자 다리</AGM_Flash_Body.corePart.parts.3.parts.0.customLabel>
+  <AGM_Flash_Body.corePart.parts.4.customLabel>오른쪽 불멸자 관절</AGM_Flash_Body.corePart.parts.4.customLabel>
+  <AGM_Flash_Body.corePart.parts.4.parts.0.customLabel>오른쪽 불멸자 다리</AGM_Flash_Body.corePart.parts.4.parts.0.customLabel>
+
+  <!-- ================= 솔 ================= -->
+
+  <AGM_Sol_Body.label>정적의 둥지 구조체 Doxa-0</AGM_Sol_Body.label>
+  <AGM_Sol_Body.corePart.parts.0.parts.0.parts.0.parts.0.customLabel>심층 논리 코어</AGM_Sol_Body.corePart.parts.0.parts.0.parts.0.parts.0.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.customLabel>반입자 포탑 거치대</AGM_Sol_Body.corePart.parts.1.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.parts.0.customLabel>반입자 발사구</AGM_Sol_Body.corePart.parts.1.parts.0.customLabel>
+  <AGM_Sol_Body.corePart.parts.1.parts.1.customLabel>사격 통제 코어 유닛</AGM_Sol_Body.corePart.parts.1.parts.1.customLabel>
+  <AGM_Sol_Body.corePart.parts.2.customLabel>쉘스플리터 부화실</AGM_Sol_Body.corePart.parts.2.customLabel>
+  <AGM_Sol_Body.corePart.parts.3.customLabel>전방 감지 어레이</AGM_Sol_Body.corePart.parts.3.customLabel>
+  <AGM_Sol_Body.corePart.parts.4.customLabel>다중 발톱 추진부</AGM_Sol_Body.corePart.parts.4.customLabel>
+
+  <!-- ================= 루나 ================= -->
+
+  <AGM_Luna_Body.label>철목 마수</AGM_Luna_Body.label>
+  <AGM_Luna_Body.corePart.parts.0.parts.1.customLabel>왼쪽 열 감지 어레이</AGM_Luna_Body.corePart.parts.0.parts.1.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.2.customLabel>오른쪽 열 감지 어레이</AGM_Luna_Body.corePart.parts.0.parts.2.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.3.customLabel>유압 분쇄기 1</AGM_Luna_Body.corePart.parts.0.parts.3.customLabel>
+  <AGM_Luna_Body.corePart.parts.0.parts.4.customLabel>유압 분쇄기 2</AGM_Luna_Body.corePart.parts.0.parts.4.customLabel>
+  <AGM_Luna_Body.corePart.parts.2.customLabel>인페르노 복사 어레이</AGM_Luna_Body.corePart.parts.2.customLabel>
+
+</LanguageData>

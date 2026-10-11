@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_HeatNullNaniteResistance.label>熱無効ナナイト抵抗</AGM_HeatNullNaniteResistance.label>
+  <AGM_HeatNullNaniteResistance.description>この生物が熱を無効化するナノマシンに対してどれほど抵抗するか。</AGM_HeatNullNaniteResistance.description>
+  <AGM_HeatNullNaniteEnvironmentResistance.label>熱無効環境抵抗</AGM_HeatNullNaniteEnvironmentResistance.label>
+  <AGM_HeatNullNaniteEnvironmentResistance.description>この生物が環境中の熱無効ナノマシンの影響にどれほど抵抗するか。極端な熱波が熱耐性を無効化するナノマシンを放出しても守られます。</AGM_HeatNullNaniteEnvironmentResistance.description>
+  <AGM_ColdNullNaniteResistance.label>冷無効ナナイト抵抗</AGM_ColdNullNaniteResistance.label>
+  <AGM_ColdNullNaniteResistance.description>この生物が冷気を無効化するナノマシンに対してどれほど抵抗するか。</AGM_ColdNullNaniteResistance.description>
+  <AGM_ColdNullNaniteEnvironmentResistance.label>冷無効ナノ環境抵抗</AGM_ColdNullNaniteEnvironmentResistance.label>
+  <AGM_ColdNullNaniteEnvironmentResistance.description>この生物が環境中の冷無効ナノマシンの影響にどれほど抵抗するか。極端な寒波が熱耐性を無効化するナノマシンを放出しても守られます。</AGM_ColdNullNaniteEnvironmentResistance.description>
+  <AGM_RadiationResistance.label>放射線抵抗</AGM_RadiationResistance.label>
+  <AGM_RadiationResistance.description>この生物が放射線中毒にどれほど抵抗するか。</AGM_RadiationResistance.description>
+  <AGM_RadiationEnvironmentResistance.label>放射線環境抵抗</AGM_RadiationEnvironmentResistance.label>
+  <AGM_RadiationEnvironmentResistance.description>この生物が環境中の放射線中毒の影響にどれほど抵抗するか。</AGM_RadiationEnvironmentResistance.description>
+  <AGM_AntiOrgToxinResistance.label>対有機毒素抵抗</AGM_AntiOrgToxinResistance.label>
+  <AGM_AntiOrgToxinResistance.description>この生物が対有機毒素にどれほど抵抗するか。</AGM_AntiOrgToxinResistance.description>
+  <AGM_AntiOrgToxinEnvironmentResistance.label>対有機毒素環境抵抗</AGM_AntiOrgToxinEnvironmentResistance.label>
+  <AGM_AntiOrgToxinEnvironmentResistance.description>この生物が環境中の対有機毒素中毒の影響にどれほど抵抗するか。</AGM_AntiOrgToxinEnvironmentResistance.description>
+  <AGM_RageVirusResistance.label>狂気ウイルス抵抗</AGM_RageVirusResistance.label>
+  <AGM_RageVirusResistance.description>この生物が狂気ウイルスにどれほど抵抗するか。</AGM_RageVirusResistance.description>
+  <AGM_RageVirusEnvironmentResistance.label>狂気ウイルス環境抵抗</AGM_RageVirusEnvironmentResistance.label>
+  <AGM_RageVirusEnvironmentResistance.description>この生物が環境中のウイルス感染の影響にどれほど抵抗するか。</AGM_RageVirusEnvironmentResistance.description>
+
+</LanguageData>

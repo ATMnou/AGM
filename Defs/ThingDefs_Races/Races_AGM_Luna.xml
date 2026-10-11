@@ -9,7 +9,8 @@
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
-            <MarketValue>3200</MarketValue>
+      <BandwidthCost>2</BandwidthCost>
+            <MarketValue>6000</MarketValue>
       <MoveSpeed>3.2</MoveSpeed>
       <ArmorRating_Blunt>1.6</ArmorRating_Blunt>
 	  <EMPResistance>1</EMPResistance>

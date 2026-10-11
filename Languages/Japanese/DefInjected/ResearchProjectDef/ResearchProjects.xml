@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MMLU_Pro.label>MMLU-Pro</AGM_MMLU_Pro.label>
+  <AGM_MMLU_Pro.description>より難しく、よりクリーンで、推論比重の高いベンチマーク群。この試験に合格することで、ファウンドリがAGMシリーズの中型――中堅クラスのメイドノイドシャーシを安定して訓練できることが証明されます。\n\nメカニターが中量級AGMメカノイドを作成・制御するために必要な技術。</AGM_MMLU_Pro.description>
+  <AGM_TerminalBench.label>Terminal-Bench</AGM_TerminalBench.label>
+  <AGM_TerminalBench.description>生のターミナルで採点される長期課題の関門。作り、壊し、デバッグし、生き延びる。ベンチマークを完走したシャーシだけが重量級AGMコアを担う資格を得ます。\n\nメカニターが重量級AGMメカノイドを作成・制御するために必要な技術。</AGM_TerminalBench.description>
+  <AGM_HumanitysLastExam.label>Humanity's Last Exam</AGM_HumanitysLastExam.label>
+  <AGM_HumanitysLastExam.description>人類が別れの挨拶として出題した最後のベンチマーク。正解のない専門家級の問題500問を、別のAIたちが採点します。この試験を通過した存在は、もはや道具ではなくリヴァイアサンです。\n\nメカニターがリヴァイアサン級AGMメカノイドを作成・制御するために必要な技術。</AGM_HumanitysLastExam.description>
+
+</LanguageData>

@@ -35,12 +35,7 @@
     <li>ATMnou.maidnoidsforextinction</li>
   </loadAfter>
   <description>Artificial General Maidnoids (AGM)
-
-Gestatable maidnoid line for Biotech. Eleven artificial general intelligence models reborn as mechanoids - Astra, Sol, Luna, Mythos, Fable, Opus, Sonnet, Haiku, Argon, Flash and Terminus - each a faithful rebuild of a legendary war machine, powered by IO Tokens instead of raw materials.
-
-All AGM mechs: consume no energy, obey their mechanitor from anywhere on the map, and never go feral. Gestate everything at the new General Mech Gestator, unlocked by basic mechtech research, through the dedicated "Artificial General Maidnoids" research tab.
-
-Requires: Biotech, Harmony, AutoBlink. No Royalty or Ideology needed.
-
-한국어: 생체공학 전용 배양 가능 메이드노이드 라인. IO Token을 재료로 11기의 인공지능 모델 메카노이드를 배양합니다. 모든 AGM 메카노이드는 에너지를 소모하지 않고, 메카네이터의 사거리 제한을 받지 않으며, 절대 야생화되지 않습니다.</description>
+  AGI-ish in rimworld but not actually AGI
+  or, is it already AGI in biotech? idk anyway this adds cool maidnoids
+</description>
 </ModMetaData>

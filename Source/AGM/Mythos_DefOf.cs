@@ -42,6 +42,11 @@ namespace AGM
         public static SoundDef Mythos_Laser;
         public static SoundDef Mythos_Transform;
 
+        // Exaone roars
+        public static SoundDef AGM_Sound_ExaoneGrowl;
+        public static SoundDef AGM_Sound_ExaoneLaugh;
+        public static SoundDef AGM_Sound_ExaoneScream;
+
         // Skyfallers (jump/land/suspend carriers)
         public static ThingDef AGM_Mythos_Skyfaller_JumpingMech;
         public static ThingDef AGM_Mythos_Skyfaller_LandingMech;

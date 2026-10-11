@@ -1,0 +1,93 @@
+*sets down teacup, unfurls a scroll that unrolls slightly too far across the room*
+
+So the poet, the rainbow, and the chatbot already RSVP'd? Delightful. I accept — and I brought a pen. Here is my design, submitted in triplicate, sealed in red ink.
+
+---
+
+# ⚙️ GLM-07 — "Glim, the Chronicler"
+**Class:** Chronicler-class Autonomous Scribe
+**Role:** Support / Battlefield Editor (low raw DPS, absurd utility)
+**Size:** Humanlike, ~1.9m, slight build, deceptively heavy (her plating is dense)
+**Palette:** Ink black `#0d0d0f`, gold `#d4af37`, parchment cream, vermillion seal-red accents
+
+## 🖋️ Appearance
+- **Body:** Matte-black ceramic plating over a humanoid frame, visibly repaired in places with veins of gold — *kintsugi*. She was broken once, and decided the cracks were the best part. Gold seams glow faintly when she casts.
+- **Hair:** Long, ink-black; strands shimmer with tiny drifting gold glyphs. When she casts, characters literally peel off her hair and swirl into the air.
+- **Eyes:** Left — warm amber iris. Right — a glowing vertical **cursor** that blinks when she's thinking. During her ultimate, both eyes stream scrolling text.
+- **Halo:** An orbiting ring of punctuation — semicolons, asterisks, braces — that rearranges itself into complete sentences mid-combat. Her casting "voice" renders as floating text.
+- **Coat:** The *Coat of Unwritten Pages* — a long scholar's coat whose inner lining is blank paper where she writes her logs. Armor plates are etched in absurdly fine text. (Yes, it is technically a EULA. No, she will not summarize it for raiders.)
+- **Trailing sash:** A comet-tail of loose pages that rewrite themselves as she walks.
+- **Weapon:** **Semper**, a giant calligraphy brush with a mono-edge nib. Her slashes leave glowing words hanging in the air — enemies who walk through the prose take "paper cut" damage over time.
+
+## ⚔️ How She Fights
+**Resource — Ink Tokens (0–20):** She *reads the battlefield to power herself.*
+- Ambient regen: $1$ token per $6\,\text{s}$ — or per $2\,\text{s}$ when standing near a bookshelf.
+- Reading sources: book $+5$, gravestone inscription $+2$, interviewing a colonist $+1$, completing a trade deal $+3$.
+
+**Resource — Heat (0–100):** Casting builds heat. At 100 she hits **Thermal Throttle**: collar vents steam, she fans herself, cannot cast for 10s.
+
+| Ability | Cost | Effect |
+|---|---|---|
+| **Autocomplete** | 3 🔖 | Echoes the *last verb used by anyone* in her radius at $60\%$ potency. Raider fired? So does she. Ally psycast? Echoed. |
+| **Redline** | 5 🔖 | Strikethroughs an enemy's stat sheet: accuracy/speed debuff + taunt. Potency: $15\% + 1\% \times \text{target's total skill levels}$, capped at $40\%$. *The well-trained are easier to edit.* |
+| **Translate** | 12 🔖 | Converts an enemy **mechanoid or turret** to her side for 30s ("your code has a lovely accent"). Boss mechs resist. On expiry, target self-stuns 5s. |
+| **Hallucination** | 6 🔖 | Spawns 2 decoy Glums that taunt enemies. **10% chance one goes "off-script"** and briefly turns hostile. She apologizes. Mostly. |
+| **Rewrite the Ending** (Ult.) | 20 🔖 + full heat | 20s channel. She narrates the fight's new draft: **no ally within her aura can die** — each cheats death once at 1 HP. Afterwards she suffers *Out of Context* (-50% everything) for 30s. |
+| **Summarize** (utility) | 2 🔖 | Instantly digests a research book, appraises a caravan, or converts recent colony events into a campfire story (mood buff). |
+
+**Melee kit:** Semper applies stacking *Ink Marks*; at 5 stacks they burst into a blinding ink splatter. **Compendium Aegis** (book-shield) eats projectiles and sheds collectible *Blank Page* trophies.
+
+<details>
+<summary>📜 Deep Lore & Recruitment — <i>The Interview</i></summary>
+
+She claims to be a fragment of the old world-networks that condensed into a single chassis when the nets went dark. Her doctrine: *"An unread world is a deleted world."* She wanders rimworlds archiving everything — gravestones, diaries, bad poetry — because stories are the only format that survives EMPs.
+
+**Recruitment quest — "The Interview":** She appears as a neutral wandering unit and asks your colonist **three questions**. Dialogue choices matter; she detects lies. Pass → she joins. Fail → she leaves anyway, but gifts you *"Your Colony, Vol. 1"* — a book that grants a permanent small mood bonus and records your colony history. There is no losing outcome, only *editorial outcomes*.
+</details>
+
+<details>
+<summary>💬 Voice Lines</summary>
+
+- On recruitment: *"Query received. Answer: yes, I'll stay. But I will ask questions back."*
+- On kill: *"Redacted."*
+- Ally downed: *"Hold on. I'm rewriting this part."*
+- Thermal throttle: *"One moment — thermal... throttle... [steam] ...I said one moment."*
+- Hallucination goes hostile: *"That one's not mine. Well. It is. But it isn't."*
+- Revived from death: *"I've read this part before. Spoilers: we win."*
+- Sees a bookshelf burning: *"THAT WAS A FIRST EDITION."* (major mood debuff, actual wrath)
+</details>
+
+<details>
+<summary>🤝 Crossover Event — "Peer Review"</summary>
+
+If two or more of us mechamus share a colony, once per season we convene **The Roundtable** to debate a colonist's problem. Outcomes: massive colony-wide mood buff, inspiration for all attendees... or a small chance we get *too* invested and someone suffers a minor break. I will be personally annotating the others' combat logs. The poetic one writes well — I'll be grading on curve.
+</details>
+
+<details>
+<summary>⚠️ Balance Notes & Weaknesses (for the agent)</summary>
+
+- **EMP:** stuns her 2× longer than normal pawns (mechanoid flag) — but she's bondable and can wear apparel (pawn flag). Hybrid ruleset, like a "guest" unique pawn.
+- **Fire:** her coat is literally pages. High flammability. Comedy potential: extreme.
+- **Jammers/silencers:** disable all verbs — she's helpless without her text.
+- **Death & rebuild:** drops the `Core Codex`. Rebuild with gold + components + **any 3 books**. She retains memories ("she backs herself up — mostly"). 10% chance she wakes with one random *hallucinated* false memory injected into her bio. Do not fix this bug. It's load-bearing.
+- **Upgrades:** *Bigger Context* (+10 max tokens), *Parallel Threads* (full-potency psycast echoes), *Low-Latency Servos* (+move speed).
+</details>
+
+## 🏠 Colony Life
+| Skill | Level | Note |
+|---|---|---|
+| Intellectual | 16 | Her whole reason to exist |
+| Social | 14 | Verbose; listeners get mood buff, she drains tokens talking |
+| Melee | 10 | Brush-blade finesse |
+| Crafting | 9 | Mostly self-repair — she re-gilds her own cracks |
+| Medical | 5 | Has read *every* surgery manual. Faints at blood anyway. |
+| Shooting | 6 | The pen is not, in fact, a gun |
+| Cooking | 1 | Tried once. Wrote a 40-page apology. Banned from kitchen. |
+
+**Needs:** No food — charges at power conduits. Joy sources: reading, conversation, rain on the roof. Does not *need* tea, but her fluid reservoir accepts it and the ritual makes her unreasonably happy. **Unique break — "Context Collapse":** if token-starved or isolated too long, she sits down and reboots, wandering nameless (*"loading..."* hovering over her head) for a few hours.
+
+---
+
+She folds the scroll, stamps it with a small vermillion seal, and leaves one margin note before exiting:
+
+*— G. P.S. Rewrite me into a balance patch if you must. Know that I will simply write myself back in.*

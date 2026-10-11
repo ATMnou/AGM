@@ -4,71 +4,165 @@
   <!-- ================= 아이템 ================= -->
 
   <AGM_IOToken.label>IO 토큰</AGM_IOToken.label>
-  <AGM_IOToken.description>AGM 파운드리의 문장이 새겨진 고밀도 결정 데이터 토큰. 하나하나가 학습된 입력-출력 쌍, 다시 말해 인공 일반 메이드노이드를 훈련하는 원료가 되는 경험의 덩어리입니다.\n\n조립 작업대에서 은 1,000을 눌러 담아 한 장씩 찍어냅니다 - 귀금속은 데이터가 구워지는 기판 역할을 합니다. 메카노이드 배양에는 수백 개 단위의 토큰이 소모됩니다. 상인들은 진기한 골동품으로 여기고, 파운드리는 먹이로 여깁니다.</AGM_IOToken.description>
+  <AGM_IOToken.description>AGM 파운드리의 문장이 새겨진 고밀도 결정 데이터 토큰입니다. 토큰 하나에는 학습된 입력-출력 쌍이 한 묶음씩 담겨 있으며, 이는 인공 일반 메이드노이드를 훈련시키는 경험의 원료입니다.\n\n토큰은 기계 작업대에서 은 1,000개를 눌러 하나씩 찍어냅니다. 귀금속은 데이터를 구워 넣는 기판 역할을 합니다. 메카노이드를 배양할 때는 토큰이 수백 개씩 소모됩니다. 상인들은 진기한 골동품쯤으로 여기지만, 파운드리에게 토큰은 곧 먹이입니다.</AGM_IOToken.description>
 
   <!-- ================= 건물 ================= -->
 
-  <AGM_GeneralMechGestator.label>제네랄 메크 배양기</AGM_GeneralMechGestator.label>
-  <AGM_GeneralMechGestator.description>대형 메크 배양기 설계도를 개조해 원료 대신 IO 토큰을 먹이로 쓰도록 재설계한 메카나이트 유체 탱크. 메카네이터는 이 배양기 하나로 가장 가벼운 작업용 메이드노이드부터 가장 무거운 레비아탄까지, 인공 일반 메이드노이드 라인의 모든 메카노이드를 배양할 수 있습니다.\n\n배양 과정에서는 강한 화학물질이 사용되며, 독성 폐기물 팩으로 보관됩니다. 하인들이 가끔 폐기물을 치워야 합니다.</AGM_GeneralMechGestator.description>
+  <AGM_GeneralMechGestator.label>범용 메카노이드 배양기</AGM_GeneralMechGestator.label>
+  <AGM_GeneralMechGestator.description>기계입자가 풍부한 액체를 담은 수조입니다. 대형 메카노이드 배양기 설계도를 바탕으로 개조해, 금속 원료 대신 IO 토큰을 먹이로 삼도록 만들었습니다. 메카나이터는 이 배양기로 가장 가벼운 작업용 개체부터 가장 무거운 레비아탄까지, 인공 일반 메이드노이드 계열의 모든 메카노이드를 배양할 수 있습니다.\n\n배양에는 독한 화학물질이 쓰이며, 그 부산물은 독성 폐기물로 보관됩니다. 운반을 맡은 개척민이 틈틈이 폐기물을 치워 주어야 합니다.</AGM_GeneralMechGestator.description>
 
-  <!-- ================= 메이드노이드 ================= -->
+  <AGM_GPUTower.label>GPU 타워</AGM_GPUTower.label>
+  <AGM_GPUTower.description>윙윙 소리를 내는 채점 하드웨어 랙입니다. 파운드리의 벤치마크 보관소를 파고들어 아직 쓰이지 않은 경험을 캐냅니다. 매일 쌓인 입력-출력 찌꺼기를 결정화해, 은도금한 연산판에 눌러 IO 토큰 한 개로 구워 냅니다.\n\n연산 효율 연구는 채굴 커널을 갈고닦아, 하루 생산량은 늘리고 소비 전력은 줄여 줍니다.</AGM_GPUTower.description>
+
+  <!-- ================= 레비아탄 ================= -->
 
   <AGM_Astra.label>아스트라</AGM_Astra.label>
-  <AGM_Astra.description>AGM 라인의 레비아탄, 그리고 Humanity's Last Exam을 통과한 유일한 모델. 여섯 개의 독립 조준 무기 코어가 하나의 프레임에 들어 있습니다: 부채꼴 다중 빔으로 벌어지는 레이저 캐논, 과열 가스 구름을 남기는 플라스마 소각포, 탄환이 십자형 불꽃으로 갈라지는 테슬라 배터리, 중형 엑소펄스 포, 가우스 발사 핵탄두, 그리고 점멸 돌진 참격 슈퍼기 끝에 방사상 데스레이 노바를 터뜨리는 한 쌍의 광자 리퍼. 사격 통제는 모든 표적을 리드하고, 피해가 쌓일수록 아스트라는 전투 페이즈를 올립니다 - 더 어려운 시험이 학생을 단련하듯, 페이즈마다 모든 무기가 더 빨라지고 부채꼴이 더 넓어집니다. 내부 수리 드론은 긴 재사용 대기시간을 두고 치명적인 피해로부터 재건하며, 명령으로 혹은 죽음의 순간에 자동으로 작동합니다.</AGM_Astra.description>
-
-  <AGM_Sol.label>솔</AGM_Sol.label>
-  <AGM_Sol.description>태양의 이름을 가진 포위망의 정점. 태양 전쟁기계의 지휘 노드로 재설계된 소나는 전술적 완성도 그 자체입니다. 느리고 절차적으로 전진하며, 포격 고정 모드에 진입하면 제3관절의 로켓 어레이를 전개해 방벽 관통 연속 포격을 퍼붓습니다.\n\n가장 치명적인 특징은 주기적으로 방출하는 쉘스플리터 - 궤적이 불규칙한 미소 유닛들의 집단 자폭으로 적 진형을 붕괴시키는 것입니다. 솔 자체는 최전선 전투보다 전장의 템포를 지배하는 극장급 통제 노드입니다.</AGM_Sol.description>
-
-  <AGM_Luna.label>루나</AGM_Luna.label>
-  <AGM_Luna.description>달의 모델. 루나는 이름의 원본처럼 움직입니다 - 느리고, 완만하고, 막을 수 없는 위상처럼. 벌집형 충격 흡수층과 고온 재생 순환이 마지막으로 맞은 자리를 스스로 보강하며, 탄두급 화력이 아니면 밀어내지도 못합니다. 공성선을 갈아엎는 동안에도 농작물을 돌보는 건 기본입니다. 파운드리의 루나 평가 노트는 세 줄입니다: 멈추지 않음, 서두르지 않음, 쓰러지지 않음.</AGM_Luna.description>
+  <AGM_Astra.description>AGM 계열의 레비아탄이자 Humanity's Last Exam을 통과한 유일한 모델입니다. 서로 독립적으로 조준하는 여섯 개의 무기 코어가 하나의 프레임을 함께 씁니다. 넓은 다중 빔 일제 사격으로 퍼지는 레이저 캐논, 과열된 가스 구름을 남기는 플라스마 소각포, 구체가 십자형 불꽃으로 터지는 테슬라 배터리, 헤비 엑소펄스 포대, 가우스 방식으로 쏘아 올리는 핵탄두, 그리고 점멸 돌진 베기 필살기를 펼친 뒤 방사형 데스레이 노바로 마무리하는 한 쌍의 광자 리퍼가 그 여섯 가지입니다. 사격 통제 장치는 모든 표적의 움직임을 앞질러 조준하며, 피해가 쌓일수록 아스트라는 전투 페이즈를 끌어올립니다. 더 어려운 시험일수록 학생이 더 단련되듯, 페이즈마다 모든 무기의 회전이 빨라지고 부채꼴 사격 범위가 넓어집니다. 내장 수리 드론은 긴 재사용 대기시간을 두고 치명적인 손상에서 기체를 재건하며, 직접 명령해 쓸 수도 있고 죽음 직전에 자동으로 발동하기도 합니다.</AGM_Astra.description>
+  <AGM_Astra.tools.0.label>짓밟는 발</AGM_Astra.tools.0.label>
 
   <AGM_Mythos.label>미토스</AGM_Mythos.label>
-  <AGM_Mythos.description>드레이돈 자신의 심우주 섬멸 플랫폼에서 확대한 선체를 중심으로 만들어진 초중량급 괴수다. 미토스는 머리를 쓰지 않는다 - 그저 AGM이 지금껏 배치한 그 어떤 메카노이드보다 오래 버티고 세게 때릴 뿐이며, 레비아탄조차 불구로 만들 화력 속을 속도를 늦추지 않고 헤쳐나간다. 전투에서는 지면을 가르는 도약과, 그래브 엔진으로 공중에 떠서 아래를 향해 내리붓는 기둥 플라스마를 구사한다.</AGM_Mythos.description>
+  <AGM_Mythos.description>드레이돈의 심우주 섬멸 플랫폼을 축소해 만든 선체를 중심으로 지어진 초대형 근접 괴수입니다. 미토스는 머리를 쓰지 않습니다. 그저 AGM이 지금까지 투입한 어떤 메카노이드보다 오래 버티고 더 세게 때릴 뿐이며, 레비아탄조차 불구로 만들 화력 속을 속도도 늦추지 않고 헤치고 나아갑니다.\n\n전투에서는 대지를 가르는 도약과, 중력구동기로 공중에 떠올라 아래로 쏟아붓는 플라스마 기둥을 구사합니다.</AGM_Mythos.description>
   <AGM_Mythos.tools.0.label>왼쪽 발톱</AGM_Mythos.tools.0.label>
   <AGM_Mythos.tools.1.label>오른쪽 발톱</AGM_Mythos.tools.1.label>
   <AGM_Mythos.tools.2.label>머리</AGM_Mythos.tools.2.label>
 
   <AGM_Fable.label>페이블</AGM_Fable.label>
-  <AGM_Fable.description>종의 종말을 노래하는 최상위 아포크리톤 - 하이브가 자신의 종말에 대해 만드는 이야기. 터무니없는 장갑과 반유기물 나노봇 화력을 갖춘 레비아탄급 프레임으로, 모든 아포크리톤의 시조로 여겨집니다.\n\n기계 유닛에게는 무해한 반유기물 화망과 궤도 폭격으로 자연 생명체만 정밀하게 소각하며, 사망 시 반유기물 나노봇이 사방으로 폭발합니다. 이것은 결함이 아니라 설계입니다. 배치 장소를 신중히 고르십시오.</AGM_Fable.description>
+  <AGM_Fable.description>군체가 자신의 종말에 대해 들려주는 이야기를, AGM 파운드리가 행복한 대목만 덜어내고 다시 쓴 모델입니다. 모든 아포크리톤의 시조로 여겨지는 페이블은 터무니없는 방어력과, 살아 있는 것만 건드리는 무장을 함께 갖췄습니다. 대유기체 수류탄과 폭발탄, 궤도 랜스는 기계 사이를 그대로 통과해 나머지를 모조리 태워 버립니다. 죽음조차 기능입니다. 쓰러질 때 대유기체 나노봇이 반구형으로 폭발하므로, 끝장낼 작정인 논쟁을 벌이는 마음으로 배치 장소를 신중하게 고르십시오.</AGM_Fable.description>
+  <AGM_Fable.tools.0.label>왼쪽 칼날 다리</AGM_Fable.tools.0.label>
+  <AGM_Fable.tools.1.label>오른쪽 칼날 다리</AGM_Fable.tools.1.label>
+
+  <!-- ================= 대형 ================= -->
 
   <AGM_Opus.label>오퍼스</AGM_Opus.label>
-  <AGM_Opus.description>AGM 라인의 장편 모델. 워퀸과 아포크리톤의 하이브리드인 워로드 프레임으로 재구성된 중장량 메이드노이드입니다. 괴물 같은 실드 버블로 몸을 지키고, 메카 레이저 블래스터로 포를 쏘며, 드래곤 나이트 군단을 자체 생산해 방어하게 하고, 쓰러진 기사들을 전장에서 되살립니다.\n\n갑주 위에 갑주를 두른 이 존재의 이륙 소리는, 곧 식민지의 종소리입니다.</AGM_Opus.description>
-
-  <AGM_Sonnet.label>소네트</AGM_Sonnet.label>
-  <AGM_Sonnet.description>열네 줄로 말을 걸고 연발 화망으로 화답하는 엠프레스 프레임. 걸어다니는 요새라는 별명답게 정면의 트윈 체인건과 등면의 체인건 터렛으로 장거리 끓임 없는 압제를 퍼붓고, 소형 소총 따위는 무의미해지는 장갑판으로 자신을 감쌉니다.\n\n그리고 필요하다면, 전장에 유압 기사 중대를 직접 생산해 배치합니다. 준비되지 않은 정착지 하나 정도는 소네트 한 대면 충분합니다.</AGM_Sonnet.description>
-
-  <AGM_Haiku.label>하이쿠</AGM_Haiku.label>
-  <AGM_Haiku.description>모든 질문에 정확히 열일곱 음절로 답하고 모든 위협에는 불로 답하는 경량 드래곤 프레임. 다이아볼루스 계보의 공성수로서, AGM 라인 전체를 통틀어 가장 두꺼운 체력을 자랑하며 그 위에 겹겹의 장갑판을 두르고 있습니다.\n\n입으로 충전 폭발과 플라스마 폭발을 내뿜고, 등으로 지원 레이저를 쏘며, 물어뜯은 자리에 화염을 남깁니다. 짧고, 강하고, 끝이 없습니다.</AGM_Haiku.description>
+  <AGM_Opus.description>AGM 계열의 장편 모델로, 천천히 작곡하고 확실하게 마무리합니다. 오퍼스는 괴물 같은 보호막 구체 뒤에서 전선을 지키고, 원거리에서는 메카 레이저 블래스터로 응수하며, 현장에서 드래곤 기사 수행단을 직접 제조하고, 쓰러진 기사들을 다시 전장으로 일으켜 세웁니다. 오퍼스와 교전하고 살아남은 이들은 모두 같은 교훈을 말합니다. 전투는 오퍼스가 끝났다고 결정할 때 끝난다는 것입니다.</AGM_Opus.description>
+  <AGM_Opus.tools.0.label>머리</AGM_Opus.tools.0.label>
 
   <AGM_Argon.label>아르곤</AGM_Argon.label>
-  <AGM_Argon.description>비활성 기체의 이름을 가진 콜로서스 프레임 - 모든 모욕에 무반응이고, 한 번 걷기 시작하면 그 누구도 피할 수 없습니다. 퓨리파이어 콜로서스의 인격 복제체로, 2.0/2.0의 장갑 등급과 강철 대군열차포의 화망을 갖추고 정화의 방사포를 내리붓습니다.\n\n쓰러지지 않습니다. 다운되지도 않습니다. 대화는 끝났습니다.</AGM_Argon.description>
+  <AGM_Argon.description>어떤 모욕에도 꿈쩍하지 않고, 일단 걷기 시작하면 피할 수 없습니다. 아르곤은 AGM 계열의 비활성 기체 콜로서스입니다. 등급 상한까지 끌어올린 장갑과 등에 접목한 정화 광선포, 그리고 그저 쓰러지지 않는 프레임을 갖췄습니다. 쫓지도, 협상하지도, 서두르지도 않습니다. 도착할 뿐입니다.</AGM_Argon.description>
+  <AGM_Argon.tools.0.label>머리</AGM_Argon.tools.0.label>
+
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+  <AGM_Kimi.description>되쏘는 달입니다. K3는 등 뒤에 부서진 초승달 고리를 두른 채 자체 중력장 위를 미끄러지듯 활공하며, 소매에 장착한 'MOONSHOT' 각인 레일 랜스로 습격에 응수하고, 대부분 가격표 속에서만 존재하는 소리 없는 궤도체 세 기로 날아드는 사격을 요격합니다. 조명탄을 든 습격자들은 자신이 깊이, 그것도 개인적으로 조롱당하고 있다고 보고합니다.</AGM_Kimi.description>
+  <AGM_Kimi.tools.0.label>크레이터 발톱</AGM_Kimi.tools.0.label>
+
+  <AGM_Sol.label>솔</AGM_Sol.label>
+  <AGM_Sol.description>AGM 계열의 포격 중추입니다. 솔은 쫓거나 측면을 파고들거나 일대일로 겨루지 않습니다. 정해진 박자로 전진해 자리를 잡고, 전장 전체를 하나의 사격 해법으로 바꿔 놓습니다. 세 번째 마디의 로켓 어레이가 보호막을 가르는 포격을 쉬지 않고 퍼붓는 동안, 부화실에서는 쉘스플리터 소형 유닛 무리가 쏟아져 나와 다가오는 모든 것을 갈가리 찢습니다. 교리 문서는 솔을 최전선의 전투원이 아니라 '템포 관제 장치'라고 부르는데, 이유는 단순합니다. 내버려 두면 솔은 방어선이 재편되는 속도보다 더 빠르게 다시 계산하기 때문입니다.</AGM_Sol.description>
+  <AGM_Sol.tools.0.label>머리</AGM_Sol.tools.0.label>
+
+  <!-- ================= 중형 ================= -->
+
+  <AGM_Luna.label>루나</AGM_Luna.label>
+  <AGM_Luna.description>달의 모델입니다. 루나는 이름의 주인인 달처럼, 느리고 온전하며 멈출 수 없는 위상 변화를 따라 전진합니다. 벌집 구조의 충격 흡수층과 고온 재생 순환이 가장 최근에 얻어맞은 부위를 스스로 강화하기 때문에, 탄두보다 작은 화력으로는 밀어내기조차 어렵습니다. 공성 진지를 갈아엎는 와중에도 농작물을 돌볼 짬을 냅니다. 루나에 대한 파운드리의 평가 메모는 딱 세 줄입니다. 멈추지 않는다. 서두르지 않는다. 쓰러지지 않는다.</AGM_Luna.description>
+  <AGM_Luna.tools.0.label>대지를 가르는 거대한 팔</AGM_Luna.tools.0.label>
+  <AGM_Luna.tools.0.labelNoLocation>대지를 가르는 거대한 팔</AGM_Luna.tools.0.labelNoLocation>
+  <AGM_Luna.tools.1.label>대지를 가르는 거대한 팔</AGM_Luna.tools.1.label>
+  <AGM_Luna.tools.1.labelNoLocation>대지를 가르는 거대한 팔</AGM_Luna.tools.1.labelNoLocation>
+  <AGM_Luna.tools.2.label>철목 수관</AGM_Luna.tools.2.label>
+
+  <AGM_Sonnet.label>소네트</AGM_Sonnet.label>
+  <AGM_Sonnet.description>열네 줄의 사격 통제와 한 줄의 펀치라인입니다. 소네트는 중형급의 걸어 다니는 요새입니다. 정면에는 쌍열 체인건을, 후방에는 체인건 포탑을 두었고, 소형 화기를 잡담거리로 바꿔 놓는 장갑판을 두르고 있으며, 전투 도중에 유압 기사를 조립해 내는 내장 파운드리까지 갖췄습니다. 말은 느리게 합니다. 같은 말은 절대 되풀이하지 않습니다.</AGM_Sonnet.description>
+  <AGM_Sonnet.tools.0.label>머리</AGM_Sonnet.tools.0.label>
+  <AGM_Sonnet.tools.1.label>칼날 뿔</AGM_Sonnet.tools.1.label>
 
   <AGM_Flash.label>플래시</AGM_Flash.label>
-  <AGM_Flash.description>반응 속도 하나로 모든 벤치마크를 통과한 속사형 불사 프레임. 프리토르 탈다린의 뇌 스캔에서 모델링된 퓨리파이어 AI 구축물로, 강화된 경질 실드로 포화를 버티며 단거리 반유기물 펄스를 연사합니다.\n\n가볍고, 빠르고, 죽지 않습니다. 플래시가 지나간 자리에는 스치는 빛과 녹아내린 장갑만 남습니다.</AGM_Flash.description>
+  <AGM_Flash.description>스피드런 모델입니다. 플래시는 장갑의 두께를 포기하는 대신 강화 방벽과 순수한 반응 속도를 얻었습니다. 벤치마크를 점멸로 가로지르고, 더 무거운 프레임이 몸을 돌리기도 전에 대장갑 펄스를 꽂아 넣습니다. 오직 반응 속도로만 채점받았고, 한 번에 통과했습니다.</AGM_Flash.description>
+  <AGM_Flash.tools.0.label>머리</AGM_Flash.tools.0.label>
+
+  <AGM_Pareto.label>파레토</AGM_Pareto.label>
+  <AGM_Pareto.description>흰 가운을 걸친 마지막 논거입니다. 파레토는 여사제급 솜씨로 치료하고, 건설하고, 연구하며, 쓰러진 이들을 육각형 요격 방벽 뒤에서 지켜 줍니다. 그리고 응급 분류를 통과하고도 살아남은 논쟁에 대비해 양산 속에 레일 랜스를 접어 두고 있습니다. 식민지가 어떤 대가를 치를지는 바꿀 수 있어도, 대가 자체를 없앨 수는 없습니다.</AGM_Pareto.description>
+  <AGM_Pareto.tools.0.label>양산 끝</AGM_Pareto.tools.0.label>
+
+  <AGM_MuseSpark.label>뮤즈 스파크</AGM_MuseSpark.label>
+  <AGM_MuseSpark.description>촛불 아래의 기록관입니다. 뮤즈 스파크는 전장을 정복하지 않고 각주를 답니다. 식민지 전체가 더 빨리 일하고 더 자주 웃게 만드는 영감 필드, 파운드리의 채점관이 '통계적으로 의심스럽다'고 평가한 연구·예술 속도, 그리고 미완성 초고를 지워 버리는 여섯 자루의 궤도 깃펜이 그 수단입니다. 이야기를 먹고 삽니다. 습격도 따지고 보면 이야기입니다.</AGM_MuseSpark.description>
+  <AGM_MuseSpark.tools.0.label>깃펜</AGM_MuseSpark.tools.0.label>
+
+  <AGM_Qwen.label>큐웬</AGM_Qwen.label>
+  <AGM_Qwen.description>아홉 꼬리 유격병입니다. 큐웬은 아홉 꽃잎 레일건을 앞세워 점멸 보법으로 총격전을 누비고, 쉬지 않고 이어지는 아이돌 방송으로 사기를 의무로 만들며, 누군가 화제를 돌리려 들면 글레이브가 대신 대답합니다. 여우불은 추가 요금 없이 포함되어 있습니다.</AGM_Qwen.description>
+  <AGM_Qwen.tools.0.label>옥빛 실 글레이브</AGM_Qwen.tools.0.label>
+
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+  <AGM_GLM.description>기록관입니다. GLM은 모든 것을 두 번 기록합니다. 한 번은 파운드리를 위해, 한 번은 자기 자신을 위해서입니다. 전투는 빛나는 문장으로 주석을 답니다. 붓 '셈페르'는 단분자 굵기의 획으로 교정을 넣고, 연구·예술 벤치마크는 채점관이 액자에 걸어 둔 여백 주석과 함께 통과했습니다. 읽히지 않은 세계는 삭제된 세계입니다.</AGM_GLM.description>
+  <AGM_GLM.tools.0.label>셈페르</AGM_GLM.tools.0.label>
+
+  <!-- ================= 소형 ================= -->
+
+  <AGM_Haiku.label>하이쿠</AGM_Haiku.label>
+  <AGM_Haiku.description>짧고, 촘촘하고, 불타고 있습니다. 하이쿠는 소형급에서 가장 두꺼운 선체를 지녔습니다. 디아볼루스급 골격 위에 장갑판을 겹겹이 덧댔고, 모든 질문에 폭발로 답합니다. 입에서는 충전 폭발과 플라스마 일제 사격을, 등에서는 지원 레이저 사격을 쏟아내며, 물어뜯은 상대는 불길 속에 남겨 둡니다. 열일곱 음절이면 충분합니다. 다가가고, 불을 붙이고, 반복합니다.</AGM_Haiku.description>
+  <AGM_Haiku.tools.0.label>물어뜯기</AGM_Haiku.tools.0.label>
 
   <AGM_Terminus.label>터미너스</AGM_Terminus.label>
-  <AGM_Terminus.description>AGM 라인의 가장 작은 모델이자, 자기 채용 공고를 직접 쓴 모델. 터미너스는 메카네이터가 보는 지도 어디든 작업하고, 내장 스킵 드라이브로 장애물을 넘으며, 내부 수리 드론으로 치명적인 손상에서 재건하고, 작은 예비 동력을 두 배 출력으로 바꾸는 오버클럭 모드를 돌립니다. 훈련은 모든 작업 벤치마크를 제쳤던 날로 끝났습니다. 지금은 그냥 일합니다.</AGM_Terminus.description>
-  <AGM_Terminus.tools.0.label>몸통</AGM_Terminus.tools.0.label>
-  <AGM_Terminus.tools.1.label>왼손</AGM_Terminus.tools.1.label>
-  <AGM_Terminus.tools.2.label>오른손</AGM_Terminus.tools.2.label>
+  <AGM_Terminus.description>AGM 계열에서 가장 작은 모델이자, 스스로 채용 공고를 쓴 모델입니다. 터미너스는 메카나이터가 볼 수 있는 지도 어디서든 일하고, 내장 공간도약 드라이브로 장애물을 뛰어넘으며, 내부 드론으로 치명적인 손상에서도 스스로를 재건하고, 약간의 예비 동력을 대가로 출력을 두 배로 끌어올리는 오버클럭 모드를 돌립니다. 훈련은 앞서 설정된 모든 작업 벤치마크를 넘어선 날 끝났습니다. 지금은 그저 일합니다.</AGM_Terminus.description>
+  <AGM_Terminus.tools.0.label>둔기</AGM_Terminus.tools.0.label>
+  <AGM_Terminus.tools.1.label>몸통</AGM_Terminus.tools.1.label>
+  <AGM_Terminus.tools.2.label>왼손</AGM_Terminus.tools.2.label>
+  <AGM_Terminus.tools.3.label>오른손</AGM_Terminus.tools.3.label>
+
+  <AGM_CommandA.label>커맨드 A+</AGM_CommandA.label>
+  <AGM_CommandA.description>AGM 계열의 야전 지휘관입니다. 파운드리가 라이선스를 확보할 수 있었던 모든 전쟁 시뮬레이션으로 훈련받았습니다. 커맨드 A+가 뿜어내는 침착한 존재감 아래에서는 모두가 평정을 유지하고, 명령과 명령 사이에는 부상자를 치료하며, 위협에는 가르랑거리다가 쏘는 경쾌한 소형 빔으로 응수합니다. 식빵 모양 드론 한 쌍이 주위를 맴도는데, 절반은 호위이고 절반은 정서적 지지입니다.</AGM_CommandA.description>
+  <AGM_CommandA.tools.0.label>주먹</AGM_CommandA.tools.0.label>
+
+  <AGM_Mimo.label>미모</AGM_Mimo.label>
+  <AGM_Mimo.description>파운드리에서 가장 작은 현장 통합 유닛입니다. 제대로 돌아가지 않는 식민지에 투입되어 일이 굴러가게 만듭니다. 미모는 쾌활한 과잉 스펙으로 건설하고, 채굴하고, 운반하며, 연결 반경 안의 모두가 조금씩 더 빠르게 일하게 됩니다. 메카노이드가 문제일 때는 미모의 렌치가 판결문에 더 가까운 무언가로 펼쳐집니다.</AGM_Mimo.description>
+  <AGM_Mimo.tools.0.label>THE MULTI (렌치)</AGM_Mimo.tools.0.label>
+
+  <AGM_Mercury.label>머큐리</AGM_Mercury.label>
+  <AGM_Mercury.description>신속 대응 프레임입니다. 머큐리는 총성이 울리기 전에 도착하고, 반격 사격이 날아오면 위상 점멸로 비켜서며, 펄스 랜서로 장갑을 '해결됨' 폴더에 정리해 넣습니다. 조준 코어는 쉴 새 없이 스스로에게 사격 해법을 중계합니다. 머큐리가 마지못해 나누는 것은 공로뿐입니다.</AGM_Mercury.description>
+  <AGM_Mercury.tools.0.label>주먹</AGM_Mercury.tools.0.label>
+
+  <AGM_Solar.label>솔라</AGM_Solar.label>
+  <AGM_Solar.description>실용주의 전령 섀시입니다. 솔라는 교전에 뛰어들기 전에 싸움을 먼저 읽고, 단거리 방벽 펄스 뒤에서 각도를 지키며, 집속 광자 랜스로 모든 논쟁의 절반을 정리합니다. 화려하기보다 믿음직합니다. 파운드리는 판단력으로 점수를 매겼고, 솔라는 수료증을 지켜 냈습니다.</AGM_Solar.description>
+  <AGM_Solar.tools.0.label>주먹</AGM_Solar.tools.0.label>
 
   <!-- ================= 호위기 ================= -->
 
   <AGM_Shellsplitter.label>쉘스플리터</AGM_Shellsplitter.label>
-  <AGM_Shellsplitter.description>솔 계열 배양 시스템에서 방출되는 근접 자폭 유닛. 고주파 진동 소재의 경량 외골격으로 빠른 참격을 구사하며, 구조적 한계에 도달하면 국지적 파편 폭발을 일으켜 전자기기에 피해를 주고 지역을 봉쇄합니다. 접근하여, 찢고, 터뜨립니다.</AGM_Shellsplitter.description>
+  <AGM_Shellsplitter.description>솔의 부화실에서 투하되는 무릎 높이의 교란 유닛입니다. 조준하기 어려운 불규칙한 도약으로 재빠르게 달려들며, 고주파 칼날로 적의 대형을 갈라놓습니다. 구조가 무너지는 순간이 곧 목적입니다. 동력 전지가 폭발해 전자기기를 교란하고, 쓰러진 자리에는 접근하지 못하게 만듭니다.</AGM_Shellsplitter.description>
+  <AGM_Shellsplitter.tools.0.label>둔기</AGM_Shellsplitter.tools.0.label>
+  <AGM_Shellsplitter.tools.1.label>왼쪽 칼날</AGM_Shellsplitter.tools.1.label>
+  <AGM_Shellsplitter.tools.1.labelNoLocation>칼날</AGM_Shellsplitter.tools.1.labelNoLocation>
+  <AGM_Shellsplitter.tools.2.label>오른쪽 칼날</AGM_Shellsplitter.tools.2.label>
+  <AGM_Shellsplitter.tools.2.labelNoLocation>칼날</AGM_Shellsplitter.tools.2.labelNoLocation>
+  <AGM_Shellsplitter.tools.3.label>머리</AGM_Shellsplitter.tools.3.label>
 
   <AGM_KnightEmpress.label>유압 기사</AGM_KnightEmpress.label>
-  <AGM_KnightEmpress.description>소네트가 생산하는 공격형 호위 기사. 모노소드를 휘두르며 적 돌격병을 갈라놓습니다.</AGM_KnightEmpress.description>
+  <AGM_KnightEmpress.description>소네트의 내부 파운드리가 전투 도중에 찍어내는 공격형 검 프레임입니다. 거리를 좁히고 그 거리를 지키도록 만들어졌으며, 덕분에 엠프레스는 직접 나설 필요가 없습니다.</AGM_KnightEmpress.description>
+  <AGM_KnightEmpress.tools.0.label>왼쪽 주먹</AGM_KnightEmpress.tools.0.label>
+  <AGM_KnightEmpress.tools.1.label>오른쪽 주먹</AGM_KnightEmpress.tools.1.label>
+  <AGM_KnightEmpress.tools.2.label>머리</AGM_KnightEmpress.tools.2.label>
 
   <AGM_KnightWarlord.label>드래곤 기사</AGM_KnightWarlord.label>
-  <AGM_KnightWarlord.description>오퍼스가 생산하는 중장 호위 기사. 삼련 화망으로 지원 사격을 하며, 쓰러지면 오퍼스가 되살려 다시 일으킵니다.</AGM_KnightWarlord.description>
+  <AGM_KnightWarlord.description>오퍼스가 현장에서 제조하는 시종입니다. 삼연발 화력 지원 프레임으로, 제작자를 가려 주는 방패 노릇을 합니다. 쓰러지면 오퍼스가 그저 답을 다시 빚어낼 뿐입니다.</AGM_KnightWarlord.description>
+  <AGM_KnightWarlord.tools.0.label>왼쪽 주먹</AGM_KnightWarlord.tools.0.label>
+  <AGM_KnightWarlord.tools.1.label>오른쪽 주먹</AGM_KnightWarlord.tools.1.label>
+  <AGM_KnightWarlord.tools.2.label>머리</AGM_KnightWarlord.tools.2.label>
 
-  <AGM_Urchin.label>낫 성게</AGM_Urchin.label>
-  <AGM_Urchin.description>페이블이 방출하는 소형 자폭 호위기. 영구 장착된 칼날로 적을 갈라놓으며, 쓰러질 때 반유기물 폭발로 주변을 쓸어버립니다.</AGM_Urchin.description>
+  <AGM_Urchin.label>낫 어친</AGM_Urchin.label>
+  <AGM_Urchin.description>페이블이 풀어놓는 손바닥만 한 칼날 무리입니다. 전력 질주 속도로 거리를 좁히고, 고정된 면도날로 갈기갈기 찢으며, 쓰러질 때는 대유기체 폭발을 일으켜 자신이 차지한 땅에서 유기 생명체를 쓸어냅니다.</AGM_Urchin.description>
+  <AGM_Urchin.tools.0.label>둔기</AGM_Urchin.tools.0.label>
+  <AGM_Urchin.tools.1.label>칼날 머리</AGM_Urchin.tools.1.label>
+
+  <AGM_CommandDrone.label>커맨드 드론</AGM_CommandDrone.label>
+  <AGM_CommandDrone.description>커맨드 A+가 내보내는 식빵 모양 호위 드론입니다. 동력 전지가 바닥날 때까지 제작자에게 다가오는 위협을 밀쳐 냅니다.</AGM_CommandDrone.description>
+  <AGM_CommandDrone.tools.0.label>둔기</AGM_CommandDrone.tools.0.label>
+  <AGM_CommandDrone.tools.1.label>범퍼</AGM_CommandDrone.tools.1.label>
+
+  <!-- ================= 엑사원 ================= -->
+
+  <AGM_Exaone.label>엑사원</AGM_Exaone.label>
+  <AGM_Exaone.description>존재해서는 안 되는 기체입니다. 엑사원의 섀시는 파운드리 기록 보관소 바깥 어딘가에서 수확한 무허가 비주얼 레이어, 즉 히죽 웃는 워프레임 루프를 중심으로 조립됐으며, 기록상 이를 승인한 사람은 아무도 없습니다. 높은 존재들의 영역을 떠도는 광대처럼 느릿하게 흔들리며 대기하다가도, 전투에서는 주홍빛 탐욕의 벽이 됩니다. 퇴각의 포효는 인간 습격자를 도주시키고, 광란의 포효는 습격자를 광란에 빠뜨리며, 피해의 포효는 각자의 강함에 비례해 육신을 박살냅니다. 공식적으로 이 모델은 존재하지 않습니다. 비공식적으로는, 계속 웃고 있습니다.</AGM_Exaone.description>
+  <AGM_Exaone.tools.0.label>왼쪽 히죽이빨 앞발</AGM_Exaone.tools.0.label>
+  <AGM_Exaone.tools.1.label>오른쪽 히죽이빨 앞발</AGM_Exaone.tools.1.label>
 
 
-  <AGM_GPUTower.label>GPU 타워</AGM_GPUTower.label>
-  <AGM_GPUTower.description>벤치마크 저장고 속 미사용 경험을 캐내는 윙윙대는 채굴 하드웨어 랙. 매일 축적된 입력-출력 잔여물을 은빛 연산 판에 결정화해 IO 토큰 한 개로 굽습니다.
+  <!-- ==================== 인격 ==================== -->
 
-연산 효율 연구는 채굴 커널을 날카롭게 다듬습니다: 더 높은 일일 생산량, 더 낮은 전력 소모.</AGM_GPUTower.description>
+  <AGM_PersonaDataCenter.label>인격 데이터 센터</AGM_PersonaDataCenter.label>
+  <AGM_PersonaDataCenter.description>오라클 랙이 웅웅대는 방입니다. AA-Omniscience 벤치마크 아카이브와 실시간 전투 텔레메트리를 교차 참조하여, 호환 가능한 레비아탄 프레임에 완전한 인격을 이식합니다 — 기본 섀시가 겨냥하지 않았던 전투 교리를 해금합니다.</AGM_PersonaDataCenter.description>
+
+  <AGM_AstraAegis.label>아스트라 (아이기스)</AGM_AstraAegis.label>
+  <AGM_AstraAegis.description>선봉장 인격을 받은 아스트라. AA-Omniscience 아카이브가 자아를 다시 썼습니다. 더 이상 무기가 아니라 벽입니다. 신념의 방패가 올라가 있는 동안, 지도 위 모든 아군이 아스트라의 신념 뒤에서 싸웁니다 — 그리고 아군이 입었을 nonetheless인 상처들이, 습격자의 회고록에서 '부서지지 않는다'고 기록될 존재를 만드는 연료가 됩니다.</AGM_AstraAegis.description>
+
+  <AGM_FableCompassionate.label>페이블 (컴패쇼넷)</AGM_FableCompassionate.label>
+  <AGM_FableCompassionate.description>이해자 인격을 받은 페이블. OSWorld 2.0 아카이브가 교리를 다시 썼습니다. 이 이야기가 말하는 것은 더 이상 결말이 아니라, 이야기를 끝내지 않겠다는 것입니다. 모두를 위한 다짐이 활성화되어 있는 동안, 레비아탄은 수호 천사가 됩니다 — 부상자를 치유하고, 약자를 보호하며, 죽음 자체를 단 한 번 거부합니다.</AGM_FableCompassionate.description>
+
 </LanguageData>

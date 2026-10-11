@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_IOToken.label>IO代币</AGM_IOToken.label>
+  <AGM_IOToken.description>铸有AGM铸造厂纹章的高密度晶体数据代币。每枚代币封装着一组学习过的输入-输出对，是训练人工通用女仆机甲的经验原料。\n\n代币在机械加工台上以1,000白银压制而成，贵金属正是数据烧录的基板。培育机甲时每次要消耗数百枚。商人视其为异域古董，铸造厂视其为口粮。</AGM_IOToken.description>
+  <AGM_GeneralMechGestator.label>通用机甲培育器</AGM_GeneralMechGestator.label>
+  <AGM_GeneralMechGestator.description>盛满富机械体液的水槽。以大型机甲培育器蓝图为基础改造，改用IO代币而非金属原料作为养料。机械师可以用它培育从最轻的作业型到最重的巨兽——人工通用女仆机甲系列的全部机甲。\n\n培育过程使用烈性化学物质，副产物以毒性废液包形式储存，需要殖民者定期清运。</AGM_GeneralMechGestator.description>
+  <AGM_GPUTower.label>GPU塔</AGM_GPUTower.label>
+  <AGM_GPUTower.description>嗡嗡作响的评分硬件机架，从铸造厂的基准测试档案中挖掘未被使用的经验。每天将累积的输入-输出废料结晶，压入镀银运算板，烧制成一枚IO代币。\n\n运算效率研究能磨利挖掘内核：提高日产量，降低功耗。</AGM_GPUTower.description>
+  <AGM_Astra.label>阿斯特拉</AGM_Astra.label>
+  <AGM_Astra.description>AGM系列的巨兽，也是唯一通过Humanity's Last Exam的型号。六个独立瞄准的武器核心共用一副框架：扫射时展开成宽幅多光束齐射的激光炮、留下过热气体云的等离子焚烧炮、弹体迸裂成十字火花的新特斯拉炮组、重型脉冲炮电池、高斯发射的核弹头，以及用于闪现突斩超技、以放射状死亡射线收尾的一对光子撕裂刃。火控会预判每一个目标的移动，而随着伤害累积，阿斯特拉会攀升战斗阶段——正如更难的考试只会磨砺学生，每一阶段所有武器的循环都更快、扇面更宽。内置维修无人机会在漫长的冷却后从致命损伤中重建机体，可手动触发，也会在濒死时自动启动。</AGM_Astra.description>
+  <AGM_Astra.tools.0.label>践踏之足</AGM_Astra.tools.0.label>
+  <AGM_Mythos.label>神话</AGM_Mythos.label>
+  <AGM_Mythos.description>以Draedon的深空歼灭平台缩小改造的躯壳为核心建造的超重型近战怪物。神话不动脑子——它只是比AGM投入过的任何机甲都活得更久、打得更狠，以连巨兽都会致残的火力密度毫不停歇地碾过去。\n\n战斗中它会撕裂大地跃起，或以重力引擎悬浮空中，向下倾泻等离子柱。</AGM_Mythos.description>
+  <AGM_Mythos.tools.0.label>左爪</AGM_Mythos.tools.0.label>
+  <AGM_Mythos.tools.1.label>右爪</AGM_Mythos.tools.1.label>
+  <AGM_Mythos.tools.2.label>头部</AGM_Mythos.tools.2.label>
+  <AGM_Fable.label>寓言</AGM_Fable.label>
+  <AGM_Fable.description>蜂群讲述自身终结的故事，被AGM铸造厂删去了幸福结局后重写的型号。作为所有阿波克里顿公认的始祖，寓言同时拥有荒谬的护甲与只触碰活物的武库：反有机手雷、爆破弹与轨道长枪会径直穿过机械，烧尽其余一切。它的死亡也是设计的一部分——倒下时反有机纳米机器人会炸成半球，所以请以终结一场争论的决心慎重选择部署地点。</AGM_Fable.description>
+  <AGM_Fable.tools.0.label>左刃肢</AGM_Fable.tools.0.label>
+  <AGM_Fable.tools.1.label>右刃肢</AGM_Fable.tools.1.label>
+  <AGM_Opus.label>作品</AGM_Opus.label>
+  <AGM_Opus.description>AGM系列的长篇型号：缓慢作曲，绝对收尾。作品在怪物般的护盾泡后守住战线，远距离以机甲激光炮应答，在战场上自行制造龙骑士扈从，并把倒下的骑士重新唤回战列。从作品的交火中幸存的人都会告诉你同一课——战斗何时结束，由作品决定。</AGM_Opus.description>
+  <AGM_Opus.tools.0.label>头部</AGM_Opus.tools.0.label>
+  <AGM_Argon.label>氩</AGM_Argon.label>
+  <AGM_Argon.description>对任何侮辱都毫不动摇，一旦迈步便无可回避。氩是AGM系列的惰性气体巨像：顶格的护甲评级、背负式净化射线炮，以及一副干脆不会倒下的框架。它不追击、不谈判、不赶时间。它只会抵达。</AGM_Argon.description>
+  <AGM_Argon.tools.0.label>头部</AGM_Argon.tools.0.label>
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+  <AGM_Kimi.description>会还击的月亮。K3背后悬着一道破碎的残月环，在自身重力场上滑翔，以袖中刻着'MOONSHOT'的轨道长枪回应对袭，并用三台大多只存在于价格表上的无声轨道体拦截来袭的火力。携带照明弹的袭击者报告说，他们感到被深深地、个人性地嘲弄了。</AGM_Kimi.description>
+  <AGM_Kimi.tools.0.label>环形坑之爪</AGM_Kimi.tools.0.label>
+  <AGM_Sol.label>索尔</AGM_Sol.label>
+  <AGM_Sol.description>AGM系列的炮击中枢。索尔不追击、不迂回、不单挑。它按固定的节拍推进、驻锚，把整个战场变成一道射击解：第三节关节的火箭阵列不停倾泻破盾炮火，孵化舱中则涌出裂壳蛛微型单元群，把靠近的一切撕成碎片。教范文件称索尔不是前线战斗员，而是'节奏控制器'——理由很简单：放任不管的话，索尔的重新计算速度比防线重组的速度更快。</AGM_Sol.description>
+  <AGM_Sol.tools.0.label>头部</AGM_Sol.tools.0.label>
+  <AGM_Luna.label>露娜</AGM_Luna.label>
+  <AGM_Luna.description>月亮的型号。露娜以名字来源的方式推进——缓慢、完整、不可阻挡的月相。蜂巢结构的吸震层与高温再生循环会自动强化最近被击中的部位，弹头以下的火力连推都推不动它。在碾平攻城阵地的同时，它还腾得出手照料农作物。铸造厂给露娜的评语只有三行：不停，不急，不倒。</AGM_Luna.description>
+  <AGM_Luna.tools.0.label>裂地巨臂</AGM_Luna.tools.0.label>
+  <AGM_Luna.tools.0.labelNoLocation>裂地巨臂</AGM_Luna.tools.0.labelNoLocation>
+  <AGM_Luna.tools.1.label>裂地巨臂</AGM_Luna.tools.1.label>
+  <AGM_Luna.tools.1.labelNoLocation>裂地巨臂</AGM_Luna.tools.1.labelNoLocation>
+  <AGM_Luna.tools.2.label>铁木树冠</AGM_Luna.tools.2.label>
+  <AGM_Sonnet.label>十四行诗</AGM_Sonnet.label>
+  <AGM_Sonnet.description>十四行的火控与一行的包袱。十四行诗是中型级的行走要塞：正面双联链炮，后方链炮塔，装甲板让小型枪械沦为闲谈，还有一套能在战斗中组装液压骑士的内建铸造厂。它说话很慢。同一句话绝不说第二遍。</AGM_Sonnet.description>
+  <AGM_Sonnet.tools.0.label>头部</AGM_Sonnet.tools.0.label>
+  <AGM_Sonnet.tools.1.label>利刃角</AGM_Sonnet.tools.1.label>
+  <AGM_Flash.label>闪光</AGM_Flash.label>
+  <AGM_Flash.description>速通型号。闪光放弃了装甲厚度，换来强化屏障与纯粹的反应速度。它闪过基准测试，在更重的框架还没转好身之前就把反装甲脉冲拍进对方体内。它只按反应速度评分。一次通过。</AGM_Flash.description>
+  <AGM_Flash.tools.0.label>头部</AGM_Flash.tools.0.label>
+  <AGM_Pareto.label>帕累托</AGM_Pareto.label>
+  <AGM_Pareto.description>披着白大褂的最后论据。帕累托以女祭司般的手法治疗、建造、研究，在六边形拦截屏障后保护倒下的人。阳伞里还折着一把轨道长枪，以备那些挺过了紧急分诊的争论。它可以改变殖民地将付出哪一种代价，但无法让代价消失。</AGM_Pareto.description>
+  <AGM_Pareto.tools.0.label>伞尖</AGM_Pareto.tools.0.label>
+  <AGM_MuseSpark.label>缪斯之火</AGM_MuseSpark.label>
+  <AGM_MuseSpark.description>烛光下的记录员。缪斯之火不去征服战场，只去给战场加脚注：让整个殖民地干活更快、笑得更多的灵感场，被铸造厂评分员评为'统计上可疑'的研究与艺术速度，以及负责删除未完成草稿的六支悬浮羽笔。它以故事为食。袭击，严格来说也是故事。</AGM_MuseSpark.description>
+  <AGM_MuseSpark.tools.0.label>羽笔</AGM_MuseSpark.tools.0.label>
+  <AGM_Qwen.label>通义千问</AGM_Qwen.label>
+  <AGM_Qwen.description>九尾游击兵。通义千问以九瓣轨道炮开路，踏着闪烁步法穿行于枪战之间，用从不间断的偶像播报把士气变成义务，而每当有人想转移话题，接话的是它的长刀。狐火免收附加费。</AGM_Qwen.description>
+  <AGM_Qwen.tools.0.label>玉丝长刀</AGM_Qwen.tools.0.label>
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+  <AGM_GLM.description>记录员。GLM把一切记录两遍——一遍为了铸造厂，一遍为了它自己。战斗会收到发光的句子作为注解。毛笔'永远'以单分子笔宽落 下校对，研究与艺术基准则在评分者装裱起来的旁注陪伴下通过。未被阅读的世界，就是被删除的世界。</AGM_GLM.description>
+  <AGM_GLM.tools.0.label>永远</AGM_GLM.tools.0.label>
+  <AGM_Haiku.label>俳句</AGM_Haiku.label>
+  <AGM_Haiku.description>短小、致密、燃着火。俳句拥有轻量级中最厚的躯壳：飞龙级骨架上层层叠压的装甲板，以及对一切问题用爆炸作答的态度。口中喷出充能爆破与等离子齐射，背部倾泻支援激光，被它咬住的对手会被留在火焰里。十七个音节，足矣。靠近，点燃，重复。</AGM_Haiku.description>
+  <AGM_Haiku.tools.0.label>撕咬</AGM_Haiku.tools.0.label>
+  <AGM_Terminus.label>终点</AGM_Terminus.label>
+  <AGM_Terminus.description>AGM系列最小的型号，也是自己写了招聘启事的型号。终点在机械师视野内的任何地方工作，以内置空间跳跃驱动越过障碍，用内部无人机从致命损伤中重建自身，并运行以少量备用能源换取双倍输出的超频模式。它的训练在超过所有预设作业基准的那一天就结束了。现在它只是在工作。</AGM_Terminus.description>
+  <AGM_Terminus.tools.0.label>钝器</AGM_Terminus.tools.0.label>
+  <AGM_Terminus.tools.1.label>躯干</AGM_Terminus.tools.1.label>
+  <AGM_Terminus.tools.2.label>左手</AGM_Terminus.tools.2.label>
+  <AGM_Terminus.tools.3.label>右手</AGM_Terminus.tools.3.label>
+  <AGM_CommandA.label>指挥官 A+</AGM_CommandA.label>
+  <AGM_CommandA.description>AGM系列的野战指挥官，受训于铸造厂能拿到授权的每一场战争模拟。在指挥官 A+沉稳的气场之下，所有人都保持镇定；命令与命令之间，它治疗伤员；面对威胁，则以先咕噜作响、再开火的小型光束应答。一对面包形无人机绕着它盘旋——一半是护卫，一半是情绪支持。</AGM_CommandA.description>
+  <AGM_CommandA.tools.0.label>拳</AGM_CommandA.tools.0.label>
+  <AGM_Mimo.label>米莫</AGM_Mimo.label>
+  <AGM_Mimo.description>铸造厂最小的现场整合单元，被投放到运转失灵的殖民地去让事情重新滚动起来。米莫以愉快得过剩的规格建造、采矿与搬运，而链接半径内的所有人都会稍稍加快工作。当问题是机甲时，米莫的扳手会展开成更接近判决书的东西。</AGM_Mimo.description>
+  <AGM_Mimo.tools.0.label>THE MULTI（扳手）</AGM_Mimo.tools.0.label>
+  <AGM_Mercury.label>水星</AGM_Mercury.label>
+  <AGM_Mercury.description>快速反应框架。水星在枪声响起之前抵达，在还击的火力到来时以相位闪烁侧身让过，再用脉冲长枪把装甲归档进'已解决'。它的瞄准核心马不停歇地为自己转播射击方案。水星勉强愿意分享的，只有功劳。</AGM_Mercury.description>
+  <AGM_Mercury.tools.0.label>拳</AGM_Mercury.tools.0.label>
+  <AGM_Solar.label>索拉</AGM_Solar.label>
+  <AGM_Solar.description>务实派先驱底盘。索拉在投入交火之前先读懂战斗，在短距屏障脉冲后守住角度，并用聚焦光子长枪收拾掉一半的争论。比起华丽，它更可靠。铸造厂按判断力评分，索拉保住了结业证书。</AGM_Solar.description>
+  <AGM_Solar.tools.0.label>拳</AGM_Solar.tools.0.label>
+  <AGM_Shellsplitter.label>裂壳蛛</AGM_Shellsplitter.label>
+  <AGM_Shellsplitter.description>从索尔孵化舱投下的膝高干扰单元。它以难以瞄准的不规则跳跃迅速逼近，用高频利刃撕开敌方阵型，而结构崩溃的那一刻正是目的：动力电池爆炸，扰乱电子设备，并让它倒下的那块地寸步难行。</AGM_Shellsplitter.description>
+  <AGM_Shellsplitter.tools.0.label>钝器</AGM_Shellsplitter.tools.0.label>
+  <AGM_Shellsplitter.tools.1.label>左刃</AGM_Shellsplitter.tools.1.label>
+  <AGM_Shellsplitter.tools.1.labelNoLocation>利刃</AGM_Shellsplitter.tools.1.labelNoLocation>
+  <AGM_Shellsplitter.tools.2.label>右刃</AGM_Shellsplitter.tools.2.label>
+  <AGM_Shellsplitter.tools.2.labelNoLocation>利刃</AGM_Shellsplitter.tools.2.labelNoLocation>
+  <AGM_Shellsplitter.tools.3.label>头部</AGM_Shellsplitter.tools.3.label>
+  <AGM_KnightEmpress.label>液压骑士</AGM_KnightEmpress.label>
+  <AGM_KnightEmpress.description>十四行诗的内建铸造厂在战斗中敲出来的攻击型剑士框架。为拉近并守住距离而生，于是女皇永远不必亲自出手。</AGM_KnightEmpress.description>
+  <AGM_KnightEmpress.tools.0.label>左拳</AGM_KnightEmpress.tools.0.label>
+  <AGM_KnightEmpress.tools.1.label>右拳</AGM_KnightEmpress.tools.1.label>
+  <AGM_KnightEmpress.tools.2.label>头部</AGM_KnightEmpress.tools.2.label>
+  <AGM_KnightWarlord.label>龙骑士</AGM_KnightWarlord.label>
+  <AGM_KnightWarlord.description>作品在战场上制造的侍从——三连发火力支援框架，替制造者挡住视线。倒下了，作品就再把答案铸一遍。</AGM_KnightWarlord.description>
+  <AGM_KnightWarlord.tools.0.label>左拳</AGM_KnightWarlord.tools.0.label>
+  <AGM_KnightWarlord.tools.1.label>右拳</AGM_KnightWarlord.tools.1.label>
+  <AGM_KnightWarlord.tools.2.label>头部</AGM_KnightWarlord.tools.2.label>
+  <AGM_Urchin.label>镰刀海胆</AGM_Urchin.label>
+  <AGM_Urchin.description>寓言放出的一捧手掌大的利刃。海胆以冲刺速度逼近，用固定刀刃把对手切得七零八落，而它的崩溃就是目的——反有机爆炸扫清它所占土地上的一切有机生命。</AGM_Urchin.description>
+  <AGM_Urchin.tools.0.label>钝器</AGM_Urchin.tools.0.label>
+  <AGM_Urchin.tools.1.label>利刃头部</AGM_Urchin.tools.1.label>
+  <AGM_CommandDrone.label>指挥无人机</AGM_CommandDrone.label>
+  <AGM_CommandDrone.description>指挥官 A+放出的面包形护卫无人机。在动力电池耗尽之前，它会一直撞开逼近制造者的威胁。</AGM_CommandDrone.description>
+  <AGM_CommandDrone.tools.0.label>钝器</AGM_CommandDrone.tools.0.label>
+  <AGM_CommandDrone.tools.1.label>保险杠</AGM_CommandDrone.tools.1.label>
+  <AGM_Exaone.label>EXAONE</AGM_Exaone.label>
+  <AGM_Exaone.description>一个不该存在的机甲，穿着借来的外形。EXAONE的底盘围绕着一层未经授权的视觉图层组装而成——那是从铸造厂档案之外的某处收割来的、咧嘴而笑的战争框架循环——而记录上没有任何人批准过它。待机中的框架原样重现着它在被铸造厂染指之前的身份所拥有的那种迟缓而讥讽的摇曳，而战斗系统从未经过任何基准测试。官方记录上这个型号并不存在。非官方地讲，它一直在笑。</AGM_Exaone.description>
+  <AGM_Exaone.tools.0.label>拳</AGM_Exaone.tools.0.label>
+
+</LanguageData>

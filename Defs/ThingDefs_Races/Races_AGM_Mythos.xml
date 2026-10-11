@@ -16,7 +16,7 @@
     <thingClass>AGM.Mythos_Pawn</thingClass>
     <size>(9,9)</size>
     <statBases>
-      <MarketValue>28800</MarketValue>
+      <MarketValue>60000</MarketValue>
       <ArmorRating_Blunt>1.55</ArmorRating_Blunt>
       <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>

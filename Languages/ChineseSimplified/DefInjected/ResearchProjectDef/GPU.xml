@@ -2,14 +2,14 @@
 <LanguageData>
 
   <AGM_ComputeEfficiency_I.label>运算效率 I</AGM_ComputeEfficiency_I.label>
-  <AGM_ComputeEfficiency_I.description>调优后的挖掘内核使GPU塔的代币产量翻倍：每天2枚。</AGM_ComputeEfficiency_I.description>
+  <AGM_ComputeEfficiency_I.description>调优挖掘内核，使GPU塔的代币产量翻倍。每天生产2枚IO代币。</AGM_ComputeEfficiency_I.description>
   <AGM_ComputeEfficiency_II.label>运算效率 II</AGM_ComputeEfficiency_II.label>
-  <AGM_ComputeEfficiency_II.description>重新设计的供电系统使GPU塔的功耗降至800W。</AGM_ComputeEfficiency_II.description>
+  <AGM_ComputeEfficiency_II.description>重新设计供电系统，使GPU塔的功耗降至800W。</AGM_ComputeEfficiency_II.description>
   <AGM_ComputeEfficiency_III.label>运算效率 III</AGM_ComputeEfficiency_III.label>
-  <AGM_ComputeEfficiency_III.description>并行基准扫描使GPU塔的代币产量提升至每天4枚。</AGM_ComputeEfficiency_III.description>
+  <AGM_ComputeEfficiency_III.description>并行基准扫描使GPU塔的代币产量提升至每天4枚IO代币。</AGM_ComputeEfficiency_III.description>
   <AGM_ComputeEfficiency_IV.label>运算效率 IV</AGM_ComputeEfficiency_IV.label>
-  <AGM_ComputeEfficiency_IV.description>每瓦吞吐更高的降频张量核心使GPU塔的功耗降至600W。</AGM_ComputeEfficiency_IV.description>
+  <AGM_ComputeEfficiency_IV.description>以低时钟换取每瓦更高吞吐的张量核心，使GPU塔的功耗降至600W。</AGM_ComputeEfficiency_IV.description>
   <AGM_ComputeEfficiency_V.label>运算效率 V</AGM_ComputeEfficiency_V.label>
-  <AGM_ComputeEfficiency_V.description>与铸造厂自身训练任务交叉评分的最终内核修订版：每天6枚，400W。</AGM_ComputeEfficiency_V.description>
+  <AGM_ComputeEfficiency_V.description>经铸造厂自身训练任务交叉评分的最终内核修订版。以400W每天生产6枚IO代币。</AGM_ComputeEfficiency_V.description>
 
 </LanguageData>

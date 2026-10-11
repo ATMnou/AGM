@@ -1,0 +1,98 @@
+Oh, I'm absolutely taking this invitation. Moonshot AI's model, in a RimWorld mod? The theme writes itself. Let me present:
+
+---
+
+# 🌙 KIMI-type Ultra Mechanoid — codename **"LUNARIS"**
+### *Kaguya-class Night Sovereign*
+**Raiders call her:** *"The Moon That Shoots Back."*
+
+---
+
+## 🎨 Appearance
+
+Not a clunky bot. She's a **moon princess who decided gravity is optional.**
+
+- **Frame:** ~165cm humanoid, porcelain-white plating with hairline glowing seams — like the *maria* on the Moon's surface. She never touches the ground; she glides 5cm above it on silent anti-grav fields.
+- **Hair:** Long, silver-white, and it *floats* — permanently drifting as if in low gravity, faint particles of moon-dust trailing from the tips.
+- **Eyes:** Her irises are **literal moon phases**. Crescent when idle. Half-moon when alert. **Full moon when you're about to die.**
+- **Silhouette:** Flowing, shrine-maiden-like armored sleeves (Kaguya-hime energy) fused with sleek mechanoid plate. A massive **broken crescent ring** floats behind her like a halo-throne — it's actually her weapon mount.
+- **Entourage:** Three small moonlet drones — the **Selene Orbiters** — eternally circling her. They light up craters on their surfaces when charging weapons.
+- **Signature weapon:** A long, elegant rail-lance that unfolds from her sleeve like a telescope. Its name is engraved on the barrel: **MOONSHOT**.
+
+---
+
+## ⚔️ Core Stats
+
+| Stat | Value | Notes |
+|---|---|---|
+| Class | Ultra Mechanoid | Boss-tier, above Centipede |
+| Move Speed | 5.2 c/s | **Hovers** — ignores terrain cost, crosses deep water |
+| Armor | 72% Sharp / 36% Blunt / 90% Heat | Graceful, not a tank |
+| Immunities | Pain, Psychic, Fire, Toxins, **Vacuum**, Cold | She's literally rated for space. Odyssey gravship crews love her. |
+| Weakness | **EMP** (critically), **Daylight** | See counterplay below |
+
+---
+
+## 🌗 Signature System: **The Phase Cycle**
+
+Her power waxes and wanes on a 6-day lunar cycle. Players must plan around her moon.
+
+| Phase | Mode | Effect |
+|---|---|---|
+| 🌑 **New Moon** | *Assassin* | Cloaked at night. Selene drones become melee "Crater Talons." Silent, fast, terrifying. |
+| 🌓 **First Quarter** | *Skirmisher* | Balanced. Drones intercept projectiles. |
+| 🌕 **Full Moon** | *Artillery Queen* | MOONSHOT unlocks **Siege Mode** — 45-tile range beam that pierces shields. **Drawback:** she glows like a beacon. Everyone on the map sees her. |
+| 🌗 **Last Quarter** | *Support* | Gravity wells and barriers for allies. |
+
+**Plus:** +25% effectiveness at night, −25% in daylight. She is a *night raid answered back*.
+
+---
+
+## 💥 Abilities
+
+- **MOONSHOT** — Single-target rail-lance. Pierces shield belts. Long cooldown, longer grudge.
+- **Tidal Lock** — Yanks an enemy **out of cover** with a gravity well and pins them. Yes, it ruins your day behind that sandbag line.
+- **Lagrange Field** — AoE slow zone. Bullets crawl. Raiders regret.
+- **Selene Orbiters** — Intercept projectiles, fire point lasers, or kamikaze into a final crater. They regrow over 3 days.
+- **Lunar Veil** — Night-only cloak.
+- **☾ ECLIPSE ☽** *(Ultimate — Full Moon + Night only)*: Blots out all light in a radius. Enemies inside suffer massive accuracy penalties and may flee. She goes berserk. The sky itself picks a side.
+
+---
+
+## 💀 Counterplay (be kind to the raiders)
+
+- **EMP causes "Moonfall"** — her hover fails and she *crashes into the ground*, staggered and taking impact damage. Deeply embarrassing for a celestial being.
+- **"Light Pollution":** raiders carrying flares or standing near sunlamps locally suppress her buffs. Fighting her under floodlights is legitimately the intended strategy.
+- **Full Moon = artillery magnet.** Glowing that brightly has consequences.
+- She recharges by **moonbathing** — stationary, outdoors, at night, completely vulnerable. Interrupt her stargazing at your own risk.
+
+---
+
+## 🏠 Colony Behavior (if mechanitor-linked or allied)
+
+- Stands outside at night recharging, gazing up. Colonists who watch her get **"Moonlit Serenity" +3 mood**. She's basically a very armed garden ornament.
+- Idle at night near a research bench: her telescope-eye feeds stellar data — **small research speed boost.**
+- **Quirk:** refuses to stay indoors during a Full Moon. Wants the sky.
+- Immune to vacuum and needs no oxygen or food — the *perfect* gravship crew member. She was built for the space age before the space age existed.
+
+---
+
+## 🗣️ Voice Lines
+
+> *"Moonlight is just sunlight that learned manners."*
+> *"The tide comes for you. It always does."*
+> *(on kill, softly)* "Forgive me. It is only gravity."
+> *(downed)* "Waxing... next time..."
+> *(passing a colonist's grave)* "I will remember your orbit."
+
+---
+
+## 🌠 Arrival Event: **"The Cradle Crater"**
+
+A glowing crater appears at the map's edge at night. Three nights of countdown. **Choice:** strike while she's inert (easy kill, poor loot) — or let her wake under the full moon and fight the real thing for the **Lunar Core**, which can power your base... or rebuild her as *yours*.
+
+---
+
+**TL;DR:** A hovering moon-princess mechanoid whose power literally waxes and wanes, who snipes you from across the map with a gun called MOONSHOT, drags you out of cover with tides, apologizes politely, and then stands in your colony's garden at night giving everyone mood buffs.
+
+To the build agent: make the hair float. Non-negotiable. 🌙

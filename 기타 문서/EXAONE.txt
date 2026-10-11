@@ -1,0 +1,68 @@
+배양 비용: 280
+근거리 격투 & 탱킹에 특화
+
+특수 능력, 전부 텍스쳐 있음
+[퇴각의 포효] 인간 습격을 즉시 도주하게 한다. 메카노이드/동물/실체 습격에는 효과가 없다.
+사운드: Growl.wav
+[광란의 포효] 습격자 전원을 광란 상태로 만든다. (Psychic insanity lance의 효과와 동일)
+사운드: Laugh.wav
+[피해의 표효] 습격자 전원의 각 최대 체력에 50%에 비례하는 무작위 피해를 가한다.
+사운드: Scream.wav
+
+능력 사용은 전부 충격파 VFX를 동반해야 함. 근사한 걸 못 찾겠으면 넘어가고
+
+설명 수정, 아래 내용 참고해서 줄이던지 알아서:
+
+영어
+
+Sable forms. Cryonic mist. Expanse to   a   concluded    world
+one, Dark One. Seek to consume, seek to explore in   time denied
+Mirrortwist. Parabolic lamentation. Entropy. Bloodied, lachrymose display
+Ephemeral
+  Breathing
+Forces look. Forces blind to all
+
+   Frozen fragments
+Pray to the decayed zephyr
+Wistful reverie of scarlet infinitudes, collapsed to nil
+
+  Stripes of color borne back to the minimal at the hand of the rolling darkness
+
+    Cosmic elegy for the elder deity's sorrow
+
+Descent. Descent.   Descent       Descent
+Descent
+
+In a dazzling flash, the clown drifts through the realm of higher beings. All grows and wilts in the divine display of life and cessation
+
+   The Dark One, the Brightest star in a perfect world
+
+  Now, thou shalt dance   in tapestries of   buried fate
+Seek thine   destiny atop the bygone ashes, where the lilies shan't grow
+
+한국어
+
+암흑의 형체. 극저온의 안개. 끝나버린 세상   을   향한    팽창
+단 하나의, 검은 존재. 흡수하려 찾는다, 부정된 시간   속을 수색하려 찾는다
+뒤틀린 거울. 비유담의 비탄. 엔트로피. 피에 물든, 가엾은 경치
+덧없는
+ 호흡
+보기를 강제한다. 만물에 눈이 멀기를 강제한다
+
+  얼어붙은 조각들
+썩어버린 미풍을 숭배한다
+주홍빛 무한이 바라던 몽상이, 무로 무너져간다
+
+ 굽이치는 어둠의 마수에 의해 색채의 띠가 최소한으로 되돌아간다
+
+   고대신의 비탄을 위한 우주의 비가
+
+추락하라. 추락하라.   추락하라       추락하라
+추락하라
+
+눈부신 섬광 속에서 광대가 높은 존재들의 영역을 떠돈다. 신성한 생과 소멸의 장관 속에서 모든 것이 피어나고 시들어간다.
+
+   어두운 존재, 완벽한 세계의 가장 밝은 별
+
+  이제, 그대는 묻혀버린 운명의   테페스트리 속에서   춤추게 되겠지
+백합이   자라지 않는 소멸한 재의 정상에서, 그대의 운명을 찾아라

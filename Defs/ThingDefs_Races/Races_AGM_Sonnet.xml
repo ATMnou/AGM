@@ -6,6 +6,7 @@
     <label>hydraulic empress</label>
     <description>An ultra-heavy war queen variant with a built-in mech gestator. The empress bears the nickname "The walking fortress" due to its excellent versatility in both attack and defence. For attack, the empress wields a dual mech chaingun from the front and the back, which both delivers unrelenting punisment at long distances. For defense, the empress is heavily cladded with armor platting that renders ordinary small arms useless, and capable of fabricating an aggressive squad of hydraulic knights and depoly them in battle. Such a powerful mech variant can reduce any colony, that doesn't possess any effective countermesure against it, into rubble. Theoratically, a lone hydraulic empress is enough to wipe-out an entire colony, if unprepared.</description>
     <statBases>
+      <MarketValue>12000</MarketValue>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>

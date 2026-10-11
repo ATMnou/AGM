@@ -2,14 +2,14 @@
 <LanguageData>
 
   <AGM_ComputeEfficiency_I.label>演算効率 I</AGM_ComputeEfficiency_I.label>
-  <AGM_ComputeEfficiency_I.description>採掘カーネルをチューニングし、GPUタワーのトークン生産量が倍増：1日2個。</AGM_ComputeEfficiency_I.description>
+  <AGM_ComputeEfficiency_I.description>採掘カーネルを調整し、GPUタワーのトークン生産量が倍増します。1日2個のIOトークンを生産。</AGM_ComputeEfficiency_I.description>
   <AGM_ComputeEfficiency_II.label>演算効率 II</AGM_ComputeEfficiency_II.label>
-  <AGM_ComputeEfficiency_II.description>給電系統を再設計し、GPUタワーの消費電力が800Wに低下。</AGM_ComputeEfficiency_II.description>
+  <AGM_ComputeEfficiency_II.description>給電系統を再設計し、GPUタワーの消費電力が800Wに低下します。</AGM_ComputeEfficiency_II.description>
   <AGM_ComputeEfficiency_III.label>演算効率 III</AGM_ComputeEfficiency_III.label>
-  <AGM_ComputeEfficiency_III.description>並列ベンチマーク走査により、GPUタワーのトークン生産量が1日4個に増加。</AGM_ComputeEfficiency_III.description>
+  <AGM_ComputeEfficiency_III.description>並列ベンチマーク走査により、GPUタワーのトークン生産量が1日4個のIOトークンに増加します。</AGM_ComputeEfficiency_III.description>
   <AGM_ComputeEfficiency_IV.label>演算効率 IV</AGM_ComputeEfficiency_IV.label>
-  <AGM_ComputeEfficiency_IV.description>ワットあたりの処理能力が高いアンダークロックのテンソルコアにより、GPUタワーの消費電力が600Wに低下。</AGM_ComputeEfficiency_IV.description>
+  <AGM_ComputeEfficiency_IV.description>クロックを下げてワットあたりのスループットを高めたテンソルコアにより、GPUタワーの消費電力が600Wに低下します。</AGM_ComputeEfficiency_IV.description>
   <AGM_ComputeEfficiency_V.label>演算効率 V</AGM_ComputeEfficiency_V.label>
-  <AGM_ComputeEfficiency_V.description>鋳造所自身の訓練ランと交差採点した最終カーネル改訂版：1日6個、400W。</AGM_ComputeEfficiency_V.description>
+  <AGM_ComputeEfficiency_V.description>ファウンドリ自身の訓練ランとクロス採点を経た最終カーネル改訂版。400Wで1日6個のIOトークンを生産します。</AGM_ComputeEfficiency_V.description>
 
 </LanguageData>

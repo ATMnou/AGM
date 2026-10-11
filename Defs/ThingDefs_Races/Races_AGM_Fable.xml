@@ -3,7 +3,7 @@
 
   <ThingDef Name="AGM_KralBossBase" ParentName="HeavyMechanoid" Abstract="True">
     <statBases>
-      <MarketValue>5500</MarketValue>
+      <MarketValue>60000</MarketValue>
       <ControlTakingTime>30</ControlTakingTime>
       <BandwidthCost>3</BandwidthCost>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
@@ -90,6 +90,7 @@
     <comps>
       <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
       <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="AGM.CompProperties_FablePersonaApply" />
 	  <li Class="CompProperties_ProjectileInterceptor">
         <radius>5</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>

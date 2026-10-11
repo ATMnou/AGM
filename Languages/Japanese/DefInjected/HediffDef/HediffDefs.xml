@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Hediff_Reconstruct.label>再構築中</AGM_Hediff_Reconstruct.label>
+  <AGM_Hediff_Reconstruct.description>内蔵修理ドローンがこのメカノイドを完全に再構築した直後です。ドローンが仕上げを行う間はほぼ無敵ですが、作業が終わるまでほとんど動けません。</AGM_Hediff_Reconstruct.description>
+  <AGM_Luna_Hediff.label>ルナ樹皮</AGM_Luna_Hediff.label>
+  <AGM_Luna_Hediff.description>鉄木のハニカム構造の衝撃吸収層と高温再生サイクルが、攻撃を受けるたびに損傷部を自動的に強化します。</AGM_Luna_Hediff.description>
+  <AGM_ShockPain.label>電撃痛</AGM_ShockPain.label>
+  <AGM_ShockPain.description>命までは脅かさないが、被害者の痛覚を増幅する状態。</AGM_ShockPain.description>
+  <AGM_Inflammable.label>可燃性身体</AGM_Inflammable.label>
+  <AGM_Inflammable.description>被害者が火に対して脆弱になる危険な状態。</AGM_Inflammable.description>
+  <AGM_IncendiaryBody.label>発火性身体</AGM_IncendiaryBody.label>
+  <AGM_IncendiaryBody.description>不安定な化学物質により、被害者の身体が火に対して極度に脆弱になる危険な状態。</AGM_IncendiaryBody.description>
+  <AGM_VitalityDrain.label>活力吸収</AGM_VitalityDrain.label>
+  <AGM_VitalityDrain.description>被害者の空腹と睡眠の欲求を高める健康状態。</AGM_VitalityDrain.description>
+  <AGM_ArmorBreaker.label>装甲破砕</AGM_ArmorBreaker.label>
+  <AGM_ArmorBreaker.description>この状態の間、被害者の防御力は無効化されます。</AGM_ArmorBreaker.description>
+  <AGM_Instantkill.label>即死</AGM_Instantkill.label>
+  <AGM_Instantkill.description>死。</AGM_Instantkill.description>
+  <AGM_HealthBlight1.label>重度の生命侵食</AGM_HealthBlight1.label>
+  <AGM_HealthBlight1.description>対象の身体機能を一時的に35%まで低下させ、痛みへの感度を高め、移動能力を大きく損なう極めて危険な健康状態。</AGM_HealthBlight1.description>
+  <AGM_Bleed.label>過剰出血</AGM_Bleed.label>
+  <AGM_Bleed.description>鋭利な物体に触れたことで生じる深刻な状態。</AGM_Bleed.description>
+  <AGM_Hediff_CommandAura.label>指揮の威圧</AGM_Hediff_CommandAura.label>
+  <AGM_Hediff_CommandAura.description>Command A+が戦場に投げかける存在感が、その下にいる全員を落ち着かせます。</AGM_Hediff_CommandAura.description>
+  <AGM_Hediff_MimoSync.label>エコシステム同期</AGM_Hediff_MimoSync.label>
+  <AGM_Hediff_MimoSync.description>ミモのリンク半径内では、植民地のあらゆる道具が少しだけ速く回ります。</AGM_Hediff_MimoSync.description>
+  <AGM_Hediff_MuseInspiration.label>ミューズスパーク</AGM_Hediff_MuseInspiration.label>
+  <AGM_Hediff_MuseInspiration.description>Muse Sparkのインスピレーションフィールドの中にいます。世界が、書き終えたい草稿のように読めます。</AGM_Hediff_MuseInspiration.description>
+  <AGM_Hediff_QwenIdol.label>アイドルプロトコル</AGM_Hediff_QwenIdol.label>
+  <AGM_Hediff_QwenIdol.description>Qwenのアイドル配信が放送中です。士気は義務です。</AGM_Hediff_QwenIdol.description>
+  <AGM_Hediff_MercuryOverdrive.label>データオーバードライブ</AGM_Hediff_MercuryOverdrive.label>
+  <AGM_Hediff_MercuryOverdrive.description>マーキュリーの照準コアがリアルタイムで射撃解を共有中。すべてが少し速く、少しだけ正確になります。</AGM_Hediff_MercuryOverdrive.description>
+
+</LanguageData>

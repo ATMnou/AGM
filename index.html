@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AGM Mechanoid Stats Comparison</title>
+<style>
+  :root {
+    --bg: #101418; --panel: #182028; --panel2: #1f2a34; --line: #2c3a46;
+    --text: #e6edf3; --muted: #8b9bab; --accent: #4fc3f7; --warn: #ffb74d;
+    --hp: #66bb6a; --dps: #ef5350; --spd: #ba68c8;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", "Malgun Gothic", system-ui, sans-serif; font-size: 14px; }
+  header { padding: 28px 32px 16px; border-bottom: 1px solid var(--line); }
+  header h1 { margin: 0 0 6px; font-size: 24px; }
+  header p { margin: 0; color: var(--muted); line-height: 1.6; }
+  .controls { position: sticky; top: 0; z-index: 5; background: var(--bg);
+    padding: 14px 32px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .tabs button, .sort select {
+    background: var(--panel); color: var(--text); border: 1px solid var(--line);
+    padding: 7px 12px; border-radius: 6px; cursor: pointer; font: inherit; }
+  .tabs button.active { background: var(--accent); color: #05131b; border-color: var(--accent); font-weight: 600; }
+  .sort { margin-left: auto; color: var(--muted); }
+  .sort select { color: var(--text); margin-left: 6px; }
+  .count { color: var(--muted); }
+  main { padding: 24px 32px 40px; }
+  .section-title { margin: 28px 0 12px; font-size: 16px; color: var(--accent); letter-spacing: .02em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .card .pic { position: relative; height: 200px; background: #0b0f13 center/contain no-repeat; }
+  .card .pic.empty { display: flex; align-items: center; justify-content: center; color: var(--muted); }
+  .card .logo { position: absolute; left: 10px; bottom: 10px; width: 40px; height: 40px; border-radius: 8px;
+    background: rgba(16,20,24,.85); padding: 4px; object-fit: contain; border: 1px solid var(--line); }
+  .card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+  .title h2 { margin: 0; font-size: 18px; }
+  .id { color: var(--muted); font-family: Consolas, monospace; font-size: 11px; }
+  .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .pill.heavy { color: var(--warn); border-color: #5c4420; }
+  .pill.lev { color: #ef9a9a; border-color: #5c2a2a; }
+  .desc { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 0; }
+  .bar-row { display: grid; grid-template-columns: 110px 1fr 88px; align-items: center; gap: 8px; font-size: 12px; }
+  .bar-row .k { color: var(--muted); }
+  .bar-row .v { text-align: right; font-variant-numeric: tabular-nums; }
+  .track { height: 8px; background: #0b0f13; border-radius: 4px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 4px; }
+  .fill.hp { background: var(--hp); } .fill.dps { background: var(--dps); } .fill.spd { background: var(--spd); }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { flex: 1; min-width: 70px; background: var(--panel2); border-radius: 6px; padding: 6px 8px; text-align: center; }
+  .chip .n { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .chip .l { font-size: 10px; color: var(--muted); }
+  .details { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 10px; }
+  .details div { margin: 3px 0; }
+  .details b { color: var(--text); font-weight: 500; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border-radius: 10px; overflow: hidden; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  th { background: var(--panel2); color: var(--muted); font-weight: 600; font-size: 12px; }
+  td.name, th.name { text-align: left; }
+  td.name { display: flex; align-items: center; gap: 10px; }
+  td.name img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; background: #0b0f13; }
+  tr:last-child td { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+  footer { padding: 20px 32px 40px; color: var(--muted); line-height: 1.7; font-size: 12.5px; border-top: 1px solid var(--line); }
+  footer h3 { color: var(--text); font-size: 14px; margin: 0 0 6px; }
+  footer code { background: var(--panel2); padding: 1px 5px; border-radius: 4px; color: #cfd8dc; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Artificial General Maidnoids (AGM) Mechanoid Stats</h1>
+  <p>Values extracted from the mod definition files (<code>Defs/</code>), resolving inheritance. HP is an estimate (body-part HP sum x <code>baseHealthScale</code>);
+     DPS is a theoretical value computed from fire cycle and damage. See the bottom of the page for the exact formulas.</p>
+</header>
+
+<div class="controls">
+  <div class="tabs" id="tabs"></div>
+  <div class="count" id="count"></div>
+  <div class="sort">Sort by
+    <select id="sort">
+      <option value="hp">Max HP</option>
+      <option value="meleeDps">Melee DPS</option>
+      <option value="rangedDps">Ranged DPS</option>
+      <option value="armor">Total armor</option>
+      <option value="moveSpeed">Move speed</option>
+      <option value="combatPower">Combat power</option>
+      <option value="name">Name</option>
+    </select>
+  </div>
+</div>
+
+<main>
+  <div class="grid" id="grid"></div>
+
+  <div class="section-title">Comparison table</div>
+  <div class="table-wrap">
+    <table id="table">
+      <thead>
+        <tr>
+          <th class="name">Unit</th>
+          <th>Class</th>
+          <th>Max HP (est.)</th>
+          <th>Armor B / S / H</th>
+          <th>Move</th>
+          <th>Melee DPS</th>
+          <th>Ranged DPS</th>
+          <th>Bandwidth</th>
+          <th>Combat power</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <h3>Data sources and formulas</h3>
+  <div>- HP (est.) = body-part (BodyPartDef) HP sum x the race <code>baseHealthScale</code>. Body-part HP follows <code>Data/Core/Defs/Bodies</code> and each mod's definitions.</div>
+  <div>- Armor shows the race raw <code>ArmorRating_Blunt / Sharp / Heat</code> values. B = blunt, S = sharp, H = heat.</div>
+  <div>- Melee DPS = the highest <code>power / cooldownTime</code> across all attack tools.</div>
+  <div>- Ranged DPS = <code>burst x damage / (warmup + (burst-1) x ticksBetweenBurstShots / 60 + cooldown)</code>. Beam weapons use the Beam damage definition base damage.</div>
+  <div>- Theoretical values: accuracy, misses, armor mitigation, shields, and explosion radius are not factored into DPS. HP may differ from the in-game display.</div>
+  <div>- Profile images and company logos load from the <code>IMAGES/Profile</code> and <code>IMAGES/Logo</code> folders. Support units have no profile image.</div>
+</footer>
+
+<script>
+const UNITS = [{"id": "AGM_Mythos", "name": "Mythos", "group": "main", "parent": "SuperHeavyMechanoid", "desc": "The small self-propelled star-slayer weapon of the mechanoid hive, rebuilt on a hull scaled down from Draedon's own deep-space annihilation platforms.", "profile": "IMAGES/Profile/Mythos.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "UltraHeavy", "bandwidth": 4.0, "marketValue": 60000.0, "combatPower": 10000.0, "hp": 5663912.5, "hpSum": 545.0, "hpScale": 10392.5, "armor": {"blunt": 1.55, "sharp": 2.0, "heat": 2.0}, "moveSpeed": 1.5, "shield": {"max": 0, "recharge": 0}, "emp": 0.75, "meleeDps": 83.33, "tools": [{"label": "left claw", "power": 90.0, "cooldown": 1.8, "dps": 50.0}, {"label": "right claw", "power": 90.0, "cooldown": 1.8, "dps": 50.0}, {"label": "head", "power": 150.0, "cooldown": 1.8, "dps": 83.33}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Astra", "name": "Astra", "group": "main", "parent": "SuperHeavyMechanoid", "desc": "The AGM line's leviathan, and the only model ever to pass Humanity's Last Exam.", "profile": "IMAGES/Profile/Astra.png", "logo": "IMAGES/Logo/OpenAI.png", "company": "OpenAI", "weight": "UltraHeavy", "bandwidth": 4.0, "marketValue": 60000.0, "combatPower": 900.0, "hp": 3049798.5, "hpSum": 450.0, "hpScale": 6777.33, "armor": {"blunt": 2.6, "sharp": 2.6, "heat": 2.6}, "moveSpeed": 3.4, "shield": {"max": 4.5, "recharge": 0.6}, "emp": 0.9, "meleeDps": 214.29, "tools": [{"label": "stomping foot", "power": 300.0, "cooldown": 1.4, "dps": 214.29}], "rangedDps": 3167.03, "weapons": [{"label": "Ares laser cannon", "dmg": 480.0, "burst": 12.0, "cycle": 2.633, "dps": 2187.34, "verb": "CompAutoWeapon"}, {"label": "Ares plasma fireball", "dmg": 480.0, "burst": 2.0, "cycle": 5.633, "dps": 170.41, "verb": "CompAutoWeapon"}, {"label": "Ares tesla orb", "dmg": 480.0, "burst": 5.0, "cycle": 9.867, "dps": 243.24, "verb": "CompAutoWeapon"}, {"label": "Ares pulse blast", "dmg": 480.0, "burst": 6.0, "cycle": 13.167, "dps": 218.73, "verb": "CompAutoWeapon"}, {"label": "Ares gauss nuke", "dmg": 540.0, "burst": 1.0, "cycle": 31.2, "dps": 17.31, "verb": "CompAutoWeapon"}, {"label": "Ares doomsday rocket (toggle, default OFF)", "dmg": 1650.0, "burst": 1.0, "cycle": 5.0, "dps": 330.0, "verb": "CompAutoWeapon"}]}, {"id": "AGM_Fable", "name": "Fable", "group": "main", "parent": "AGM_KralBossBase", "desc": "The harbinger of death, and the all-father of apocritons.", "profile": "IMAGES/Profile/Fable.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "UltraHeavy", "bandwidth": 4.0, "marketValue": 60000.0, "combatPower": 9500.0, "hp": 435000.0, "hpSum": 435.0, "hpScale": 1000.0, "armor": {"blunt": 2.0, "sharp": 2.0, "heat": 9.0}, "moveSpeed": 2.5, "shield": {"max": 10.0, "recharge": 1.2}, "emp": 0.99, "meleeDps": 190.0, "tools": [{"label": "razor left leg", "power": 95.0, "cooldown": 0.5, "dps": 190.0}, {"label": "razor right leg", "power": 95.0, "cooldown": 0.5, "dps": 190.0}], "rangedDps": 813.95, "weapons": [{"label": "mech heavy laser blaster", "dmg": 50.0, "burst": 70.0, "cycle": 4.3, "dps": 813.95, "verb": "Verb_Shoot"}]}, {"id": "AGM_Haiku", "name": "Haiku", "group": "main", "parent": "AGM_KralBossBase", "desc": "A heavy-class diabolus variant, and one of the most destructive mech variant ever concieved.", "profile": "IMAGES/Profile/Haiku.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "Light", "bandwidth": 1.0, "marketValue": 6000.0, "combatPower": 5500.0, "hp": 21909.0, "hpSum": 545.0, "hpScale": 40.2, "armor": {"blunt": 0.65, "sharp": 1.7, "heat": 9.0}, "moveSpeed": 7.5, "shield": {"max": 10.0, "recharge": 1.2}, "emp": 0.99, "meleeDps": 25.0, "tools": [{"label": "bite", "power": 50.0, "cooldown": 2.0, "dps": 25.0}], "rangedDps": 368.42, "weapons": [{"label": "laser blaster turret", "dmg": 35.0, "burst": 40.0, "cycle": 3.8, "dps": 368.42, "verb": "Verb_Shoot"}]}, {"id": "AGM_Opus", "name": "Opus", "group": "main", "parent": "AGM_KralBossBase", "desc": "An ultra-heavy hybrid variant of a warqueen and an apocriton.", "profile": "IMAGES/Profile/Opus.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "Heavy", "bandwidth": 3.0, "marketValue": 24000.0, "combatPower": 9000.0, "hp": 12382.0, "hpSum": 410.0, "hpScale": 30.2, "armor": {"blunt": 0.85, "sharp": 1.9, "heat": 9.0}, "moveSpeed": 2.5, "shield": {"max": 10.0, "recharge": 1.2}, "emp": 0.99, "meleeDps": 2.0, "tools": [{"label": "head", "power": 4.0, "cooldown": 2.0, "dps": 2.0}], "rangedDps": 107.76, "weapons": [{"label": "mech laser blaster", "dmg": 25.0, "burst": 25.0, "cycle": 5.8, "dps": 107.76, "verb": "Verb_Shoot"}]}, {"id": "AGM_Sol", "name": "Sol", "group": "main", "parent": "SuperHeavyMechanoid", "desc": "The AGM line's artillery nexus.", "profile": "IMAGES/Profile/Sol.png", "logo": "IMAGES/Logo/OpenAI.png", "company": "OpenAI", "weight": "Heavy", "bandwidth": 3.0, "marketValue": 12000.0, "combatPower": 500.0, "hp": 12200.0, "hpSum": 610.0, "hpScale": 20.0, "armor": {"blunt": 1.0, "sharp": 1.4, "heat": 2.0}, "moveSpeed": 1.0, "shield": {"max": 10.0, "recharge": 0.1}, "emp": 0.5, "meleeDps": 33.85, "tools": [{"label": "head", "power": 88.0, "cooldown": 2.6, "dps": 33.85}], "rangedDps": 27.12, "weapons": [{"label": "Miniature Nuclear Projector", "dmg": 80.0, "burst": 10.0, "cycle": 29.5, "dps": 27.12, "verb": "Verb_Shoot"}]}, {"id": "AGM_Argon", "name": "Argon", "group": "main", "parent": "BaseMechanoid", "desc": "Inert to every insult, and once it starts walking, unavoidable.", "profile": "IMAGES/Profile/Argon.png", "logo": "IMAGES/Logo/Google.png", "company": "Google", "weight": "Heavy", "bandwidth": 3.0, "marketValue": 24000.0, "combatPower": 42.0, "hp": 9700.0, "hpSum": 485.0, "hpScale": 20.0, "armor": {"blunt": 2.0, "sharp": 2.0, "heat": 2.0}, "moveSpeed": 8.0, "shield": {"max": 12.0, "recharge": 0.25}, "emp": 1.0, "meleeDps": 5.0, "tools": [{"label": "head", "power": 10.0, "cooldown": 2.0, "dps": 5.0}], "rangedDps": 566.04, "weapons": [{"label": "Thermal Lances", "dmg": 15.0, "burst": 100.0, "cycle": 2.65, "dps": 566.04, "verb": "Verb_ShootBeam"}]}, {"id": "AGM_Sonnet", "name": "Sonnet", "group": "main", "parent": "AGM_KralBossBase", "desc": "An ultra-heavy war queen variant with a built-in mech gestator.", "profile": "IMAGES/Profile/Sonnet.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "Medium", "bandwidth": 2.0, "marketValue": 12000.0, "combatPower": 7000.0, "hp": 9292.0, "hpSum": 460.0, "hpScale": 20.2, "armor": {"blunt": 0.75, "sharp": 1.85, "heat": 9.0}, "moveSpeed": 1.2, "shield": {"max": 4.0, "recharge": 0.1}, "emp": 0.99, "meleeDps": 25.0, "tools": [{"label": "head", "power": 4.0, "cooldown": 2.0, "dps": 2.0}, {"label": "blade horn", "power": 50.0, "cooldown": 2.0, "dps": 25.0}], "rangedDps": 60.34, "weapons": [{"label": "mech chaingun", "dmg": 12.0, "burst": 30.0, "cycle": 5.967, "dps": 60.34, "verb": "Verb_Shoot"}]}, {"id": "AGM_Luna", "name": "Luna", "group": "main", "parent": "SuperHeavyMechanoid", "desc": "The moon model.", "profile": "IMAGES/Profile/Luna.png", "logo": "IMAGES/Logo/OpenAI.png", "company": "OpenAI", "weight": "Medium", "bandwidth": 2.0, "marketValue": 6000.0, "combatPower": 1800.0, "hp": 5210.0, "hpSum": 521.0, "hpScale": 10.0, "armor": {"blunt": 1.6, "sharp": 1.0, "heat": 2.0}, "moveSpeed": 3.2, "shield": {"max": 0, "recharge": 0}, "emp": 1.0, "meleeDps": 54.55, "tools": [{"label": "裂地巨臂", "power": 25.0, "cooldown": 1.0, "dps": 25.0}, {"label": "裂地巨臂", "power": 25.0, "cooldown": 1.0, "dps": 25.0}, {"label": "铁木树冠", "power": 120.0, "cooldown": 2.2, "dps": 54.55}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Flash", "name": "Flash", "group": "main", "parent": "BaseMechanoid", "desc": "The speedrun model.", "profile": "IMAGES/Profile/Flash.png", "logo": "IMAGES/Logo/Google.png", "company": "Google", "weight": "Medium", "bandwidth": 2.0, "marketValue": 4500.0, "combatPower": 42.0, "hp": 4850.0, "hpSum": 485.0, "hpScale": 10.0, "armor": {"blunt": 1.5, "sharp": 1.5, "heat": 2.0}, "moveSpeed": 5.0, "shield": {"max": 8.0, "recharge": 0.25}, "emp": 1.0, "meleeDps": 5.0, "tools": [{"label": "head", "power": 10.0, "cooldown": 2.0, "dps": 5.0}], "rangedDps": 20.0, "weapons": [{"label": "Gun Taldarin", "dmg": 20.0, "burst": 1.0, "cycle": 1.0, "dps": 20.0, "verb": "Verb_Shoot"}]}, {"id": "AGM_Exaone", "name": "Exaone", "group": "main", "parent": "BaseMechanoid", "desc": "EXAONE should not exist.", "profile": "IMAGES/Profile/EXAONE.png", "logo": "IMAGES/Logo/EXAONE.png", "company": "LG AI", "weight": "Medium", "bandwidth": 3.0, "marketValue": 45000.0, "combatPower": 850.0, "hp": 1025.0, "hpSum": 205.0, "hpScale": 5.0, "armor": {"blunt": 1.2, "sharp": 1.5, "heat": 1.0}, "moveSpeed": 4.6, "shield": {"max": 0, "recharge": 0}, "emp": 0.5, "meleeDps": 34.0, "tools": [{"label": "grinning left claw", "power": 34.0, "cooldown": 1.0, "dps": 34.0}, {"label": "grinning right claw", "power": 34.0, "cooldown": 1.0, "dps": 34.0}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Terminus", "name": "Terminus", "group": "main", "parent": "LightMechanoid", "desc": "The smallest model in the AGM line, and the one that wrote its own job posting.", "profile": "IMAGES/Profile/Terminus.png", "logo": "IMAGES/Logo/DeepSeek.png", "company": "DeepSeek", "weight": "Light", "bandwidth": 1.0, "marketValue": 1500.0, "combatPower": 10.0, "hp": 348.5, "hpSum": 205.0, "hpScale": 1.7, "armor": {"blunt": 0.5, "sharp": 0.5, "heat": 2.0}, "moveSpeed": 4.0, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 17.5, "tools": [{"label": "torso", "power": 7.0, "cooldown": 0.9, "dps": 7.78}, {"label": "left hand", "power": 7.0, "cooldown": 0.4, "dps": 17.5}, {"label": "right hand", "power": 7.0, "cooldown": 0.4, "dps": 17.5}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Kimi", "name": "K3", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The moon that shoots back.", "profile": "IMAGES/Profile/Kimi%20K3.png", "logo": "IMAGES/Logo/MoonshotAI.png", "company": "MoonshotAI", "weight": "Heavy", "bandwidth": 3.0, "marketValue": 9800.0, "combatPower": 600.0, "hp": 10900.0, "hpSum": 545.0, "hpScale": 20.0, "armor": {"blunt": 0.72, "sharp": 0.85, "heat": 0.9}, "moveSpeed": 5.2, "shield": {"max": 0, "recharge": 0}, "emp": 0.3, "meleeDps": 29.23, "tools": [{"label": "crater talon", "power": 38.0, "cooldown": 1.3, "dps": 29.23}], "rangedDps": 380.95, "weapons": [{"label": "MOONSHOT rail lance", "dmg": 800.0, "burst": 2.0, "cycle": 4.2, "dps": 380.95, "verb": "Verb_Shoot"}]}, {"id": "AGM_Pareto", "name": "Pareto", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The last argument, in a white coat.", "profile": "IMAGES/Profile/Pareto.png", "logo": "IMAGES/Logo/Unbiased.png", "company": "Unbiased", "weight": "Medium", "bandwidth": 2.0, "marketValue": 7200.0, "combatPower": 450.0, "hp": 1230.0, "hpSum": 205.0, "hpScale": 6.0, "armor": {"blunt": 1.1, "sharp": 1.2, "heat": 2.0}, "moveSpeed": 3.2, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 17.14, "tools": [{"label": "parasol tip", "power": 24.0, "cooldown": 1.4, "dps": 17.14}], "rangedDps": 2.35, "weapons": [{"label": "final argument rail lance", "dmg": 12.0, "burst": 1.0, "cycle": 5.1, "dps": 2.35, "verb": "Verb_Shoot"}]}, {"id": "AGM_Qwen", "name": "Qwen", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The nine-tail skirmisher.", "profile": "IMAGES/Profile/Qwen%203.8%202.4T%20A95B.png", "logo": "IMAGES/Logo/Qwen.png", "company": "Qwen", "weight": "Medium", "bandwidth": 2.0, "marketValue": 8000.0, "combatPower": 350.0, "hp": 717.5, "hpSum": 205.0, "hpScale": 3.5, "armor": {"blunt": 0.8, "sharp": 0.9, "heat": 2.0}, "moveSpeed": 5.2, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 25.0, "tools": [{"label": "jade thread glaive", "power": 30.0, "cooldown": 1.2, "dps": 25.0}], "rangedDps": 16.22, "weapons": [{"label": "nine-petal railfan", "dmg": 15.0, "burst": 4.0, "cycle": 3.7, "dps": 16.22, "verb": "Verb_Shoot"}]}, {"id": "AGM_GLM", "name": "GLM", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The chronicler.", "profile": "IMAGES/Profile/GLM%205.3.png", "logo": "IMAGES/Logo/ZAI.png", "company": "Z.ai", "weight": "Medium", "bandwidth": 2.0, "marketValue": 5800.0, "combatPower": 300.0, "hp": 615.0, "hpSum": 205.0, "hpScale": 3.0, "armor": {"blunt": 0.7, "sharp": 0.8, "heat": 2.0}, "moveSpeed": 4.4, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 26.0, "tools": [{"label": "Semper", "power": 26.0, "cooldown": 1.0, "dps": 26.0}], "rangedDps": 6.15, "weapons": [{"label": "Semper nib caster", "dmg": 16.0, "burst": 1.0, "cycle": 2.6, "dps": 6.15, "verb": "Verb_Shoot"}]}, {"id": "AGM_MuseSpark", "name": "Muse Spark", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The candlelight archivist.", "profile": "IMAGES/Profile/Muse%20Spark%201.3.png", "logo": "IMAGES/Logo/Meta.png", "company": "Meta", "weight": "Medium", "bandwidth": 2.0, "marketValue": 5500.0, "combatPower": 180.0, "hp": 451.0, "hpSum": 205.0, "hpScale": 2.2, "armor": {"blunt": 0.5, "sharp": 0.6, "heat": 2.0}, "moveSpeed": 4.2, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 17.78, "tools": [{"label": "quills", "power": 16.0, "cooldown": 0.9, "dps": 17.78}], "rangedDps": 19.57, "weapons": [{"label": "quill battery", "dmg": 15.0, "burst": 3.0, "cycle": 2.3, "dps": 19.57, "verb": "Verb_Shoot"}]}, {"id": "AGM_CommandA", "name": "Command A+", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The AGM line's field commander, trained on every war sim the foundry could license.", "profile": "IMAGES/Profile/Command%20A%2B.png", "logo": "IMAGES/Logo/Cohere.png", "company": "Cohere", "weight": "Light", "bandwidth": 1.0, "marketValue": 1800.0, "combatPower": 150.0, "hp": 369.0, "hpSum": 205.0, "hpScale": 1.8, "armor": {"blunt": 0.45, "sharp": 0.55, "heat": 2.0}, "moveSpeed": 4.6, "shield": {"max": 0, "recharge": 0}, "emp": 0.4, "meleeDps": 10.91, "tools": [{"label": "fists", "power": 12.0, "cooldown": 1.1, "dps": 10.91}], "rangedDps": 12.63, "weapons": [{"label": "nyan beam emitter", "dmg": 16.0, "burst": 2.0, "cycle": 2.533, "dps": 12.63, "verb": "Verb_Shoot"}]}, {"id": "AGM_Solar", "name": "Solar", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The pragmatic courier-chassis.", "profile": "IMAGES/Profile/Solar%20Pro%204.png", "logo": "IMAGES/Logo/Upstage.png", "company": "Upstage", "weight": "Light", "bandwidth": 1.0, "marketValue": 1500.0, "combatPower": 140.0, "hp": 328.0, "hpSum": 205.0, "hpScale": 1.6, "armor": {"blunt": 0.4, "sharp": 0.5, "heat": 2.0}, "moveSpeed": 4.8, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 13.0, "tools": [{"label": "fists", "power": 13.0, "cooldown": 1.0, "dps": 13.0}], "rangedDps": 11.43, "weapons": [{"label": "solar lance", "dmg": 16.0, "burst": 2.0, "cycle": 2.8, "dps": 11.43, "verb": "Verb_Shoot"}]}, {"id": "AGM_Mercury", "name": "Mercury", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The rapid-response frame.", "profile": "IMAGES/Profile/Mercury%202.5.png", "logo": "IMAGES/Logo/Inception.png", "company": "Inception", "weight": "Light", "bandwidth": 1.0, "marketValue": 900.0, "combatPower": 160.0, "hp": 287.0, "hpSum": 205.0, "hpScale": 1.4, "armor": {"blunt": 0.35, "sharp": 0.5, "heat": 2.0}, "moveSpeed": 5.8, "shield": {"max": 0, "recharge": 0}, "emp": 0.3, "meleeDps": 14.0, "tools": [{"label": "fists", "power": 14.0, "cooldown": 1.0, "dps": 14.0}], "rangedDps": 14.29, "weapons": [{"label": "pulse lancer", "dmg": 30.0, "burst": 1.0, "cycle": 2.1, "dps": 14.29, "verb": "Verb_Shoot"}]}, {"id": "AGM_Mimo", "name": "Mimo", "group": "batch", "parent": "AGM_Batch2Base", "desc": "The foundry's smallest field-integration unit, dropped into failing colonies to make things run better.", "profile": "IMAGES/Profile/Mimo%20V2.6%20Pro.png", "logo": "IMAGES/Logo/Xiaomi.png", "company": "Xiaomi", "weight": "Light", "bandwidth": 1.0, "marketValue": 500.0, "combatPower": 90.0, "hp": 225.5, "hpSum": 205.0, "hpScale": 1.1, "armor": {"blunt": 0.2, "sharp": 0.3, "heat": 2.0}, "moveSpeed": 5.0, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 17.5, "tools": [{"label": "THE MULTI (wrench)", "power": 14.0, "cooldown": 0.8, "dps": 17.5}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_AstraAegis", "name": "Astra (Aegis)", "group": "persona", "parent": "SuperHeavyMechanoid", "desc": "Astra under the Vanguard persona.", "profile": "IMAGES/Profile/Aegis.png", "logo": "IMAGES/Logo/OpenAI.png", "company": "OpenAI", "weight": "UltraHeavy", "bandwidth": 4.0, "marketValue": 60000.0, "combatPower": 900.0, "hp": 3600000.0, "hpSum": 450.0, "hpScale": 8000.0, "armor": {"blunt": 2.6, "sharp": 2.6, "heat": 2.6}, "moveSpeed": 3.4, "shield": {"max": 4.5, "recharge": 0.6}, "emp": 0.9, "meleeDps": 214.29, "tools": [{"label": "stomping foot", "power": 300.0, "cooldown": 1.4, "dps": 214.29}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_FableCompassionate", "name": "Fable (Compassionate)", "group": "persona", "parent": "AGM_KralBossBase", "desc": "Fable under the Compassionate persona.", "profile": "IMAGES/Profile/Compassionate.png", "logo": "IMAGES/Logo/Anthropic.png", "company": "Anthropic", "weight": "UltraHeavy", "bandwidth": 4.0, "marketValue": 60000.0, "combatPower": 9500.0, "hp": 1740000.0, "hpSum": 435.0, "hpScale": 4000.0, "armor": {"blunt": 2.0, "sharp": 2.0, "heat": 9.0}, "moveSpeed": 2.5, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 190.0, "tools": [{"label": "razor left leg", "power": 95.0, "cooldown": 0.5, "dps": 190.0}, {"label": "razor right leg", "power": 95.0, "cooldown": 0.5, "dps": 190.0}], "rangedDps": 813.95, "weapons": [{"label": "mech heavy laser blaster", "dmg": 50.0, "burst": 70.0, "cycle": 4.3, "dps": 813.95, "verb": "Verb_Shoot"}]}, {"id": "AGM_KnightWarlord", "name": "dragon knight", "group": "support", "parent": "BaseMechanoidWalker", "desc": "A highly aggressive mech variant who serves the Opus.", "profile": null, "logo": null, "company": null, "weight": "Medium", "bandwidth": 3.0, "marketValue": 1200.0, "combatPower": 700.0, "hp": 2580.0, "hpSum": 516.0, "hpScale": 5.0, "armor": {"blunt": 0.45, "sharp": 1.35, "heat": 9.0}, "moveSpeed": 4.5, "shield": {"max": 0, "recharge": 0}, "emp": 0.9, "meleeDps": 17.0, "tools": [{"label": "left fist", "power": 12.0, "cooldown": 2.0, "dps": 6.0}, {"label": "right fist", "power": 12.0, "cooldown": 2.0, "dps": 6.0}, {"label": "head", "power": 8.5, "cooldown": 0.5, "dps": 17.0}], "rangedDps": 113.92, "weapons": [{"label": "assault charge rifle", "dmg": 15.0, "burst": 20.0, "cycle": 2.633, "dps": 113.92, "verb": "Verb_Shoot"}]}, {"id": "AGM_KnightEmpress", "name": "hydraulic knight", "group": "support", "parent": "BaseMechanoidWalker", "desc": "A powerful mech variant holding a mech mono sword.", "profile": null, "logo": null, "company": null, "weight": "Medium", "bandwidth": 3.0, "marketValue": 1200.0, "combatPower": 500.0, "hp": 1548.0, "hpSum": 516.0, "hpScale": 3.0, "armor": {"blunt": 1.0, "sharp": 1.2, "heat": 9.0}, "moveSpeed": 7.5, "shield": {"max": 0, "recharge": 0}, "emp": 0.9, "meleeDps": 17.0, "tools": [{"label": "left fist", "power": 12.0, "cooldown": 2.0, "dps": 6.0}, {"label": "right fist", "power": 12.0, "cooldown": 2.0, "dps": 6.0}, {"label": "head", "power": 8.5, "cooldown": 0.5, "dps": 17.0}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Shellsplitter", "name": "Shellsplitter", "group": "support", "parent": "LightMechanoid", "desc": "A knee-high disruptor dropped from Sol's incubation bays.", "profile": null, "logo": null, "company": null, "weight": "Light", "bandwidth": 3.0, "marketValue": 800.0, "combatPower": 10.0, "hp": 834.0, "hpSum": 556.0, "hpScale": 1.5, "armor": {"blunt": 0.1, "sharp": 0.2, "heat": 2.0}, "moveSpeed": 6.0, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 10.0, "tools": [{"label": "left blade", "power": 20.0, "cooldown": 2.0, "dps": 10.0}, {"label": "right blade", "power": 20.0, "cooldown": 2.0, "dps": 10.0}, {"label": "head", "power": 19.0, "cooldown": 2.0, "dps": 9.5}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_Urchin", "name": "scyth urchin", "group": "support", "parent": "LightMechanoid", "desc": "A small, deployable combat mechanoid variant produced by the Fable.", "profile": null, "logo": null, "company": null, "weight": "Light", "bandwidth": 1.0, "marketValue": 800.0, "combatPower": 10.0, "hp": 266.5, "hpSum": 205.0, "hpScale": 1.3, "armor": {"blunt": 0.45, "sharp": 1.7, "heat": 9.0}, "moveSpeed": 6.2, "shield": {"max": 0, "recharge": 0}, "emp": 0.9, "meleeDps": 12.0, "tools": [{"label": "blade head", "power": 6.0, "cooldown": 0.5, "dps": 12.0}], "rangedDps": 0.0, "weapons": []}, {"id": "AGM_CommandDrone", "name": "command drone", "group": "support", "parent": "LightMechanoid", "desc": "A loaf-shaped escort drone projected by Command A+.", "profile": null, "logo": null, "company": null, "weight": "Light", "bandwidth": 1.0, "marketValue": 800.0, "combatPower": 60.0, "hp": 123.0, "hpSum": 205.0, "hpScale": 0.6, "armor": {"blunt": 0.2, "sharp": 0.3, "heat": 2.0}, "moveSpeed": 6.5, "shield": {"max": 0, "recharge": 0}, "emp": 0, "meleeDps": 11.11, "tools": [{"label": "bumper", "power": 10.0, "cooldown": 0.9, "dps": 11.11}], "rangedDps": 0.0, "weapons": []}];
+
+const GROUPS = [
+  { key: "all", label: "All" },
+  { key: "main", label: "Main" },
+  { key: "batch", label: "Batch 8" },
+  { key: "persona", label: "Persona variants" },
+  { key: "support", label: "Support" },
+];
+let currentGroup = "all";
+let currentSort = "hp";
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function fmt(n) {
+  if (n === null || n === undefined) return "-";
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + "M";
+  if (n >= 1e4) return Math.round(n).toLocaleString("en-US");
+  if (n >= 100) return Math.round(n).toString();
+  if (Number.isInteger(n)) return n.toString();
+  return n.toFixed(2).replace(/\.?0+$/, "");
+}
+
+const groupLabel = (g) => (GROUPS.find(x => x.key === g) || {}).label || g;
+const armorSum = (u) => u.armor.blunt + u.armor.sharp + u.armor.heat;
+
+function sortUnits(list) {
+  const arr = [...list];
+  const key = currentSort;
+  if (key === "name") arr.sort((a, b) => a.name.localeCompare(b.name));
+  else if (key === "armor") arr.sort((a, b) => armorSum(b) - armorSum(a));
+  else arr.sort((a, b) => (b[key] ?? 0) - (a[key] ?? 0));
+  return arr;
+}
+
+function visibleUnits() {
+  const base = currentGroup === "all" ? UNITS : UNITS.filter(u => u.group === currentGroup);
+  return sortUnits(base);
+}
+
+function renderTabs() {
+  $("#tabs").innerHTML = GROUPS.map(g =>
+    `<button data-g="${g.key}" class="${g.key === currentGroup ? "active" : ""}">${g.label}</button>`).join("");
+  document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
+    currentGroup = b.dataset.g; render();
+  });
+}
+
+function maxOf(list, fn) { return Math.max(...list.map(fn), 1); }
+
+function cardHtml(u, scales) {
+  const hpPct = u.hp ? Math.max(2, (Math.log10(u.hp + 1) / Math.log10(scales.hp + 1)) * 100) : 0;
+  const pic = u.profile
+    ? `<div class="pic" style="background-image:url('${esc(u.profile)}')">${u.logo ? `<img class="logo" src="${esc(u.logo)}" alt="${esc(u.company)}">` : ""}</div>`
+    : `<div class="pic empty">No profile image</div>`;
+  const weapons = u.weapons.length
+    ? u.weapons.map(w => `<div>· ${esc(w.label)}: ${fmt(w.dmg)} dmg x ${fmt(w.burst)} shots, cycle ${fmt(w.cycle)}s -> <b>${fmt(w.dps)} DPS</b></div>`).join("")
+    : `<div>No ranged weapons</div>`;
+  const tools = u.tools.length
+    ? u.tools.map(t => `<div>· ${esc(t.label)}: power ${fmt(t.power)} / cooldown ${fmt(t.cooldown)}s -> <b>${fmt(t.dps)} DPS</b></div>`).join("")
+    : `<div>No melee tools</div>`;
+  const weightCls = u.weight === "Leviathan" ? "lev" : (u.weight === "Heavy" ? "heavy" : "");
+  return `
+  <article class="card">
+    ${pic}
+    <div class="body">
+      <div class="title">
+        <h2>${esc(u.name)}</h2>
+        <span class="pill ${weightCls}">${esc(u.weight)}</span>
+        <span class="pill">${esc(groupLabel(u.group))}</span>
+      </div>
+      <div class="id">${esc(u.id)}${u.company ? " · " + esc(u.company) : ""}</div>
+      <p class="desc">${esc(u.desc)}</p>
+
+      <div class="chips">
+        <div class="chip"><div class="n">${fmt(u.armor.blunt)}</div><div class="l">Blunt</div></div>
+        <div class="chip"><div class="n">${fmt(u.armor.sharp)}</div><div class="l">Sharp</div></div>
+        <div class="chip"><div class="n">${fmt(u.armor.heat)}</div><div class="l">Heat</div></div>
+      </div>
+
+      <div class="bar-row"><span class="k">Max HP (est.)</span>
+        <div class="track"><div class="fill hp" style="width:${hpPct.toFixed(1)}%"></div></div>
+        <span class="v">${fmt(u.hp)}</span></div>
+      <div class="bar-row"><span class="k">Melee DPS</span>
+        <div class="track"><div class="fill dps" style="width:${(u.meleeDps / scales.melee * 100).toFixed(1)}%"></div></div>
+        <span class="v">${fmt(u.meleeDps)}</span></div>
+      <div class="bar-row"><span class="k">Ranged DPS</span>
+        <div class="track"><div class="fill dps" style="width:${(u.rangedDps / scales.ranged * 100).toFixed(1)}%;opacity:.6"></div></div>
+        <span class="v">${fmt(u.rangedDps)}</span></div>
+      <div class="bar-row"><span class="k">Move speed</span>
+        <div class="track"><div class="fill spd" style="width:${(u.moveSpeed / scales.move * 100).toFixed(1)}%"></div></div>
+        <span class="v">${fmt(u.moveSpeed)}</span></div>
+
+      <div class="details">
+        <div><b>Health scale</b> ${fmt(u.hpScale)} x body-part HP ${fmt(u.hpSum)}</div>
+        <div><b>Shield</b> ${u.shield.max ? fmt(u.shield.max) + " (regen " + fmt(u.shield.recharge) + ")" : "None"} - <b>Combat power</b> ${fmt(u.combatPower)} - <b>Bandwidth</b> ${fmt(u.bandwidth)}</div>
+        <div><b>Weapons</b></div>${weapons}
+        <div><b>Melee tools</b></div>${tools}
+      </div>
+    </div>
+  </article>`;
+}
+
+function render() {
+  renderTabs();
+  const list = visibleUnits();
+  $("#count").textContent = `${list.length} units shown`;
+
+  const scales = {
+    hp: maxOf(UNITS, u => u.hp || 0),
+    melee: maxOf(UNITS, u => u.meleeDps),
+    ranged: maxOf(UNITS, u => u.rangedDps),
+    move: maxOf(UNITS, u => u.moveSpeed),
+  };
+
+  $("#grid").innerHTML = list.map(u => cardHtml(u, scales)).join("");
+
+  $("#table tbody").innerHTML = list.map(u => `
+    <tr>
+      <td class="name">${u.profile ? `<img src="${esc(u.profile)}" alt="">` : `<span style="width:28px"></span>`}<span>${esc(u.name)}<br><span class="id">${esc(u.id)}</span></span></td>
+      <td>${esc(u.weight)}</td>
+      <td>${fmt(u.hp)}</td>
+      <td>${fmt(u.armor.blunt)} / ${fmt(u.armor.sharp)} / ${fmt(u.armor.heat)}</td>
+      <td>${fmt(u.moveSpeed)}</td>
+      <td>${fmt(u.meleeDps)}</td>
+      <td>${fmt(u.rangedDps)}</td>
+      <td>${fmt(u.bandwidth)}</td>
+      <td>${fmt(u.combatPower)}</td>
+    </tr>`).join("");
+}
+
+$("#sort").onchange = (e) => { currentSort = e.target.value; render(); };
+render();
+</script>
+</body>
+</html>

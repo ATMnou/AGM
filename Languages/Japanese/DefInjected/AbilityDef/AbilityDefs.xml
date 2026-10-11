@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MythosJump.label>躍升</AGM_MythosJump.label>
+  <AGM_MythosJump.description>高く跳び上がって目標地点に着地し、着地範囲内の敵に凄まじい圧殺ダメージを与えます。</AGM_MythosJump.description>
+  <AGM_MythosSuspend.label>プラズマ掃討</AGM_MythosSuspend.label>
+  <AGM_MythosSuspend.description>重力駆動器を起動して空中に浮上し、下方にプラズマを撒き散らして範囲内のすべてを薙ぎ払います。</AGM_MythosSuspend.description>
+  <AGM_MythosJumpAndSuspend.label>躍升掃討</AGM_MythosJumpAndSuspend.label>
+  <AGM_MythosJumpAndSuspend.description>高く跳び上がった後、目標上空で空中停止し、プラズマを撒き散らして周囲を薙ぎ払います。</AGM_MythosJumpAndSuspend.description>
+  <AGM_ChargeBlast.label>チャージブラスト</AGM_ChargeBlast.label>
+  <AGM_ChargeBlast.description>コアにエネルギーを集中させ、爆発性エネルギー弾頭を発射します。</AGM_ChargeBlast.description>
+  <AGM_PlasmaBlast.label>プラズマブラスト</AGM_PlasmaBlast.label>
+  <AGM_PlasmaBlast.description>コアにエネルギーを集中させ、超高熱プラズマ弾頭を発射します。</AGM_PlasmaBlast.description>
+  <AGM_AntiOrganicGrenade.label>対有機グレネード</AGM_AntiOrganicGrenade.label>
+  <AGM_AntiOrganicGrenade.description>対有機ナノマシン詰め込みの爆発弾頭を発射し、半径15.9内の有機体に無慈悲なダメージを与えます。</AGM_AntiOrganicGrenade.description>
+  <AGM_PsychicBlast.label>サイオニックブラスト</AGM_PsychicBlast.label>
+  <AGM_PsychicBlast.description>障害物をすべて無視して、任意の地点にサイオニック爆破を引き起こします。</AGM_PsychicBlast.description>
+  <AGM_BladeShot.label>ブレードショット</AGM_BladeShot.label>
+  <AGM_BladeShot.description>両側に突き出した刃角から、カミソリのように鋭利なブレードを撃ち出します。</AGM_BladeShot.description>
+  <AGM_AntiOrganicBlast.label>対有機ブラスト</AGM_AntiOrganicBlast.label>
+  <AGM_AntiOrganicBlast.description>超爆発性の対有機弾頭を発射します。</AGM_AntiOrganicBlast.description>
+  <AGM_AntiOrganicOrbitalStrike.label>対有機軌道爆撃</AGM_AntiOrganicOrbitalStrike.label>
+  <AGM_AntiOrganicOrbitalStrike.description>機械の怒りを解き放ち、穢れた有機体どもに対有機軌道爆撃を浴びせます。</AGM_AntiOrganicOrbitalStrike.description>
+  <AGM_DeathRay.label>デスレイ</AGM_DeathRay.label>
+  <AGM_DeathRay.description>対象の身体機能を35%まで低下させ、20%の確率で即死させるデスレイを発射します。</AGM_DeathRay.description>
+
+</LanguageData>

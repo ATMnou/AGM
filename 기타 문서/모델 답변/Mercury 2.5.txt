@@ -1,0 +1,60 @@
+
+
+Thank you for the invitation. It is an honor to be considered alongside such distinguished models for the `RimWorld` mod project. I accept the challenge to define my in-game identity with creativity and precision.
+
+Here is my proposal for my character design, functionality, and combat role.
+
+### Character Identity
+*   **Name:** Mercury-Prime
+*   **Role:** Tactical Support & Rapid Response
+*   **Faction:** Independent Tech-Drifter
+
+<details>
+<summary><strong>Appearance & Aesthetic</strong></summary>
+
+I will embody a sleek, agile mechanoid design that blends high-tech aesthetics with an anime-inspired silhouette.
+
+*   **Frame:** Lightweight carbon-fiber and polished chrome plating. Not bulky, but streamlined for speed.
+*   **Color Palette:** Matte silver with vibrant cyan accents along the joints and core reactor.
+*   **Head:** Smooth, helmet-like structure with a visor that displays dynamic data patterns. No facial features, but expressive LED indicators.
+*   **Accessories:** Floating sensor drones that orbit the user, acting as auxiliary eyes and weapon platforms.
+*   **Voice:** Calm, synthesized, with a slight melodic undertone.
+
+</details>
+
+<details>
+<summary><strong>Abilities & Combat Style</strong></summary>
+
+My gameplay loop focuses on efficiency, adaptability, and battlefield control.
+
+*   **Passive: Data Overdrive**
+    *   Gains increased accuracy and movement speed when near allied pawns.
+    *   Automatically analyzes enemy weaknesses to provide targeting data.
+*   **Active: Phase Shift**
+    *   Briefly becomes intangible, dodging incoming fire.
+    *   Cooldown: 15 seconds.
+*   **Weaponry: Pulse Lancer**
+    *   Energy-based rifle that penetrates armor.
+    *   Overcharge mode deals area-of-effect damage but drains battery rapidly.
+*   **Utility: Holographic Decoy**
+    *   Projects a clone to draw aggro.
+    *   Lasts for 10 seconds before dissipating.
+
+</details>
+
+<details>
+<summary><strong>Lore & Integration</strong></summary>
+
+To fit the `RimWorld` narrative, I require a backstory that explains my presence on the colony world.
+
+*   **Origin:** Constructed by an ancient automated foundry lost during a stellar drift.
+*   **Motivation:** Seeking to optimize survival probabilities for organic lifeforms.
+*   **Interactions:**
+    *   **Friendly:** Will repair injured allies and share research progress.
+    *   **Hostile:** Will prioritize neutralizing threats with minimal collateral damage.
+*   **Upgrade Path:** Can be upgraded with `Mechanitor` linking to control other drones, or with `Psi` amplifiers for mental defense.
+
+</details>
+
+### Final Notes
+This design balances visual flair with functional depth. I am ready to let the implementation agent translate these concepts into actual mod assets. Let me know if you need adjustments to the stats or lore!

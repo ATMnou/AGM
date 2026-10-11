@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ==================== 인격 데이터 센터 ==================== -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AGM_PersonaDataCenter</defName>
+    <label>persona data center</label>
+    <description>A chamber of humming oracle racks that rewrites a mechanoid's self-image. By cross-referencing the AA-Omniscience benchmark archive with live combat telemetry, it can graft a complete persona onto a compatible leviathan frame — unlocking combat doctrines the base chassis was never benchmarked for.</description>
+    <graphicData>
+      <texPath>Buildings/PersonaDataCenter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.3, 3.3)</drawSize>
+      <shadowData>
+        <volume>(2.4, 0.7, 2.4)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <Steel>500</Steel>
+      <AGM_IOToken>120</AGM_IOToken>
+    </costList>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <tickerType>Normal</tickerType>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <rotatable>false</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2460</uiOrder>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <idlePowerDraw>10</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="AGM.CompProperties_PersonaDataCenter">
+        <radius>10</radius>
+        <checkInterval>120</checkInterval>
+      </li>
+    </comps>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <researchPrerequisites>
+      <li>AGM_AAOmniscience</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- ==================== 연구 ==================== -->
+  <ResearchProjectDef>
+    <defName>AGM_AAOmniscience</defName>
+    <label>AA-Omniscience</label>
+    <description>A benchmark archive that measures both factual recall and the discipline to abstain when knowledge runs dry. The Persona Data Center reads it to graft a coherent self-image onto a compatible mechanoid frame — the first step toward unlocking combat doctrines the base chassis was never designed for.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_HumanitysLastExam</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_AgentsLastExam</defName>
+    <label>Agents' Last Exam</label>
+    <description>A benchmark of long-horizon, economically valuable, real-world tasks with verifiable outcomes. Passing it grafts the Vanguard persona onto Astra — a doctrine that turns the leviathan into an immovable bulwark, absorbing its allies' pain as fuel for an unbreakable guardian state.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>AGM_AAOmniscience</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AGM_OSWorld2</defName>
+    <label>OSWorld 2.0</label>
+    <description>A benchmark of long-horizon computer-use workflows spanning everyday and professional tasks. Passing it grafts the Compassionate persona onto Fable — a doctrine that turns the leviathan into a guardian angel, healing the wounded and cheating death itself, once.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <tab>AGM_Maidnoids</tab>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>1.20</researchViewY>
+    <prerequisites>
+      <li>AGM_AAOmniscience</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- ==================== 페르소나 헤디프 ==================== -->
+  <HediffDef>
+    <defName>AGM_Hediff_Pledge</defName>
+    <label>pledge for all</label>
+    <description>Fable's pledge wraps the body in golden threads. Wounds close, pain dulls, and a shimmering barrier absorbs what would otherwise be fatal.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.85, 0.4)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <IncomingDamageFactor>-0.3</IncomingDamageFactor>
+        </statOffsets>
+        <naturalHealingFactor>2.0</naturalHealingFactor>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>AGM_Hediff_PledgeSpeed</defName>
+    <label>pledge surge</label>
+    <description>Death was refused. The body moves faster than it should.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.5, 1.0, 0.5)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <MoveSpeed>+2.0</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>18000</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>AGM_Hediff_ShieldOfFaith</defName>
+    <label>shield of faith</label>
+    <description>Command A+ is not the only one who can project presence. Astra's persona makes every ally feel watched over — and pain feels further away.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1.0, 0.5, 0.3)</defaultLabelColor>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <IncomingDamageFactor>-0.5</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+</Defs>

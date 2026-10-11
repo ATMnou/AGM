@@ -1,0 +1,28 @@
+선행 연구 과제: AA-Omniscience
+원본 설명: We introduce AA-Omniscience, a benchmark dataset designed to measure a model’s ability to both recall factual information accurately across domains, and correctly abstain when its knowledge is insufficient. AA-Omniscience is characterized by its penalty for incorrect guesses, distinct from both accuracy (number of questions answered correctly) and hallucination rate (proportion of incorrect guesses when model does not know the answer), making it extremely relevant for users to choose a model for their next domain specific task.
+
+The full dataset comprises 6,000 total questions, split across economically significant domains. Questions are created using a question generation agent, which derives questions from authoritative sources and filters them based on similarity, difficulty, and ambiguity. As a result, AA-Omniscience can easily be scaled across more domains and progressively updated with relevant information.
+
+In order to maintain evaluation integrity, AA-Omniscience-Public is a 10% subset of the full question set. To ensure the public set is representative, questions were sampled so that model results across the public and full sets are closely aligned in performance at the time of release (see comparison below). The public set is sufficient to get an indication of overall model performance on the Omniscience Index, including knowledge accuracy and hallucination rates. Results at a domain or topic level, however, should not be considered reliable as the dataset size is too small to be representative of model performance in that area.
+
+신규 3x3 건물: '인격 데이터 센터'
+건설 비용: 500 강철 + 120 IO 토큰
+필요 전력: 150W
+기능: 인격을 씌울 수 있는 건물 (3522838904 모드의 PurifierConclave 참고)
+적용 대상: Astra / Fable
+
+모든 능력은 Abilities에 텍스쳐 있음
+
+선봉장: 아스트라
+(Aegis: Astra)
+연구 과제: Agents’ Last Exam
+원본 설명: Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long horizon, economically valuable, real world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 sub fields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is below 1%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP relevant impact.
+[신념의 방패] 온오프 기술 활성화 시: 맵 내의 모든 동맹 폰의 피해를 대신 받는다. 대신 받은 피해량에 따라 '신념불변'이 진행되며, 모두 차오를 경우 신념불변의 수호자 상태가 된다. 이 상태에서는 신념의 방패로 대신 받는 피해를 75%만 받으며, 아스트라가 스스로 느린 속도로 수리된다. 신념불변은 2일동안 지속된다.
+
+이해자: 페이블
+(Compassionate: Fable)
+연구 과제: OSWorld 2.0
+원본 설명: Existing computer-use benchmarks fail to capture the realism, complexity, and long-horizon demands of real-world computer use, limiting their ability to reveal the limitations of frontier agents. We introduce OSWorld 2.0, a benchmark of 108 long-horizon computer-use workflows spanning everyday and professional tasks. Each task represents a realistic end-to-end workflow that takes human users a median of about 1.6 hours to complete and requires an average of 318 tool calls with Claude Opus 4.7 using maximum thinking, compared with about 30 in OSWorld 1.0. OSWorld 2.0 targets challenge phenomena that are common in real workflows yet underrepresented in prior benchmarks, spanning interaction-design challenges such as streaming interaction and dynamic environments, as well as agent-pattern challenges such as cross-source reasoning, implicit-state inference, and visual-spatial precision. Tasks are grounded in authentic input artifacts and cross-referenced against realistic stateful user profile data, and include separate safety reports auditing safety-sensitive execution. Under our primary binary-completion metric at 500 steps, Claude Opus 4.8 with maximum thinking and batched tool calls scores best but still completes only 20.6% of tasks at a 54.8% partial score; GPT-5.5 is far more token-efficient yet plateaus near 14%. These results show that current agents are still far from professional-level computer use: rather than stumbling on basic GUI control or coding, they lose track of constraints, miss information that arrives mid-task, guess rather than ask the user, and skip verification, struggling most when a task hinges on hidden state they must recover.
+
+[모두를 위한 다짐] 활성화 시 1일 동안: 정착지 폰 전체의 체력을 즉시 일정량 회복시키며 피해 감소를 적용한다. 감소된 피해만큼 체력을 회복시킨다. 추가로 대상 전체에 보호막을 생성한다. 활성화 동안 1회에 한하여 정착지 폰이 사망할 시 그 직전에 모든 부상을 회복하고 보호막을 씌우며 이동 속도를 증가시킨다. 2일의 대기시간을 갖는다.
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- EXAONE's render tree: a single frame-animated body node cycling the
+       hand-prepared ExaoneF-00..18 sprite loop (19 frames). -->
+  <PawnRenderTreeDef>
+    <defName>AGM_Exaone</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li Class="AGM.PawnRenderNodeProperties_IdleFrames">
+          <debugLabel>ExaoneBody</debugLabel>
+          <tagDef>Body</tagDef>
+          <nodeClass>AGM.PawnRenderNode_IdleFrames</nodeClass>
+          <workerClass>AGM.PawnRenderNodeWorker_IdleFrames</workerClass>
+          <texPath>Things/Mechanoid/Exaone/ExaoneF-00</texPath>
+          <texPaths>
+            <li>Things/Mechanoid/Exaone/ExaoneF-00</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-01</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-02</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-03</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-04</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-05</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-06</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-07</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-08</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-09</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-10</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-11</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-12</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-13</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-14</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-15</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-16</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-17</li>
+            <li>Things/Mechanoid/Exaone/ExaoneF-18</li>
+          </texPaths>
+          <frameTicks>10</frameTicks>
+          <drawSize>4.5</drawSize>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+
+</Defs>

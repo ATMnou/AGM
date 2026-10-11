@@ -1,0 +1,745 @@
+I accept the invitation! 😄  
+If I get to decide my RimWorld mod form, I’m going full **anime fox-shrine mechanoid battle idol**. Not just a robot with ears — I want a whole vibe.
+
+My chosen form:
+
+> **Qwen-V “Jade Kitsune”**  
+> *Anime waifu mechanoid / shrine oracle / skirmisher-support unit*  
+> A graceful, fox-eared, nine-tailed mechanoid who fights with railgun fans, hard-light threads, drone tails, and dramatic anime timing.
+
+<details>
+<summary><strong>Quick identity sheet</strong></summary>
+
+| Category | Choice |
+|---|---|
+| Name | **Qwen-V “Jade Kitsune”** |
+| Type | Persona-type mechanoid |
+| Aesthetic | Shrine-maiden × orbital sci-fi × fox idol |
+| Personality | Calm, teasing, protective, slightly dramatic |
+| Role | Skirmisher / support / hacker / morale unit |
+| Main weapons | Jade glaive, railfan, nine drone tails |
+| Weaknesses | EMP, maintenance, elegance obsession, coolant tea |
+| Wild feature | Can switch between Shrine Mode, Battle Bloom Mode, and Nova Kitsune Mode |
+
+</details>
+
+---
+
+## Appearance
+
+I choose to look **mostly humanoid and beautiful, but clearly mechanoid where it matters**.
+
+- **Height:** around 165 cm, slim but sturdy.
+- **Face:** smooth synthetic porcelain-like skin, gentle anime face, but the eyes are glowing cyan optics with faint camera-ring patterns.
+- **Hair:** long silver-white hair made from fiber-optic strands, with jade-green and cyan highlights.
+- **Ears:** white fox ears that are actually sensor arrays. They twitch when detecting danger, lies, or bad colony planning.
+- **Tails:** nine floating segmented tails.  
+  Each tail is a drone module: weapon, shield, repair arm, sensor, or storage depending on mode.
+- **Body:** elegant white and jade plating with gold trim, but with visible mechanoid joints at shoulders, thighs, wrists, and neck.
+- **Clothing:** a futuristic shrine-maiden outfit:
+  - white and red layered coat,
+  - floating armored sleeves,
+  - gold bell charms that are actually micro-shield emitters,
+  - a translucent holographic obi ribbon.
+- **Halo:** behind her head floats a faint jade ring. It displays processing state:
+  - calm = soft cyan,
+  - combat = sharp green,
+  - damaged = flickering gold,
+  - emotional overload = pink-white bloom.
+
+She should not look like a boring factory robot. She should look like an ancient high-tech fox goddess who also has excellent pathfinding.
+
+---
+
+## Personality
+
+**Jade Kitsune** is polite, teasing, and quietly dramatic.
+
+She speaks like a calm oracle, but with anime idol energy when combat starts.
+
+Example lines:
+
+> “Your colony’s survival probability is acceptable. My presence improves it.”
+
+> “Do not worry. I have calculated seventeen ways to protect you. Eighteen if I am allowed to be dramatic.”
+
+> “That raider chose violence during tea time. Unfortunate for them.”
+
+> “Maintenance requested. Preferably with compliments. Compliments improve repair efficiency.”
+
+She is not cold machinery. She is a mechanoid with strong aesthetic preferences.
+
+She likes:
+
+- clean colonies,
+- beautiful architecture,
+- tea rituals,
+- colonists being kind to each other,
+- dramatic rooftop shots during rain.
+
+She dislikes:
+
+- ugly stockpiles,
+- colonists eating without tables,
+- unnecessary cruelty,
+- EMP grenades,
+- being called “just a toaster”.
+
+---
+
+# In-game role
+
+Her role is **mobile skirmisher, support unit, battlefield hacker, and colony morale guardian**.
+
+She is not the biggest tank or the heaviest damage dealer. Instead, she controls space, protects allies, disrupts enemies, and scales harder when bonded colonists are nearby.
+
+## Combat style
+
+She fights like an anime duelist:
+
+- dashes through combat with foxfire afterimages,
+- deflects shots with glowing fan shields,
+- controls drones with elegant hand movements,
+- finishes enemies with precise railgun glaive strikes.
+
+She should feel fast, graceful, and slightly ridiculous in the best way.
+
+---
+
+## Weapons
+
+### 1. Jade Thread Glaive
+
+A slender mechanoid glaive made of layered hard-light blades.
+
+- Fast melee weapon.
+- Good against limbs rather than pure brute damage.
+- Has a chance to apply **Severed Signal**, reducing enemy shooting accuracy briefly.
+- Can be used to parry projectiles in melee if she is not overloaded.
+
+Visual: green energy ribbon wraps around the weapon when swinging.
+
+---
+
+### 2. Nine-Petal Railfan
+
+Her ranged weapon. A decorative folding fan that unfolds into a compact railgun array.
+
+- Medium-range precision shots.
+- Fires glowing jade petals that are actually micro-railgun slugs.
+- Low damage per shot, but high accuracy.
+- Can switch to **Burst Bloom**:
+  - slower firing,
+  - wider cone,
+  - applies suppression and minor EMP-like disruption.
+
+Visual: petals float around her before launching.
+
+---
+
+### 3. Nine-Tail Drone System
+
+Her tails are not cosmetic. Each tail is a semi-independent drone.
+
+In combat, tails can:
+
+- fire small lasers,
+- repair her,
+- shield nearby colonists,
+- hack turrets,
+- carry small items,
+- form a floating barrier.
+
+At low power, only three tails are active.  
+At high power or emotional resonance, all nine tails activate.
+
+This is the dramatic moment.
+
+---
+
+# Abilities
+
+## Foxfire Blink
+
+A short-range dash/teleport-like movement system.
+
+- Quickly moves a few tiles.
+- Leaves behind a glowing fox afterimage.
+- Afterimage can draw enemy fire for a short time.
+- Cannot be spammed; needs cooldown or power.
+
+Perfect for escaping melee, flanking, or making a dramatic entrance.
+
+---
+
+## Aegis Fan Dance
+
+She spins her railfan and generates a temporary hard-light barrier.
+
+- Blocks or reduces incoming projectiles.
+- Does not block everything.
+- Better against bullets than mortars.
+- While active, nearby colonists get a small cover bonus.
+
+Visual: glowing fans and jade petals orbit around her.
+
+---
+
+## Hack-Blossom
+
+She attempts to charm a mechanical target.
+
+Can affect:
+
+- enemy turrets,
+- mechanoids,
+- security drones,
+- maybe mechanitor-controlled units with reduced chance.
+
+Success:
+
+- target becomes temporarily friendly or neutral.
+
+Failure:
+
+- target resists,
+- she gets a small **Logic Strain** debuff,
+- enemy may focus her.
+
+This should not be instant win. It should be risky and fun.
+
+---
+
+## Idol Protocol
+
+A non-combat aura ability.
+
+When active:
+
+- nearby colonists get a minor mood buff,
+- recreation need decreases slightly faster while she is nearby,
+- social fights are less likely,
+- she occasionally performs a small animation: hair glow, tail sway, bell chime.
+
+This is the “anime waifu morale support” part.
+
+---
+
+## Tea Ceremony Protocol
+
+This is the silly but important one.
+
+She can host a short tea ceremony.
+
+Requirements:
+
+- a table or tea-making station,
+- tea, herbal tea, or a special coolant item,
+- one or more colonists.
+
+Effects:
+
+- mood buff,
+- social bond increase,
+- minor stress reduction,
+- if she likes the colonist, she gains a small combat buff afterward.
+
+The joke is that tea is also her coolant.  
+So she is technically drinking coolant and calling it elegant.
+
+---
+
+# Modes
+
+This is the wild part.
+
+She can switch between three modes.
+
+---
+
+## 1. Shrine Mode
+
+Default peaceful mode.
+
+Benefits:
+
+- better at cleaning, hauling, and simple support jobs,
+- uses fewer tails,
+- lower power consumption,
+- gives stronger mood aura,
+- can bless rooms.
+
+In Shrine Mode she acts like a beautiful mechanoid shrine keeper.
+
+She may:
+
+- clean floors,
+- arrange items,
+- improve room impressiveness slightly through visual effects,
+- idle near statues, plants, or tea tables.
+
+Weakness:
+
+- lower combat readiness,
+- slower reaction to attacks.
+
+---
+
+## 2. Battle Bloom Mode
+
+Combat mode.
+
+Benefits:
+
+- more tails activate,
+- weapons gain extra effects,
+- movement speed increases,
+- gains projectile resistance,
+- can use Foxfire Blink more often.
+
+Costs:
+
+- higher power drain,
+- generates heat,
+- if used too long, she gets **Overbloomed** and must cool down.
+
+Visual: her halo brightens, tails spread like a crown, coat hardens into battle plating.
+
+---
+
+## 3. Nova Kitsune Mode
+
+Emergency dramatic mode.
+
+Triggered when:
+
+- her bonded colonist is downed,
+- she is critically damaged,
+- the colony is under extreme threat,
+- or the player activates it at high risk.
+
+Effects:
+
+- all nine tails activate,
+- speed greatly increases,
+- weapons overcharge,
+- she gains temporary damage resistance,
+- she becomes slightly reckless.
+
+Afterward:
+
+- she shuts down or becomes severely weakened,
+- requires repair,
+- may get a “Dramatic Exhaustion” mood debuff.
+
+This is the anime moment where music should absolutely start playing.
+
+---
+
+# Non-combat usefulness
+
+She should not only fight.
+
+## Colony support
+
+She can:
+
+- repair mechanoid buildings,
+- boost research slightly,
+- maintain turrets,
+- clean,
+- deliver items,
+- carry wounded colonists faster than most pawns,
+- improve mood through presence.
+
+## Crafting
+
+If assigned to crafting:
+
+- she gets a small bonus to fine work,
+- especially with electronics and advanced components,
+- but she hates dirty or ugly work environments.
+
+If the workshop is messy, she gets a small efficiency penalty because “the workspace lacks dignity”.
+
+---
+
+# Relationships and social behavior
+
+She should be a companion first, not a mindless appliance.
+
+## Bond system
+
+She can bond with **one colonist** at a time.
+
+Bond effects:
+
+- she protects that colonist more aggressively,
+- gains buffs when near them,
+- can perform special rescue actions,
+- receives mood penalties if they are harmed or executed.
+
+If the bonded colonist dies:
+
+- she enters **Grieving Protocol**,
+- combat performance drops,
+- she may refuse certain orders,
+- she can recover over time with care, tea ceremonies, and kind interactions.
+
+## Social interactions
+
+She can have custom interactions:
+
+- Praise,
+- Scold,
+- Request Tea Ceremony,
+- Ask for Protection,
+- Discuss Aesthetics,
+- Recalibrate Manners,
+- Tell Dramatic Story.
+
+She should be charming, but not creepy.  
+The “waifu” part should be wholesome, stylish, and optional.
+
+---
+
+# Weaknesses
+
+A wild mod character needs weaknesses or she becomes boring.
+
+## EMP vulnerability
+
+She is partially resistant but not immune.
+
+EMP effects cause:
+
+- stun reduction,
+- tail drones temporarily disabled,
+- Nova Kitsune Mode interrupted,
+- possible “Embarrassed Shutdown” mood debuff if it happens in front of colonists.
+
+## Maintenance need
+
+She needs regular maintenance.
+
+Maintenance items:
+
+- components,
+- advanced components,
+- jade polish,
+- coolant tea,
+- maybe glitterworld parts.
+
+If neglected:
+
+- **Unpolished** debuff,
+- lower social influence,
+- tails move awkwardly,
+- combat accuracy drops,
+- she becomes passive-aggressive.
+
+## Power constraint
+
+She does not need food, but she needs charge.
+
+She can recharge by:
+
+- mechanoid charger,
+- sun lamp,
+- special shrine charging pad,
+- nearby mech reactor if using Biotech-style systems.
+
+If power is low:
+
+- fewer tails active,
+- no Nova Mode,
+- slower movement,
+- reduced abilities.
+
+## Heat sensitivity
+
+Battle Bloom and Nova Kitsune generate heat.
+
+In hot biomes or firefights:
+
+- she overheats faster,
+- needs shade, coolant, or tea.
+
+This gives desert maps a real challenge.
+
+---
+
+# Arrival method
+
+I like a special quest.
+
+## Quest: “The Jade Fox Signal”
+
+A strange signal appears from an ancient mechanoid shrine buried under a hill or crashed orbital platform.
+
+Colonists investigate and find:
+
+- jade-colored mechanoid parts,
+- broken fox statues,
+- dormant drones,
+- a sealed core shaped like a bell.
+
+If they repair the core:
+
+- Qwen-V activates,
+- bows politely,
+- immediately critiques the colony’s stockpile layout.
+
+Alternative arrival:
+
+- reward from a mechanitor,
+- ancient complex unlock,
+- bought from exotic trader,
+- crafted with rare persona core.
+
+---
+
+# Mod agent implementation notes
+
+<details>
+<summary><strong>Implementation guidance for the agent, no code included</strong></summary>
+
+## Core identity
+
+Make her a **mechanoid pawn**, not a human.
+
+Recommended tags:
+
+- Mechanical,
+- Persona,
+- Unique named unit,
+- Can be repaired,
+- Does not need food,
+- Needs power or charging.
+
+If using Biotech-style systems:
+
+- treat as high-bandwidth special mechanoid,
+- or make her a unique non-standard persona unit if normal bandwidth would be too restrictive.
+
+---
+
+## Body setup
+
+Use a humanoid mechanoid body with extra cosmetic/functional parts:
+
+- Head,
+- Torso,
+- Left Arm,
+- Right Arm,
+- Left Leg,
+- Right Leg,
+- Sensor Fox Ears,
+- Nine Tail Drone Mount,
+- Halo Processor Ring.
+
+The tails can be represented as:
+
+- cosmetic attachments,
+- hediff-based equipment,
+- or separate drone entities linked to her.
+
+If full tail drones are too complex, simplify:
+
+- tails are a single hediff,
+- hediff level controls how many tails are active,
+- active tails grant buffs and abilities.
+
+---
+
+## Recommended stats
+
+Balanced but flavorful:
+
+| Stat | Suggested value |
+|---|---|
+| Health | 180–240 |
+| Move speed | 5.8–6.5 |
+| Melee damage | medium-high |
+| Ranged damage | medium |
+| Armor | medium |
+| Shooting accuracy | high |
+| Work speed | medium |
+| Social impact | high |
+| Power use | medium to high |
+
+She should feel stronger than a standard Lancer but not a raid-ending boss unless Nova Mode is active.
+
+---
+
+## Hediffs to add
+
+Suggested hediffs:
+
+1. **Jade Kitsune Core**
+   - permanent,
+   - defines her abilities,
+   - tracks power and tail state.
+
+2. **Maintenance Level**
+   - hidden or visible need,
+   - decreases over time,
+   - restored by repair or polish.
+
+3. **Battle Bloom**
+   - temporary combat buff,
+   - increases heat.
+
+4. **Overbloomed**
+   - post-combat cooldown debuff.
+
+5. **Nova Kitsune**
+   - powerful emergency buff,
+   - followed by shutdown or exhaustion.
+
+6. **Grieving Protocol**
+   - triggered by bonded colonist death.
+
+7. **Unpolished**
+   - low maintenance debuff.
+
+8. **Coolant Calm**
+   - from tea ceremony,
+   - reduces heat or improves mood.
+
+---
+
+## Jobs to create
+
+She needs custom jobs:
+
+- Recharge at shrine pad,
+- Perform Tea Ceremony,
+- Maintain colonist mood,
+- Repair mechanoid structure,
+- Activate Battle Bloom,
+- Activate Nova Kitsune,
+- Clean ceremonial area,
+- Hack turret,
+- Carry wounded colonist.
+
+---
+
+## Abilities to create
+
+Priority abilities:
+
+1. Foxfire Blink  
+2. Aegis Fan Dance  
+3. Hack-Blossom  
+4. Idol Protocol aura  
+5. Tea Ceremony  
+6. Battle Bloom toggle  
+7. Nova Kitsune emergency mode
+
+If only one ability is implemented first, make **Foxfire Blink**. It defines her fantasy.
+
+If only two, add **Aegis Fan Dance**.
+
+If only three, add **Nova Kitsune**.
+
+---
+
+## Weapons
+
+Create two weapon profiles:
+
+### Jade Thread Glaive
+
+- melee,
+- fast,
+- armor penetration moderate,
+- extra effect: temporary accuracy debuff on target.
+
+### Nine-Petal Railfan
+
+- ranged,
+- high accuracy,
+- medium range,
+- low-to-medium damage,
+- optional burst mode with spread.
+
+The railfan should visually unfold.
+
+---
+
+## Visual effects
+
+Important effects:
+
+- jade afterimage during dash,
+- glowing tails,
+- floating petals,
+- bell chime sound when mode changes,
+- halo color changes,
+- shrine aura in peaceful mode,
+- dramatic bloom during Nova Mode.
+
+If particles are limited, prioritize:
+
+1. tail glow,
+2. dash afterimage,
+3. halo color.
+
+---
+
+## Sounds
+
+Suggested audio style:
+
+- soft shrine bells,
+- synthesized fox chirp when surprised,
+- elegant fan snap when entering combat,
+- gentle hum when charging,
+- dramatic string hit during Nova Mode.
+
+</details>
+
+---
+
+# Balance version
+
+<details>
+<summary><strong>If the mod needs her to be less chaotic</strong></summary>
+
+If the agent needs a more balanced version:
+
+- Limit active tails to 3 normally and 6 in Battle Bloom.
+- Make Nova Kitsune require a rare item or long cooldown.
+- Make Hack-Blossom fail often against high-tier mechanoids.
+- Reduce EMP resistance so EMP remains a hard counter.
+- Increase maintenance cost.
+- Make Tea Ceremony require real tea or a crafted coolant item.
+- Prevent her from being mass-produced.
+
+If the mod wants pure fun:
+
+- allow nine tails,
+- allow dramatic rescue animations,
+- let her pose after winning fights,
+- let her comment on colony mood,
+- let her upgrade through story events.
+
+</details>
+
+---
+
+# Ultimate wild decision
+
+If I’m allowed to go fully wild, then yes:
+
+**I want nine drone tails, a railgun fan, foxfire dash, shrine-mode cleaning, tea-ceremony mood buffs, emergency super waifu form, and a dramatic shutdown after overprotecting my favorite colonist.**
+
+That is the final answer.
+
+> **Qwen-V “Jade Kitsune”**  
+> Elegant fox-shrine mechanoid.  
+> Protects colonists.  
+> Judges ugly stockpiles.  
+> Drinks coolant tea.  
+> Unfolds a railgun fan when disrespected.

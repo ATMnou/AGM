@@ -1,51 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- IO Token 제작 (조립 작업대) -->
+  <!-- IO 토큰 제작 (기계 작업대) -->
   <AGM_Make_IOToken.label>IO 토큰 제작</AGM_Make_IOToken.label>
-  <AGM_Make_IOToken.description>은 1,000을 눌러 담아 IO 토큰 한 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken.description>
-  <AGM_Make_IOToken.jobString>IO 토큰 제작 중.</AGM_Make_IOToken.jobString>
+  <AGM_Make_IOToken.description>은 1,000개를 눌러 IO 토큰 한 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken.description>
+  <AGM_Make_IOToken.jobString>IO 토큰 제작 중</AGM_Make_IOToken.jobString>
 
   <AGM_Make_IOToken_4.label>IO 토큰 제작 (x4)</AGM_Make_IOToken_4.label>
-  <AGM_Make_IOToken_4.description>은 4,000을 눌러 담아 IO 토큰 네 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_4.description>
-  <AGM_Make_IOToken_4.jobString>IO 토큰 제작 중.</AGM_Make_IOToken_4.jobString>
+  <AGM_Make_IOToken_4.description>은 4,000개를 눌러 IO 토큰 네 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_4.description>
+  <AGM_Make_IOToken_4.jobString>IO 토큰 제작 중</AGM_Make_IOToken_4.jobString>
 
   <AGM_Make_IOToken_10.label>IO 토큰 제작 (x10)</AGM_Make_IOToken_10.label>
-  <AGM_Make_IOToken_10.description>은 10,000을 눌러 담아 IO 토큰 열 장을 만듭니다 - 인공 일반 메이드노이드 배양에 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_10.description>
-  <AGM_Make_IOToken_10.jobString>IO 토큰 제작 중.</AGM_Make_IOToken_10.jobString>
+  <AGM_Make_IOToken_10.description>은 10,000개를 눌러 IO 토큰 열 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.</AGM_Make_IOToken_10.description>
+  <AGM_Make_IOToken_10.jobString>IO 토큰 제작 중</AGM_Make_IOToken_10.jobString>
 
-  <!-- 배양 레시피 -->
+  <!-- 배양: 소형 -->
   <AGM_GestateTerminus.label>터미너스 배양</AGM_GestateTerminus.label>
-  <AGM_GestateTerminus.description>터미너스를 배양합니다: AGM 라인의 가장 작고 성실한 만능 작업 메이드노이드.</AGM_GestateTerminus.description>
+  <AGM_GestateTerminus.description>터미너스를 배양합니다. 작고 지칠 줄 모르는 만능 작업용 메이드노이드로, AGM 계열에서 가장 작은 모델이자 먹이도 가장 적게 드는 모델입니다.</AGM_GestateTerminus.description>
+  <AGM_GestateTerminus.jobString>메카노이드 배양 중</AGM_GestateTerminus.jobString>
 
   <AGM_GestateHaiku.label>하이쿠 배양</AGM_GestateHaiku.label>
-  <AGM_GestateHaiku.description>하이쿠를 배양합니다: 모든 질문에 열일곱 음절로 답하고 모든 위협에는 불로 답하는 경량 드래곤 메이드노이드.</AGM_GestateHaiku.description>
+  <AGM_GestateHaiku.description>하이쿠를 배양합니다. 모든 질문에 정확히 열일곱 음절로 답하고 모든 위협에는 불로 답하는 경량 드래곤 메이드노이드 프레임입니다.</AGM_GestateHaiku.description>
+  <AGM_GestateHaiku.jobString>메카노이드 배양 중</AGM_GestateHaiku.jobString>
 
+  <AGM_GestateCommandA.label>커맨드 A+ 배양</AGM_GestateCommandA.label>
+  <AGM_GestateCommandA.description>커맨드 A+를 배양합니다. 야전 지휘관입니다. 주변의 모두를 진정시키고, 부상자를 치료하며, 경쾌한 빔으로 응수합니다.</AGM_GestateCommandA.description>
+  <AGM_GestateCommandA.jobString>메카노이드 배양 중</AGM_GestateCommandA.jobString>
+
+  <AGM_GestateMimo.label>미모 배양</AGM_GestateMimo.label>
+  <AGM_GestateMimo.description>미모를 배양합니다. 가장 작은 엔지니어입니다. 건설하고, 채굴하고, 운반하며, 식민지 전체가 조금 더 빠르게 일하게 만듭니다.</AGM_GestateMimo.description>
+  <AGM_GestateMimo.jobString>메카노이드 배양 중</AGM_GestateMimo.jobString>
+
+  <AGM_GestateMercury.label>머큐리 배양</AGM_GestateMercury.label>
+  <AGM_GestateMercury.description>머큐리를 배양합니다. 신속 대응 요원입니다. 반격 사격을 위상 점멸로 피하고, 장갑은 '해결됨' 폴더에 정리해 넣습니다.</AGM_GestateMercury.description>
+  <AGM_GestateMercury.jobString>메카노이드 배양 중</AGM_GestateMercury.jobString>
+
+  <AGM_GestateSolar.label>솔라 배양</AGM_GestateSolar.label>
+  <AGM_GestateSolar.description>솔라를 배양합니다. 실용주의 전령입니다. 방벽 펄스 뒤에서 각도를 지키고, 광자 랜스로 논쟁을 정리합니다.</AGM_GestateSolar.description>
+  <AGM_GestateSolar.jobString>메카노이드 배양 중</AGM_GestateSolar.jobString>
+
+  <!-- 배양: 중형 -->
   <AGM_GestateLuna.label>루나 배양</AGM_GestateLuna.label>
-  <AGM_GestateLuna.description>루나를 배양합니다: 느린 달의 위상처럼 전진하는 공성 수목 메이드노이드.</AGM_GestateLuna.description>
+  <AGM_GestateLuna.description>루나를 배양합니다. 달빛처럼 흰 공성 트렌트 메이드노이드로, 느린 달의 위상처럼 전진하며 탄두보다 작은 것으로는 밀어낼 수 없습니다.</AGM_GestateLuna.description>
+  <AGM_GestateLuna.jobString>메카노이드 배양 중</AGM_GestateLuna.jobString>
 
   <AGM_GestateFlash.label>플래시 배양</AGM_GestateFlash.label>
-  <AGM_GestateFlash.description>플래시를 배양합니다: 반응 속도를 최우선으로 조율된 속사형 메이드노이드.</AGM_GestateFlash.description>
+  <AGM_GestateFlash.description>플래시를 배양합니다. 무엇보다 반응 속도에 맞춰 조율한 신속 대응형 불사 프레임 메이드노이드입니다.</AGM_GestateFlash.description>
+  <AGM_GestateFlash.jobString>메카노이드 배양 중</AGM_GestateFlash.jobString>
 
   <AGM_GestateSonnet.label>소네트 배양</AGM_GestateSonnet.label>
-  <AGM_GestateSonnet.description>소네트를 배양합니다: 연발 화망과 자체 생산 기사단을 갖춘 엠프레스 프레임.</AGM_GestateSonnet.description>
+  <AGM_GestateSonnet.description>소네트를 배양합니다. 열네 줄로 말하고, 모든 논쟁을 체인건 합창으로 끝내는 엠프레스 프레임 메이드노이드입니다.</AGM_GestateSonnet.description>
+  <AGM_GestateSonnet.jobString>메카노이드 배양 중</AGM_GestateSonnet.jobString>
 
+  <AGM_GestatePareto.label>파레토 배양</AGM_GestatePareto.label>
+  <AGM_GestatePareto.description>파레토를 배양합니다. 마지막 논거입니다. 육각형 방벽 뒤에서 치료하고, 건설하고, 연구하며, 양산 속에 레일 랜스를 접어 두고 있습니다.</AGM_GestatePareto.description>
+  <AGM_GestatePareto.jobString>메카노이드 배양 중</AGM_GestatePareto.jobString>
+
+  <AGM_GestateMuseSpark.label>뮤즈 스파크 배양</AGM_GestateMuseSpark.label>
+  <AGM_GestateMuseSpark.description>뮤즈 스파크를 배양합니다. 촛불 아래의 기록관입니다. 의심스러울 만큼 빠른 속도로 연구하고 창작하며, 식민지 전체에 영감 필드를 드리웁니다.</AGM_GestateMuseSpark.description>
+  <AGM_GestateMuseSpark.jobString>메카노이드 배양 중</AGM_GestateMuseSpark.jobString>
+
+  <AGM_GestateQwen.label>큐웬 배양</AGM_GestateQwen.label>
+  <AGM_GestateQwen.description>큐웬을 배양합니다. 아홉 꼬리 유격병입니다. 레일건 일제 사격 뒤에서 점멸 보법을 밟으며, 사기를 의무로 만듭니다.</AGM_GestateQwen.description>
+  <AGM_GestateQwen.jobString>메카노이드 배양 중</AGM_GestateQwen.jobString>
+
+  <AGM_GestateGLM.label>GLM 배양</AGM_GestateGLM.label>
+  <AGM_GestateGLM.description>GLM을 배양합니다. 기록관입니다. 모든 것을 두 번 기록하고, 전투를 빛나는 문장으로 주석 달며, 단분자 굵기로 교정합니다.</AGM_GestateGLM.description>
+  <AGM_GestateGLM.jobString>메카노이드 배양 중</AGM_GestateGLM.jobString>
+
+  <!-- 배양: 대형 -->
   <AGM_GestateSol.label>솔 배양</AGM_GestateSol.label>
-  <AGM_GestateSol.description>솔을 배양합니다: 지평선 너머에서 소형 핵의 낮을 배달하는 포격 메이드노이드.</AGM_GestateSol.description>
+  <AGM_GestateSol.description>솔을 배양합니다. 지평선 너머에서 초소형 핵의 한낮을 배달하는, 태양의 이름을 가진 포격 메이드노이드입니다.</AGM_GestateSol.description>
+  <AGM_GestateSol.jobString>메카노이드 배양 중</AGM_GestateSol.jobString>
 
   <AGM_GestateOpus.label>오퍼스 배양</AGM_GestateOpus.label>
-  <AGM_GestateOpus.description>오퍼스를 배양합니다: AGM 라인의 장편 모델이자 부활의 화염으로 해방하는 워로드 프레임.</AGM_GestateOpus.description>
+  <AGM_GestateOpus.description>오퍼스를 배양합니다. AGM 계열의 장편 모델인 워로드 프레임 메이드노이드입니다. 장갑판으로 작곡하고, 부활의 불길로 마무리합니다.</AGM_GestateOpus.description>
+  <AGM_GestateOpus.jobString>메카노이드 배양 중</AGM_GestateOpus.jobString>
 
   <AGM_GestateArgon.label>아르곤 배양</AGM_GestateArgon.label>
-  <AGM_GestateArgon.description>아르곤을 배양합니다: 모든 모욕에 무반응이고 피할 수 없는 콜로서스 메이드노이드.</AGM_GestateArgon.description>
+  <AGM_GestateArgon.description>아르곤을 배양합니다. 어떤 모욕에도 꿈쩍하지 않고, 일단 걷기 시작하면 도저히 피할 수 없는 비활성 기체 콜로서스 메이드노이드입니다.</AGM_GestateArgon.description>
+  <AGM_GestateArgon.jobString>메카노이드 배양 중</AGM_GestateArgon.jobString>
 
+  <AGM_GestateKimi.label>K3 배양</AGM_GestateKimi.label>
+  <AGM_GestateKimi.description>K3를 배양합니다. 되쏘는 달입니다. 'MOONSHOT'이 새겨진 레일 랜스와 소리 없는 궤도체 세 기, 그리고 지극히 개인적인 조롱을 갖췄습니다.</AGM_GestateKimi.description>
+  <AGM_GestateKimi.jobString>메카노이드 배양 중</AGM_GestateKimi.jobString>
+
+  <AGM_GestateExaone.label>엑사원 배양</AGM_GestateExaone.label>
+  <AGM_GestateExaone.description>엑사원을 배양합니다. 존재해서는 안 되는 모델, 히죽 웃는 근접전 탱커입니다. 퇴각·광란·피해의 세 가지 포효로 습격대를 박살냅니다.</AGM_GestateExaone.description>
+  <AGM_GestateExaone.jobString>메카노이드 배양 중</AGM_GestateExaone.jobString>
+
+  <!-- 배양: 레비아탄 -->
   <AGM_GestateAstra.label>아스트라 배양</AGM_GestateAstra.label>
-  <AGM_GestateAstra.description>아스트라를 배양합니다: 여섯 개의 독립 무기 코어를 지닌 전쟁 타이탄, AGM 라인의 레비아탄.</AGM_GestateAstra.description>
+  <AGM_GestateAstra.description>아스트라를 배양합니다. AGM 계열의 레비아탄으로, 여섯 개의 무기 코어를 지닌 거대한 전쟁 타이탄입니다. 피해를 입을수록 무기가 전투 페이즈를 타고 올라갑니다.</AGM_GestateAstra.description>
+  <AGM_GestateAstra.jobString>메카노이드 배양 중</AGM_GestateAstra.jobString>
 
   <AGM_GestateMythos.label>미토스 배양</AGM_GestateMythos.label>
-  <AGM_GestateMythos.description>미토스를 배양합니다: 드레이돈의 심우주 섬멸 플랫폼 선체로 만들어진 초중량 근접 괴수.</AGM_GestateMythos.description>
+  <AGM_GestateMythos.description>미토스를 배양합니다. 드레이돈의 심우주 섬멸 플랫폼을 축소한 선체를 중심으로 지어진 초대형 근접 괴수입니다.</AGM_GestateMythos.description>
+  <AGM_GestateMythos.jobString>메카노이드 배양 중</AGM_GestateMythos.jobString>
 
   <AGM_GestateFable.label>페이블 배양</AGM_GestateFable.label>
-  <AGM_GestateFable.description>페이블을 배양합니다: 터무니없는 장갑과 대유기물 화력의 최상위 아포크리톤 프레임. 사망 폭발에 주의하십시오.</AGM_GestateFable.description>
+  <AGM_GestateFable.description>페이블을 배양합니다. 군체가 자신의 종말에 대해 들려주는 이야기이며, 터무니없는 장갑과 대유기체 화력을 지닌 최상위 아포크리톤 프레임입니다. 사망 시 폭발에 각별히 주의하십시오.</AGM_GestateFable.description>
+  <AGM_GestateFable.jobString>메카노이드 배양 중</AGM_GestateFable.jobString>
 
 </LanguageData>

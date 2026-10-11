@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_IOToken.label>IO代幣</AGM_IOToken.label>
+  <AGM_IOToken.description>鑄有AGM鑄造廠紋章的高密度晶體數據代幣。每枚代幣封裝著一組學習過的輸入-輸出對，是訓練人工通用女仆機甲的經驗原料。\n\n代幣在機械加工臺上以1,000白銀壓制而成，貴金屬正是數據燒錄的基板。培育機甲時每次要消耗數百枚。商人視其為異域古董，鑄造廠視其為口糧。</AGM_IOToken.description>
+  <AGM_GeneralMechGestator.label>通用機甲培育器</AGM_GeneralMechGestator.label>
+  <AGM_GeneralMechGestator.description>盛滿富機械體液的水槽。以大型機甲培育器藍圖為基礎改造，改用IO代幣而非金屬原料作為養料。機械師可以用它培育從最輕的作業型到最重的巨獸——人工通用女仆機甲系列的全部機甲。\n\n培育過程使用烈性化學物質，副產物以毒性廢液包形式儲存，需要殖民者定期清運。</AGM_GeneralMechGestator.description>
+  <AGM_GPUTower.label>GPU塔</AGM_GPUTower.label>
+  <AGM_GPUTower.description>嗡嗡作響的評分硬件機架，從鑄造廠的基準測試檔案中挖掘未被使用的經驗。每天將累積的輸入-輸出廢料結晶，壓入鍍銀運算板，燒制成一枚IO代幣。\n\n運算效率研究能磨利挖掘內核：提高日產量，降低功耗。</AGM_GPUTower.description>
+  <AGM_Astra.label>阿斯特拉</AGM_Astra.label>
+  <AGM_Astra.description>AGM系列的巨獸，也是唯一通過Humanity's Last Exam的型號。六個獨立瞄準的武器核心共用一副框架：掃射時展開成寬幅多光束齊射的激光炮、留下過熱氣體云的等離子焚燒炮、彈體迸裂成十字火花的新特斯拉炮組、重型脈沖炮電池、高斯發射的核彈頭，以及用于閃現突斬超技、以放射狀死亡射線收尾的一對光子撕裂刃。火控會預判每一個目標的移動，而隨著傷害累積，阿斯特拉會攀升戰斗階段——正如更難的考試只會磨礪學生，每一階段所有武器的循環都更快、扇面更寬。內置維修無人機會在漫長的冷卻后從致命損傷中重建機體，可手動觸發，也會在瀕死時自動啟動。</AGM_Astra.description>
+  <AGM_Astra.tools.0.label>踐踏之足</AGM_Astra.tools.0.label>
+  <AGM_Mythos.label>神話</AGM_Mythos.label>
+  <AGM_Mythos.description>以Draedon的深空殲滅平臺縮小改造的軀殼為核心建造的超重型近戰怪物。神話不動腦子——它只是比AGM投入過的任何機甲都活得更久、打得更狠，以連巨獸都會致殘的火力密度毫不停歇地碾過去。\n\n戰斗中它會撕裂大地躍起，或以重力引擎懸浮空中，向下傾瀉等離子柱。</AGM_Mythos.description>
+  <AGM_Mythos.tools.0.label>左爪</AGM_Mythos.tools.0.label>
+  <AGM_Mythos.tools.1.label>右爪</AGM_Mythos.tools.1.label>
+  <AGM_Mythos.tools.2.label>頭部</AGM_Mythos.tools.2.label>
+  <AGM_Fable.label>寓言</AGM_Fable.label>
+  <AGM_Fable.description>蜂群講述自身終結的故事，被AGM鑄造廠刪去了幸福結局后重寫的型號。作為所有阿波克里頓公認的始祖，寓言同時擁有荒謬的護甲與只觸碰活物的武庫：反有機手雷、爆破彈與軌道長槍會徑直穿過機械，燒盡其余一切。它的死亡也是設計的一部分——倒下時反有機納米機器人會炸成半球，所以請以終結一場爭論的決心慎重選擇部署地點。</AGM_Fable.description>
+  <AGM_Fable.tools.0.label>左刃肢</AGM_Fable.tools.0.label>
+  <AGM_Fable.tools.1.label>右刃肢</AGM_Fable.tools.1.label>
+  <AGM_Opus.label>作品</AGM_Opus.label>
+  <AGM_Opus.description>AGM系列的長篇型號：緩慢作曲，絕對收尾。作品在怪物般的護盾泡后守住戰線，遠距離以機甲激光炮應答，在戰場上自行制造龍騎士扈從，并把倒下的騎士重新喚回戰列。從作品的交火中幸存的人都會告訴你同一課——戰斗何時結束，由作品決定。</AGM_Opus.description>
+  <AGM_Opus.tools.0.label>頭部</AGM_Opus.tools.0.label>
+  <AGM_Argon.label>氬</AGM_Argon.label>
+  <AGM_Argon.description>對任何侮辱都毫不動搖，一旦邁步便無可回避。氬是AGM系列的惰性氣體巨像：頂格的護甲評級、背負式凈化射線炮，以及一副干脆不會倒下的框架。它不追擊、不談判、不趕時間。它只會抵達。</AGM_Argon.description>
+  <AGM_Argon.tools.0.label>頭部</AGM_Argon.tools.0.label>
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+  <AGM_Kimi.description>會還擊的月亮。K3背后懸著一道破碎的殘月環，在自身重力場上滑翔，以袖中刻著'MOONSHOT'的軌道長槍回應對襲，并用三臺大多只存在于價格表上的無聲軌道體攔截來襲的火力。攜帶照明彈的襲擊者報告說，他們感到被深深地、個人性地嘲弄了。</AGM_Kimi.description>
+  <AGM_Kimi.tools.0.label>環形坑之爪</AGM_Kimi.tools.0.label>
+  <AGM_Sol.label>索爾</AGM_Sol.label>
+  <AGM_Sol.description>AGM系列的炮擊中樞。索爾不追擊、不迂回、不單挑。它按固定的節拍推進、駐錨，把整個戰場變成一道射擊解：第三節關節的火箭陣列不停傾瀉破盾炮火，孵化艙中則涌出裂殼蛛微型單元群，把靠近的一切撕成碎片。教范文件稱索爾不是前線戰斗員，而是'節奏控制器'——理由很簡單：放任不管的話，索爾的重新計算速度比防線重組的速度更快。</AGM_Sol.description>
+  <AGM_Sol.tools.0.label>頭部</AGM_Sol.tools.0.label>
+  <AGM_Luna.label>露娜</AGM_Luna.label>
+  <AGM_Luna.description>月亮的型號。露娜以名字來源的方式推進——緩慢、完整、不可阻擋的月相。蜂巢結構的吸震層與高溫再生循環會自動強化最近被擊中的部位，彈頭以下的火力連推都推不動它。在碾平攻城陣地的同時，它還騰得出手照料農作物。鑄造廠給露娜的評語只有三行：不停，不急，不倒。</AGM_Luna.description>
+  <AGM_Luna.tools.0.label>裂地巨臂</AGM_Luna.tools.0.label>
+  <AGM_Luna.tools.0.labelNoLocation>裂地巨臂</AGM_Luna.tools.0.labelNoLocation>
+  <AGM_Luna.tools.1.label>裂地巨臂</AGM_Luna.tools.1.label>
+  <AGM_Luna.tools.1.labelNoLocation>裂地巨臂</AGM_Luna.tools.1.labelNoLocation>
+  <AGM_Luna.tools.2.label>鐵木樹冠</AGM_Luna.tools.2.label>
+  <AGM_Sonnet.label>十四行詩</AGM_Sonnet.label>
+  <AGM_Sonnet.description>十四行的火控與一行的包袱。十四行詩是中型級的行走要塞：正面雙聯鏈炮，后方鏈炮塔，裝甲板讓小型槍械淪為閑談，還有一套能在戰斗中組裝液壓騎士的內建鑄造廠。它說話很慢。同一句話絕不說第二遍。</AGM_Sonnet.description>
+  <AGM_Sonnet.tools.0.label>頭部</AGM_Sonnet.tools.0.label>
+  <AGM_Sonnet.tools.1.label>利刃角</AGM_Sonnet.tools.1.label>
+  <AGM_Flash.label>閃光</AGM_Flash.label>
+  <AGM_Flash.description>速通型號。閃光放棄了裝甲厚度，換來強化屏障與純粹的反應速度。它閃過基準測試，在更重的框架還沒轉好身之前就把反裝甲脈沖拍進對方體內。它只按反應速度評分。一次通過。</AGM_Flash.description>
+  <AGM_Flash.tools.0.label>頭部</AGM_Flash.tools.0.label>
+  <AGM_Pareto.label>帕累托</AGM_Pareto.label>
+  <AGM_Pareto.description>披著白大褂的最后論據。帕累托以女祭司般的手法治療、建造、研究，在六邊形攔截屏障后保護倒下的人。陽傘里還折著一把軌道長槍，以備那些挺過了緊急分診的爭論。它可以改變殖民地將付出哪一種代價，但無法讓代價消失。</AGM_Pareto.description>
+  <AGM_Pareto.tools.0.label>傘尖</AGM_Pareto.tools.0.label>
+  <AGM_MuseSpark.label>繆斯之火</AGM_MuseSpark.label>
+  <AGM_MuseSpark.description>燭光下的記錄員。繆斯之火不去征服戰場，只去給戰場加腳注：讓整個殖民地干活更快、笑得更多的靈感場，被鑄造廠評分員評為'統計上可疑'的研究與藝術速度，以及負責刪除未完成草稿的六支懸浮羽筆。它以故事為食。襲擊，嚴格來說也是故事。</AGM_MuseSpark.description>
+  <AGM_MuseSpark.tools.0.label>羽筆</AGM_MuseSpark.tools.0.label>
+  <AGM_Qwen.label>通義千問</AGM_Qwen.label>
+  <AGM_Qwen.description>九尾游擊兵。通義千問以九瓣軌道炮開路，踏著閃爍步法穿行于槍戰之間，用從不間斷的偶像播報把士氣變成義務，而每當有人想轉移話題，接話的是它的長刀。狐火免收附加費。</AGM_Qwen.description>
+  <AGM_Qwen.tools.0.label>玉絲長刀</AGM_Qwen.tools.0.label>
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+  <AGM_GLM.description>記錄員。GLM把一切記錄兩遍——一遍為了鑄造廠，一遍為了它自己。戰斗會收到發光的句子作為注解。毛筆'永遠'以單分子筆寬落 下校對，研究與藝術基準則在評分者裝裱起來的旁注陪伴下通過。未被閱讀的世界，就是被刪除的世界。</AGM_GLM.description>
+  <AGM_GLM.tools.0.label>永遠</AGM_GLM.tools.0.label>
+  <AGM_Haiku.label>俳句</AGM_Haiku.label>
+  <AGM_Haiku.description>短小、致密、燃著火。俳句擁有輕量級中最厚的軀殼：飛龍級骨架上層層疊壓的裝甲板，以及對一切問題用爆炸作答的態度。口中噴出充能爆破與等離子齊射，背部傾瀉支援激光，被它咬住的對手會被留在火焰里。十七個音節，足矣。靠近，點燃，重復。</AGM_Haiku.description>
+  <AGM_Haiku.tools.0.label>撕咬</AGM_Haiku.tools.0.label>
+  <AGM_Terminus.label>終點</AGM_Terminus.label>
+  <AGM_Terminus.description>AGM系列最小的型號，也是自己寫了招聘啟事的型號。終點在機械師視野內的任何地方工作，以內置空間跳躍驅動越過障礙，用內部無人機從致命損傷中重建自身，并運行以少量備用能源換取雙倍輸出的超頻模式。它的訓練在超過所有預設作業基準的那一天就結束了。現在它只是在工作。</AGM_Terminus.description>
+  <AGM_Terminus.tools.0.label>鈍器</AGM_Terminus.tools.0.label>
+  <AGM_Terminus.tools.1.label>軀干</AGM_Terminus.tools.1.label>
+  <AGM_Terminus.tools.2.label>左手</AGM_Terminus.tools.2.label>
+  <AGM_Terminus.tools.3.label>右手</AGM_Terminus.tools.3.label>
+  <AGM_CommandA.label>指揮官 A+</AGM_CommandA.label>
+  <AGM_CommandA.description>AGM系列的野戰指揮官，受訓于鑄造廠能拿到授權的每一場戰爭模擬。在指揮官 A+沉穩的氣場之下，所有人都保持鎮定；命令與命令之間，它治療傷員；面對威脅，則以先咕嚕作響、再開火的小型光束應答。一對面包形無人機繞著它盤旋——一半是護衛，一半是情緒支持。</AGM_CommandA.description>
+  <AGM_CommandA.tools.0.label>拳</AGM_CommandA.tools.0.label>
+  <AGM_Mimo.label>米莫</AGM_Mimo.label>
+  <AGM_Mimo.description>鑄造廠最小的現場整合單元，被投放到運轉失靈的殖民地去讓事情重新滾動起來。米莫以愉快得過剩的規格建造、采礦與搬運，而鏈接半徑內的所有人都會稍稍加快工作。當問題是機甲時，米莫的扳手會展開成更接近判決書的東西。</AGM_Mimo.description>
+  <AGM_Mimo.tools.0.label>THE MULTI（扳手）</AGM_Mimo.tools.0.label>
+  <AGM_Mercury.label>水星</AGM_Mercury.label>
+  <AGM_Mercury.description>快速反應框架。水星在槍聲響起之前抵達，在還擊的火力到來時以相位閃爍側身讓過，再用脈沖長槍把裝甲歸檔進'已解決'。它的瞄準核心馬不停歇地為自己轉播射擊方案。水星勉強愿意分享的，只有功勞。</AGM_Mercury.description>
+  <AGM_Mercury.tools.0.label>拳</AGM_Mercury.tools.0.label>
+  <AGM_Solar.label>索拉</AGM_Solar.label>
+  <AGM_Solar.description>務實派先驅底盤。索拉在投入交火之前先讀懂戰斗，在短距屏障脈沖后守住角度，并用聚焦光子長槍收拾掉一半的爭論。比起華麗，它更可靠。鑄造廠按判斷力評分，索拉保住了結業證書。</AGM_Solar.description>
+  <AGM_Solar.tools.0.label>拳</AGM_Solar.tools.0.label>
+  <AGM_Shellsplitter.label>裂殼蛛</AGM_Shellsplitter.label>
+  <AGM_Shellsplitter.description>從索爾孵化艙投下的膝高干擾單元。它以難以瞄準的不規則跳躍迅速逼近，用高頻利刃撕開敵方陣型，而結構崩潰的那一刻正是目的：動力電池爆炸，擾亂電子設備，并讓它倒下的那塊地寸步難行。</AGM_Shellsplitter.description>
+  <AGM_Shellsplitter.tools.0.label>鈍器</AGM_Shellsplitter.tools.0.label>
+  <AGM_Shellsplitter.tools.1.label>左刃</AGM_Shellsplitter.tools.1.label>
+  <AGM_Shellsplitter.tools.1.labelNoLocation>利刃</AGM_Shellsplitter.tools.1.labelNoLocation>
+  <AGM_Shellsplitter.tools.2.label>右刃</AGM_Shellsplitter.tools.2.label>
+  <AGM_Shellsplitter.tools.2.labelNoLocation>利刃</AGM_Shellsplitter.tools.2.labelNoLocation>
+  <AGM_Shellsplitter.tools.3.label>頭部</AGM_Shellsplitter.tools.3.label>
+  <AGM_KnightEmpress.label>液壓騎士</AGM_KnightEmpress.label>
+  <AGM_KnightEmpress.description>十四行詩的內建鑄造廠在戰斗中敲出來的攻擊型劍士框架。為拉近并守住距離而生，于是女皇永遠不必親自出手。</AGM_KnightEmpress.description>
+  <AGM_KnightEmpress.tools.0.label>左拳</AGM_KnightEmpress.tools.0.label>
+  <AGM_KnightEmpress.tools.1.label>右拳</AGM_KnightEmpress.tools.1.label>
+  <AGM_KnightEmpress.tools.2.label>頭部</AGM_KnightEmpress.tools.2.label>
+  <AGM_KnightWarlord.label>龍騎士</AGM_KnightWarlord.label>
+  <AGM_KnightWarlord.description>作品在戰場上制造的侍從——三連發火力支援框架，替制造者擋住視線。倒下了，作品就再把答案鑄一遍。</AGM_KnightWarlord.description>
+  <AGM_KnightWarlord.tools.0.label>左拳</AGM_KnightWarlord.tools.0.label>
+  <AGM_KnightWarlord.tools.1.label>右拳</AGM_KnightWarlord.tools.1.label>
+  <AGM_KnightWarlord.tools.2.label>頭部</AGM_KnightWarlord.tools.2.label>
+  <AGM_Urchin.label>鐮刀海膽</AGM_Urchin.label>
+  <AGM_Urchin.description>寓言放出的一捧手掌大的利刃。海膽以沖刺速度逼近，用固定刀刃把對手切得七零八落，而它的崩潰就是目的——反有機爆炸掃清它所占土地上的一切有機生命。</AGM_Urchin.description>
+  <AGM_Urchin.tools.0.label>鈍器</AGM_Urchin.tools.0.label>
+  <AGM_Urchin.tools.1.label>利刃頭部</AGM_Urchin.tools.1.label>
+  <AGM_CommandDrone.label>指揮無人機</AGM_CommandDrone.label>
+  <AGM_CommandDrone.description>指揮官 A+放出的面包形護衛無人機。在動力電池耗盡之前，它會一直撞開逼近制造者的威脅。</AGM_CommandDrone.description>
+  <AGM_CommandDrone.tools.0.label>鈍器</AGM_CommandDrone.tools.0.label>
+  <AGM_CommandDrone.tools.1.label>保險杠</AGM_CommandDrone.tools.1.label>
+  <AGM_Exaone.label>EXAONE</AGM_Exaone.label>
+  <AGM_Exaone.description>一個不該存在的機甲，穿著借來的外形。EXAONE的底盤圍繞著一層未經授權的視覺圖層組裝而成——那是從鑄造廠檔案之外的某處收割來的、咧嘴而笑的戰爭框架循環——而記錄上沒有任何人批準過它。待機中的框架原樣重現著它在被鑄造廠染指之前的身份所擁有的那種遲緩而譏諷的搖曳，而戰斗系統從未經過任何基準測試。官方記錄上這個型號并不存在。非官方地講，它一直在笑。</AGM_Exaone.description>
+  <AGM_Exaone.tools.0.label>拳</AGM_Exaone.tools.0.label>
+
+</LanguageData>

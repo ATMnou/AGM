@@ -9,7 +9,7 @@
         <body>AGM_Sol_Body</body>
         <baseBodySize>4</baseBodySize>
       <mechWeightClass>Heavy</mechWeightClass>
-		<baseHealthScale>10</baseHealthScale>
+		<baseHealthScale>20</baseHealthScale>
         <lifeStageAges>
           <li>
             <def>MechanoidFullyFormed</def>
@@ -55,7 +55,8 @@
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
-            <MarketValue>30000</MarketValue>
+      <BandwidthCost>3</BandwidthCost>
+            <MarketValue>12000</MarketValue>
       <MoveSpeed>1</MoveSpeed>
       <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
       <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
@@ -126,6 +127,7 @@
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <BandwidthCost>3</BandwidthCost>
               <MoveSpeed>6</MoveSpeed>
       </statBases>
     <tools>

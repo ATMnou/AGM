@@ -1,0 +1,14 @@
+Anthropic: Mythos, Fable, Opus, Sonnet, Haiku
+OpenAI: Astra, Sol, Luna
+Gemini: Argon, Flash
+Cohere: Command A+
+DeepsSeek: Terminus
+ZAI: GLM
+Upstage: Solar Pro 4
+Inception: Mercury
+Meta: Muse Spark
+MoonshotAI: Kimi K3
+Qwen: Qwen 3.8
+Unbiased: Pareto
+Xiaomi: MiMo
+LG AI: EXAONE

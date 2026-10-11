@@ -25,4 +25,19 @@
 
   <AGM.GPUTowerInspect>IO token yield: {0}/day</AGM.GPUTowerInspect>
 
+  <!-- Exaone roars -->
+  <AGM.ExaoneRetreat.Label>Retreat Roar</AGM.ExaoneRetreat.Label>
+  <AGM.ExaoneRetreat.Desc>Let out a chilling roar. Every human raider on the map immediately flees in panic. Has no effect on mechanoids, animals, or entities.</AGM.ExaoneRetreat.Desc>
+  <AGM.ExaoneFrenzy.Label>Frenzy Roar</AGM.ExaoneFrenzy.Label>
+  <AGM.ExaoneFrenzy.Desc>Let out a maddening roar. Every raider on the map goes berserk, as if struck by a psychic insanity lance.</AGM.ExaoneFrenzy.Desc>
+  <AGM.ExaoneDamage.Label>Ruin Roar</AGM.ExaoneDamage.Label>
+  <AGM.ExaoneDamage.Desc>Let out a ruinous roar. Every raider on the map takes bodily damage of about half their maximum health.</AGM.ExaoneDamage.Desc>
+  <AGM.ExaoneRetreatReason>fled before EXAONE's roar</AGM.ExaoneRetreatReason>
+  <AGM.ExaoneFrenzyReason>driven mad by EXAONE's roar</AGM.ExaoneFrenzyReason>
+  <AGM.ExaoneOnCooldown>Roar on cooldown ({0} days left)</AGM.ExaoneOnCooldown>
+  <AGM.ExaoneNoRaiders>There are no raiders to roar at.</AGM.ExaoneNoRaiders>
+  <AGM.ExaoneRetreatUsed>{0} raiders break and flee!</AGM.ExaoneRetreatUsed>
+  <AGM.ExaoneFrenzyUsed>{0} raiders go berserk!</AGM.ExaoneFrenzyUsed>
+  <AGM.ExaoneDamageUsed>The ruinous roar breaks {0} raiders!</AGM.ExaoneDamageUsed>
+
 </LanguageData>

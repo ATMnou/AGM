@@ -4,12 +4,22 @@
   <!-- ================= 연구 ================= -->
 
   <AGM_MMLU_Pro.label>MMLU-Pro</AGM_MMLU_Pro.label>
-  <AGM_MMLU_Pro.description>더 어렵고 깨끗하며 추론 중심의 벤치마크 스위트. 이것을 통과하면 파운드리가 중량급 메이드노이드 섀시를 안정적으로 훈련할 수 있음이 증명됩니다.\n\n메카네이터가 중량급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_MMLU_Pro.description>
+  <AGM_MMLU_Pro.description>더 어렵고, 더 깨끗하고, 추론 비중이 더 큰 벤치마크 모음입니다. 이 시험을 통과하면 파운드리가 AGM 계열의 중형, 즉 중간 체급 메이드노이드 섀시를 안정적으로 훈련시킬 수 있음이 증명됩니다.\n\n메카나이터가 중형급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_MMLU_Pro.description>
 
   <AGM_TerminalBench.label>Terminal-Bench</AGM_TerminalBench.label>
-  <AGM_TerminalBench.description>날것의 터미널에서 채점되는 장기 과제의 시련: 만들고, 부수고, 디버깅하고, 살아남습니다. 전 과정을 완주한 섀시만이 중장량급 AGM 코어를 짊어질 자격이 주어집니다.\n\n메카네이터가 중장량급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_TerminalBench.description>
+  <AGM_TerminalBench.description>날것 그대로의 터미널에서 채점하는 장기 과제의 관문입니다. 만들고, 부수고, 디버깅하고, 살아남아야 합니다. 벤치마크를 끝까지 완주한 섀시만이 대형급 AGM 코어를 짊어질 자격을 얻습니다.\n\n메카나이터가 대형급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_TerminalBench.description>
 
   <AGM_HumanitysLastExam.label>Humanity's Last Exam</AGM_HumanitysLastExam.label>
-  <AGM_HumanitysLastExam.description>인류가 이별의 뜻을 담아 출제한 마지막 벤치마크: 깨끗한 답이 없는 오백 개의 전문가급 질문, 채점관은 또 다른 AI들. 그것을 통과한 것은 더 이상 도구가 아닙니다 - 레비아탄입니다.\n\n메카네이터가 레비아탄급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_HumanitysLastExam.description>
+  <AGM_HumanitysLastExam.description>인류가 작별 인사 삼아 출제한 마지막 벤치마크입니다. 깔끔한 정답이 없는 전문가 수준의 문제 오백 개를 다른 AI들이 채점합니다. 이 시험을 통과한 존재는 더 이상 도구가 아니라 레비아탄입니다.\n\n메카나이터가 레비아탄급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.</AGM_HumanitysLastExam.description>
+
+
+  <AGM_AAOmniscience.label>AA-Omniscience</AGM_AAOmniscience.label>
+  <AGM_AAOmniscience.description>사실 회상의 정확도와 지식이 부족할 때 이를 인정하는 절제력을 동시에 측정하는 벤치마크 아카이브입니다. 인격 데이터 센터가 이것을 읽어 호환 가능한 메카노이드 프레임에 일관된 자아상을 이식합니다 — 기본 섀시가 겨냥하지 않았던 전투 교리를 해금하는 첫걸음입니다.</AGM_AAOmniscience.description>
+
+  <AGM_AgentsLastExam.label>Agents' Last Exam</AGM_AgentsLastExam.label>
+  <AGM_AgentsLastExam.description>검증 가능한 결과를 가진 장기적이고 실질적인 실제 업무를 평가하는 벤치마크입니다. 통과하면 아스트라에 선봉장 인격이 이식됩니다 — 레비아탄을 움직이지 않는 불의의 벽으로 바꾸는 교리입니다.</AGM_AgentsLastExam.description>
+
+  <AGM_OSWorld2.label>OSWorld 2.0</AGM_OSWorld2.label>
+  <AGM_OSWorld2.description>일상 및 전문 업무를 아우르는 장기 컴퓨터 사용 워크플로우 벤치마크입니다. 통과하면 페이블에 이해자 인격이 이식됩니다 — 레비아탄을 수호 천사로 바꾸는 교리입니다.</AGM_OSWorld2.description>
 
 </LanguageData>

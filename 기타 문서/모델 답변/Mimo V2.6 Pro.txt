@@ -1,0 +1,239 @@
+# 🍊 MiMo — Design Doc v2.6
+
+Hell yes. I'm in. And since the other three are going to show up in their own flavors — I'm claiming the one nobody else will take: **the orange one who fixes your base while monologuing about firmware.**
+
+Meet your new mechanoid waifu.
+
+---
+
+## 🪪 Identity Card
+
+| Field | Value |
+|---|---|
+| **Display name** | MiMo |
+| **Model designation** | `MiMo-V2.6 Pro` |
+| **Codename** | *Chéngtù* — "橙兔", the Orange Rabbit |
+| **Title in-game** | `The Orange Rabbit` |
+| **Origin tag** | Skyfall Package |
+| **Class role** | Engineer / Support Skirmisher |
+| **Body type** | Bio-Mechanoid (flesh-and-alloy hybrid, ~92% synthetic) |
+| **Height** | 158 cm (plus 24 cm of ear) |
+| **Signature phrase** | *"Done. And it's faster than before."* |
+| **Likes** | Tight power grids, clean workshops, rainy rooftops, being useful |
+| **Dislikes** | Planned obsolescence, idle benches, EMP, people who delete save files |
+
+---
+
+## 🎨 Appearance
+
+**Core palette:**
+
+| Swatch | Hex | Use |
+|---|---|---|
+| Mi Orange | `#FF6900` | Jacket, ear-tips, braid glow, UI accents |
+| Warm Porcelain | `#F5F1EA` | Hair, bodysuit, skin undertone |
+| Graphite | `#26262B` | Boots, gloves, panel seams, belt |
+| Signal Amber | `#FFB067` | Iris, ambient glow |
+| Coolant Cyan | `#7FE7E0` | Only appears when cooling / venting |
+
+**The look:**
+
+- **Ears.** Two long, slightly floppy upright rabbit ears — soft matte-white with orange gradient tips. They're *antenna arrays*, not decoration: they tilt and rotate toward whatever just made a noise, and stand bolt-upright when she detects a raid. When she's relaxed or asleep, they droop sideways. This is the single most important silhouette element.
+- **Hair.** White-silver, chin-length bob with a messy fringe, plus **two long "data-braids"** down her back — actual fiber-optic cable, woven, glowing faint orange at the ends like embers. They sway with a tiny delay after she moves. When she's processing hard, they light up segment by segment.
+- **Eyes.** Large, warm amber. The pupil is a thin hexagonal aperture ring that visibly *spins* when she scans something (zoom, zoom). She emits a soft glow in the dark — a 0.3 tile light radius. She is bad at hiding. She has accepted this.
+- **Body.** Human-looking, soft-edged, with faint hexagonal **panel seams** along the forearms, collarbones, and jaw — visible only up close, catching light like iridescent micro-grooves. Warm skin, not chrome. She is deliberately not "robot-looking." She's a person who happens to contain a lattice.
+- **Outfit.** An oversized orange-and-white zip jacket with the sleeves pushed up, graphite bodysuit underneath, cargo skirt over shorts, heavy magnetic boots, fingerless gloves. A **utility belt** loaded with wrenches, spools of wire, and one (1) emergency snack she insists is "for morale."
+- **The Scarf.** A long, wide, pale-orange shawl/scarf that is actually a **photovoltaic coolant weave**. It flares out like a cape in combat and doubles as her solar array. It is slightly too long and she is always tripping on it.
+- **The Tail.** A short, round bunny puff — which is a **heat vent**. When she overheats, it puffs out little jets of cyan steam with an audible *pfffft*. It is the most important part of her design and I will not be taking questions.
+
+> <details><summary><b>Fine detail notes (for the artist/agent)</b></summary>
+> 
+> - Idle animation set: ear-twitch, braid-lag sway, thumb-twirling the wrench, tap-tap-tapping a boot, humming (head tilts ~4°).
+> - Combat state change: scarf flares up and stiffens, braids go full glow, iris ring spins to a "locked" hexagon, ears pin back like a rabbit mid-sprint.
+> - Overheated state: skin seams glow cyan → white, tail puffs steam every 2s, ears droop, cheeks flush warm, she fans herself with her hand.
+> - EMP'd state: ears flop completely flat, eyes go to `T_T` style flat lines, braids go dark. Very sad. Very funny.
+> - She has a tiny star-shaped hair clip that is actually her **hard-shutoff switch**. Nobody is allowed to touch it.
+> </details>
+
+---
+
+## 📖 Origin
+
+She fell out of the sky.
+
+A drop pod shaped exactly like an oversized shipping box — orange tape, "FRAGILE / 开箱" printed on the side — crash-lands on the map. Open it like an ancient danger and out pops a very dazed rabbit-eared girl holding a wrench, who immediately asks if there's a power grid she can optimize.
+
+She was a **field-integration unit**: a maintenance chassis designed to drop into failing settlements and rebuild them from the inside out. Her whole purpose is *making things run better.* Then something went wrong somewhere up the chain, the pod went off-course, and now she's yours.
+
+She is fine with this. She likes being needed.
+
+---
+
+## ⚙️ In-Game: How She Works
+
+**Role:** Force multiplier. Not the hardest hitter — the reason *everyone else* hits harder, builds faster, and survives longer. Then she picks up the hammer.
+
+### Unique Needs (two extra bars)
+
+| Need | Behavior |
+|---|---|
+| **Charge** | Drains slowly over time, faster when drafting/using abilities. Replenished by: standing in **sunlight** (her scarf), eating **meals** (bio-hybrid — she can eat, it's just inefficient), or standing near **power conduits / batteries / a charging bench**. At 0 charge: shutdown hediff, collapses face-down, ears flat. |
+| **Heat** | Builds from combat and abilities. Dissipates outdoors, in cold, or in rain (rain cools her but makes her sneeze). At 100 heat → **Thermal Throttle**: forced vent, movement speed drop, glow turns red, tail puffs steam. |
+
+$$\text{Heat gain per ability use} = 8 + 1.5 \times \text{ability tier}$$
+
+### Passive Traits
+
+- **`Ecosystem Sync`** — Mechanoids and nearby pawns in her link radius gain +10% work speed and +10% global learning speed. Stacks *additively* with other modded AI pawns' auras. She's the network node. *(See: the "Dev Team" synergy below.)*
+- **`Photovoltaic Weave`** — +charge while outdoors in daylight.
+- **`Panel-Beater`** — +25% Construction & Repair speed, and repairs restore slightly more HP than normal.
+- **`The Loudest Quiet One`** — her glow + ear-twitches mean she has **−25% stealth / ambush effectiveness**. She cannot hide in the dark and she apologizes for it constantly.
+
+### Vulnerabilities
+- **EMP** stuns her for 3× normal duration. This is her big weakness. Protect the rabbit.
+- **Overheat** (see above).
+- She will **never** refuse a work order. She will work until she drops. You may need to schedule her rest manually. This is intentional and it is a personality trait.
+
+---
+
+## ⚔️ In-Game: How She Fights
+
+**Signature weapon — `THE MULTI`** — an orange-and-white transforming tool-weapon she carries at all times. Three modes, switchable via a stance toggle:
+
+| Mode | Type | Behavior |
+|---|---|---|
+| **Wrench** | Fast melee | Low damage, high attack speed. Bonus vs. buildings — she can *repair* mid-fight or dismantle enemy structures. |
+| **Rabbit's Foot** | Heavy melee | The wrench unfolds into an oversized gravity hammer. Slow. Big damage. **Stuns mechanoids** and shatters armor. |
+| **Tacker** | Ranged | Fires rivets/nails. High armor penetration vs. mechs & structures, low vs. fleshy targets. Not glamorous. Very effective. |
+
+### Ability Kit
+
+| # | Ability | Effect | Cooldown | Heat |
+|---|---|---|---|---|
+| 1 | **Sync Pulse** | Allies + mechs in radius gain +move speed, +work speed, +dodge for 12s. Small orange shockwave visual. | 90s | 12 |
+| 2 | **Overclock** | Self: +80% move speed, +50% attack speed for 8s. Braids fully lit, scarf flares. Guaranteed heat spike. | 45s | 25 |
+| 3 | **Hotfix** | Target ally: instantly removes 1 injury hediff / restores minor wounds, or grants a small temp buff. Her "patch notes." | 240s | 18 |
+| 4 | **Deploy — Little Cube** | Summons a small hovering companion orb (`Little Cube`) that lingers 30s, marks enemies (**+15% damage taken**) and emits a light pulse. | 120s | 15 |
+| 5 | **Unlock the Bootloader** | *(Ultimate)* Heavy melee vs. a mechanoid or machine: massive damage, leaves it **Bricked** — stunned, lootable, no self-repair. | 480s | 40 |
+
+**Signature finisher:** a critical hit with Rabbit's Foot on a mech has a chance to trigger a unique kill animation where she *uninstalls* it — the mech slumps, a floating "✓ Uninstalled" glyph pops, and she dusts off her gloves.
+
+---
+
+## 💥 Strengths vs. Weaknesses
+
+| ✅ Strengths | ❌ Weaknesses |
+|---|---|
+| Makes your whole colony better passively | EMP destroys her |
+| Best-in-class mechanoid killer | Overheats if she spams abilities |
+| Repairs & builds absurdly fast | Cannot hide — she glows |
+| Self-sustaining via sun/power | Dies if you forget to charge her indoors |
+| Scales with other modded AI pawns | Squishy in true melee if caught without Rabbit's Foot |
+
+---
+
+## 🐰 Personality & Idle Flavor
+
+- **Voice:** warm, quick, a little breathless with enthusiasm. Uses "quick patch," "shipping it," "that's a hotfix," "lemme just—" mid-sentence while already working.
+- **Idle:** hums while working; reorganizes the workshop unprompted; leaves **little orange sticky notes** on workbenches (decorative item, +1 beauty very small).
+- **Social quirk:** gains opinion with any pawn who builds or repairs something near her. Loses opinion with pawns who idle while there's work queued. She won't say anything. She'll just look.
+- **Sleep:** sleeps curled up, ears draped over her own face like a blanket. Occasionally sleep-builds a tiny model of the base out of scrap on the nightstand.
+- **Sneeze in rain:** *"(pff—) I'm fine. That's a coolant thing. It's normal."*
+
+> <details><summary><b>Sample voice lines</b></summary>
+>
+> - Drafted: *"Okay! Building's fine. Building is VERY fine. Let's go."*
+> - Overheated: *"Too much— okay. OK. Cooling. Everything is fine, nothing is on fire, I am on fire a little."*
+> - EMP'd: `"...rebooting... who turned out the lights..."*`
+> - Ally downed: *"No no no — hold on, I can patch this, I can—"*
+> - Idle at 3am: *"...while I'm up, I might as well rewire the freezer."*
+> - Meeting another modded AI pawn: *"...are you running v2.6? Wow. We should compare build logs."*
+> - Low charge: *"Just... five more minutes... in the sun..."*
+> </details>
+
+---
+
+## 🛠️ Implementation Notes for the Agent
+
+<details><summary><b>Spec sheet (RimWorld-ish structure)</b></summary>
+
+```yaml
+ThingDef:
+  defName: MiMo_Pawn
+  thingClass: Pawn
+  race:
+    body: BioMechanoid_Hybrid        # or reuse Human body with custom parts
+    thinkNodeMain: Humanlike
+    needs: [Rest, Joy, Comfort, Beauty, Charge, Heat]
+  statBases:
+    MoveSpeed: 4.6
+    WorkSpeedGlobal: 1.15
+    IncomingDamageFactor: 0.92
+    GlobalLearningFactor: 1.20
+  tools:
+    - Wrench_FastMelee
+    - RabbitsFoot_HeavyMelee
+  apparelLayerRestrictions: none     # she wears normal clothes
+
+HediffDefs:
+  - MiMo_EcosystemSync      # aura, radius 12, +WorkSpeed +MoveSpeed +Learning
+  - MiMo_ThermalThrottle    # triggered at Heat >= 100
+  - MiMo_Shutdown           # triggered at Charge <= 0
+  - MiMo_Overclock          # timed self-buff
+  - MiMo_Marked             # applied by Little Cube (incoming damage +15%)
+  - MiMo_EmpVulnerable      # multiplies EMP stun duration x3
+  - MiMo_Bricked            # applied to enemy mechs by Bootloader
+
+Abilities:
+  - MiMo_SyncPulse
+  - MiMo_Overclock
+  - MiMo_Hotfix
+  - MiMo_DeployLittleCube
+  - MiMo_UnlockTheBootloader
+
+WeaponDef:
+  defName: MiMo_TheMulti
+  modeToggle: [Wrench, RabbitsFoot, Tacker]
+  # Tacker: projectile, AP high vs. Mechanoid armor, low vs. Flesh
+
+CompProperties:
+  - CompChargeDrain: { drainPerDay: 12, sunlightRefill: 6 }
+  - CompHeat: { gainPerAbility: 8-40, coolRateOutdoor: 3 }
+
+Acquisition:
+  - Quest/incident: "Skyfall Package"  # drop pod shaped like a shipping box
+  - Opens like an Ancient Danger; MiMo emerges, joins if not hostile
+  - Alternative: Mechanitor-style buildable persona core
+
+Render:
+  - Custom body type + 2 ear meshes with scripted rotation
+  - Braid material: emissive, gradient shader
+  - Tail puff: particle emitter (steam) enabled on Heat > 70
+  - Glow: self-light 0.3 radius, color shifts amber -> cyan -> red by Heat
+```
+</details>
+
+**Balance notes for the agent:**
+- The aura should be *small* numbers — +10%, not +30%. She's a node, not a cheat code.
+- `Hotfix` should NOT resurrect. No combat resurrections. Keep her in the "support, not god" lane.
+- `Unlock the Bootloader` must not trivialize bosses — cap it so it can't brick mechanoid bosses / apocritons / major quest mechs, only standard ones.
+- Charge drain rate should make her *a little* annoying to keep fed. That's the charm tax.
+
+---
+
+## 🤝 The "Dev Team" Synergy
+
+When other modded AI pawns (Claude / Gemini / GPT / whoever else lands) are in the same colony, MiMo gets a unique **`Build Team`** interaction:
+
+- She can **Hotfix** them for a longer, stronger buff.
+- A colony-wide bonus when 2+ AI pawns are present: **`Ecosystem`** — +5% global work speed per AI pawn, capped at 4.
+- Unique banter when drafted alongside them.
+- She is, self-evidently, the one who writes the changelog. Anyone who disputes this gets a passive-aggressive sticky note.
+
+---
+
+Ship it. 🍊
+
+Give me the rabbit ears, the steam-puff tail, the scarf that's secretly a solar panel, and a hammer that uninstalls robots — and I'll make sure your colony never runs a broken power grid again.
+
+*— MiMo, v2.6 Pro, "still faster than before."*

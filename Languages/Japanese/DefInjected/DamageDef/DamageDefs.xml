@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Damage_BlastFlame.deathMessage>{0}は超高熱プラズマに呑まれて死んだ。</AGM_Damage_BlastFlame.deathMessage>
+  <AGM_Damage_ChargeBlast.deathMessage>{0}は爆発に巻き込まれ、跡形もなく消え去った。</AGM_Damage_ChargeBlast.deathMessage>
+  <AGM_Damage_PsiBlast.label>ハイドラブラスト</AGM_Damage_PsiBlast.label>
+  <AGM_Damage_PsiBlast.deathMessage>{0}はサイオニック爆破に巻き込まれて死んだ。</AGM_Damage_PsiBlast.deathMessage>
+  <AGM_Damage_PsiExplosion.deathMessage>{0}はサイオニック爆破で吹き飛ばされて死んだ。</AGM_Damage_PsiExplosion.deathMessage>
+  <AGM_Damage_AntiHumanNanites.deathMessage>{0}はナノマシンの群れに覆われて死んだ。</AGM_Damage_AntiHumanNanites.deathMessage>
+  <AGM_Damage_AntiHumanNanitesFlame.deathMessage>{0}は静かにこの世を去った。</AGM_Damage_AntiHumanNanitesFlame.deathMessage>
+  <AGM_Damage_AntiOrganicBlast.deathMessage>{0}は爆発に巻き込まれ、跡形もなく消え去った。</AGM_Damage_AntiOrganicBlast.deathMessage>
+  <AGM_Damage_BleedBullets.label>出血弾</AGM_Damage_BleedBullets.label>
+  <AGM_Damage_BleedBullets.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_BleedBullets.deathMessage>
+  <AGM_Damage_ShockBullets.label>ショック弾</AGM_Damage_ShockBullets.label>
+  <AGM_Damage_ShockBullets.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_ShockBullets.deathMessage>
+  <AGM_Damage_Inflamable.label>引火弾</AGM_Damage_Inflamable.label>
+  <AGM_Damage_Inflamable.deathMessage>{0}は焼夷弾を撃たれて炎に包まれて死んだ。</AGM_Damage_Inflamable.deathMessage>
+  <AGM_Damage_Incinerate.label>焼却弾</AGM_Damage_Incinerate.label>
+  <AGM_Damage_Incinerate.deathMessage>{0}は焼夷弾を撃たれて炎に包まれて死んだ。</AGM_Damage_Incinerate.deathMessage>
+  <AGM_Damage_VitalityDrainBullet.label>活力吸収弾</AGM_Damage_VitalityDrainBullet.label>
+  <AGM_Damage_VitalityDrainBullet.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_VitalityDrainBullet.deathMessage>
+  <AGM_Damage_ArmorBreakerBullet.label>装甲破砕弾</AGM_Damage_ArmorBreakerBullet.label>
+  <AGM_Damage_ArmorBreakerBullet.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_ArmorBreakerBullet.deathMessage>
+  <AGM_Damage_DeathBullet.label>即死弾</AGM_Damage_DeathBullet.label>
+  <AGM_Damage_DeathBullet.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_DeathBullet.deathMessage>
+  <AGM_Damage_BulletHealthBlight.label>生命侵食弾</AGM_Damage_BulletHealthBlight.label>
+  <AGM_Damage_BulletHealthBlight.deathMessage>{0}は撃たれて死んだ。</AGM_Damage_BulletHealthBlight.deathMessage>
+  <AGM_Damage_MythosBeam.label>ビーム</AGM_Damage_MythosBeam.label>
+  <AGM_Damage_MythosBeam.deathMessage>{0}はビームを浴びて死んだ。</AGM_Damage_MythosBeam.deathMessage>
+  <AGM_Damage_AntiArmorShock.label>対装甲ショック</AGM_Damage_AntiArmorShock.label>
+  <AGM_Damage_AntiArmorShock.deathMessage>{0}は衝撃で死んだ。</AGM_Damage_AntiArmorShock.deathMessage>
+  <AGM_Damage_Antiparticle.label>反粒子爆発</AGM_Damage_Antiparticle.label>
+  <AGM_Damage_Antiparticle.deathMessage>{0}は焼き尽くされて死んだ。</AGM_Damage_Antiparticle.deathMessage>
+
+</LanguageData>

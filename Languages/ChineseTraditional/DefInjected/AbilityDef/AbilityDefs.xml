@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MythosJump.label>躍升</AGM_MythosJump.label>
+  <AGM_MythosJump.description>高高躍起砸向目標地點，對落點內的敵人造成可怕的壓制傷害。</AGM_MythosJump.description>
+  <AGM_MythosSuspend.label>等離子清掃</AGM_MythosSuspend.label>
+  <AGM_MythosSuspend.description>啟動重力驅動懸浮于空中，向下方噴灑等離子體，掃除范圍內的一切。</AGM_MythosSuspend.description>
+  <AGM_MythosJumpAndSuspend.label>躍升清掃</AGM_MythosJumpAndSuspend.label>
+  <AGM_MythosJumpAndSuspend.description>高高躍起后在目標地上空懸停，噴灑等離子體掃除四周。</AGM_MythosJumpAndSuspend.description>
+  <AGM_ChargeBlast.label>充能爆破</AGM_ChargeBlast.label>
+  <AGM_ChargeBlast.description>將能量凝聚于核心，發射爆炸性能量彈頭。</AGM_ChargeBlast.description>
+  <AGM_PlasmaBlast.label>等離子爆破</AGM_PlasmaBlast.label>
+  <AGM_PlasmaBlast.description>將能量凝聚于核心，發射超高熱等離子彈頭。</AGM_PlasmaBlast.description>
+  <AGM_AntiOrganicGrenade.label>反有機手雷</AGM_AntiOrganicGrenade.label>
+  <AGM_AntiOrganicGrenade.description>發射裝滿反有機納米機器人的爆炸彈頭，對15.9格爆炸半徑內的有機體造成殘酷傷害。</AGM_AntiOrganicGrenade.description>
+  <AGM_PsychicBlast.label>靈能爆破</AGM_PsychicBlast.label>
+  <AGM_PsychicBlast.description>無視一切障礙，在指定地點引發靈能爆破。</AGM_PsychicBlast.description>
+  <AGM_BladeShot.label>利刃射擊</AGM_BladeShot.label>
+  <AGM_BladeShot.description>從兩側突出的利刃角發射剃刀般鋒利的刀片。</AGM_BladeShot.description>
+  <AGM_AntiOrganicBlast.label>反有機爆破</AGM_AntiOrganicBlast.label>
+  <AGM_AntiOrganicBlast.description>發射超高爆性的反有機彈頭。</AGM_AntiOrganicBlast.description>
+  <AGM_AntiOrganicOrbitalStrike.label>反有機軌道轟炸</AGM_AntiOrganicOrbitalStrike.label>
+  <AGM_AntiOrganicOrbitalStrike.description>釋放機械之怒，向骯臟的有機體傾瀉反有機軌道轟炸。</AGM_AntiOrganicOrbitalStrike.description>
+  <AGM_DeathRay.label>死亡射線</AGM_DeathRay.label>
+  <AGM_DeathRay.description>發射死亡射線，將目標的身體機能削減至35%，并有20%概率使其當場死亡。</AGM_DeathRay.description>
+
+</LanguageData>

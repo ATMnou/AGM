@@ -1,0 +1,35 @@
+Command A+
+비용: 18
+체급: Light
+
+Mimo
+비용: 5
+체급: Light
+
+Pareto
+비용: 100
+체급: Medium
+
+Mercury
+비용: 9
+체급: Light
+
+Muse Spark
+비용: 55
+체급: Medium
+
+Solar
+비용: 15
+체급: Light
+
+Qwen
+비용: 80
+체급: Medium
+
+K3
+비용: 140
+체급: Heavy
+
+GLM
+비용: 58
+체급: Medium

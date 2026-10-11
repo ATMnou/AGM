@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 設定 -->
-
-  <!-- オーバークロック (Terminus) -->
   <AGM.OverclockLabel>オーバークロック</AGM.OverclockLabel>
   <AGM.OverclockDesc>出力ブーストの切替。移動・作業速度が2倍になりますが、内部予備電力を消費します。（現在の予備：{0}%）</AGM.OverclockDesc>
   <AGM.OverclockNoReserve>予備電力切れ。再始動できません。</AGM.OverclockNoReserve>
   <AGM.OverclockReserveStatus>予備電力：{0}%</AGM.OverclockReserveStatus>
-
-  <!-- Mythos -->
   <AGM.MythosBusy>{0} は他の技を使用中です。</AGM.MythosBusy>
-
   <AGM.ExoPhaseAdvanceLabel>AGMシリーズ メカノイドがフェーズ {0} に移行</AGM.ExoPhaseAdvanceLabel>
   <AGM.ExoPhaseAdvanceText>{0} が大ダメージを受け、戦闘フェーズ {1} に移行しました：全武装システムの稼働が高速化し、フェーズ限定の攻撃パターンが拡大します。</AGM.ExoPhaseAdvanceText>
   <AGM.ExoPhaseStatus>戦闘フェーズ {0} / {1}</AGM.ExoPhaseStatus>
@@ -22,7 +16,6 @@
   <AGM.AutoWeaponToggleDesc>このメカノイドの自動武器をオン/オフします。</AGM.AutoWeaponToggleDesc>
   <AGM.DoomsdayRocketToggleLabel>ドゥームズデイロケット切替</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>ドゥームズデイロケット斉射のオン/オフ。初期状態はオフです。</AGM.DoomsdayRocketToggleDesc>
-
   <AGM.GPUTowerInspect>IOトークン生産量：{0}/日</AGM.GPUTowerInspect>
 
 </LanguageData>

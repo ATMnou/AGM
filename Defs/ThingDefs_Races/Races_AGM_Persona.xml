@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ==================== Astra → Aegis (선봉장 인격) ==================== -->
+  <ThingDef ParentName="SuperHeavyMechanoid">
+    <defName>AGM_AstraAegis</defName>
+    <label>Astra (Aegis)</label>
+    <description>Astra under the Vanguard persona. The AA-Omniscience archive has rewritten its self-image: no longer a weapon, but a wall. While the Shield of Faith is raised, every ally on the map fights behind Astra's conviction — and every wound they would have suffered feeds the gauge that turns the leviathan into something the raiders' memoirs will call unbreakable.</description>
+    <statBases>
+      <MarketValue>60000</MarketValue>
+      <MoveSpeed>3.4</MoveSpeed>
+      <ArmorRating_Blunt>2.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.6</ArmorRating_Sharp>
+      <ArmorRating_Heat>2.6</ArmorRating_Heat>
+      <BandwidthCost>4</BandwidthCost>
+      <ControlTakingTime>40</ControlTakingTime>
+      <EMPResistance>0.9</EMPResistance>
+      <EnergyShieldEnergyMax>4.5</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.6</EnergyShieldRechargeRate>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <PsychicSensitivity>0.4</PsychicSensitivity>
+    </statBases>
+    <race>
+      <body>Mech_Centurion</body>
+      <baseBodySize>6.0</baseBodySize>
+      <baseHealthScale>8000</baseHealthScale>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centurion_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centurion_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centurion_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tools>
+      <li>
+        <label>stomping foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>300</power>
+        <armorPenetration>0.60</armorPenetration>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_PersonaShield">
+        <gaugeMax>500</gaugeMax>
+        <guardianDurationTicks>120000</guardianDurationTicks>
+        <guardianDamageFactor>0.75</guardianDamageFactor>
+        <auraDamageReduction>0.5</auraDamageReduction>
+      </li>
+      <li Class="AGM.CompProperties_PersonaRevert">
+        <revertDefName>AGM_Astra</revertDefName>
+        <revertKindName>AGM_Astra</revertKindName>
+      </li>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>400</Steel>
+      <Plasteel>800</Plasteel>
+      <Uranium>200</Uranium>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_AstraAegis</defName>
+    <label>Astra (Aegis)</label>
+    <race>AGM_AstraAegis</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>900</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Persona/Aegis</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>5.5</drawSize>
+          <shadowData>
+            <volume>(0.9, 1.0, 0.9)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags></weaponTags>
+    <controlGroupPortraitZoom>0.55</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== Fable → Compassionate (이해자 인격) ==================== -->
+  <ThingDef ParentName="AGM_KralBossBase">
+    <defName>AGM_FableCompassionate</defName>
+    <label>Fable (Compassionate)</label>
+    <description>Fable under the Compassionate persona. The OSWorld 2.0 archive has rewritten its doctrine: the story it tells is no longer about an ending, but about refusing to let the story end. While the Pledge for All is active, the leviathan becomes a guardian angel — healing the wounded, shielding the weak, and refusing death itself, once.</description>
+    <statBases>
+      <MarketValue>60000</MarketValue>
+      <MoveSpeed>2.5</MoveSpeed>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Heat>9.00</ArmorRating_Heat>
+      <BandwidthCost>4</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <race>
+      <body>AGM_Body_Fable</body>
+      <baseBodySize>7</baseBodySize>
+      <baseHealthScale>4000</baseHealthScale>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Apocriton_Wounded</soundWounded>
+          <soundAngry>Pawn_Mech_Apocriton_Call</soundAngry>
+          <soundDeath>Pawn_Mech_Apocriton_Death</soundDeath>
+          <soundCall>Pawn_Mech_Apocriton_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <dutyBoss>Warqueen</dutyBoss>
+    </race>
+    <tools>
+      <li>
+        <label>razor left leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+        <armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>razor right leg</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>95</power>
+        <armorPenetration>10</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_PersonaPledge">
+        <durationTicks>60000</durationTicks>
+        <cooldownTicks>120000</cooldownTicks>
+        <healAmount>50</healAmount>
+      </li>
+      <li Class="AGM.CompProperties_PersonaRevert">
+        <revertDefName>AGM_Fable</revertDefName>
+        <revertKindName>AGM_Fable</revertKindName>
+      </li>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>200</Steel>
+      <Plasteel>160</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_FableCompassionate</defName>
+    <label>Fable (Compassionate)</label>
+    <race>AGM_FableCompassionate</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>9500</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Persona/Compassionate</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>7</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponTags>
+      <li>AGM_MechHeavyLaserBlaster</li>
+    </weaponTags>
+    <weaponMoney>9999~9999</weaponMoney>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <skipResistant>true</skipResistant>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+</Defs>

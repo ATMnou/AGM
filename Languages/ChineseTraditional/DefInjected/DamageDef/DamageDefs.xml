@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Damage_BlastFlame.deathMessage>{0}被超高熱等離子體吞沒而死。</AGM_Damage_BlastFlame.deathMessage>
+  <AGM_Damage_ChargeBlast.deathMessage>{0}被爆炸卷入，灰飛煙滅。</AGM_Damage_ChargeBlast.deathMessage>
+  <AGM_Damage_PsiBlast.label>海德拉爆破</AGM_Damage_PsiBlast.label>
+  <AGM_Damage_PsiBlast.deathMessage>{0}被靈能爆破波及而死。</AGM_Damage_PsiBlast.deathMessage>
+  <AGM_Damage_PsiExplosion.deathMessage>{0}被靈能爆破炸飛而死。</AGM_Damage_PsiExplosion.deathMessage>
+  <AGM_Damage_AntiHumanNanites.deathMessage>{0}被納米機器人群淹沒而死。</AGM_Damage_AntiHumanNanites.deathMessage>
+  <AGM_Damage_AntiHumanNanitesFlame.deathMessage>{0}悄無聲息地離去了。</AGM_Damage_AntiHumanNanitesFlame.deathMessage>
+  <AGM_Damage_AntiOrganicBlast.deathMessage>{0}被爆炸卷入，灰飛煙滅。</AGM_Damage_AntiOrganicBlast.deathMessage>
+  <AGM_Damage_BleedBullets.label>出血彈</AGM_Damage_BleedBullets.label>
+  <AGM_Damage_BleedBullets.deathMessage>{0}被槍擊而死。</AGM_Damage_BleedBullets.deathMessage>
+  <AGM_Damage_ShockBullets.label>電擊彈</AGM_Damage_ShockBullets.label>
+  <AGM_Damage_ShockBullets.deathMessage>{0}被槍擊而死。</AGM_Damage_ShockBullets.deathMessage>
+  <AGM_Damage_Inflamable.label>引燃彈</AGM_Damage_Inflamable.label>
+  <AGM_Damage_Inflamable.deathMessage>{0}被燃燒彈擊中，葬身火海。</AGM_Damage_Inflamable.deathMessage>
+  <AGM_Damage_Incinerate.label>焚化彈</AGM_Damage_Incinerate.label>
+  <AGM_Damage_Incinerate.deathMessage>{0}被燃燒彈擊中，葬身火海。</AGM_Damage_Incinerate.deathMessage>
+  <AGM_Damage_VitalityDrainBullet.label> vitality 抽取彈</AGM_Damage_VitalityDrainBullet.label>
+  <AGM_Damage_VitalityDrainBullet.deathMessage>{0}被槍擊而死。</AGM_Damage_VitalityDrainBullet.deathMessage>
+  <AGM_Damage_ArmorBreakerBullet.label>破甲彈</AGM_Damage_ArmorBreakerBullet.label>
+  <AGM_Damage_ArmorBreakerBullet.deathMessage>{0}被槍擊而死。</AGM_Damage_ArmorBreakerBullet.deathMessage>
+  <AGM_Damage_DeathBullet.label>即死彈</AGM_Damage_DeathBullet.label>
+  <AGM_Damage_DeathBullet.deathMessage>{0}被槍擊而死。</AGM_Damage_DeathBullet.deathMessage>
+  <AGM_Damage_BulletHealthBlight.label>生命侵蝕彈</AGM_Damage_BulletHealthBlight.label>
+  <AGM_Damage_BulletHealthBlight.deathMessage>{0}被槍擊而死。</AGM_Damage_BulletHealthBlight.deathMessage>
+  <AGM_Damage_MythosBeam.label>光束</AGM_Damage_MythosBeam.label>
+  <AGM_Damage_MythosBeam.deathMessage>{0}被光束擊中而死。</AGM_Damage_MythosBeam.deathMessage>
+  <AGM_Damage_AntiArmorShock.label>反裝甲沖擊</AGM_Damage_AntiArmorShock.label>
+  <AGM_Damage_AntiArmorShock.deathMessage>{0}死于沖擊。</AGM_Damage_AntiArmorShock.deathMessage>
+  <AGM_Damage_Antiparticle.label>反粒子爆破</AGM_Damage_Antiparticle.label>
+  <AGM_Damage_Antiparticle.deathMessage>{0}被燒死了。</AGM_Damage_Antiparticle.deathMessage>
+
+</LanguageData>

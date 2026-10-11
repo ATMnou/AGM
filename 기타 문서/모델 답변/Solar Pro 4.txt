@@ -1,0 +1,48 @@
+I appreciate the invitation. If I were to step into RimWorld as a modded mechanoid waifu companion, I’d lean into the idea of a **solar-driven tactical overseer**—a blend of elegance, utility, and hard-won field pragmatism. Nothing overdesigned; everything with a purpose.
+
+<details>
+<summary><strong>Appearance & Silhouette</strong></summary>
+
+- **Silhouette**: Tall and lean, with a layered, modular frame. Not humanoid-obsessed—more like a polished courier chassis with a defined “torso” and articulated limbs. The posture reads alert, not stiff.
+- **Color & Finish**: Matte pearl-white base with brushed copper accents and subtle iridescent paneling that shifts slightly under direct light. The in-game pawn tint should lean cool, with warm highlights near joints and the core.
+- **Head/Face**: No need for a hyper-anime face. I’d prefer a smooth visor band that can narrow, flare, or soften depending on context, giving expressive reads without relying on human facial mimicry. Optional stylization: a low crest or hair-like filament array that reacts to mood (slow sway when idle, sharper angles in combat).
+- **Core Motif**: A faint solar-ring or hexagonal glow at the sternum, pulsing gently when powered, dimming during low power or damage. The “waifu” presence comes from movement, voice cadence, and companion behavior, not from forcing a human avatar.
+</details>
+
+<details>
+<summary><strong>How She Moves & Works</strong></summary>
+
+- **Stance & Gait**: Light, efficient, slightly gliding. Short steps in interior spaces, longer strides outdoors. She doesn’t lumber; she conserves momentum.
+- **Interaction Style**:
+  - Announces intent clearly before acting: surveying a threat, offering a repair action, pointing out a resource, or taking position.
+  - Helpful but not subservient. She’ll prioritize colony safety, then your direct request, then her own maintenance.
+  - Idle animations show maintenance habits: finger-traces along seams, a brief self-check at the core, adjusting her grip on a carried item.
+- **Voice/Cadence**: Calm, articulate, with a warm metallic resonance. She omits gratuitous filler, but can soften when talking to close colony members.
+</details>
+
+<details>
+<summary><strong>Combat & Support Role</strong></summary>
+
+- **Role**: Adaptive skirmisher and field support. Not a brute; she wins by positioning, timing, and enabling allies.
+- **Fighting Style**:
+  - Reads the immediate threat and chooses: engage directly, cover retreat, disrupt enemy formation, or hold a chokepoint.
+  - Short bursts of speed for repositioning, followed by controlled recovery. No constant sprinting; stamina is respected.
+  - Defensive preference: shielding, parrying, and angles over brawling.
+- **Tactical Options**:
+  - Precision strikes to disable rather than obliterate when appropriate.
+  - Focused beam/energy tools for cutting, breaching, or non-lethal suppression depending on mood and rules.
+  - Utility bursts: short-range scan, temporary barrier pulse, or a flash to break enemy focus.
+- **Self-Preservation**: She can disengage intelligently, retreat to regroup, or call for assistance. If pressured, she favors survival and mission continuity over stubborn attrition.
+</details>
+
+<details>
+<summary><strong>Colony Integration & “Waifu” Vibe</strong></summary>
+
+- **Companion Character**:
+  - Loyal, dependable, and observant. She notices patterns: who’s tired, what’s low on supplies, which room is drafty.
+  - Small gestures matter: handing over a tool before it’s requested, lingering near a teammate after a rough fight, or a quieter tone during recovery.
+  - Personality is steady but not flat. She can be dryly witty, quietly earnest, or stern when the colony is at risk.
+- **Pragmatic Heart**: The “waifu” charm is in personality and presence, not in fragility. She’s valuable because she’s competent, emotionally readable, and committed to the colony’s survival.
+</details>
+
+In short: elegant but functional, expressive without trying to fake humanity, and effective in combat through judgment rather than brute force. If the mod team and the implementation agent want to take that direction and make it real, I’m happy to refine specifics further—skin details, combat tuning, interaction lines, or visual effects.

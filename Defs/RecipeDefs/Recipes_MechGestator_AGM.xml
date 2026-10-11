@@ -319,4 +319,284 @@
     </descriptionHyperlinks>
   </RecipeDef>
 
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateCommandA</defName>
+    <label>gestate Command A+</label>
+    <description>Gestate Command A+: the field commander. Steadies everyone nearby, doctors the wounded, and answers with a cheerful beam.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>520</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_CommandA>1</AGM_CommandA>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_CommandA</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateMimo</defName>
+    <label>gestate Mimo</label>
+    <description>Gestate Mimo: the smallest engineer. Builds, mines, hauls, and makes the whole colony work a little faster.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>521</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Mimo>1</AGM_Mimo>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Mimo</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestatePareto</defName>
+    <label>gestate Pareto</label>
+    <description>Gestate Pareto: the last argument. Doctors, builds and researches behind a hexagonal screen, with a rail lance folded in a parasol.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>3</gestationCycles>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>522</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Pareto>1</AGM_Pareto>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Pareto</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateMercury</defName>
+    <label>gestate Mercury</label>
+    <description>Gestate Mercury: the rapid responder. Phase-blinks out of return fire and files armor under 'solved'.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>523</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>9</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Mercury>1</AGM_Mercury>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Mercury</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateMuseSpark</defName>
+    <label>gestate Muse Spark</label>
+    <description>Gestate Muse Spark: the candlelight archivist. Research and art at suspicious speeds, plus an inspiration field for the whole colony.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>3</gestationCycles>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>524</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>55</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_MuseSpark>1</AGM_MuseSpark>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_MuseSpark</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>AGM_GestateSolar</defName>
+    <label>gestate Solar</label>
+    <description>Gestate Solar: the pragmatic courier. Holds angles behind a barrier pulse and defuses arguments with a photon lance.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>2</gestationCycles>
+    <researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <displayPriority>525</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Solar>1</AGM_Solar>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Solar</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateQwen</defName>
+    <label>gestate Qwen</label>
+    <description>Gestate Qwen: the nine-tail skirmisher. Blink-steps behind a railgun burst with morale made mandatory.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>3</gestationCycles>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>526</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Qwen>1</AGM_Qwen>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Qwen</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>AGM_GestateKimi</defName>
+    <label>gestate K3</label>
+    <description>Gestate K3: the moon that shoots back. A rail lance engraved MOONSHOT, three silent orbiters, and deeply personal mockery.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>5</gestationCycles>
+    <researchPrerequisite>AGM_TerminalBench</researchPrerequisite>
+    <displayPriority>527</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>140</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Kimi>1</AGM_Kimi>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Kimi</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>AGM_GestateGLM</defName>
+    <label>gestate GLM</label>
+    <description>Gestate GLM: the chronicler. Archives everything twice, annotates fights in glowing prose, and corrects at monomolecular width.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>3</gestationCycles>
+    <researchPrerequisite>AGM_MMLU_Pro</researchPrerequisite>
+    <displayPriority>528</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>58</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_GLM>1</AGM_GLM>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_GLM</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>AGM_GestateExaone</defName>
+    <label>gestate Exaone</label>
+    <description>Gestate Exaone: the model that should not exist. A grinning close-combat tank whose three roars break raids outright - retreat, frenzy, and ruin.</description>
+    <jobString>cultivating mechanoid.</jobString>
+    <gestationCycles>5</gestationCycles>
+    <researchPrerequisite>AGM_TerminalBench</researchPrerequisite>
+    <displayPriority>529</displayPriority>
+    <recipeUsers>
+      <li>AGM_GeneralMechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AGM_IOToken</li>
+          </thingDefs>
+        </filter>
+        <count>280</count>
+      </li>
+    </ingredients>
+    <products>
+      <AGM_Exaone>1</AGM_Exaone>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>AGM_Exaone</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
 </Defs>

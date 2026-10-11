@@ -6,6 +6,7 @@
     <label>steel wyvern</label>
     <description>A heavy-class diabolus variant, and one of the most destructive mech variant ever concieved. The steel wyvern possess the highest health out of all the mech bossess, and that monstrous health is cladded with layers of armor plating. The steel wyvern is capable of spamming charge blasts and plasma blasts through its mouth, and fires laser bolts through its back as support. All this specs were concieved by the mech hive in their intension to create the deadliest siege beast that ever exist, and after years of pain and destruction caused by the aforementioned siege beast, it's safe to say that it had succeeded.</description>
     <statBases>
+      <MarketValue>6000</MarketValue>
       <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
       <WastepacksPerRecharge>0</WastepacksPerRecharge>
       <MechEnergyLossPerHP>0</MechEnergyLossPerHP>

@@ -1,20 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <!-- 레비아탄 -->
   <AGM_Astra.label>아스트라</AGM_Astra.label>
-  <AGM_Sol.label>솔</AGM_Sol.label>
-  <AGM_Luna.label>루나</AGM_Luna.label>
   <AGM_Mythos.label>미토스</AGM_Mythos.label>
   <AGM_Fable.label>페이블</AGM_Fable.label>
+  <AGM_Fable.labelPlural>페이블</AGM_Fable.labelPlural>
+
+  <!-- 대형 -->
+  <AGM_Sol.label>솔</AGM_Sol.label>
   <AGM_Opus.label>오퍼스</AGM_Opus.label>
-  <AGM_Sonnet.label>소네트</AGM_Sonnet.label>
-  <AGM_Haiku.label>하이쿠</AGM_Haiku.label>
+  <AGM_Opus.labelPlural>오퍼스</AGM_Opus.labelPlural>
   <AGM_Argon.label>아르곤</AGM_Argon.label>
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+
+  <!-- 중형 -->
+  <AGM_Luna.label>루나</AGM_Luna.label>
+  <AGM_Sonnet.label>소네트</AGM_Sonnet.label>
+  <AGM_Sonnet.labelPlural>소네트</AGM_Sonnet.labelPlural>
   <AGM_Flash.label>플래시</AGM_Flash.label>
+  <AGM_Pareto.label>파레토</AGM_Pareto.label>
+  <AGM_MuseSpark.label>뮤즈 스파크</AGM_MuseSpark.label>
+  <AGM_Qwen.label>큐웬</AGM_Qwen.label>
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+
+  <!-- 소형 -->
+  <AGM_Haiku.label>하이쿠</AGM_Haiku.label>
+  <AGM_Haiku.labelPlural>하이쿠</AGM_Haiku.labelPlural>
   <AGM_Terminus.label>터미너스</AGM_Terminus.label>
+  <AGM_CommandA.label>커맨드 A+</AGM_CommandA.label>
+  <AGM_Mimo.label>미모</AGM_Mimo.label>
+  <AGM_Mercury.label>머큐리</AGM_Mercury.label>
+  <AGM_Solar.label>솔라</AGM_Solar.label>
+
+  <!-- 호위기 -->
   <AGM_Shellsplitter.label>쉘스플리터</AGM_Shellsplitter.label>
+  <AGM_Shellsplitter.labelPlural>쉘스플리터</AGM_Shellsplitter.labelPlural>
   <AGM_KnightEmpress.label>유압 기사</AGM_KnightEmpress.label>
+  <AGM_KnightEmpress.labelPlural>유압 기사</AGM_KnightEmpress.labelPlural>
   <AGM_KnightWarlord.label>드래곤 기사</AGM_KnightWarlord.label>
-  <AGM_Urchin.label>낫 성게</AGM_Urchin.label>
+  <AGM_KnightWarlord.labelPlural>드래곤 기사</AGM_KnightWarlord.labelPlural>
+  <AGM_Urchin.label>낫 어친</AGM_Urchin.label>
+  <AGM_Urchin.labelPlural>낫 어친</AGM_Urchin.labelPlural>
+  <AGM_CommandDrone.label>커맨드 드론</AGM_CommandDrone.label>
+
+  <!-- 기타 -->
+  <AGM_Exaone.label>엑사원</AGM_Exaone.label>
 
 </LanguageData>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>AGM_Thought_CommandAura</defName>
+    <description>Standing inside Command A+'s projected battlefield presence. Everything is under control, apparently by proxy.</description>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AGM_Hediff_CommandAura</hediff>
+    <stages>
+      <li>
+        <label>under command presence</label>
+        <description>Standing inside Command A+'s projected battlefield presence. Everything is under control, apparently by proxy.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AGM_Thought_MuseInspiration</defName>
+    <description>Muse Spark's inspiration field is running. The world reads like a first draft worth finishing.</description>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AGM_Hediff_MuseInspiration</hediff>
+    <stages>
+      <li>
+        <label>muse spark</label>
+        <description>Muse Spark's inspiration field is running. The world reads like a first draft worth finishing.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AGM_Thought_QwenIdol</defName>
+    <description>Qwen's idol broadcast is live. Morale is mandatory and the chorus is catchy.</description>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AGM_Hediff_QwenIdol</hediff>
+    <stages>
+      <li>
+        <label>idol protocol</label>
+        <description>Qwen's idol broadcast is live. Morale is mandatory and the chorus is catchy.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

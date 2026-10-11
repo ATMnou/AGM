@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <AGM_Damage_PsiBlast.label>사이오닉 파열</AGM_Damage_PsiBlast.label>
+
+  <!-- Kraltech 계열 -->
+  <AGM_Damage_BlastFlame.deathMessage>{0}(이)가 초고열 플라스마에 휩쓸려 죽었습니다.</AGM_Damage_BlastFlame.deathMessage>
+
+  <AGM_Damage_ChargeBlast.deathMessage>{0}(이)가 폭발에 휩쓸려 흔적도 없이 사라졌습니다.</AGM_Damage_ChargeBlast.deathMessage>
+
+  <AGM_Damage_PsiBlast.label>하이드라블라스트</AGM_Damage_PsiBlast.label>
+  <AGM_Damage_PsiBlast.deathMessage>{0}(이)가 초능력 폭발에 휘말려 죽었습니다.</AGM_Damage_PsiBlast.deathMessage>
+
+  <AGM_Damage_PsiExplosion.deathMessage>{0}(이)가 초능력 폭발에 날아가 죽었습니다.</AGM_Damage_PsiExplosion.deathMessage>
+
+  <AGM_Damage_AntiHumanNanites.deathMessage>{0}(이)가 나노봇 떼에 뒤덮여 죽었습니다.</AGM_Damage_AntiHumanNanites.deathMessage>
+
+  <AGM_Damage_AntiHumanNanitesFlame.deathMessage>{0}(이)가 조용히 자리를 떴습니다.</AGM_Damage_AntiHumanNanitesFlame.deathMessage>
+
+  <AGM_Damage_AntiOrganicBlast.deathMessage>{0}(이)가 폭발에 휩쓸려 흔적도 없이 사라졌습니다.</AGM_Damage_AntiOrganicBlast.deathMessage>
+
   <AGM_Damage_BleedBullets.label>출혈 탄환</AGM_Damage_BleedBullets.label>
-  <AGM_Damage_Inflamable.label>인화 탄환</AGM_Damage_Inflamable.label>
-  <AGM_Damage_Incinerate.label>소각 탄환</AGM_Damage_Incinerate.label>
-  <AGM_Damage_VitalityDrainBullet.label>활력 흡수 탄환</AGM_Damage_VitalityDrainBullet.label>
-  <AGM_Damage_ArmorBreakerBullet.label>장갑 파쇄 탄환</AGM_Damage_ArmorBreakerBullet.label>
-  <AGM_Damage_DeathBullet.label>즉사 탄환</AGM_Damage_DeathBullet.label>
-  <AGM_Damage_BulletHealthBlight.label>생명 잠식 탄환</AGM_Damage_BulletHealthBlight.label>
+  <AGM_Damage_BleedBullets.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_BleedBullets.deathMessage>
+
   <AGM_Damage_ShockBullets.label>충격 탄환</AGM_Damage_ShockBullets.label>
-  <AGM_Damage_Antiparticle.label>반입자 폭발</AGM_Damage_Antiparticle.label>
+  <AGM_Damage_ShockBullets.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_ShockBullets.deathMessage>
+
+  <AGM_Damage_Inflamable.label>인화 탄환</AGM_Damage_Inflamable.label>
+  <AGM_Damage_Inflamable.deathMessage>{0}(이)가 화염탄에 맞아 불타 죽었습니다.</AGM_Damage_Inflamable.deathMessage>
+
+  <AGM_Damage_Incinerate.label>소각 탄환</AGM_Damage_Incinerate.label>
+  <AGM_Damage_Incinerate.deathMessage>{0}(이)가 화염탄에 맞아 불타 죽었습니다.</AGM_Damage_Incinerate.deathMessage>
+
+  <AGM_Damage_VitalityDrainBullet.label>활력 흡수 탄환</AGM_Damage_VitalityDrainBullet.label>
+  <AGM_Damage_VitalityDrainBullet.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_VitalityDrainBullet.deathMessage>
+
+  <AGM_Damage_ArmorBreakerBullet.label>장갑 파쇄 탄환</AGM_Damage_ArmorBreakerBullet.label>
+  <AGM_Damage_ArmorBreakerBullet.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_ArmorBreakerBullet.deathMessage>
+
+  <AGM_Damage_DeathBullet.label>즉사 탄환</AGM_Damage_DeathBullet.label>
+  <AGM_Damage_DeathBullet.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_DeathBullet.deathMessage>
+
+  <AGM_Damage_BulletHealthBlight.label>생명 잠식 탄환</AGM_Damage_BulletHealthBlight.label>
+  <AGM_Damage_BulletHealthBlight.deathMessage>{0}(이)가 총에 맞아 죽었습니다.</AGM_Damage_BulletHealthBlight.deathMessage>
+
+  <!-- 미토스 -->
+  <AGM_Damage_MythosBeam.label>광선</AGM_Damage_MythosBeam.label>
+  <AGM_Damage_MythosBeam.deathMessage>{0}(이)가 광선에 맞아 죽었습니다.</AGM_Damage_MythosBeam.deathMessage>
+
+  <!-- 아르곤 · 플래시 -->
   <AGM_Damage_AntiArmorShock.label>대장갑 충격</AGM_Damage_AntiArmorShock.label>
+  <AGM_Damage_AntiArmorShock.deathMessage>{0}(이)가 충격으로 죽었습니다.</AGM_Damage_AntiArmorShock.deathMessage>
+
+  <!-- 솔 -->
+  <AGM_Damage_Antiparticle.label>반입자 폭발</AGM_Damage_Antiparticle.label>
+  <AGM_Damage_Antiparticle.deathMessage>{0}(이)가 불타 죽었습니다.</AGM_Damage_Antiparticle.deathMessage>
 
 </LanguageData>

@@ -1,28 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Settings -->
-
-  <!-- Overclock (Terminus) -->
+  <!-- 오버클럭 (터미너스) -->
   <AGM.OverclockLabel>오버클럭</AGM.OverclockLabel>
-  <AGM.OverclockDesc>출력 부스트를 켭니다. 이동 속도와 작업 속도가 2배가 되지만, 자체 예비 동력이 소모됩니다. (현재 예비율: {0}%)</AGM.OverclockDesc>
-  <AGM.OverclockNoReserve>예비 동력이 소진되어 재가동할 수 없습니다.</AGM.OverclockNoReserve>
+  <AGM.OverclockDesc>출력 부스트를 켜거나 끕니다. 켜져 있는 동안은 내부 예비 동력을 소모하는 대신 이동 속도와 작업 속도가 2배가 됩니다. (현재 예비 동력: {0}%)</AGM.OverclockDesc>
+  <AGM.OverclockNoReserve>예비 동력이 바닥나서 다시 가동할 수 없습니다.</AGM.OverclockNoReserve>
   <AGM.OverclockReserveStatus>예비 동력: {0}%</AGM.OverclockReserveStatus>
 
-  <!-- Mythos -->
-  <AGM.MythosBusy>{0}은(는) 지금 다른 기술을 사용하는 중입니다.</AGM.MythosBusy>
+  <!-- 미토스 -->
+  <AGM.MythosBusy>{0}(은)는 이미 다른 기술을 사용하는 중입니다.</AGM.MythosBusy>
 
-  <AGM.ExoPhaseAdvanceLabel>AGM-series mechanoid enters Phase {0}</AGM.ExoPhaseAdvanceLabel>
-  <AGM.ExoPhaseAdvanceText>{0}이(가) 큰 피해를 입고 전투 페이즈 {1}에 도달했습니다: 모든 무기 체계가 더 빠르게 순환하며, 페이즈 개방형 공격 패턴이 더 넓어집니다.</AGM.ExoPhaseAdvanceText>
+  <!-- 전투 페이즈 (아스트라) -->
+  <AGM.ExoPhaseAdvanceLabel>AGM 계열 메카노이드, 페이즈 {0} 돌입.</AGM.ExoPhaseAdvanceLabel>
+  <AGM.ExoPhaseAdvanceText>{0}(이)가 큰 피해를 입고 전투 페이즈 {1}에 도달했습니다. 모든 무기 체계가 더 빠르게 순환하며, 페이즈마다 열리는 공격 패턴이 넓어집니다.</AGM.ExoPhaseAdvanceText>
   <AGM.ExoPhaseStatus>전투 페이즈 {0} / {1}</AGM.ExoPhaseStatus>
+
+  <!-- 무기 제어 -->
   <AGM.MultiTargetLabel>다중 표적</AGM.MultiTargetLabel>
   <AGM.FocusFireLabel>집중 사격</AGM.FocusFireLabel>
-  <AGM.TargetingModeDesc>이 메카노이드의 독립 무기 체계가 여러 표적에 분산 사격할지 단일 표적에 집중할지 전환합니다.</AGM.TargetingModeDesc>
-  <AGM.AutoWeaponToggleLabel>무기 전환</AGM.AutoWeaponToggleLabel>
-  <AGM.AutoWeaponToggleDesc>이 메카노이드의 자동 무기를 끄거나 켭니다.</AGM.AutoWeaponToggleDesc>
-  <AGM.DoomsdayRocketToggleLabel>종말 로켓 전환</AGM.DoomsdayRocketToggleLabel>
-  <AGM.DoomsdayRocketToggleDesc>종말 로켓 발사를 켜거나 끕니다. 기본값은 꺼짐입니다.</AGM.DoomsdayRocketToggleDesc>
+  <AGM.TargetingModeDesc>이 메카노이드의 독립 무기 체계가 여러 표적에 나눠서 사격할지, 하나의 표적에 집중해서 사격할지 전환합니다.</AGM.TargetingModeDesc>
+  <AGM.AutoWeaponToggleLabel>무기 켜기/끄기</AGM.AutoWeaponToggleLabel>
+  <AGM.AutoWeaponToggleDesc>이 메카노이드의 자동 무기를 켜거나 끕니다.</AGM.AutoWeaponToggleDesc>
+  <AGM.DoomsdayRocketToggleLabel>최후의 심판 로켓 켜기/끄기</AGM.DoomsdayRocketToggleLabel>
+  <AGM.DoomsdayRocketToggleDesc>최후의 심판 로켓 일제 사격을 켜거나 끕니다. 기본값은 꺼짐입니다.</AGM.DoomsdayRocketToggleDesc>
 
-  <AGM.GPUTowerInspect>IO 토큰 생산량: {0}/일</AGM.GPUTowerInspect>
+  <!-- GPU 타워 -->
+  <AGM.GPUTowerInspect>IO 토큰 생산량: 하루 {0}개</AGM.GPUTowerInspect>
+
+
+  <AGM.ShieldOfFaith.Label>신념의 방패</AGM.ShieldOfFaith.Label>
+  <AGM.ShieldOfFaith.Desc>활성화 시 맵 내의 모든 동맹 폰이 받는 피해가 50% 감소합니다. 아스트라가 받는 피해는 신념불변 게이지를 충전하며, 게이지가 차오르면 수호자 상태가 됩니다.</AGM.ShieldOfFaith.Desc>
+  <AGM.ShieldOfFaith.DescLocked>Agents' Last Exam 연구와 인격 데이터 센터가 필요합니다.</AGM.ShieldOfFaith.DescLocked>
+  <AGM.ShieldOfFaith.Gauge>신념불변: {0}%</AGM.ShieldOfFaith.Gauge>
+  <AGM.ShieldOfFaith.GaugeDesc>아스트라가 대신 받은 피해량입니다. 게이지가 차오르면 수호자 상태가 됩니다.</AGM.ShieldOfFaith.GaugeDesc>
+  <AGM.ShieldOfFaith.GuardianActive>신념불변의 수호자 상태입니다. 대신 받는 피해를 75%만 받으며 천천히 수리됩니다.</AGM.ShieldOfFaith.GuardianActive>
+  <AGM.PledgeForAll.Label>모두를 위한 다짐</AGM.PledgeForAll.Label>
+  <AGM.PledgeForAll.Desc>1일 동안 활성화됩니다. 정착지 폰 전체를 즉시 회복하고 피해 감소를 적용합니다. 활성화 동안 1회에 한하여 정착지 폰이 사망할 시 직전에 부상을 모두 회복하고 보호막을 씌우며 이동 속도를 증가시킵니다. 재사용 대기시간 2일.</AGM.PledgeForAll.Desc>
+  <AGM.PledgeForAll.DescLocked>OSWorld 2.0 연구와 인격 데이터 센터가 필요합니다.</AGM.PledgeForAll.DescLocked>
+  <AGM.PledgeForAll.Active>모두를 위한 다짐 활성화 ({0}일 남음)</AGM.PledgeForAll.Active>
+  <AGM.PledgeOnCooldown>재사용 대기 중 ({0}일 남음)</AGM.PledgeOnCooldown>
+  <AGM.PledgeAlreadyActive>이미 활성화되어 있습니다.</AGM.PledgeAlreadyActive>
+  <AGM.PledgeDeathSave>{0}의 죽음을 거부했습니다. 다짐이 실행되었습니다.</AGM.PledgeDeathSave>
+  <AGM.PersonaAegis.Label>선봉장 인격 적용</AGM.PersonaAegis.Label>
+  <AGM.PersonaAegis.Desc>아스트라를 선봉장 아이기스 인격으로 변환합니다. 신념의 방패 능력이 해금됩니다.</AGM.PersonaAegis.Desc>
+  <AGM.PersonaCompassionate.Label>이해자 인격 적용</AGM.PersonaCompassionate.Label>
+  <AGM.PersonaCompassionate.Desc>페이블을 이해자 컴패쇼넷 인격으로 변환합니다. 모두를 위한 다짐 능력이 해금됩니다.</AGM.PersonaCompassionate.Desc>
+  <AGM.PersonaRevert.Label>인격 해제</AGM.PersonaRevert.Label>
+  <AGM.PersonaRevert.Desc>인격을 해제하고 원래 모델로 되돌아갑니다.</AGM.PersonaRevert.Desc>
+  <AGM.PersonaApplied>{0} 인격이 적용되었습니다.</AGM.PersonaApplied>
+  <AGM.PersonaLocked>{0} 연구가 필요합니다.</AGM.PersonaLocked>
+  <AGM.PersonaRequiresResearch>연구가 필요합니다.</AGM.PersonaRequiresResearch>
+  <AGM.PersonaRequiresBuilding>인격 데이터 센터가 필요합니다.</AGM.PersonaRequiresBuilding>
+
+  <!-- 엑사원 포효 -->
+  <AGM.ExaoneRetreat.Label>퇴각의 포효</AGM.ExaoneRetreat.Label>
+  <AGM.ExaoneRetreat.Desc>오싹한 포효를 내지릅니다. 지도 위의 인간 습격자가 전부 공황에 빠져 즉시 도주합니다. 메카노이드·동물·실체에게는 효과가 없습니다.</AGM.ExaoneRetreat.Desc>
+  <AGM.ExaoneFrenzy.Label>광란의 포효</AGM.ExaoneFrenzy.Label>
+  <AGM.ExaoneFrenzy.Desc>광기를 담은 포효를 내지릅니다. 지도 위의 습격자가 전부 광란 상태가 됩니다. (사이킥 인새너티 랜스와 동일)</AGM.ExaoneFrenzy.Desc>
+  <AGM.ExaoneDamage.Label>피해의 포효</AGM.ExaoneDamage.Label>
+  <AGM.ExaoneDamage.Desc>파멸적인 포효를 내지릅니다. 지도 위의 모든 습격자가 최대 체력의 절반에 달하는 신체 피해를 입습니다.</AGM.ExaoneDamage.Desc>
+  <AGM.ExaoneRetreatReason>엑사원의 포효에 도주함</AGM.ExaoneRetreatReason>
+  <AGM.ExaoneFrenzyReason>엑사원의 포효에 광란함</AGM.ExaoneFrenzyReason>
+  <AGM.ExaoneOnCooldown>포효 재사용 대기 중 ({0}일 남음)</AGM.ExaoneOnCooldown>
+  <AGM.ExaoneNoRaiders>포효할 습격자가 없습니다.</AGM.ExaoneNoRaiders>
+  <AGM.ExaoneRetreatUsed>{0}명의 습격자가 도주합니다!</AGM.ExaoneRetreatUsed>
+  <AGM.ExaoneFrenzyUsed>{0}명의 습격자가 광란에 빠집니다!</AGM.ExaoneFrenzyUsed>
+  <AGM.ExaoneDamageUsed>피해의 포효가 {0}명의 습격자를 박살냅니다!</AGM.ExaoneDamageUsed>
 
 </LanguageData>

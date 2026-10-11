@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 設置 -->
-
-  <!-- 超頻 (Terminus) -->
   <AGM.OverclockLabel>超頻</AGM.OverclockLabel>
   <AGM.OverclockDesc>開啟輸出增幅：移動與工作速度翻倍，但會消耗內部備用能源。（當前儲備：{0}%）</AGM.OverclockDesc>
   <AGM.OverclockNoReserve>備用能源耗盡，無法重新啟動。</AGM.OverclockNoReserve>
   <AGM.OverclockReserveStatus>備用能源：{0}%</AGM.OverclockReserveStatus>
-
-  <!-- Mythos -->
   <AGM.MythosBusy>{0}正在使用其他技能。</AGM.MythosBusy>
-
   <AGM.ExoPhaseAdvanceLabel>AGM系列機甲進入階段 {0}</AGM.ExoPhaseAdvanceLabel>
   <AGM.ExoPhaseAdvanceText>{0}受到重創，進入戰斗階段 {1}：所有武器系統循環更快，分階段攻擊模式范圍更廣。</AGM.ExoPhaseAdvanceText>
   <AGM.ExoPhaseStatus>戰斗階段 {0} / {1}</AGM.ExoPhaseStatus>
@@ -22,7 +16,6 @@
   <AGM.AutoWeaponToggleDesc>開關該機甲的自動武器。</AGM.AutoWeaponToggleDesc>
   <AGM.DoomsdayRocketToggleLabel>切換末日火箭</AGM.DoomsdayRocketToggleLabel>
   <AGM.DoomsdayRocketToggleDesc>開關末日火箭齊射。默認關閉。</AGM.DoomsdayRocketToggleDesc>
-
   <AGM.GPUTowerInspect>IO代幣產量：{0}/天</AGM.GPUTowerInspect>
 
 </LanguageData>

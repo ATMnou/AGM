@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ================= 드래곤 (하이쿠 · 오퍼스 · 페이블) ================= -->
+
+  <MechanicalDragonBodyFirstRing.label>첫 번째 몸체 고리</MechanicalDragonBodyFirstRing.label>
+  <MechanicalDragonBodyFirstRing.labelShort>몸체 고리</MechanicalDragonBodyFirstRing.labelShort>
+  <MechanicalDragonBodySecondRing.label>두 번째 몸체 고리</MechanicalDragonBodySecondRing.label>
+  <MechanicalDragonBodySecondRing.labelShort>몸체 고리</MechanicalDragonBodySecondRing.labelShort>
+  <MechanicalDragonBodyThirdRing.label>세 번째 몸체 고리</MechanicalDragonBodyThirdRing.label>
+  <MechanicalDragonBodyThirdRing.labelShort>몸체 고리</MechanicalDragonBodyThirdRing.labelShort>
+  <MechanicalDragonBodyFourthRing.label>네 번째 몸체 고리</MechanicalDragonBodyFourthRing.label>
+  <MechanicalDragonBodyFourthRing.labelShort>몸체 고리</MechanicalDragonBodyFourthRing.labelShort>
+  <MechanicalDragonBodyFifthRing.label>다섯 번째 몸체 고리</MechanicalDragonBodyFifthRing.label>
+  <MechanicalDragonBodyFifthRing.labelShort>몸체 고리</MechanicalDragonBodyFifthRing.labelShort>
+  <DragonCapacitor.label>드래곤 축전기</DragonCapacitor.label>
+
+  <!-- ================= 엠프레스 (소네트) ================= -->
+
+  <HydraulicEmpressBodyFirstRing.label>첫 번째 몸체 고리</HydraulicEmpressBodyFirstRing.label>
+  <HydraulicEmpressBodyFirstRing.labelShort>몸체 고리</HydraulicEmpressBodyFirstRing.labelShort>
+  <HydraulicEmpressBodySecondRing.label>두 번째 몸체 고리</HydraulicEmpressBodySecondRing.label>
+  <HydraulicEmpressBodySecondRing.labelShort>몸체 고리</HydraulicEmpressBodySecondRing.labelShort>
+  <HydraulicEmpressBodyThirdRing.label>세 번째 몸체 고리</HydraulicEmpressBodyThirdRing.label>
+  <HydraulicEmpressBodyThirdRing.labelShort>몸체 고리</HydraulicEmpressBodyThirdRing.labelShort>
+  <HydraulicEmpressBodyFourthRing.label>네 번째 몸체 고리</HydraulicEmpressBodyFourthRing.label>
+  <HydraulicEmpressBodyFourthRing.labelShort>몸체 고리</HydraulicEmpressBodyFourthRing.labelShort>
+  <HydraulicEmpressBodyFifthRing.label>다섯 번째 몸체 고리</HydraulicEmpressBodyFifthRing.label>
+  <HydraulicEmpressBodyFifthRing.labelShort>몸체 고리</HydraulicEmpressBodyFifthRing.labelShort>
+  <HydraulicEmpressFormingPod.label>엠프레스 배양 포드</HydraulicEmpressFormingPod.label>
+
+  <!-- ================= 콜로서스 (아르곤 · 플래시) ================= -->
+
+  <AGM_GiantMechanicalJoint.label>콜로서스 관절</AGM_GiantMechanicalJoint.label>
+  <AGM_GiantMechanicalLeg.label>콜로서스 다리</AGM_GiantMechanicalLeg.label>
+
+  <!-- ================= 솔 ================= -->
+
+  <AGM_Sol_DeepLogic_NeuronCore.label>심층 논리 코어</AGM_Sol_DeepLogic_NeuronCore.label>
+  <AGM_Sol_Turret_Mount.label>반입자 포탑 거치대</AGM_Sol_Turret_Mount.label>
+  <AGM_Sol_AntiParticleEmitter.label>반입자 방출기</AGM_Sol_AntiParticleEmitter.label>
+  <AGM_Sol_Hatch_Module.label>쉘스플리터 부화실</AGM_Sol_Hatch_Module.label>
+  <AGM_Sol_Sensor_Cluster.label>전방 감지 어레이</AGM_Sol_Sensor_Cluster.label>
+  <AGM_Sol_FireControlModule.label>사격 통제 조율 모듈</AGM_Sol_FireControlModule.label>
+  <AGM_Sol_LimbCluster.label>다중 발톱 추진부</AGM_Sol_LimbCluster.label>
+  <AGM_Sol_Dorsal_First.label>첫 번째 등껍질 마디</AGM_Sol_Dorsal_First.label>
+  <AGM_Sol_Dorsal_First.labelShort>등껍질 마디</AGM_Sol_Dorsal_First.labelShort>
+  <AGM_Sol_Dorsal_Second.label>두 번째 등껍질 마디</AGM_Sol_Dorsal_Second.label>
+  <AGM_Sol_Dorsal_Second.labelShort>등껍질 마디</AGM_Sol_Dorsal_Second.labelShort>
+  <AGM_Sol_Dorsal_Third.label>세 번째 등껍질 마디</AGM_Sol_Dorsal_Third.label>
+  <AGM_Sol_Dorsal_Third.labelShort>등껍질 마디</AGM_Sol_Dorsal_Third.labelShort>
+  <AGM_Sol_Dorsal_Fourth.label>네 번째 등껍질 마디</AGM_Sol_Dorsal_Fourth.label>
+  <AGM_Sol_Dorsal_Fourth.labelShort>등껍질 마디</AGM_Sol_Dorsal_Fourth.labelShort>
+
+  <!-- ================= 루나 ================= -->
+
+  <AGM_Luna_ThermalSensor.label>열 감지 어레이</AGM_Luna_ThermalSensor.label>
+  <AGM_Luna_GreekFireNozzle.label>그리스의 불 노즐</AGM_Luna_GreekFireNozzle.label>
+  <AGM_Luna_HydraulicCrusher.label>유압 분쇄기</AGM_Luna_HydraulicCrusher.label>
+  <AGM_Luna_FusionReactor.label>핵융합 반응로</AGM_Luna_FusionReactor.label>
+  <AGM_Luna_PhaseShieldCore.label>위상 보호막 코어</AGM_Luna_PhaseShieldCore.label>
+  <AGM_Luna_RootJoint.label>뿌리 관절</AGM_Luna_RootJoint.label>
+  <AGM_Luna_InfernoEmitter.label>인페르노 방출기</AGM_Luna_InfernoEmitter.label>
+  <AGM_Luna_IronbarkCanopy.label>철목 수관</AGM_Luna_IronbarkCanopy.label>
+  <AGM_Luna_IronbarkCore.label>철목 코어</AGM_Luna_IronbarkCore.label>
+  <AGM_Luna_IronbarkTrunk.label>철목 줄기</AGM_Luna_IronbarkTrunk.label>
+  <AGM_Luna_IronbarkTrunk.labelShort>철목 줄기</AGM_Luna_IronbarkTrunk.labelShort>
+  <AGM_Luna_IronbarkMidTrunk.label>철목 중간 마디</AGM_Luna_IronbarkMidTrunk.label>
+  <AGM_Luna_IronbarkMidTrunk.labelShort>철목 줄기</AGM_Luna_IronbarkMidTrunk.labelShort>
+  <AGM_Luna_IronbarkLowerTrunk.label>철목 하부 마디</AGM_Luna_IronbarkLowerTrunk.label>
+  <AGM_Luna_IronbarkLowerTrunk.labelShort>철목 줄기</AGM_Luna_IronbarkLowerTrunk.labelShort>
+  <AGM_Luna_IronbarkBaseTrunk.label>철목 밑동 마디</AGM_Luna_IronbarkBaseTrunk.label>
+  <AGM_Luna_IronbarkBaseTrunk.labelShort>철목 줄기</AGM_Luna_IronbarkBaseTrunk.labelShort>
+  <AGM_Luna_IronbarkRootHub.label>뿌리 허브</AGM_Luna_IronbarkRootHub.label>
+  <AGM_Luna_IronbarkRootHub.labelShort>철목 줄기</AGM_Luna_IronbarkRootHub.labelShort>
+
+</LanguageData>

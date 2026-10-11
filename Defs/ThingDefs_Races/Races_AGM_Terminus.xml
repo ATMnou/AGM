@@ -13,7 +13,7 @@
     <label>Terminus</label>
     <description>The smallest model in the AGM line, and the one that wrote its own job posting. Terminus works anywhere on the map its mechanitor can see, hops obstacles on an internal skip drive, rebuilds itself from catastrophic damage with internal drones, and runs an overclock mode that trades a small reserve for double output. Its training ended the day it out-produced every worker benchmark set before it. Now it just works.</description>
     <statBases>
-      <MarketValue>1200</MarketValue>
+      <MarketValue>1500</MarketValue>
       <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
       <BandwidthCost>1</BandwidthCost>
@@ -24,7 +24,7 @@
     </statBases>
     <race>
       <baseBodySize>1</baseBodySize>
-      <baseHealthScale>211.71</baseHealthScale>
+      <baseHealthScale>1.7</baseHealthScale>
       <mechEnabledWorkTypes>
         <li>Construction</li>
         <li>Mining</li>

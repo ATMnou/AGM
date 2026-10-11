@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Thought_CommandAura.description>Command A+が戦場に投げかける存在感の中にいます。すべては統制されている模様。どうやら代理で。</AGM_Thought_CommandAura.description>
+  <AGM_Thought_CommandAura.stages.0.label>指揮の威圧の下</AGM_Thought_CommandAura.stages.0.label>
+  <AGM_Thought_CommandAura.stages.0.description>Command A+が戦場に投げかける存在感の中にいます。すべては統制されている模様。どうやら代理で。</AGM_Thought_CommandAura.stages.0.description>
+
+  <AGM_Thought_MuseInspiration.description>Muse Sparkのインスピレーションフィールドが稼働中です。世界が、書き終えたい草稿のように読めます。</AGM_Thought_MuseInspiration.description>
+  <AGM_Thought_MuseInspiration.stages.0.label>ミューズスパーク</AGM_Thought_MuseInspiration.stages.0.label>
+  <AGM_Thought_MuseInspiration.stages.0.description>Muse Sparkのインスピレーションフィールドが稼働中です。世界が、書き終えたい草稿のように読めます。</AGM_Thought_MuseInspiration.stages.0.description>
+
+  <AGM_Thought_QwenIdol.description>Qwenのアイドル配信が生放送中です。士気は義務で、サビは中毒性があります。</AGM_Thought_QwenIdol.description>
+  <AGM_Thought_QwenIdol.stages.0.label>アイドルプロトコル</AGM_Thought_QwenIdol.stages.0.label>
+  <AGM_Thought_QwenIdol.stages.0.description>Qwenのアイドル配信が生放送中です。士気は義務で、サビは中毒性があります。</AGM_Thought_QwenIdol.stages.0.description>
+
+</LanguageData>

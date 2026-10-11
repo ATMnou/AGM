@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_MythosJump.label>跃升</AGM_MythosJump.label>
+  <AGM_MythosJump.description>高高跃起砸向目标地点，对落点内的敌人造成可怕的压制伤害。</AGM_MythosJump.description>
+  <AGM_MythosSuspend.label>等离子清扫</AGM_MythosSuspend.label>
+  <AGM_MythosSuspend.description>启动重力驱动悬浮于空中，向下方喷洒等离子体，扫除范围内的一切。</AGM_MythosSuspend.description>
+  <AGM_MythosJumpAndSuspend.label>跃升清扫</AGM_MythosJumpAndSuspend.label>
+  <AGM_MythosJumpAndSuspend.description>高高跃起后在目标地上空悬停，喷洒等离子体扫除四周。</AGM_MythosJumpAndSuspend.description>
+  <AGM_ChargeBlast.label>充能爆破</AGM_ChargeBlast.label>
+  <AGM_ChargeBlast.description>将能量凝聚于核心，发射爆炸性能量弹头。</AGM_ChargeBlast.description>
+  <AGM_PlasmaBlast.label>等离子爆破</AGM_PlasmaBlast.label>
+  <AGM_PlasmaBlast.description>将能量凝聚于核心，发射超高热等离子弹头。</AGM_PlasmaBlast.description>
+  <AGM_AntiOrganicGrenade.label>反有机手雷</AGM_AntiOrganicGrenade.label>
+  <AGM_AntiOrganicGrenade.description>发射装满反有机纳米机器人的爆炸弹头，对15.9格爆炸半径内的有机体造成残酷伤害。</AGM_AntiOrganicGrenade.description>
+  <AGM_PsychicBlast.label>灵能爆破</AGM_PsychicBlast.label>
+  <AGM_PsychicBlast.description>无视一切障碍，在指定地点引发灵能爆破。</AGM_PsychicBlast.description>
+  <AGM_BladeShot.label>利刃射击</AGM_BladeShot.label>
+  <AGM_BladeShot.description>从两侧突出的利刃角发射剃刀般锋利的刀片。</AGM_BladeShot.description>
+  <AGM_AntiOrganicBlast.label>反有机爆破</AGM_AntiOrganicBlast.label>
+  <AGM_AntiOrganicBlast.description>发射超高爆性的反有机弹头。</AGM_AntiOrganicBlast.description>
+  <AGM_AntiOrganicOrbitalStrike.label>反有机轨道轰炸</AGM_AntiOrganicOrbitalStrike.label>
+  <AGM_AntiOrganicOrbitalStrike.description>释放机械之怒，向肮脏的有机体倾泻反有机轨道轰炸。</AGM_AntiOrganicOrbitalStrike.description>
+  <AGM_DeathRay.label>死亡射线</AGM_DeathRay.label>
+  <AGM_DeathRay.description>发射死亡射线，将目标的身体机能削减至35%，并有20%概率使其当场死亡。</AGM_DeathRay.description>
+
+</LanguageData>

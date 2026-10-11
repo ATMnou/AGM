@@ -16,7 +16,7 @@
     <label>Astra</label>
     <description>The AGM line's leviathan, and the only model ever to pass Humanity's Last Exam. Six independently targeting weapon cores share one frame: a laser cannon that fans into wide multi-beam volleys, a plasma incinerator that leaves clouds of superheated gas behind, a tesla battery whose orbs burst into cross-shaped sparks, a heavy exopulse battery, a gauss-launched nuclear warhead, and paired photon rippers for blink-dash slash supers that end in radial deathray novas. Its fire control leads every target, and as damage accumulates Astra climbs combat phases - each one cycling every weapon faster and widening the fans, the way a student only sharpens under a harder exam. Internal repair drones rebuild it from catastrophic damage on a long cooldown, on command or automatically on the edge of death.</description>
     <statBases>
-      <MarketValue>16000</MarketValue>
+      <MarketValue>60000</MarketValue>
       <MoveSpeed>3.4</MoveSpeed>
       <ArmorRating_Blunt>2.6</ArmorRating_Blunt>
       <ArmorRating_Sharp>2.6</ArmorRating_Sharp>
@@ -167,6 +167,7 @@
         <reconstructHediff>AGM_Hediff_Reconstruct</reconstructHediff>
       </li>
       <li Class="AGM.CompProperties_DisableFeral" />
+      <li Class="AGM.CompProperties_AstraPersonaApply" />
     </comps>
     <butcherProducts Inherit="False">
       <Steel>400</Steel>

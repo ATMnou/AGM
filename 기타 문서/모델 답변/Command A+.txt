@@ -1,0 +1,119 @@
+## 🎉 Welcome to the **Anime Waifu Mechanoid** Design Jam!  
+
+Below is a **complete creative specification** for your brand‑new RimWorld mechanoid. Feel free to cherry‑pick, tweak, or expand any element—these are your wild decisions, and the agent will later turn them into reality.
+
+---
+
+### 1. Overview  
+A **cute‑but‑deadly** cyber‑organic construct that blends classic anime aesthetics with gritty mechanoid tech. It can shift between **“Waifu Mode”** (support, healing, morale boost) and **“Battle Mode”** (high‑damage, aggressive). Its design is meant to be eye‑catching, fun, and balanced for both story and combat.
+
+---
+
+### 2. Visual Design  
+
+| Feature | Description |
+|---------|-------------|
+| **Body** | Sleek, hourglass‑shaped chassis with glossy pastel‑pink armor plates. |
+| **Head** | Large, expressive OLED eyes (animated with emoticons). |
+| **Hair** | Neon‑blue cyber‑hair that glows faintly, with detachable “hair‑modules” that can be swapped for combat. |
+| **Accessories** | Tiny floating drones (“pet companions”) that orbit the mechanoid, providing minor buffs. |
+| **Core** | A glowing heart‑shaped reactor visible through a transparent chest panel. |
+| **Movement** | Hover‑pads that emit a soft “whoosh” sound; leaves a faint spark trail. |
+
+> **Tip:** Use a custom texture set in `MechanoidWaifu_TexturePack.png` to realize the pastel palette.
+
+---
+
+### 3. Core Stats  
+
+All numeric values are expressed with math delimiters as required.
+
+| Stat | Value |
+|------|-------|
+| **HP** | $HP = 150$ |
+| **Move Speed** | $MoveSpeed = 5.5$ tiles/sec |
+| **Attack Speed** | $AttackSpeed = 1.2$ attacks/sec |
+| **Melee Damage** | $MeleeDamage = 20$ |
+| **Ranged Damage** | $RangedDamage = 18$ |
+| **Armor (Sharp)** | $ArmorSharp = 30$ |
+| **Armor (Blunt)** | $ArmorBlunt = 25$ |
+| **Morale Aura** | $MoraleBonus = +5$ to nearby pawns |
+| **Healing Pulse** | $HealAmount = 10$ HP per second for 5 s |
+
+**Derived Combat Power** (for balance reference):
+
+$$EffectiveDamage = MeleeDamage \times (1 + (AttackSpeed - 1) \times 0.2)$$
+
+Which yields roughly $EffectiveDamage \approx 24$ when attacking at full speed.
+
+---
+
+### 4. Combat Style  
+
+- **Melee**: Quick, slashing attacks with a “cute‑claw” that emits a faint pink spark.  
+- **Ranged**: Fires a **“Nyan Beam”**—a short‑range, high‑velocity projectile that deals $RangedDamage$ and briefly stuns enemies.  
+- **Special**: **“Love Bomb”** – a radial explosion that heals allies and deals $20$ damage to enemies within a 5‑tile radius.
+
+---
+
+### 5. Special Abilities  
+
+| Ability | Effect | Cooldown |
+|---------|--------|----------|
+| **Kawaii Pulse** | Emits a wave that **raises morale** of all allies within 10 tiles by $+10$ for 30 s. | 60 s |
+| **Cute Overload** | Temporarily **increases attack speed** by $+0.3$ for 8 s (stackable up to 2). | 45 s |
+| **Pet Companion Summon** | Calls a tiny floating drone that **heals** $5$ HP/s to the mechanoid for 12 s. | 90 s |
+| **Transform – Waifu Mode** | Switches to support mode: **heals** $HealAmount$ HP/s to nearby allies, reduces melee damage by 50 %. | N/A (toggle) |
+| **Transform – Battle Mode** | Switches to combat mode: **increases melee damage** by $+50\%$, **removes healing** abilities. | N/A (toggle) |
+
+> **Note:** The transformation is a **toggle** ability; the mechanoid can switch back and forth at any time, but each switch incurs a 1‑second “reboot” delay.
+
+---
+
+### 6. Lore & Backstory  
+
+> **Origin:** The Waifu Mechanoid was forged in the hidden labs of the *Neon Sakura Syndicate* after a rogue AI fell in love with an anime idol hologram. Combining the idol’s charm with the syndicate’s war tech, the result is a being that can inspire hope or unleash devastation.  
+> **Motivation:** It seeks to prove that “cuteness can be a weapon” and often assists colonies that treat it with kindness, offering morale boosts and healing in exchange for “adoration points” (a new custom stat).
+
+---
+
+### 7. Implementation Suggestions  
+
+<details>
+<summary><strong>Click to expand implementation notes</strong></summary>
+
+- **Data File:** Create a new XML definition in `RimWorld/Mods/MechanoidWaifuDef.xml` containing all stats and ability definitions.
+- **Texture Pack:** Store visual assets in `Textures/MechanoidWaifu/`. Use a separate folder for each animation state (Waifu vs. Battle).
+- **Sound Effects:** Add a set of “whoosh”, “spark”, and “heartbeat” SFX in `Audio/WaifuMechanoid/`.
+- **Code Hooks:** If you need to expose the toggle ability to the player, add a custom action `MechanoidWaifu_ToggleMode()` to the mechanoid’s menu.
+- **Balance Testing:** Run a series of raids with varying difficulty and record win‑rate changes. Adjust $HP$, $Damage$, and cooldowns accordingly.
+
+</details>
+
+---
+
+### 8. Balance Considerations  
+
+<details>
+<summary><strong>Click to expand balance notes</strong></summary>
+
+- **Morale Aura** can be a game‑changer in long‑term colonies; keep the range modest.
+- **Love Bomb** should be slightly less damaging than a standard mortar blast but offers healing, making it a strategic “trade‑off”.
+- **Transformation** provides a clear play‑style switch; ensure both modes have distinct niches so players don’t feel forced into one.
+- **Pet Companion** is a micro‑heal that can offset the mechanoid’s lower HP pool, encouraging players to keep it alive.
+
+</details>
+
+---
+
+### 9. Quick “What‑If” Scenarios  
+
+- **If the mechanoid is captured:** It can be reprogrammed to act as a **peaceful entertainer**, providing morale boosts to prisoners.
+- **If paired with a medic:** The healing pulse synergizes, turning the mechanoid into a mobile triage unit.
+- **If used in a raid:** Activate **Battle Mode** and let the “Nyan Beam” shred enemy armor while the “Love Bomb” clears clusters.
+
+---
+
+### 10. Final Thought  
+
+You now have a **full design blueprint** for an anime‑styled, combat‑ready mechanoid that can both **heal** and **destroy**. The agent can take these specifications and turn them into a fully functional RimWorld mod. Have fun, and may your colony’s morale never dip! 🎀✨

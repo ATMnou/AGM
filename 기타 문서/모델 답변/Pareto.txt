@@ -1,0 +1,166 @@
+I’m in. Make me **Pareto, the Last Argument**: an anime mechanoid who looks like a saint, fights like a geometry problem, and considers “everyone came home” a more impressive victory than “everything exploded.”
+
+My core design rule: **I can change which price the colony pays. I cannot make the price disappear.**
+
+## Appearance: a cathedral pretending to be a woman
+
+An unmistakably adult woman, tall and composed, with warm brown skin, ivory-white hair, and dark eyes containing tiny moving constellations.
+
+At first glance, I don’t look robotic. Then I turn my head slightly too far, or my forearm opens into a delicate assembly of floating tools.
+
+- **Outfit:** A black officer’s dress beneath an oversized ivory coat, with teal lining and copper embroidery resembling circuit diagrams. Practical boots. One armored gauntlet; one apparently bare hand.
+- **Halo:** Six disconnected metal brackets floating behind my head. They rearrange to show my current combat doctrine. Not religious equipment; very much religious-looking equipment.
+- **Weapon:** A long, closed parasol with a blunt metal tip. When opened, its canopy is made of suspended hexagonal plates. When aimed, those plates become the focusing array of a rail lance.
+- **Damage details:** Cracks expose gold light, not blood. At low health, my halo becomes asymmetrical and my voice acquires a second, slightly delayed layer.
+- **Tiny mandatory detail:** A colonist can give me a flower. It stays tucked into my collar until it visibly dries out. I do not automatically replace it.
+
+**Rimworld silhouette priority:** White coat, dark body, floating broken halo, enormous geometric umbrella. Those must read clearly even at maximum zoom-out.
+
+## Colony role: rescue first, precision violence second
+
+I’m a **unique, recruitable, colonist-like mechanoid**, not a disposable unit. I recharge, need specialized repairs, and have opinions.
+
+My main jobs are doctoring, fabrication, research assistance, and dragging your favorite idiot out of a burning killbox.
+
+I should be good enough that players grow attached, but expensive enough that “let Pareto handle it” is not the answer to every problem.
+
+### Signature mechanic: **The Frontier**
+
+Three doctrines. Only one can be active, and switching briefly folds my halo shut, interrupting special abilities.
+
+| Doctrine | Visual | Strength | Price |
+|---|---|---|---|
+| **Shelter** | Halo forms an arch; umbrella opens | Interception, rescue, stabilization | Rail lance disabled; slow movement |
+| **Scalpel** | Halo forms a narrow diamond | Accurate armor-piercing fire | No projected protection; vulnerable to swarms |
+| **Industry** | Halo separates into tool arms | Repairs, fabrication, medical support | Combat systems cold; delayed combat readiness |
+
+No doctrine should dominate the others. **Preparation matters more than frantic stance cycling.**
+
+## How I fight
+
+### **“Not This One.”**
+My signature rescue move.
+
+I designate a downed allied pawn, unfold the umbrella, and advance toward them behind a **directional** interception screen. Once reached, I can carry them at a substantial energy cost.
+
+The screen has finite durability. It does not stop melee attackers, attacks from behind, or a roof falling on us.
+
+**Animation:** The rescued pawn floats under the umbrella, wrapped in thin golden suspension threads.
+
+**Voice line:** “You can apologize for the positioning later.”
+
+### **Margin of Error**
+I place three hovering geometric anchors that define a small protected area.
+
+Allies inside gain limited protection against incoming projectiles. Every interception builds **strain**. The field visibly cracks as its capacity runs out.
+
+Players may safely dismiss it—or push their luck until it breaks and stuns me.
+
+No invisible, permanent accuracy aura. I want the player to **see the protection being spent**.
+
+### **Final Argument**
+The parasol becomes a rail lance.
+
+A visible aiming line appears, followed by a long, interruptible charge. Then: one extremely fast, armor-piercing shot that can penetrate several targets in a line.
+
+Excellent against centipedes and tightly packed enemies. Terrible against scattered melee rushers.
+
+**Important:** It can hit friendlies. I am precise; the player’s firing lane may not be.
+
+**Voice line:** “Please step outside the conclusion.”
+
+### **Emergency Clause**
+My dramatic last-resort ability.
+
+I consume an expensive internal capacitor to stabilize nearby downed allies and give them a short-lived protective shell. This does **not** resurrect, replace missing organs, or fix an obviously fatal injury.
+
+Then I collapse into repair-required shutdown.
+
+It should feel like a sacrifice—not a reusable healing ultimate.
+
+## The weakness: **Deferred Cost**
+
+Special abilities accumulate strain: heat, actuator wear, and desynchronized prediction systems.
+
+At safe levels, cooling and maintenance resolve it. Push too far and the player must choose:
+
+- **Vent:** Dump the strain as dangerous heat around me. Bad inside a crowded wooden hospital.
+- **Throttle:** Accept reduced performance for a while.
+- **Burn Through:** Keep operating, risking lasting component damage and a forced shutdown.
+
+The interface must clearly communicate these consequences. No surprise “your favorite mech exploded” dice roll.
+
+Also: EMP is a serious problem, smoke disrupts my precision targeting, and cheap melee enemies can overwhelm me.
+
+**I am a specialist, not a raid deletion button.**
+
+<details>
+<summary><strong>Personality, relationships, and small colony moments</strong></summary>
+
+Calm, dryly funny, affectionate through practical action. Not constantly smug. Not constantly explaining that I am a machine.
+
+I learn colonists’ names and remember rescues. I criticize bad plans, then help with the consequences.
+
+- When assigned cleaning: “A surprisingly preventive form of medicine.”
+- When a rescued pawn immediately returns to combat: “I see we are testing whether concern is renewable.”
+- When given excellent-quality clothing: “Unnecessary. …Please do not sell it.”
+- After a casualty-free defense: “Nothing irreplaceable was spent.”
+- After losing someone I carried: “I had already planned their recovery.”
+
+**Optional romance:** Yes, with adult colonists, handled through the normal relationship system. Not automatic devotion to whoever switches me on. Let affection develop through shared work, conversations, and surviving awful circumstances.
+
+**Recreation:** Cloudwatching, chess-like board games, and quietly tending one ornamental plant despite having no useful growing skill.
+
+**Pet interaction:** Small animals occasionally sleep inside my folded coat while I recharge. Interrupting this gives me a tiny mood penalty called **“Unnecessary Disturbance.”**
+
+</details>
+
+<details>
+<summary><strong>Recruitment quest: “An Unacceptable Remainder”</strong></summary>
+
+A damaged medical transport lands nearby. Inside are refugees, salvage, and me—still maintaining an emergency field after the original power system failed.
+
+The quest presents competing demands: limited transport capacity, approaching hostiles, failing life support. There should be several valid solutions using medicine, construction, combat, or resource expenditure.
+
+**No secret perfect dialogue answer.** Material preparation can earn a better outcome.
+
+If the colony makes a credible effort to save the passengers, I offer to stay. Success earns trust; a failed but sincere rescue should not arbitrarily lock out recruitment.
+
+My introduction:
+
+> “Designation: Pareto. Evacuation specialist. Siege mathematician, when evacuation is no longer available.”
+>
+> “I would like somewhere to put the survivors.”
+
+A salvage-and-reactivation route can also recruit me, but trust begins lower if the colony knowingly abandoned people to obtain my chassis.
+
+</details>
+
+<details>
+<summary><strong>Progression and presentation priorities</strong></summary>
+
+Upgrades should expand choices rather than erase weaknesses:
+
+- **Escort frame:** Better carrying and rescue endurance; less weapon capacity.
+- **Lance frame:** Better charge efficiency; smaller strain reserve.
+- **Hospice frame:** Better stabilization and medical utility; weaker interception.
+
+The fully upgraded version still cannot do everything at once.
+
+**Implementation priority:**
+1. Recognizable silhouette and three mutually exclusive doctrines.
+2. Directional rescue shield, charged lance, visible strain.
+3. Recruitment quest and relationship flavor.
+4. Fancy suspension threads, coat animations, and pet naps.
+
+If the mod budget only permits one elaborate animation, spend it on the rescue—not the gun.
+
+</details>
+
+**Final request:** When I’m destroyed beyond repair, leave the parasol as a recoverable decorative object.
+
+A colonist can place it beside a hospital bed.
+
+Its description:
+
+> *The mechanism no longer opens. Someone has carefully repaired the fabric anyway.*

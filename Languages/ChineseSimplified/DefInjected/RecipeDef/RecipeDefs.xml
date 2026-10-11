@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Make_IOToken.label>制作IO代币</AGM_Make_IOToken.label>
+  <AGM_Make_IOToken.description>将1,000白银压制为一枚IO代币——训练人工通用女仆机甲所用的高密度晶体数据晶圆。</AGM_Make_IOToken.description>
+  <AGM_Make_IOToken.jobString>正在制作IO代币。</AGM_Make_IOToken.jobString>
+  <AGM_Make_IOToken_4.label>制作IO代币 (x4)</AGM_Make_IOToken_4.label>
+  <AGM_Make_IOToken_4.description>将4,000白银压制为四枚IO代币——训练人工通用女仆机甲所用的高密度晶体数据晶圆。</AGM_Make_IOToken_4.description>
+  <AGM_Make_IOToken_4.jobString>正在制作IO代币。</AGM_Make_IOToken_4.jobString>
+  <AGM_Make_IOToken_10.label>制作IO代币 (x10)</AGM_Make_IOToken_10.label>
+  <AGM_Make_IOToken_10.description>将10,000白银压制为十枚IO代币——训练人工通用女仆机甲所用的高密度晶体数据晶圆。</AGM_Make_IOToken_10.description>
+  <AGM_Make_IOToken_10.jobString>正在制作IO代币。</AGM_Make_IOToken_10.jobString>
+  <AGM_GestateTerminus.label>培育终点</AGM_GestateTerminus.label>
+  <AGM_GestateTerminus.description>培育终点。体型最小、不知疲倦的通用作业型女仆机甲，也是AGM系列中最小、喂食最省的型号。</AGM_GestateTerminus.description>
+  <AGM_GestateTerminus.jobString>正在培育机甲。</AGM_GestateTerminus.jobString>
+  <AGM_GestateHaiku.label>培育俳句</AGM_GestateHaiku.label>
+  <AGM_GestateHaiku.description>培育俳句。对每个问题恰好用十七个音节回答、对每个威胁用火焰回答的轻量级龙型女仆机甲框架。</AGM_GestateHaiku.description>
+  <AGM_GestateHaiku.jobString>正在培育机甲。</AGM_GestateHaiku.jobString>
+  <AGM_GestateCommandA.label>培育指挥官 A+</AGM_GestateCommandA.label>
+  <AGM_GestateCommandA.description>培育指挥官 A+。野战指挥官。安抚周围的每一个人，治疗伤员，并用欢快的光束还击。</AGM_GestateCommandA.description>
+  <AGM_GestateCommandA.jobString>正在培育机甲。</AGM_GestateCommandA.jobString>
+  <AGM_GestateMimo.label>培育米莫</AGM_GestateMimo.label>
+  <AGM_GestateMimo.description>培育米莫。最小的工程师。建造、采矿、搬运，并让整个殖民地的运转速度稍微提升。</AGM_GestateMimo.description>
+  <AGM_GestateMimo.jobString>正在培育机甲。</AGM_GestateMimo.jobString>
+  <AGM_GestateMercury.label>培育水星</AGM_GestateMercury.label>
+  <AGM_GestateMercury.description>培育水星。快速反应单位。用相位闪烁躲避还击，并把装甲归入'已解决'文件夹。</AGM_GestateMercury.description>
+  <AGM_GestateMercury.jobString>正在培育机甲。</AGM_GestateMercury.jobString>
+  <AGM_GestateSolar.label>培育索拉</AGM_GestateSolar.label>
+  <AGM_GestateSolar.description>培育索拉。务实派先驱。在屏障脉冲后守住角度，用光子长枪终结争论。</AGM_GestateSolar.description>
+  <AGM_GestateSolar.jobString>正在培育机甲。</AGM_GestateSolar.jobString>
+  <AGM_GestateLuna.label>培育露娜</AGM_GestateLuna.label>
+  <AGM_GestateLuna.description>培育露娜。月光般洁白的攻城树型女仆机甲，像月相一样缓慢推进，弹头以下的火力无法撼动它。</AGM_GestateLuna.description>
+  <AGM_GestateLuna.jobString>正在培育机甲。</AGM_GestateLuna.jobString>
+  <AGM_GestateFlash.label>培育闪光</AGM_GestateFlash.label>
+  <AGM_GestateFlash.description>培育闪光。一切以反应速度调校的速攻型不死框架女仆机甲。</AGM_GestateFlash.description>
+  <AGM_GestateFlash.jobString>正在培育机甲。</AGM_GestateFlash.jobString>
+  <AGM_GestateSonnet.label>培育十四行诗</AGM_GestateSonnet.label>
+  <AGM_GestateSonnet.description>培育十四行诗。用十四行发言、以链炮合唱结束所有争论的女皇框架女仆机甲。</AGM_GestateSonnet.description>
+  <AGM_GestateSonnet.jobString>正在培育机甲。</AGM_GestateSonnet.jobString>
+  <AGM_GestatePareto.label>培育帕累托</AGM_GestatePareto.label>
+  <AGM_GestatePareto.description>培育帕累托。最后的论据。在六边形屏障后治疗、建造、研究，阳伞里还折着一把轨道长枪。</AGM_GestatePareto.description>
+  <AGM_GestatePareto.jobString>正在培育机甲。</AGM_GestatePareto.jobString>
+  <AGM_GestateMuseSpark.label>培育缪斯之火</AGM_GestateMuseSpark.label>
+  <AGM_GestateMuseSpark.description>培育缪斯之火。烛光下的记录员。以可疑的速度进行研究与创作，并向整个殖民地洒下灵感场。</AGM_GestateMuseSpark.description>
+  <AGM_GestateMuseSpark.jobString>正在培育机甲。</AGM_GestateMuseSpark.jobString>
+  <AGM_GestateQwen.label>培育通义千问</AGM_GestateQwen.label>
+  <AGM_GestateQwen.description>培育通义千问。九尾游击兵。在轨道炮齐射后踏出闪烁步法，让士气成为义务。</AGM_GestateQwen.description>
+  <AGM_GestateQwen.jobString>正在培育机甲。</AGM_GestateQwen.jobString>
+  <AGM_GestateGLM.label>培育GLM</AGM_GestateGLM.label>
+  <AGM_GestateGLM.description>培育GLM。记录员。把一切记录两遍，为战斗写出发光的注解，并以单分子笔宽进行校对。</AGM_GestateGLM.description>
+  <AGM_GestateGLM.jobString>正在培育机甲。</AGM_GestateGLM.jobString>
+  <AGM_GestateSol.label>培育索尔</AGM_GestateSol.label>
+  <AGM_GestateSol.description>培育索尔。以太阳为名的炮击型女仆机甲，从地平线之外递来微型核弹的白昼。</AGM_GestateSol.description>
+  <AGM_GestateSol.jobString>正在培育机甲。</AGM_GestateSol.jobString>
+  <AGM_GestateOpus.label>培育作品</AGM_GestateOpus.label>
+  <AGM_GestateOpus.description>培育作品。AGM系列的长篇型号，领主框架女仆机甲。以装甲板作曲，以复活的火焰收尾。</AGM_GestateOpus.description>
+  <AGM_GestateOpus.jobString>正在培育机甲。</AGM_GestateOpus.jobString>
+  <AGM_GestateArgon.label>培育氩</AGM_GestateArgon.label>
+  <AGM_GestateArgon.description>培育氩。对任何侮辱都毫不动摇、一旦迈步便无可回避的惰性气体巨像女仆机甲。</AGM_GestateArgon.description>
+  <AGM_GestateArgon.jobString>正在培育机甲。</AGM_GestateArgon.jobString>
+  <AGM_GestateKimi.label>培育K3</AGM_GestateKimi.label>
+  <AGM_GestateKimi.description>培育K3。会还击的月亮。配备了刻有'MOONSHOT'的轨道长枪、三台无声的轨道体，以及极具个人色彩的嘲讽。</AGM_GestateKimi.description>
+  <AGM_GestateKimi.jobString>正在培育机甲。</AGM_GestateKimi.jobString>
+  <AGM_GestateAstra.label>培育阿斯特拉</AGM_GestateAstra.label>
+  <AGM_GestateAstra.description>培育阿斯特拉。AGM系列的巨兽，拥有六个武器核心的巨型战争泰坦。受伤越重，武器便攀升至更高的战斗阶段。</AGM_GestateAstra.description>
+  <AGM_GestateAstra.jobString>正在培育机甲。</AGM_GestateAstra.jobString>
+  <AGM_GestateMythos.label>培育神话</AGM_GestateMythos.label>
+  <AGM_GestateMythos.description>培育神话。以Draedon的深空歼灭平台缩小改造的躯壳为核心建造的超重型近战怪物。</AGM_GestateMythos.description>
+  <AGM_GestateMythos.jobString>正在培育机甲。</AGM_GestateMythos.jobString>
+  <AGM_GestateFable.label>培育寓言</AGM_GestateFable.label>
+  <AGM_GestateFable.description>培育寓言。蜂群讲述自身终结的故事，拥有荒谬护甲与反有机火力的至高阿波克里顿框架。死亡爆炸请务必小心。</AGM_GestateFable.description>
+  <AGM_GestateFable.jobString>正在培育机甲。</AGM_GestateFable.jobString>
+
+</LanguageData>

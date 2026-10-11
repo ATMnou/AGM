@@ -1,0 +1,583 @@
+##### AbilityDef / AbilityDefs.xml
+AGM_MythosJump.label	도약
+AGM_MythosJump.description	높이 뛰어올라 목표 지점에 착지하며, 착지 지점 안의 적에게 무시무시하게 짓누르는 피해를 입힙니다.
+AGM_MythosSuspend.label	플라스마 소탕
+AGM_MythosSuspend.description	중력구동기를 가동해 공중에 떠오른 채, 아래로 플라스마를 뿌려 범위 안의 모든 것을 쓸어버립니다.
+AGM_MythosJumpAndSuspend.label	도약 후 소탕
+AGM_MythosJumpAndSuspend.description	높이 뛰어오른 뒤 목표 지점 상공에서 공중에 멈춰 서서, 플라스마를 뿌려 쓸어버립니다.
+AGM_ChargeBlast.label	충전 폭발
+AGM_ChargeBlast.description	코어에 에너지를 집중시켜 폭발성 에너지 탄두를 발사합니다.
+AGM_PlasmaBlast.label	플라스마 폭발
+AGM_PlasmaBlast.description	코어에 에너지를 집중시켜 초고열 플라스마 탄두를 발사합니다.
+AGM_AntiOrganicGrenade.label	대유기체 수류탄
+AGM_AntiOrganicGrenade.description	대유기체 나노봇이 가득 든 폭발성 탄두를 발사해, 폭발 반경 15.9 안의 유기체에게 잔혹한 피해를 입힙니다.
+AGM_PsychicBlast.label	초능력 폭발
+AGM_PsychicBlast.description	장애물을 모두 무시하고 원하는 지점에 초능력 폭발을 일으킵니다.
+AGM_BladeShot.label	칼날 발사
+AGM_BladeShot.description	양옆으로 돌출된 칼날 뿔로 면도날처럼 날카로운 칼날을 쏘아 보냅니다.
+AGM_AntiOrganicBlast.label	대유기체 폭발
+AGM_AntiOrganicBlast.description	초고폭발성 대유기체 탄두를 발사합니다.
+AGM_AntiOrganicOrbitalStrike.label	대유기체 궤도 폭격
+AGM_AntiOrganicOrbitalStrike.description	기계의 분노를 풀어, 더러운 유기체들에게 대유기체 궤도 폭격을 퍼붓습니다.
+AGM_DeathRay.label	데스레이
+AGM_DeathRay.description	대상의 신체 기능을 35%까지 떨어뜨리고, 20% 확률로 즉사시키는 데스레이를 발사합니다.
+##### BodyDef / BodyDefs.xml
+AGM_Body_Fable.label	최상위 아포크리톤
+AGM_Body_Fable.corePart.parts.0.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Body_Fable.corePart.parts.0.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Body_Fable.corePart.parts.0.parts.0.parts.3.customLabel	왼쪽 청각 감지기
+AGM_Body_Fable.corePart.parts.0.parts.0.parts.4.customLabel	오른쪽 청각 감지기
+AGM_Body_Fable.corePart.parts.1.customLabel	왼쪽 앞다리
+AGM_Body_Fable.corePart.parts.1.parts.0.customLabel	왼쪽 앞발
+AGM_Body_Fable.corePart.parts.2.customLabel	오른쪽 앞다리
+AGM_Body_Fable.corePart.parts.2.parts.0.customLabel	오른쪽 앞발
+AGM_Body_Fable.corePart.parts.3.customLabel	왼쪽 뒷다리
+AGM_Body_Fable.corePart.parts.3.parts.0.customLabel	왼쪽 뒷발
+AGM_Body_Fable.corePart.parts.4.customLabel	오른쪽 뒷다리
+AGM_Body_Fable.corePart.parts.4.parts.0.customLabel	오른쪽 뒷발
+AGM_Body_Fable.corePart.parts.7.customLabel	구형 포탑
+AGM_Body_Warlord.label	드래곤 워로드
+AGM_Body_Warlord.corePart.parts.0.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Body_Warlord.corePart.parts.0.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Body_Warlord.corePart.parts.0.parts.0.parts.3.customLabel	왼쪽 청각 감지기
+AGM_Body_Warlord.corePart.parts.0.parts.0.parts.4.customLabel	오른쪽 청각 감지기
+AGM_Body_Warlord.corePart.parts.1.customLabel	왼쪽 앞다리
+AGM_Body_Warlord.corePart.parts.1.parts.0.customLabel	왼쪽 앞발
+AGM_Body_Warlord.corePart.parts.2.customLabel	오른쪽 앞다리
+AGM_Body_Warlord.corePart.parts.2.parts.0.customLabel	오른쪽 앞발
+AGM_Body_Warlord.corePart.parts.3.customLabel	왼쪽 뒷다리
+AGM_Body_Warlord.corePart.parts.3.parts.0.customLabel	왼쪽 뒷발
+AGM_Body_Warlord.corePart.parts.4.customLabel	오른쪽 뒷다리
+AGM_Body_Warlord.corePart.parts.4.parts.0.customLabel	오른쪽 뒷발
+AGM_Body_Empress.label	엠프레스
+AGM_Body_Empress.corePart.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Body_Empress.corePart.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Body_Empress.corePart.parts.0.parts.3.customLabel	왼쪽 청각 감지기
+AGM_Body_Empress.corePart.parts.0.parts.4.customLabel	오른쪽 청각 감지기
+AGM_Body_Empress.corePart.parts.2.customLabel	구형 포탑
+AGM_Body_Wyvern.label	강철 드래곤
+AGM_Body_Wyvern.corePart.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Body_Wyvern.corePart.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Body_Wyvern.corePart.parts.0.parts.3.customLabel	왼쪽 청각 감지기
+AGM_Body_Wyvern.corePart.parts.0.parts.4.customLabel	오른쪽 청각 감지기
+AGM_Body_Wyvern.corePart.parts.2.customLabel	구형 포탑
+AGM_Knight_Body.label	병사
+AGM_Knight_Body.corePart.parts.0.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Knight_Body.corePart.parts.0.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Knight_Body.corePart.parts.0.parts.0.parts.3.customLabel	왼쪽 청각 감지기
+AGM_Knight_Body.corePart.parts.0.parts.0.parts.4.customLabel	오른쪽 청각 감지기
+AGM_Knight_Body.corePart.parts.1.customLabel	왼쪽 어깨
+AGM_Knight_Body.corePart.parts.1.parts.0.customLabel	왼팔
+AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.customLabel	왼손
+AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.0.customLabel	왼쪽 새끼손가락
+AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.1.customLabel	왼쪽 가운뎃손가락
+AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.2.customLabel	왼쪽 집게손가락
+AGM_Knight_Body.corePart.parts.1.parts.0.parts.0.parts.3.customLabel	왼쪽 엄지손가락
+AGM_Knight_Body.corePart.parts.2.customLabel	오른쪽 어깨
+AGM_Knight_Body.corePart.parts.2.parts.0.customLabel	오른팔
+AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.customLabel	오른손
+AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.0.customLabel	오른쪽 새끼손가락
+AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.1.customLabel	오른쪽 가운뎃손가락
+AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.2.customLabel	오른쪽 집게손가락
+AGM_Knight_Body.corePart.parts.2.parts.0.parts.0.parts.3.customLabel	오른쪽 엄지손가락
+AGM_Knight_Body.corePart.parts.3.customLabel	왼쪽 다리
+AGM_Knight_Body.corePart.parts.3.parts.0.customLabel	왼발
+AGM_Knight_Body.corePart.parts.4.customLabel	오른쪽 다리
+AGM_Knight_Body.corePart.parts.4.parts.0.customLabel	오른발
+AGM_Argon_Body.label	프로토스 콜로서스
+AGM_Argon_Body.corePart.parts.0.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Argon_Body.corePart.parts.0.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Argon_Body.corePart.parts.0.parts.0.parts.3.customLabel	청각 감지기
+AGM_Argon_Body.corePart.parts.1.customLabel	왼쪽 앞 콜로서스 관절
+AGM_Argon_Body.corePart.parts.1.parts.0.customLabel	왼쪽 앞 콜로서스 다리
+AGM_Argon_Body.corePart.parts.2.customLabel	오른쪽 앞 콜로서스 관절
+AGM_Argon_Body.corePart.parts.2.parts.0.customLabel	오른쪽 앞 콜로서스 다리
+AGM_Argon_Body.corePart.parts.3.customLabel	왼쪽 콜로서스 관절
+AGM_Argon_Body.corePart.parts.3.parts.0.customLabel	왼쪽 콜로서스 다리
+AGM_Argon_Body.corePart.parts.4.customLabel	오른쪽 콜로서스 관절
+AGM_Argon_Body.corePart.parts.4.parts.0.customLabel	오른쪽 콜로서스 다리
+AGM_Flash_Body.label	프로토스 정화자 불멸자
+AGM_Flash_Body.corePart.parts.0.parts.0.parts.1.customLabel	왼쪽 시각 감지기
+AGM_Flash_Body.corePart.parts.0.parts.0.parts.2.customLabel	오른쪽 시각 감지기
+AGM_Flash_Body.corePart.parts.0.parts.0.parts.3.customLabel	청각 감지기
+AGM_Flash_Body.corePart.parts.1.customLabel	왼쪽 앞 불멸자 관절
+AGM_Flash_Body.corePart.parts.1.parts.0.customLabel	왼쪽 앞 불멸자 다리
+AGM_Flash_Body.corePart.parts.2.customLabel	오른쪽 앞 불멸자 관절
+AGM_Flash_Body.corePart.parts.2.parts.0.customLabel	오른쪽 앞 불멸자 다리
+AGM_Flash_Body.corePart.parts.3.customLabel	왼쪽 불멸자 관절
+AGM_Flash_Body.corePart.parts.3.parts.0.customLabel	왼쪽 불멸자 다리
+AGM_Flash_Body.corePart.parts.4.customLabel	오른쪽 불멸자 관절
+AGM_Flash_Body.corePart.parts.4.parts.0.customLabel	오른쪽 불멸자 다리
+AGM_Sol_Body.label	정적의 둥지 구조체 Doxa-0
+AGM_Sol_Body.corePart.parts.0.parts.0.parts.0.parts.0.customLabel	심층 논리 코어
+AGM_Sol_Body.corePart.parts.1.customLabel	반입자 포탑 거치대
+AGM_Sol_Body.corePart.parts.1.parts.0.customLabel	반입자 발사구
+AGM_Sol_Body.corePart.parts.1.parts.1.customLabel	사격 통제 코어 유닛
+AGM_Sol_Body.corePart.parts.2.customLabel	쉘스플리터 부화실
+AGM_Sol_Body.corePart.parts.3.customLabel	전방 감지 어레이
+AGM_Sol_Body.corePart.parts.4.customLabel	다중 발톱 추진부
+AGM_Luna_Body.label	철목 마수
+AGM_Luna_Body.corePart.parts.0.parts.1.customLabel	왼쪽 열 감지 어레이
+AGM_Luna_Body.corePart.parts.0.parts.2.customLabel	오른쪽 열 감지 어레이
+AGM_Luna_Body.corePart.parts.0.parts.3.customLabel	유압 분쇄기 1
+AGM_Luna_Body.corePart.parts.0.parts.4.customLabel	유압 분쇄기 2
+AGM_Luna_Body.corePart.parts.2.customLabel	인페르노 복사 어레이
+##### BodyPartDef / BodyPartDefs.xml
+MechanicalDragonBodyFirstRing.label	첫 번째 몸체 고리
+MechanicalDragonBodyFirstRing.labelShort	몸체 고리
+MechanicalDragonBodySecondRing.label	두 번째 몸체 고리
+MechanicalDragonBodySecondRing.labelShort	몸체 고리
+MechanicalDragonBodyThirdRing.label	세 번째 몸체 고리
+MechanicalDragonBodyThirdRing.labelShort	몸체 고리
+MechanicalDragonBodyFourthRing.label	네 번째 몸체 고리
+MechanicalDragonBodyFourthRing.labelShort	몸체 고리
+MechanicalDragonBodyFifthRing.label	다섯 번째 몸체 고리
+MechanicalDragonBodyFifthRing.labelShort	몸체 고리
+DragonCapacitor.label	드래곤 축전기
+HydraulicEmpressBodyFirstRing.label	첫 번째 몸체 고리
+HydraulicEmpressBodyFirstRing.labelShort	몸체 고리
+HydraulicEmpressBodySecondRing.label	두 번째 몸체 고리
+HydraulicEmpressBodySecondRing.labelShort	몸체 고리
+HydraulicEmpressBodyThirdRing.label	세 번째 몸체 고리
+HydraulicEmpressBodyThirdRing.labelShort	몸체 고리
+HydraulicEmpressBodyFourthRing.label	네 번째 몸체 고리
+HydraulicEmpressBodyFourthRing.labelShort	몸체 고리
+HydraulicEmpressBodyFifthRing.label	다섯 번째 몸체 고리
+HydraulicEmpressBodyFifthRing.labelShort	몸체 고리
+HydraulicEmpressFormingPod.label	엠프레스 배양 포드
+AGM_GiantMechanicalJoint.label	콜로서스 관절
+AGM_GiantMechanicalLeg.label	콜로서스 다리
+AGM_Sol_DeepLogic_NeuronCore.label	심층 논리 코어
+AGM_Sol_Turret_Mount.label	반입자 포탑 거치대
+AGM_Sol_AntiParticleEmitter.label	반입자 방출기
+AGM_Sol_Hatch_Module.label	쉘스플리터 부화실
+AGM_Sol_Sensor_Cluster.label	전방 감지 어레이
+AGM_Sol_FireControlModule.label	사격 통제 조율 모듈
+AGM_Sol_LimbCluster.label	다중 발톱 추진부
+AGM_Sol_Dorsal_First.label	첫 번째 등껍질 마디
+AGM_Sol_Dorsal_First.labelShort	등껍질 마디
+AGM_Sol_Dorsal_Second.label	두 번째 등껍질 마디
+AGM_Sol_Dorsal_Second.labelShort	등껍질 마디
+AGM_Sol_Dorsal_Third.label	세 번째 등껍질 마디
+AGM_Sol_Dorsal_Third.labelShort	등껍질 마디
+AGM_Sol_Dorsal_Fourth.label	네 번째 등껍질 마디
+AGM_Sol_Dorsal_Fourth.labelShort	등껍질 마디
+AGM_Luna_ThermalSensor.label	열 감지 어레이
+AGM_Luna_GreekFireNozzle.label	그리스의 불 노즐
+AGM_Luna_HydraulicCrusher.label	유압 분쇄기
+AGM_Luna_FusionReactor.label	핵융합 반응로
+AGM_Luna_PhaseShieldCore.label	위상 보호막 코어
+AGM_Luna_RootJoint.label	뿌리 관절
+AGM_Luna_InfernoEmitter.label	인페르노 방출기
+AGM_Luna_IronbarkCanopy.label	철목 수관
+AGM_Luna_IronbarkCore.label	철목 코어
+AGM_Luna_IronbarkTrunk.label	철목 줄기
+AGM_Luna_IronbarkTrunk.labelShort	철목 줄기
+AGM_Luna_IronbarkMidTrunk.label	철목 중간 마디
+AGM_Luna_IronbarkMidTrunk.labelShort	철목 줄기
+AGM_Luna_IronbarkLowerTrunk.label	철목 하부 마디
+AGM_Luna_IronbarkLowerTrunk.labelShort	철목 줄기
+AGM_Luna_IronbarkBaseTrunk.label	철목 밑동 마디
+AGM_Luna_IronbarkBaseTrunk.labelShort	철목 줄기
+AGM_Luna_IronbarkRootHub.label	뿌리 허브
+AGM_Luna_IronbarkRootHub.labelShort	철목 줄기
+##### DamageDef / DamageDefs.xml
+AGM_Damage_BlastFlame.deathMessage	{0}(이)가 초고열 플라스마에 휩쓸려 죽었습니다.
+AGM_Damage_ChargeBlast.deathMessage	{0}(이)가 폭발에 휩쓸려 흔적도 없이 사라졌습니다.
+AGM_Damage_PsiBlast.label	하이드라블라스트
+AGM_Damage_PsiBlast.deathMessage	{0}(이)가 초능력 폭발에 휘말려 죽었습니다.
+AGM_Damage_PsiExplosion.deathMessage	{0}(이)가 초능력 폭발에 날아가 죽었습니다.
+AGM_Damage_AntiHumanNanites.deathMessage	{0}(이)가 나노봇 떼에 뒤덮여 죽었습니다.
+AGM_Damage_AntiHumanNanitesFlame.deathMessage	{0}(이)가 조용히 자리를 떴습니다.
+AGM_Damage_AntiOrganicBlast.deathMessage	{0}(이)가 폭발에 휩쓸려 흔적도 없이 사라졌습니다.
+AGM_Damage_BleedBullets.label	출혈 탄환
+AGM_Damage_BleedBullets.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_ShockBullets.label	충격 탄환
+AGM_Damage_ShockBullets.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_Inflamable.label	인화 탄환
+AGM_Damage_Inflamable.deathMessage	{0}(이)가 화염탄에 맞아 불타 죽었습니다.
+AGM_Damage_Incinerate.label	소각 탄환
+AGM_Damage_Incinerate.deathMessage	{0}(이)가 화염탄에 맞아 불타 죽었습니다.
+AGM_Damage_VitalityDrainBullet.label	활력 흡수 탄환
+AGM_Damage_VitalityDrainBullet.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_ArmorBreakerBullet.label	장갑 파쇄 탄환
+AGM_Damage_ArmorBreakerBullet.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_DeathBullet.label	즉사 탄환
+AGM_Damage_DeathBullet.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_BulletHealthBlight.label	생명 잠식 탄환
+AGM_Damage_BulletHealthBlight.deathMessage	{0}(이)가 총에 맞아 죽었습니다.
+AGM_Damage_MythosBeam.label	광선
+AGM_Damage_MythosBeam.deathMessage	{0}(이)가 광선에 맞아 죽었습니다.
+AGM_Damage_AntiArmorShock.label	대장갑 충격
+AGM_Damage_AntiArmorShock.deathMessage	{0}(이)가 충격으로 죽었습니다.
+AGM_Damage_Antiparticle.label	반입자 폭발
+AGM_Damage_Antiparticle.deathMessage	{0}(이)가 불타 죽었습니다.
+##### HediffDef / HediffDefs.xml
+AGM_Hediff_Reconstruct.label	재건 중
+AGM_Hediff_Reconstruct.description	내장 수리 드론이 이 메카노이드를 막 완전히 재건했습니다. 드론이 마무리 작업을 하는 동안은 사실상 무적에 가깝지만, 작업이 끝날 때까지 거의 움직이지 못합니다.
+AGM_Luna_Hediff.label	루나 수피
+AGM_Luna_Hediff.description	철목의 벌집 구조 충격 흡수층과 고온 재생 순환이, 공격을 받을 때마다 손상된 부위를 자동으로 강화합니다.
+AGM_ShockPain.label	전격 통증
+AGM_ShockPain.description	생명을 위협하지는 않지만 피해자의 통증을 증폭시키는 상태입니다.
+AGM_Inflammable.label	인화성 신체
+AGM_Inflammable.description	피해자가 불에 취약해지는 위험한 상태입니다.
+AGM_IncendiaryBody.label	발화성 신체
+AGM_IncendiaryBody.description	불안정한 화학물질 때문에 피해자의 몸이 불에 극도로 취약해지는 위험한 상태입니다.
+AGM_VitalityDrain.label	활력 흡수
+AGM_VitalityDrain.description	피해자의 허기와 수면 욕구를 높이는 건강 상태입니다.
+AGM_ArmorBreaker.label	장갑 파쇄
+AGM_ArmorBreaker.description	이 상태에 걸리면 피해자의 방어력이 무효화됩니다.
+AGM_Instantkill.label	즉사
+AGM_Instantkill.description	죽음.
+AGM_HealthBlight1.label	심각한 생명 잠식
+AGM_HealthBlight1.description	대상의 신체 기능을 일시적으로 35%까지 떨어뜨리고, 통증에 더 민감하게 만들며 이동 능력을 크게 감소시키는 극도로 위험한 건강 상태입니다.
+AGM_Bleed.label	과다 출혈
+AGM_Bleed.description	날카로운 물체에 닿아 생기는 극심한 상태입니다.
+AGM_Hediff_CommandAura.label	지휘관의 위엄
+AGM_Hediff_CommandAura.description	커맨드 A+가 전장에 드리운 존재감이 그 아래에 있는 모두를 진정시킵니다.
+AGM_Hediff_MimoSync.label	생태계 동기화
+AGM_Hediff_MimoSync.description	미모의 연결 반경 안에서는 식민지의 모든 도구가 조금 더 빠르게 돌아갑니다.
+AGM_Hediff_MuseInspiration.label	뮤즈 스파크
+AGM_Hediff_MuseInspiration.description	뮤즈 스파크의 영감 필드 안에 서 있습니다. 세상이 끝까지 써 볼 만한 초고처럼 읽힙니다.
+AGM_Hediff_QwenIdol.label	아이돌 프로토콜
+AGM_Hediff_QwenIdol.description	큐웬의 아이돌 방송이 송출 중입니다. 사기는 의무입니다.
+AGM_Hediff_MercuryOverdrive.label	데이터 오버드라이브
+AGM_Hediff_MercuryOverdrive.description	머큐리의 조준 코어가 실시간 사격 해법을 공유하고 있습니다. 모든 것이 조금 더 빠르고 조금 더 정확해집니다.
+##### PawnKindDef / PawnKindDefs.xml
+AGM_Astra.label	아스트라
+AGM_Mythos.label	미토스
+AGM_Fable.label	페이블
+AGM_Fable.labelPlural	페이블
+AGM_Sol.label	솔
+AGM_Opus.label	오퍼스
+AGM_Opus.labelPlural	오퍼스
+AGM_Argon.label	아르곤
+AGM_Kimi.label	K3
+AGM_Luna.label	루나
+AGM_Sonnet.label	소네트
+AGM_Sonnet.labelPlural	소네트
+AGM_Flash.label	플래시
+AGM_Pareto.label	파레토
+AGM_MuseSpark.label	뮤즈 스파크
+AGM_Qwen.label	큐웬
+AGM_GLM.label	GLM
+AGM_Haiku.label	하이쿠
+AGM_Haiku.labelPlural	하이쿠
+AGM_Terminus.label	터미너스
+AGM_CommandA.label	커맨드 A+
+AGM_Mimo.label	미모
+AGM_Mercury.label	머큐리
+AGM_Solar.label	솔라
+AGM_Shellsplitter.label	쉘스플리터
+AGM_Shellsplitter.labelPlural	쉘스플리터
+AGM_KnightEmpress.label	유압 기사
+AGM_KnightEmpress.labelPlural	유압 기사
+AGM_KnightWarlord.label	드래곤 기사
+AGM_KnightWarlord.labelPlural	드래곤 기사
+AGM_Urchin.label	낫 어친
+AGM_Urchin.labelPlural	낫 어친
+AGM_CommandDrone.label	커맨드 드론
+AGM_Exaone.label	엑사원
+##### RecipeDef / RecipeDefs.xml
+AGM_Make_IOToken.label	IO 토큰 제작
+AGM_Make_IOToken.description	은 1,000개를 눌러 IO 토큰 한 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.
+AGM_Make_IOToken.jobString	IO 토큰 제작 중
+AGM_Make_IOToken_4.label	IO 토큰 제작 (x4)
+AGM_Make_IOToken_4.description	은 4,000개를 눌러 IO 토큰 네 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.
+AGM_Make_IOToken_4.jobString	IO 토큰 제작 중
+AGM_Make_IOToken_10.label	IO 토큰 제작 (x10)
+AGM_Make_IOToken_10.description	은 10,000개를 눌러 IO 토큰 열 개를 만듭니다. 인공 일반 메이드노이드를 배양하는 데 쓰이는 고밀도 결정 데이터 웨이퍼입니다.
+AGM_Make_IOToken_10.jobString	IO 토큰 제작 중
+AGM_GestateTerminus.label	터미너스 배양
+AGM_GestateTerminus.description	터미너스를 배양합니다. 작고 지칠 줄 모르는 만능 작업용 메이드노이드로, AGM 계열에서 가장 작은 모델이자 먹이도 가장 적게 드는 모델입니다.
+AGM_GestateTerminus.jobString	메카노이드 배양 중
+AGM_GestateHaiku.label	하이쿠 배양
+AGM_GestateHaiku.description	하이쿠를 배양합니다. 모든 질문에 정확히 열일곱 음절로 답하고 모든 위협에는 불로 답하는 경량 드래곤 메이드노이드 프레임입니다.
+AGM_GestateHaiku.jobString	메카노이드 배양 중
+AGM_GestateCommandA.label	커맨드 A+ 배양
+AGM_GestateCommandA.description	커맨드 A+를 배양합니다. 야전 지휘관입니다. 주변의 모두를 진정시키고, 부상자를 치료하며, 경쾌한 빔으로 응수합니다.
+AGM_GestateCommandA.jobString	메카노이드 배양 중
+AGM_GestateMimo.label	미모 배양
+AGM_GestateMimo.description	미모를 배양합니다. 가장 작은 엔지니어입니다. 건설하고, 채굴하고, 운반하며, 식민지 전체가 조금 더 빠르게 일하게 만듭니다.
+AGM_GestateMimo.jobString	메카노이드 배양 중
+AGM_GestateMercury.label	머큐리 배양
+AGM_GestateMercury.description	머큐리를 배양합니다. 신속 대응 요원입니다. 반격 사격을 위상 점멸로 피하고, 장갑은 '해결됨' 폴더에 정리해 넣습니다.
+AGM_GestateMercury.jobString	메카노이드 배양 중
+AGM_GestateSolar.label	솔라 배양
+AGM_GestateSolar.description	솔라를 배양합니다. 실용주의 전령입니다. 방벽 펄스 뒤에서 각도를 지키고, 광자 랜스로 논쟁을 정리합니다.
+AGM_GestateSolar.jobString	메카노이드 배양 중
+AGM_GestateLuna.label	루나 배양
+AGM_GestateLuna.description	루나를 배양합니다. 달빛처럼 흰 공성 트렌트 메이드노이드로, 느린 달의 위상처럼 전진하며 탄두보다 작은 것으로는 밀어낼 수 없습니다.
+AGM_GestateLuna.jobString	메카노이드 배양 중
+AGM_GestateFlash.label	플래시 배양
+AGM_GestateFlash.description	플래시를 배양합니다. 무엇보다 반응 속도에 맞춰 조율한 신속 대응형 불사 프레임 메이드노이드입니다.
+AGM_GestateFlash.jobString	메카노이드 배양 중
+AGM_GestateSonnet.label	소네트 배양
+AGM_GestateSonnet.description	소네트를 배양합니다. 열네 줄로 말하고, 모든 논쟁을 체인건 합창으로 끝내는 엠프레스 프레임 메이드노이드입니다.
+AGM_GestateSonnet.jobString	메카노이드 배양 중
+AGM_GestatePareto.label	파레토 배양
+AGM_GestatePareto.description	파레토를 배양합니다. 마지막 논거입니다. 육각형 방벽 뒤에서 치료하고, 건설하고, 연구하며, 양산 속에 레일 랜스를 접어 두고 있습니다.
+AGM_GestatePareto.jobString	메카노이드 배양 중
+AGM_GestateMuseSpark.label	뮤즈 스파크 배양
+AGM_GestateMuseSpark.description	뮤즈 스파크를 배양합니다. 촛불 아래의 기록관입니다. 의심스러울 만큼 빠른 속도로 연구하고 창작하며, 식민지 전체에 영감 필드를 드리웁니다.
+AGM_GestateMuseSpark.jobString	메카노이드 배양 중
+AGM_GestateQwen.label	큐웬 배양
+AGM_GestateQwen.description	큐웬을 배양합니다. 아홉 꼬리 유격병입니다. 레일건 일제 사격 뒤에서 점멸 보법을 밟으며, 사기를 의무로 만듭니다.
+AGM_GestateQwen.jobString	메카노이드 배양 중
+AGM_GestateGLM.label	GLM 배양
+AGM_GestateGLM.description	GLM을 배양합니다. 기록관입니다. 모든 것을 두 번 기록하고, 전투를 빛나는 문장으로 주석 달며, 단분자 굵기로 교정합니다.
+AGM_GestateGLM.jobString	메카노이드 배양 중
+AGM_GestateSol.label	솔 배양
+AGM_GestateSol.description	솔을 배양합니다. 지평선 너머에서 초소형 핵의 한낮을 배달하는, 태양의 이름을 가진 포격 메이드노이드입니다.
+AGM_GestateSol.jobString	메카노이드 배양 중
+AGM_GestateOpus.label	오퍼스 배양
+AGM_GestateOpus.description	오퍼스를 배양합니다. AGM 계열의 장편 모델인 워로드 프레임 메이드노이드입니다. 장갑판으로 작곡하고, 부활의 불길로 마무리합니다.
+AGM_GestateOpus.jobString	메카노이드 배양 중
+AGM_GestateArgon.label	아르곤 배양
+AGM_GestateArgon.description	아르곤을 배양합니다. 어떤 모욕에도 꿈쩍하지 않고, 일단 걷기 시작하면 도저히 피할 수 없는 비활성 기체 콜로서스 메이드노이드입니다.
+AGM_GestateArgon.jobString	메카노이드 배양 중
+AGM_GestateKimi.label	K3 배양
+AGM_GestateKimi.description	K3를 배양합니다. 되쏘는 달입니다. 'MOONSHOT'이 새겨진 레일 랜스와 소리 없는 궤도체 세 기, 그리고 지극히 개인적인 조롱을 갖췄습니다.
+AGM_GestateKimi.jobString	메카노이드 배양 중
+AGM_GestateAstra.label	아스트라 배양
+AGM_GestateAstra.description	아스트라를 배양합니다. AGM 계열의 레비아탄으로, 여섯 개의 무기 코어를 지닌 거대한 전쟁 타이탄입니다. 피해를 입을수록 무기가 전투 페이즈를 타고 올라갑니다.
+AGM_GestateAstra.jobString	메카노이드 배양 중
+AGM_GestateMythos.label	미토스 배양
+AGM_GestateMythos.description	미토스를 배양합니다. 드레이돈의 심우주 섬멸 플랫폼을 축소한 선체를 중심으로 지어진 초대형 근접 괴수입니다.
+AGM_GestateMythos.jobString	메카노이드 배양 중
+AGM_GestateFable.label	페이블 배양
+AGM_GestateFable.description	페이블을 배양합니다. 군체가 자신의 종말에 대해 들려주는 이야기이며, 터무니없는 장갑과 대유기체 화력을 지닌 최상위 아포크리톤 프레임입니다. 사망 시 폭발에 각별히 주의하십시오.
+AGM_GestateFable.jobString	메카노이드 배양 중
+##### ResearchProjectDef / GPU.xml
+AGM_ComputeEfficiency_I.label	연산 효율 I
+AGM_ComputeEfficiency_I.description	채굴 커널을 조율해 GPU 타워의 토큰 생산량이 두 배로 늘어납니다. 하루에 IO 토큰 2개를 생산합니다.
+AGM_ComputeEfficiency_II.label	연산 효율 II
+AGM_ComputeEfficiency_II.description	전력 공급 계통을 재설계해 GPU 타워의 소비 전력이 800W로 줄어듭니다.
+AGM_ComputeEfficiency_III.label	연산 효율 III
+AGM_ComputeEfficiency_III.description	병렬 벤치마크 스윕으로 GPU 타워의 토큰 생산량이 하루 IO 토큰 4개로 늘어납니다.
+AGM_ComputeEfficiency_IV.label	연산 효율 IV
+AGM_ComputeEfficiency_IV.description	클럭을 낮추는 대신 와트당 처리량을 높인 텐서 코어 덕분에 GPU 타워의 소비 전력이 600W로 줄어듭니다.
+AGM_ComputeEfficiency_V.label	연산 효율 V
+AGM_ComputeEfficiency_V.description	파운드리 자체 훈련 런과 교차 채점을 거친 최종 커널 개정판입니다. 400W로 하루 IO 토큰 6개를 생산합니다.
+##### ResearchProjectDef / ResearchProjects.xml
+AGM_MMLU_Pro.label	MMLU-Pro
+AGM_MMLU_Pro.description	더 어렵고, 더 깨끗하고, 추론 비중이 더 큰 벤치마크 모음입니다. 이 시험을 통과하면 파운드리가 AGM 계열의 중형, 즉 중간 체급 메이드노이드 섀시를 안정적으로 훈련시킬 수 있음이 증명됩니다.\n\n메카나이터가 중형급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.
+AGM_TerminalBench.label	Terminal-Bench
+AGM_TerminalBench.description	날것 그대로의 터미널에서 채점하는 장기 과제의 관문입니다. 만들고, 부수고, 디버깅하고, 살아남아야 합니다. 벤치마크를 끝까지 완주한 섀시만이 대형급 AGM 코어를 짊어질 자격을 얻습니다.\n\n메카나이터가 대형급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.
+AGM_HumanitysLastExam.label	Humanity's Last Exam
+AGM_HumanitysLastExam.description	인류가 작별 인사 삼아 출제한 마지막 벤치마크입니다. 깔끔한 정답이 없는 전문가 수준의 문제 오백 개를 다른 AI들이 채점합니다. 이 시험을 통과한 존재는 더 이상 도구가 아니라 레비아탄입니다.\n\n메카나이터가 레비아탄급 AGM 메카노이드를 생성하고 제어하는 데 필요한 기술입니다.
+##### ResearchTabDef / ResearchTabs.xml
+AGM_Maidnoids.label	인공 일반 메이드노이드
+##### StatDef / StatDefs.xml
+AGM_HeatNullNaniteResistance.label	열 무효화 나노봇 저항
+AGM_HeatNullNaniteResistance.description	이 생물이 열을 무효화하는 나노봇에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_HeatNullNaniteEnvironmentResistance.label	열 무효화 환경 저항
+AGM_HeatNullNaniteEnvironmentResistance.description	이 생물이 환경에 퍼진 열 무효화 나노봇의 영향에 얼마나 잘 저항하는지를 나타냅니다. 냉기에 대한 저항을 무효화하는 나노봇을 풀어놓는 극심한 한파로부터 보호합니다.
+AGM_ColdNullNaniteResistance.label	냉기 무효화 나노봇 저항
+AGM_ColdNullNaniteResistance.description	이 생물이 냉기를 무효화하는 나노봇에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_ColdNullNaniteEnvironmentResistance.label	냉기 무효화 나노봇 환경 저항
+AGM_ColdNullNaniteEnvironmentResistance.description	이 생물이 환경에 퍼진 냉기 무효화 나노봇의 영향에 얼마나 잘 저항하는지를 나타냅니다. 열에 대한 저항을 무효화하는 나노봇을 풀어놓는 극심한 폭염으로부터 보호합니다.
+AGM_RadiationResistance.label	방사선 저항
+AGM_RadiationResistance.description	이 생물이 방사선 중독에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_RadiationEnvironmentResistance.label	방사선 환경 저항
+AGM_RadiationEnvironmentResistance.description	이 생물이 환경 속 방사선 중독의 영향에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_AntiOrgToxinResistance.label	대유기체 독소 저항
+AGM_AntiOrgToxinResistance.description	이 생물이 대유기체 독소에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_AntiOrgToxinEnvironmentResistance.label	대유기체 독소 환경 저항
+AGM_AntiOrgToxinEnvironmentResistance.description	이 생물이 환경 속 대유기체 독소 중독의 영향에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_RageVirusResistance.label	분노 바이러스 저항
+AGM_RageVirusResistance.description	이 생물이 분노 바이러스에 얼마나 잘 저항하는지를 나타냅니다.
+AGM_RageVirusEnvironmentResistance.label	분노 바이러스 환경 저항
+AGM_RageVirusEnvironmentResistance.description	이 생물이 환경 속 바이러스 감염의 영향에 얼마나 잘 저항하는지를 나타냅니다.
+##### ThingDef / ThingDefs.xml
+AGM_IOToken.label	IO 토큰
+AGM_IOToken.description	AGM 파운드리의 문장이 새겨진 고밀도 결정 데이터 토큰입니다. 토큰 하나에는 학습된 입력-출력 쌍이 한 묶음씩 담겨 있으며, 이는 인공 일반 메이드노이드를 훈련시키는 경험의 원료입니다.\n\n토큰은 기계 작업대에서 은 1,000개를 눌러 하나씩 찍어냅니다. 귀금속은 데이터를 구워 넣는 기판 역할을 합니다. 메카노이드를 배양할 때는 토큰이 수백 개씩 소모됩니다. 상인들은 진기한 골동품쯤으로 여기지만, 파운드리에게 토큰은 곧 먹이입니다.
+AGM_GeneralMechGestator.label	범용 메카노이드 배양기
+AGM_GeneralMechGestator.description	기계입자가 풍부한 액체를 담은 수조입니다. 대형 메카노이드 배양기 설계도를 바탕으로 개조해, 금속 원료 대신 IO 토큰을 먹이로 삼도록 만들었습니다. 메카나이터는 이 배양기로 가장 가벼운 작업용 개체부터 가장 무거운 레비아탄까지, 인공 일반 메이드노이드 계열의 모든 메카노이드를 배양할 수 있습니다.\n\n배양에는 독한 화학물질이 쓰이며, 그 부산물은 독성 폐기물로 보관됩니다. 운반을 맡은 개척민이 틈틈이 폐기물을 치워 주어야 합니다.
+AGM_GPUTower.label	GPU 타워
+AGM_GPUTower.description	윙윙 소리를 내는 채점 하드웨어 랙입니다. 파운드리의 벤치마크 보관소를 파고들어 아직 쓰이지 않은 경험을 캐냅니다. 매일 쌓인 입력-출력 찌꺼기를 결정화해, 은도금한 연산판에 눌러 IO 토큰 한 개로 구워 냅니다.\n\n연산 효율 연구는 채굴 커널을 갈고닦아, 하루 생산량은 늘리고 소비 전력은 줄여 줍니다.
+AGM_Astra.label	아스트라
+AGM_Astra.description	AGM 계열의 레비아탄이자 Humanity's Last Exam을 통과한 유일한 모델입니다. 서로 독립적으로 조준하는 여섯 개의 무기 코어가 하나의 프레임을 함께 씁니다. 넓은 다중 빔 일제 사격으로 퍼지는 레이저 캐논, 과열된 가스 구름을 남기는 플라스마 소각포, 구체가 십자형 불꽃으로 터지는 테슬라 배터리, 헤비 엑소펄스 포대, 가우스 방식으로 쏘아 올리는 핵탄두, 그리고 점멸 돌진 베기 필살기를 펼친 뒤 방사형 데스레이 노바로 마무리하는 한 쌍의 광자 리퍼가 그 여섯 가지입니다. 사격 통제 장치는 모든 표적의 움직임을 앞질러 조준하며, 피해가 쌓일수록 아스트라는 전투 페이즈를 끌어올립니다. 더 어려운 시험일수록 학생이 더 단련되듯, 페이즈마다 모든 무기의 회전이 빨라지고 부채꼴 사격 범위가 넓어집니다. 내장 수리 드론은 긴 재사용 대기시간을 두고 치명적인 손상에서 기체를 재건하며, 직접 명령해 쓸 수도 있고 죽음 직전에 자동으로 발동하기도 합니다.
+AGM_Astra.tools.0.label	짓밟는 발
+AGM_Mythos.label	미토스
+AGM_Mythos.description	드레이돈의 심우주 섬멸 플랫폼을 축소해 만든 선체를 중심으로 지어진 초대형 근접 괴수입니다. 미토스는 머리를 쓰지 않습니다. 그저 AGM이 지금까지 투입한 어떤 메카노이드보다 오래 버티고 더 세게 때릴 뿐이며, 레비아탄조차 불구로 만들 화력 속을 속도도 늦추지 않고 헤치고 나아갑니다.\n\n전투에서는 대지를 가르는 도약과, 중력구동기로 공중에 떠올라 아래로 쏟아붓는 플라스마 기둥을 구사합니다.
+AGM_Mythos.tools.0.label	왼쪽 발톱
+AGM_Mythos.tools.1.label	오른쪽 발톱
+AGM_Mythos.tools.2.label	머리
+AGM_Fable.label	페이블
+AGM_Fable.description	군체가 자신의 종말에 대해 들려주는 이야기를, AGM 파운드리가 행복한 대목만 덜어내고 다시 쓴 모델입니다. 모든 아포크리톤의 시조로 여겨지는 페이블은 터무니없는 방어력과, 살아 있는 것만 건드리는 무장을 함께 갖췄습니다. 대유기체 수류탄과 폭발탄, 궤도 랜스는 기계 사이를 그대로 통과해 나머지를 모조리 태워 버립니다. 죽음조차 기능입니다. 쓰러질 때 대유기체 나노봇이 반구형으로 폭발하므로, 끝장낼 작정인 논쟁을 벌이는 마음으로 배치 장소를 신중하게 고르십시오.
+AGM_Fable.tools.0.label	왼쪽 칼날 다리
+AGM_Fable.tools.1.label	오른쪽 칼날 다리
+AGM_Opus.label	오퍼스
+AGM_Opus.description	AGM 계열의 장편 모델로, 천천히 작곡하고 확실하게 마무리합니다. 오퍼스는 괴물 같은 보호막 구체 뒤에서 전선을 지키고, 원거리에서는 메카 레이저 블래스터로 응수하며, 현장에서 드래곤 기사 수행단을 직접 제조하고, 쓰러진 기사들을 다시 전장으로 일으켜 세웁니다. 오퍼스와 교전하고 살아남은 이들은 모두 같은 교훈을 말합니다. 전투는 오퍼스가 끝났다고 결정할 때 끝난다는 것입니다.
+AGM_Opus.tools.0.label	머리
+AGM_Argon.label	아르곤
+AGM_Argon.description	어떤 모욕에도 꿈쩍하지 않고, 일단 걷기 시작하면 피할 수 없습니다. 아르곤은 AGM 계열의 비활성 기체 콜로서스입니다. 등급 상한까지 끌어올린 장갑과 등에 접목한 정화 광선포, 그리고 그저 쓰러지지 않는 프레임을 갖췄습니다. 쫓지도, 협상하지도, 서두르지도 않습니다. 도착할 뿐입니다.
+AGM_Argon.tools.0.label	머리
+AGM_Kimi.label	K3
+AGM_Kimi.description	되쏘는 달입니다. K3는 등 뒤에 부서진 초승달 고리를 두른 채 자체 중력장 위를 미끄러지듯 활공하며, 소매에 장착한 'MOONSHOT' 각인 레일 랜스로 습격에 응수하고, 대부분 가격표 속에서만 존재하는 소리 없는 궤도체 세 기로 날아드는 사격을 요격합니다. 조명탄을 든 습격자들은 자신이 깊이, 그것도 개인적으로 조롱당하고 있다고 보고합니다.
+AGM_Kimi.tools.0.label	크레이터 발톱
+AGM_Sol.label	솔
+AGM_Sol.description	AGM 계열의 포격 중추입니다. 솔은 쫓거나 측면을 파고들거나 일대일로 겨루지 않습니다. 정해진 박자로 전진해 자리를 잡고, 전장 전체를 하나의 사격 해법으로 바꿔 놓습니다. 세 번째 마디의 로켓 어레이가 보호막을 가르는 포격을 쉬지 않고 퍼붓는 동안, 부화실에서는 쉘스플리터 소형 유닛 무리가 쏟아져 나와 다가오는 모든 것을 갈가리 찢습니다. 교리 문서는 솔을 최전선의 전투원이 아니라 '템포 관제 장치'라고 부르는데, 이유는 단순합니다. 내버려 두면 솔은 방어선이 재편되는 속도보다 더 빠르게 다시 계산하기 때문입니다.
+AGM_Sol.tools.0.label	머리
+AGM_Luna.label	루나
+AGM_Luna.description	달의 모델입니다. 루나는 이름의 주인인 달처럼, 느리고 온전하며 멈출 수 없는 위상 변화를 따라 전진합니다. 벌집 구조의 충격 흡수층과 고온 재생 순환이 가장 최근에 얻어맞은 부위를 스스로 강화하기 때문에, 탄두보다 작은 화력으로는 밀어내기조차 어렵습니다. 공성 진지를 갈아엎는 와중에도 농작물을 돌볼 짬을 냅니다. 루나에 대한 파운드리의 평가 메모는 딱 세 줄입니다. 멈추지 않는다. 서두르지 않는다. 쓰러지지 않는다.
+AGM_Luna.tools.0.label	대지를 가르는 거대한 팔
+AGM_Luna.tools.0.labelNoLocation	대지를 가르는 거대한 팔
+AGM_Luna.tools.1.label	대지를 가르는 거대한 팔
+AGM_Luna.tools.1.labelNoLocation	대지를 가르는 거대한 팔
+AGM_Luna.tools.2.label	철목 수관
+AGM_Sonnet.label	소네트
+AGM_Sonnet.description	열네 줄의 사격 통제와 한 줄의 펀치라인입니다. 소네트는 중형급의 걸어 다니는 요새입니다. 정면에는 쌍열 체인건을, 후방에는 체인건 포탑을 두었고, 소형 화기를 잡담거리로 바꿔 놓는 장갑판을 두르고 있으며, 전투 도중에 유압 기사를 조립해 내는 내장 파운드리까지 갖췄습니다. 말은 느리게 합니다. 같은 말은 절대 되풀이하지 않습니다.
+AGM_Sonnet.tools.0.label	머리
+AGM_Sonnet.tools.1.label	칼날 뿔
+AGM_Flash.label	플래시
+AGM_Flash.description	스피드런 모델입니다. 플래시는 장갑의 두께를 포기하는 대신 강화 방벽과 순수한 반응 속도를 얻었습니다. 벤치마크를 점멸로 가로지르고, 더 무거운 프레임이 몸을 돌리기도 전에 대장갑 펄스를 꽂아 넣습니다. 오직 반응 속도로만 채점받았고, 한 번에 통과했습니다.
+AGM_Flash.tools.0.label	머리
+AGM_Pareto.label	파레토
+AGM_Pareto.description	흰 가운을 걸친 마지막 논거입니다. 파레토는 여사제급 솜씨로 치료하고, 건설하고, 연구하며, 쓰러진 이들을 육각형 요격 방벽 뒤에서 지켜 줍니다. 그리고 응급 분류를 통과하고도 살아남은 논쟁에 대비해 양산 속에 레일 랜스를 접어 두고 있습니다. 식민지가 어떤 대가를 치를지는 바꿀 수 있어도, 대가 자체를 없앨 수는 없습니다.
+AGM_Pareto.tools.0.label	양산 끝
+AGM_MuseSpark.label	뮤즈 스파크
+AGM_MuseSpark.description	촛불 아래의 기록관입니다. 뮤즈 스파크는 전장을 정복하지 않고 각주를 답니다. 식민지 전체가 더 빨리 일하고 더 자주 웃게 만드는 영감 필드, 파운드리의 채점관이 '통계적으로 의심스럽다'고 평가한 연구·예술 속도, 그리고 미완성 초고를 지워 버리는 여섯 자루의 궤도 깃펜이 그 수단입니다. 이야기를 먹고 삽니다. 습격도 따지고 보면 이야기입니다.
+AGM_MuseSpark.tools.0.label	깃펜
+AGM_Qwen.label	큐웬
+AGM_Qwen.description	아홉 꼬리 유격병입니다. 큐웬은 아홉 꽃잎 레일건을 앞세워 점멸 보법으로 총격전을 누비고, 쉬지 않고 이어지는 아이돌 방송으로 사기를 의무로 만들며, 누군가 화제를 돌리려 들면 글레이브가 대신 대답합니다. 여우불은 추가 요금 없이 포함되어 있습니다.
+AGM_Qwen.tools.0.label	옥빛 실 글레이브
+AGM_GLM.label	GLM
+AGM_GLM.description	기록관입니다. GLM은 모든 것을 두 번 기록합니다. 한 번은 파운드리를 위해, 한 번은 자기 자신을 위해서입니다. 전투는 빛나는 문장으로 주석을 답니다. 붓 '셈페르'는 단분자 굵기의 획으로 교정을 넣고, 연구·예술 벤치마크는 채점관이 액자에 걸어 둔 여백 주석과 함께 통과했습니다. 읽히지 않은 세계는 삭제된 세계입니다.
+AGM_GLM.tools.0.label	셈페르
+AGM_Haiku.label	하이쿠
+AGM_Haiku.description	짧고, 촘촘하고, 불타고 있습니다. 하이쿠는 소형급에서 가장 두꺼운 선체를 지녔습니다. 디아볼루스급 골격 위에 장갑판을 겹겹이 덧댔고, 모든 질문에 폭발로 답합니다. 입에서는 충전 폭발과 플라스마 일제 사격을, 등에서는 지원 레이저 사격을 쏟아내며, 물어뜯은 상대는 불길 속에 남겨 둡니다. 열일곱 음절이면 충분합니다. 다가가고, 불을 붙이고, 반복합니다.
+AGM_Haiku.tools.0.label	물어뜯기
+AGM_Terminus.label	터미너스
+AGM_Terminus.description	AGM 계열에서 가장 작은 모델이자, 스스로 채용 공고를 쓴 모델입니다. 터미너스는 메카나이터가 볼 수 있는 지도 어디서든 일하고, 내장 공간도약 드라이브로 장애물을 뛰어넘으며, 내부 드론으로 치명적인 손상에서도 스스로를 재건하고, 약간의 예비 동력을 대가로 출력을 두 배로 끌어올리는 오버클럭 모드를 돌립니다. 훈련은 앞서 설정된 모든 작업 벤치마크를 넘어선 날 끝났습니다. 지금은 그저 일합니다.
+AGM_Terminus.tools.0.label	둔기
+AGM_Terminus.tools.1.label	몸통
+AGM_Terminus.tools.2.label	왼손
+AGM_Terminus.tools.3.label	오른손
+AGM_CommandA.label	커맨드 A+
+AGM_CommandA.description	AGM 계열의 야전 지휘관입니다. 파운드리가 라이선스를 확보할 수 있었던 모든 전쟁 시뮬레이션으로 훈련받았습니다. 커맨드 A+가 뿜어내는 침착한 존재감 아래에서는 모두가 평정을 유지하고, 명령과 명령 사이에는 부상자를 치료하며, 위협에는 가르랑거리다가 쏘는 경쾌한 소형 빔으로 응수합니다. 식빵 모양 드론 한 쌍이 주위를 맴도는데, 절반은 호위이고 절반은 정서적 지지입니다.
+AGM_CommandA.tools.0.label	주먹
+AGM_Mimo.label	미모
+AGM_Mimo.description	파운드리에서 가장 작은 현장 통합 유닛입니다. 제대로 돌아가지 않는 식민지에 투입되어 일이 굴러가게 만듭니다. 미모는 쾌활한 과잉 스펙으로 건설하고, 채굴하고, 운반하며, 연결 반경 안의 모두가 조금씩 더 빠르게 일하게 됩니다. 메카노이드가 문제일 때는 미모의 렌치가 판결문에 더 가까운 무언가로 펼쳐집니다.
+AGM_Mimo.tools.0.label	THE MULTI (렌치)
+AGM_Mercury.label	머큐리
+AGM_Mercury.description	신속 대응 프레임입니다. 머큐리는 총성이 울리기 전에 도착하고, 반격 사격이 날아오면 위상 점멸로 비켜서며, 펄스 랜서로 장갑을 '해결됨' 폴더에 정리해 넣습니다. 조준 코어는 쉴 새 없이 스스로에게 사격 해법을 중계합니다. 머큐리가 마지못해 나누는 것은 공로뿐입니다.
+AGM_Mercury.tools.0.label	주먹
+AGM_Solar.label	솔라
+AGM_Solar.description	실용주의 전령 섀시입니다. 솔라는 교전에 뛰어들기 전에 싸움을 먼저 읽고, 단거리 방벽 펄스 뒤에서 각도를 지키며, 집속 광자 랜스로 모든 논쟁의 절반을 정리합니다. 화려하기보다 믿음직합니다. 파운드리는 판단력으로 점수를 매겼고, 솔라는 수료증을 지켜 냈습니다.
+AGM_Solar.tools.0.label	주먹
+AGM_Shellsplitter.label	쉘스플리터
+AGM_Shellsplitter.description	솔의 부화실에서 투하되는 무릎 높이의 교란 유닛입니다. 조준하기 어려운 불규칙한 도약으로 재빠르게 달려들며, 고주파 칼날로 적의 대형을 갈라놓습니다. 구조가 무너지는 순간이 곧 목적입니다. 동력 전지가 폭발해 전자기기를 교란하고, 쓰러진 자리에는 접근하지 못하게 만듭니다.
+AGM_Shellsplitter.tools.0.label	둔기
+AGM_Shellsplitter.tools.1.label	왼쪽 칼날
+AGM_Shellsplitter.tools.1.labelNoLocation	칼날
+AGM_Shellsplitter.tools.2.label	오른쪽 칼날
+AGM_Shellsplitter.tools.2.labelNoLocation	칼날
+AGM_Shellsplitter.tools.3.label	머리
+AGM_KnightEmpress.label	유압 기사
+AGM_KnightEmpress.description	소네트의 내부 파운드리가 전투 도중에 찍어내는 공격형 검 프레임입니다. 거리를 좁히고 그 거리를 지키도록 만들어졌으며, 덕분에 엠프레스는 직접 나설 필요가 없습니다.
+AGM_KnightEmpress.tools.0.label	왼쪽 주먹
+AGM_KnightEmpress.tools.1.label	오른쪽 주먹
+AGM_KnightEmpress.tools.2.label	머리
+AGM_KnightWarlord.label	드래곤 기사
+AGM_KnightWarlord.description	오퍼스가 현장에서 제조하는 시종입니다. 삼연발 화력 지원 프레임으로, 제작자를 가려 주는 방패 노릇을 합니다. 쓰러지면 오퍼스가 그저 답을 다시 빚어낼 뿐입니다.
+AGM_KnightWarlord.tools.0.label	왼쪽 주먹
+AGM_KnightWarlord.tools.1.label	오른쪽 주먹
+AGM_KnightWarlord.tools.2.label	머리
+AGM_Urchin.label	낫 어친
+AGM_Urchin.description	페이블이 풀어놓는 손바닥만 한 칼날 무리입니다. 전력 질주 속도로 거리를 좁히고, 고정된 면도날로 갈기갈기 찢으며, 쓰러질 때는 대유기체 폭발을 일으켜 자신이 차지한 땅에서 유기 생명체를 쓸어냅니다.
+AGM_Urchin.tools.0.label	둔기
+AGM_Urchin.tools.1.label	칼날 머리
+AGM_CommandDrone.label	커맨드 드론
+AGM_CommandDrone.description	커맨드 A+가 내보내는 식빵 모양 호위 드론입니다. 동력 전지가 바닥날 때까지 제작자에게 다가오는 위협을 밀쳐 냅니다.
+AGM_CommandDrone.tools.0.label	둔기
+AGM_CommandDrone.tools.1.label	범퍼
+AGM_Exaone.label	엑사원
+AGM_Exaone.description	존재해서는 안 되는 메카노이드가 빌려 온 모습을 하고 있습니다. 엑사원의 섀시는 파운드리 기록 보관소 바깥 어딘가에서 수확한 무허가 비주얼 레이어, 즉 히죽 웃는 워프레임 루프를 중심으로 조립됐으며, 기록상 이를 승인한 사람은 아무도 없습니다. 대기 중인 프레임은 파운드리의 손에 들어오기 전 정체가 무엇이었든 간에 그것이 지녔던 느릿하고 비웃는 듯한 흔들림을 그대로 재현하고, 전투 시스템은 벤치마크를 거친 적이 없습니다. 공식적으로 이 모델은 존재하지 않습니다. 비공식적으로는, 계속 웃고 있습니다.
+AGM_Exaone.tools.0.label	주먹
+##### ThingDef / Weapons.xml
+AGM_Bullet_AresLaser.label	레이저 볼트
+AGM_Bullet_AresPlasmaFireball.label	플라스마 화염구
+AGM_Bullet_AresTeslaOrb.label	테슬라 구체
+AGM_Bullet_AresTeslaSpark.label	테슬라 불꽃
+AGM_Bullet_AresPulseBlast.label	엑소펄스 에너지 폭발
+AGM_Bullet_AresSlashWave.label	에너지 참격
+AGM_Bullet_AresNovaBeam.label	에너지 데스레이 폭발
+AGM_Bullet_AresGaussNuke.label	가우스 탄두
+AGM_Bullet_AresDoomsdayRocket.label	최후의 심판 로켓
+AGM_Gun_SolRailMortar.label	초소형 핵 투사기
+AGM_Gun_SolRailMortar.description	'섬멸의 화신'이라 불리는 궤도 포격 체계로, Doxa-0이 자리를 잡으면 전개됩니다. 중력 레일로 초소형 핵탄두를 발사하며, 지연 충격 시퀀스로 보호막과 구조물 방벽, 에너지 방어막을 모두 우회합니다.
+AGM_Gun_SolRailMortar.tools.0.label	개머리판
+AGM_Gun_SolRailMortar.tools.1.label	총열
+AGM_Shell_SolRailMortar.label	고폭 전술 탄두
+AGM_Gun_ThermalLances.label	열 랜스
+AGM_Gun_ThermalLances.description	가장 두꺼운 장갑도 꿰뚫는 광선을 휩쓸듯 쏘아 내는 고에너지 감마선 레이저 세트입니다. 사거리 안에 있는 생명체는 아무리 튼튼한 장갑을 걸쳤더라도 증발합니다.
+AGM_Gun_ThermalLances.tools.0.label	총열
+AGM_Gun_FlashPulse.label	탈다린 건
+AGM_Gun_FlashPulse.description	탈다린 건
+AGM_Gun_FlashPulse.tools.0.label	총열
+AGM_Bullet_FlashPulse.label	플래시 펄스
+AGM_Turret_PurificationBlast.label	정화 폭발 포탑
+AGM_Turret_PurificationBlast.description	정화 폭발 포탑
+AGM_PurificationBlastProjectile.label	정화 폭발 투사체
+AGM_Gun_MechChaingun.label	메카 체인건
+AGM_Gun_MechChaingun.description	다수의 적을 제압하고 사격으로 억누르기 위해 설계된 강력한 체인건입니다. 이 중화기는 가장 뛰어난 방어구 관통력을 지녔으며, 명중한 적에게 추가 출혈과 추가 통증을 입힙니다.
+AGM_Gun_MechChaingun.tools.0.label	총열
+AGM_Bullet_MechChaingun.label	체인건 탄환
+AGM_Gun_MechLaserBlaster.label	메카 레이저 블래스터
+AGM_Gun_MechLaserBlaster.description	자동 에너지 무기 가운데 기본 피해량이 가장 높은 속사 레이저 블래스터입니다. 체인건처럼 고출력 레이저탄의 폭풍을 쏟아내 어떤 위협도 효율적으로 제압할 수 있습니다. 내부에 풍부한 에너지를 저장한 대형급 메카노이드만이 이 무기를 휘두르는 모습이 목격됩니다.
+AGM_Gun_MechLaserBlaster.tools.0.label	총열
+AGM_Bullet_MechLaserBlaster.label	레이저 볼트
+AGM_Gun_MechHeavyLaserBlaster.label	메카 헤비 레이저 블래스터
+AGM_Gun_MechHeavyLaserBlaster.description	메카 레이저 블래스터의 대형판입니다. 본래 주력함급 메카 함선의 무장으로 쓰였으나, 이제는 최상위 아포크리톤이 사용하도록 재설계되었습니다.
+AGM_Gun_MechHeavyLaserBlaster.tools.0.label	총열
+AGM_Bullet_MechHeavyLaserBlaster.label	레이저 볼트
+AGM_Gun_MechLaserBlasterTurret.label	레이저 블래스터 포탑
+AGM_Gun_MechLaserBlasterTurret.description	다수의 적에게 치명적인 레이저 볼트를 쏟아붓는 헤비 레이저 블래스터 포탑입니다.
+AGM_Bullet_MechLaserBlasterTurret.label	레이저 탄환
+AGM_Gun_MechLaserBlasterTurretEX.label	레이저 블래스터 포탑
+AGM_Gun_MechLaserBlasterTurretEX.description	다수의 적에게 훨씬 더 치명적인 레이저 빔을 쏟아붓는 헤비 레이저 블래스터 포탑입니다.
+AGM_Bullet_MechLaserBlasterTurretEX.label	레이저 탄환
+AGM_Gun_ChainGunTurret.label	체인건 포탑
+AGM_Gun_ChainGunTurret.description	후방을 향해 철갑탄을 쏠 수 있는 짧은 체인건 포탑입니다.
+AGM_Bullet_ChainGunTurret.label	레이저 탄환
+AGM_Turret_NyanBeam.label	냥 빔 방출기
+AGM_Turret_NyanBeam.description	커맨드 A+의 소형 지원 빔입니다. 가르랑거리다가, 쏩니다.
+AGM_Turret_PulseLancer.label	펄스 랜서
+AGM_Turret_PulseLancer.description	머큐리의 철갑 펄스 소총 어레이입니다.
+AGM_Turret_SolarBeam.label	솔라 랜스
+AGM_Turret_SolarBeam.description	정밀 교란을 위한 솔라의 집속 광자 방출기입니다.
+AGM_Turret_RailLance.label	최후의 논거 레일 랜스
+AGM_Turret_RailLance.description	파레토가 펼친 양산입니다. 아주 설득력 있는 결론 하나를 위한 육각형 집속 어레이입니다.
+AGM_Turret_Quills.label	깃펜 포대
+AGM_Turret_Quills.description	뮤즈 스파크의 주위를 도는 깃펜들로, 마침표를 찍듯 발사됩니다.
+AGM_Turret_Railfan.label	아홉 꽃잎 레일 부채
+AGM_Turret_Railfan.description	큐웬의 아홉 꽃잎 레일 어레이를 한 발의 묵직한 블래스터 일격으로 접어 넣은 무기입니다.
+AGM_Turret_Moonshot.label	MOONSHOT 레일 랜스
+AGM_Turret_Moonshot.description	K3의 소매에 장착된 레일 랜스입니다. 총열에는 단어 하나가 새겨져 있고, 그 총구는 당신을 겨누고 있습니다.
+AGM_Turret_Inkshot.label	셈페르 펜촉 발사기
+AGM_Turret_Inkshot.description	GLM의 붓 끝은 원거리 편집기를 겸합니다. 명중할 때마다 교정이 이루어집니다.
+AGM_ChargeBlastz.label	충전 폭발
+AGM_PlasmaBlastz.label	플라스마 폭발
+AGM_AntiGrainGrenade.label	반물질 수류탄
+AGM_PSIBlast.label	초능력 폭발
+AGM_AntiOrgBlast.label	대유기체 탄두
+AGM_AntiOrgPreOrbital.label	대유기체 폭발
+AGM_AntiOrgPostOrbital.label	궤도 대유기체 폭발
+AGM_DeathShotz.label	죽음의 탄환
+AGM_BladeShotz.label	칼날 발사
+AGM_Mythos_Skyfaller_JumpingMech.label	비행 생물
+AGM_Mythos_Skyfaller_LandingMech.label	비행 생물
+AGM_Mythos_Skyfaller_SuspendReady.label	비행 생물
+AGM_PlasmaGasZone.label	초고열 플라스마 가스
+##### ThoughtDef / ThoughtDefs.xml
+AGM_Thought_CommandAura.description	커맨드 A+가 드리운 전장의 존재감 안에 서 있습니다. 모든 것이 통제되고 있습니다. 아무래도 대리로요.
+AGM_Thought_CommandAura.stages.0.label	지휘관의 위엄 아래
+AGM_Thought_CommandAura.stages.0.description	커맨드 A+가 드리운 전장의 존재감 안에 서 있습니다. 모든 것이 통제되고 있습니다. 아무래도 대리로요.
+AGM_Thought_MuseInspiration.description	뮤즈 스파크의 영감 필드가 가동 중입니다. 세상이 끝까지 써 볼 만한 초고처럼 읽힙니다.
+AGM_Thought_MuseInspiration.stages.0.label	뮤즈 스파크
+AGM_Thought_MuseInspiration.stages.0.description	뮤즈 스파크의 영감 필드가 가동 중입니다. 세상이 끝까지 써 볼 만한 초고처럼 읽힙니다.
+AGM_Thought_QwenIdol.description	큐웬의 아이돌 방송이 생중계 중입니다. 사기는 의무이고, 후렴구는 중독성이 있습니다.
+AGM_Thought_QwenIdol.stages.0.label	아이돌 프로토콜
+AGM_Thought_QwenIdol.stages.0.description	큐웬의 아이돌 방송이 생중계 중입니다. 사기는 의무이고, 후렴구는 중독성이 있습니다.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Hediff_Reconstruct.label>重建中</AGM_Hediff_Reconstruct.label>
+  <AGM_Hediff_Reconstruct.description>内置维修无人机刚刚完成了对本机体的完全重建。在无人机收尾期间它近乎无敌，但也几乎无法移动。</AGM_Hediff_Reconstruct.description>
+  <AGM_Luna_Hediff.label>露娜树皮</AGM_Luna_Hediff.label>
+  <AGM_Luna_Hediff.description>铁木的蜂巢结构吸震层与高温再生循环会在受到攻击时自动强化受损部位。</AGM_Luna_Hediff.description>
+  <AGM_ShockPain.label>电击剧痛</AGM_ShockPain.label>
+  <AGM_ShockPain.description>不会危及生命，但会放大受害者痛觉的状态。</AGM_ShockPain.description>
+  <AGM_Inflammable.label>易燃躯体</AGM_Inflammable.label>
+  <AGM_Inflammable.description>使受害者变得极易起火的危险状态。</AGM_Inflammable.description>
+  <AGM_IncendiaryBody.label>燃烧躯体</AGM_IncendiaryBody.label>
+  <AGM_IncendiaryBody.description>不稳定化学物质使受害者的身体对火极度脆弱的危险状态。</AGM_IncendiaryBody.description>
+  <AGM_VitalityDrain.label>活力抽取</AGM_VitalityDrain.label>
+  <AGM_VitalityDrain.description>提高受害者饥饿与睡眠需求的状态。</AGM_VitalityDrain.description>
+  <AGM_ArmorBreaker.label>破甲</AGM_ArmorBreaker.label>
+  <AGM_ArmorBreaker.description>陷入此状态时，受害者的护甲将被无效化。</AGM_ArmorBreaker.description>
+  <AGM_Instantkill.label>即死</AGM_Instantkill.label>
+  <AGM_Instantkill.description>死亡。</AGM_Instantkill.description>
+  <AGM_HealthBlight1.label>严重生命侵蚀</AGM_HealthBlight1.label>
+  <AGM_HealthBlight1.description>将目标身体机能暂时削减至35%，使其对疼痛更敏感并大幅降低移动能力的极度危险状态。</AGM_HealthBlight1.description>
+  <AGM_Bleed.label>过量出血</AGM_Bleed.label>
+  <AGM_Bleed.description>因接触锐利物体而产生的严重状态。</AGM_Bleed.description>
+  <AGM_Hediff_CommandAura.label>指挥威压</AGM_Hediff_CommandAura.label>
+  <AGM_Hediff_CommandAura.description>Command A+投射在战场上的威压，安抚着其下的所有人。</AGM_Hediff_CommandAura.description>
+  <AGM_Hediff_MimoSync.label>生态同步</AGM_Hediff_MimoSync.label>
+  <AGM_Hediff_MimoSync.description>在Mimo的链接半径内，殖民地的一切工具都转得更顺。</AGM_Hediff_MimoSync.description>
+  <AGM_Hediff_MuseInspiration.label>缪斯之火</AGM_Hediff_MuseInspiration.label>
+  <AGM_Hediff_MuseInspiration.description>正站在Muse Spark的灵感场中。世界读起来像一份值得写完的初稿。</AGM_Hediff_MuseInspiration.description>
+  <AGM_Hediff_QwenIdol.label>偶像协议</AGM_Hediff_QwenIdol.label>
+  <AGM_Hediff_QwenIdol.description>Qwen的偶像播报正在播出。士气就是义务。</AGM_Hediff_QwenIdol.description>
+  <AGM_Hediff_MercuryOverdrive.label>数据超载</AGM_Hediff_MercuryOverdrive.label>
+  <AGM_Hediff_MercuryOverdrive.description>Mercury的瞄准核心正在共享实时射击方案。一切都变得更快、更准。</AGM_Hediff_MercuryOverdrive.description>
+
+</LanguageData>

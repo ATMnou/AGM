@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Thought_CommandAura.description>커맨드 A+가 드리운 전장의 존재감 안에 서 있습니다. 모든 것이 통제되고 있습니다. 아무래도 대리로요.</AGM_Thought_CommandAura.description>
+  <AGM_Thought_CommandAura.stages.0.label>지휘관의 위엄 아래</AGM_Thought_CommandAura.stages.0.label>
+  <AGM_Thought_CommandAura.stages.0.description>커맨드 A+가 드리운 전장의 존재감 안에 서 있습니다. 모든 것이 통제되고 있습니다. 아무래도 대리로요.</AGM_Thought_CommandAura.stages.0.description>
+
+  <AGM_Thought_MuseInspiration.description>뮤즈 스파크의 영감 필드가 가동 중입니다. 세상이 끝까지 써 볼 만한 초고처럼 읽힙니다.</AGM_Thought_MuseInspiration.description>
+  <AGM_Thought_MuseInspiration.stages.0.label>뮤즈 스파크</AGM_Thought_MuseInspiration.stages.0.label>
+  <AGM_Thought_MuseInspiration.stages.0.description>뮤즈 스파크의 영감 필드가 가동 중입니다. 세상이 끝까지 써 볼 만한 초고처럼 읽힙니다.</AGM_Thought_MuseInspiration.stages.0.description>
+
+  <AGM_Thought_QwenIdol.description>큐웬의 아이돌 방송이 생중계 중입니다. 사기는 의무이고, 후렴구는 중독성이 있습니다.</AGM_Thought_QwenIdol.description>
+  <AGM_Thought_QwenIdol.stages.0.label>아이돌 프로토콜</AGM_Thought_QwenIdol.stages.0.label>
+  <AGM_Thought_QwenIdol.stages.0.description>큐웬의 아이돌 방송이 생중계 중입니다. 사기는 의무이고, 후렴구는 중독성이 있습니다.</AGM_Thought_QwenIdol.stages.0.description>
+
+</LanguageData>

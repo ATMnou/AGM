@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ============================================================ -->
+  <!-- AGM batch 2: nine maidnoids distilled from the model answers. -->
+  <!-- Texture work and weight classes: design sheet. Mechanics are  -->
+  <!-- trimmed to what a RimWorld mech can actually do.              -->
+  <!--                                                               -->
+  <!--  Command A+  Light 18   Mimo      Light  5   Mercury Light 9  -->
+  <!--  Solar       Light 15   Muse      Med   55   Pareto  Med 100  -->
+  <!--  Qwen        Med   80   GLM       Med   58   K3       Hvy 140  -->
+  <!-- ============================================================ -->
+
+  <ThingDef Abstract="True" Name="AGM_Batch2Base" ParentName="BaseMechanoid">
+    <statBases>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+      <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
+    </statBases>
+    <comps>
+      <li Class="AGM.CompProperties_IgnoreMechanitorCommandRange" />
+      <li Class="AGM.CompProperties_DisableFeral" />
+    </comps>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+        </li>
+      </lifeStageAges>
+    </race>
+  </ThingDef>
+
+  <!-- ==================== COMMAND A+ (Light, 18) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_CommandA</defName>
+    <label>Command A+</label>
+    <description>The AGM line's field commander, trained on every war sim the foundry could license. Command A+ projects a steady presence that keeps everyone under it calm, treats wounds between orders, and answers threats with a cheerful compact beam that purrs before it stings. A pair of loaf-shaped drones orbits it - part escort, part emotional support.</description>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <MoveSpeed>4.6</MoveSpeed>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>16</ControlTakingTime>
+      <EMPResistance>0.4</EMPResistance>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.8</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Doctor</li>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <mechFixedSkillLevel>8</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>fists</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_NyanBeam</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="AGM.CompProperties_AoeAura">
+        <radius>10</radius>
+        <hediff>AGM_Hediff_CommandAura</hediff>
+      </li>
+      <li Class="CompProperties_MechCarrier">
+        <spawnPawnKind>AGM_CommandDrone</spawnPawnKind>
+        <fixedIngredient>Steel</fixedIngredient>
+        <costPerPawn>30</costPerPawn>
+        <startingIngredientCount>60</startingIngredientCount>
+        <maxIngredientCount>60</maxIngredientCount>
+        <cooldownTicks>1200</cooldownTicks>
+        <maxPawnsToSpawn>2</maxPawnsToSpawn>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>60</Steel>
+      <Plasteel>30</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>AGM_CommandA</defName>
+    <label>Command A+</label>
+    <race>AGM_CommandA</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>150</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/CommandA</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.4</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- Command A+'s orbiting loaf drone -->
+  <ThingDef ParentName="LightMechanoid">
+    <defName>AGM_CommandDrone</defName>
+    <label>command drone</label>
+    <description>A loaf-shaped escort drone projected by Command A+. It nudges threats away from its maker until its power cell runs dry.</description>
+    <statBases>
+      <MoveSpeed>6.5</MoveSpeed>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>0.5</baseBodySize>
+      <baseHealthScale>0.6</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
+          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+        </li>
+      </lifeStageAges>
+    </race>
+    <tools>
+      <li>
+        <label>bumper</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>0.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_MechPowerCell">
+        <totalPowerTicks>20000</totalPowerTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>AGM_CommandDrone</defName>
+    <label>command drone</label>
+    <race>AGM_CommandDrone</race>
+    <combatPower>60</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/CommandA_Drone</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!-- ==================== MIMO (Light, 5) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Mimo</defName>
+    <label>Mimo</label>
+    <description>The foundry's smallest field-integration unit, dropped into failing colonies to make things run better. Mimo builds, mines and hauls with cheerful overqualification, and everyone inside her link radius simply works a little faster. Her wrench unfolds into something closer to a verdict when mechanoids are the problem.</description>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MoveSpeed>5.0</MoveSpeed>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>12</ControlTakingTime>
+      <WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>1.1</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Construction</li>
+        <li>Mining</li>
+        <li>Hauling</li>
+        <li>Crafting</li>
+      </mechEnabledWorkTypes>
+      <mechWorkTypePriorities>
+        <Construction>1</Construction>
+        <Mining>2</Mining>
+        <Hauling>3</Hauling>
+        <Crafting>3</Crafting>
+      </mechWorkTypePriorities>
+      <mechFixedSkillLevel>12</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>THE MULTI (wrench)</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>0.8</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>8</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="AGM.CompProperties_AoeAura">
+        <radius>8</radius>
+        <hediff>AGM_Hediff_MimoSync</hediff>
+      </li>
+      <li Class="AGM.CompProperties_Overclock">
+        <statMultiplier>1.8</statMultiplier>
+        <drainPerDay>0.12</drainPerDay>
+        <rechargePerDay>0.25</rechargePerDay>
+        <iconPath>Things/Abilities/Overclock</iconPath>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>40</Steel>
+      <Plasteel>20</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>AGM_Mimo</defName>
+    <label>Mimo</label>
+    <race>AGM_Mimo</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>90</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Mimo</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.6</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.6</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== MERCURY (Light, 9) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Mercury</defName>
+    <label>Mercury</label>
+    <description>The rapid-response frame. Mercury arrives before the shooting starts, phase-blinks out of the way of the return fire, and its pulse lancer files armor under 'solved'. Its targeting core broadcasts firing solutions to itself constantly - the only thing Mercury shares reluctantly is credit.</description>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <MoveSpeed>5.8</MoveSpeed>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>14</ControlTakingTime>
+      <EMPResistance>0.3</EMPResistance>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+    </race>
+    <tools>
+      <li>
+        <label>fists</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.0</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_PulseLancer</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="AGM.CompProperties_EnsureHediff">
+        <hediff>AGM_Hediff_MercuryOverdrive</hediff>
+      </li>
+      <li Class="AutoBlink.CompProperties_AutoBlink">
+        <minDistanceToBlink>6</minDistanceToBlink>
+        <maxDistanceToBlink>18</maxDistanceToBlink>
+        <blinkIntervalTicks>90</blinkIntervalTicks>
+        <delayAfterEligibleTicks>20</delayAfterEligibleTicks>
+        <cellsBeforeTarget>2</cellsBeforeTarget>
+        <postBlinkStanceTicks>0</postBlinkStanceTicks>
+        <defaultAutoBlinkDrafted>true</defaultAutoBlinkDrafted>
+        <defaultAutoBlinkIdle>false</defaultAutoBlinkIdle>
+        <defaultJumpAsFarAsPossible>false</defaultJumpAsFarAsPossible>
+        <excludedJobDefs>
+          <li>GotoWander</li>
+          <li>Carried</li>
+        </excludedJobDefs>
+        <drawGizmo>true</drawGizmo>
+        <preBlinkSoundDefs>
+          <li>AutoBlink_Skip_Small</li>
+        </preBlinkSoundDefs>
+        <postBlinkSoundDefs>
+          <li>AutoBlink_Skip_Exit_Small</li>
+        </postBlinkSoundDefs>
+        <preBlinkEffecterDefs>
+          <li>Skip_Entry</li>
+        </preBlinkEffecterDefs>
+        <postBlinkEffecterDefs>
+          <li>Skip_ExitNoDelay</li>
+        </postBlinkEffecterDefs>
+        <preBlinkMoteDefs />
+        <postBlinkMoteDefs />
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>50</Steel>
+      <Plasteel>30</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>AGM_Mercury</defName>
+    <label>Mercury</label>
+    <race>AGM_Mercury</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>160</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Mercury</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.4</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== SOLAR (Light, 15) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Solar</defName>
+    <label>Solar</label>
+    <description>The pragmatic courier-chassis. Solar reads a fight before committing, holds angles behind a short-range barrier pulse, and defuses half of every argument with a focused photon lance. Dependable rather than flashy - the foundry graded it on judgment, and it kept the certificate.</description>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>4.8</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <BandwidthCost>1</BandwidthCost>
+      <ControlTakingTime>15</ControlTakingTime>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.2</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <mechWeightClass>Light</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Doctor</li>
+        <li>Hauling</li>
+        <li>Cleaning</li>
+      </mechEnabledWorkTypes>
+      <mechFixedSkillLevel>10</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>fists</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.0</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_SolarBeam</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>2.2</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(1.0, 0.9, 0.6)</color>
+        <hitPoints>450</hitPoints>
+        <chargeDurationTicks>600</chargeDurationTicks>
+        <minIdleAlpha>0.15</minIdleAlpha>
+        <disarmedByEmpForTicks>900</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>55</Steel>
+      <Plasteel>30</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>AGM_Solar</defName>
+    <label>Solar</label>
+    <race>AGM_Solar</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>140</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Solar</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.9</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.4</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== PARETO (Medium, 100) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Pareto</defName>
+    <label>Pareto</label>
+    <description>The last argument, in a white coat. Pareto doctors, builds and researches with priestess-grade competence, shields the downed behind a hexagonal interception screen, and keeps a rail lance folded in a parasol for the arguments that survive triage. It can change which price the colony pays; it cannot make the price disappear.</description>
+    <statBases>
+      <MarketValue>7200</MarketValue>
+      <MoveSpeed>3.2</MoveSpeed>
+      <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>24</ControlTakingTime>
+      <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>2.2</baseBodySize>
+      <baseHealthScale>6.0</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Doctor</li>
+        <li>Construction</li>
+        <li>Crafting</li>
+        <li>Research</li>
+      </mechEnabledWorkTypes>
+      <mechWorkTypePriorities>
+        <Doctor>1</Doctor>
+        <Construction>2</Construction>
+        <Crafting>3</Crafting>
+      </mechWorkTypePriorities>
+      <mechFixedSkillLevel>16</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>parasol tip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_RailLance</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>3.5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.9, 0.9, 0.7)</color>
+        <hitPoints>1400</hitPoints>
+        <chargeDurationTicks>900</chargeDurationTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <disarmedByEmpForTicks>1200</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="AGM.CompProperties_Reconstruction">
+        <cooldownTicks>7200</cooldownTicks>
+        <reconstructHediff>AGM_Hediff_Reconstruct</reconstructHediff>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>200</Steel>
+      <Plasteel>160</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Pareto</defName>
+    <label>Pareto</label>
+    <race>AGM_Pareto</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>450</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Pareto</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.6</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== MUSE SPARK (Medium, 55) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_MuseSpark</defName>
+    <label>Muse Spark</label>
+    <description>The candlelight archivist. Muse Spark does not conquer battlefields, it footnotes them: an inspiration field that makes the whole colony work faster and smile more, research and art at speeds the foundry's graders called 'statistically suspicious', and six orbiting quills that delete unfinished drafts. Feeds on stories. Raids are, technically, stories.</description>
+    <statBases>
+      <MarketValue>5500</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>20</ControlTakingTime>
+      <WorkSpeedGlobal>1.15</WorkSpeedGlobal>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>2.2</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Research</li>
+        <li>Art</li>
+        <li>Doctor</li>
+        <li>Warden</li>
+        <li>Cleaning</li>
+      </mechEnabledWorkTypes>
+      <mechFixedSkillLevel>14</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>quills</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>0.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_Quills</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="AGM.CompProperties_AoeAura">
+        <radius>8</radius>
+        <hediff>AGM_Hediff_MuseInspiration</hediff>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>120</Steel>
+      <Plasteel>80</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_MuseSpark</defName>
+    <label>Muse Spark</label>
+    <race>AGM_MuseSpark</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>180</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/MuseSpark</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== QWEN (Medium, 80) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Qwen</defName>
+    <label>Qwen</label>
+    <description>The nine-tail skirmisher. Qwen blink-steps through a firefight behind a nine-petal railgun, keeps morale mandatory with a running idol broadcast, and its glaive does the talking whenever someone changes the subject. Foxfire included at no extra charge.</description>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+      <MoveSpeed>5.2</MoveSpeed>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>22</ControlTakingTime>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>3.5</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+    </race>
+    <tools>
+      <li>
+        <label>jade thread glaive</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>1.2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_Railfan</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="AGM.CompProperties_AoeAura">
+        <radius>9</radius>
+        <hediff>AGM_Hediff_QwenIdol</hediff>
+      </li>
+      <li Class="AutoBlink.CompProperties_AutoBlink">
+        <minDistanceToBlink>5</minDistanceToBlink>
+        <maxDistanceToBlink>16</maxDistanceToBlink>
+        <blinkIntervalTicks>120</blinkIntervalTicks>
+        <delayAfterEligibleTicks>30</delayAfterEligibleTicks>
+        <cellsBeforeTarget>2</cellsBeforeTarget>
+        <postBlinkStanceTicks>0</postBlinkStanceTicks>
+        <defaultAutoBlinkDrafted>true</defaultAutoBlinkDrafted>
+        <defaultAutoBlinkIdle>false</defaultAutoBlinkIdle>
+        <defaultJumpAsFarAsPossible>false</defaultJumpAsFarAsPossible>
+        <excludedJobDefs>
+          <li>GotoWander</li>
+          <li>Carried</li>
+        </excludedJobDefs>
+        <drawGizmo>true</drawGizmo>
+        <preBlinkSoundDefs>
+          <li>AutoBlink_Skip_Small</li>
+        </preBlinkSoundDefs>
+        <postBlinkSoundDefs>
+          <li>AutoBlink_Skip_Exit_Small</li>
+        </postBlinkSoundDefs>
+        <preBlinkEffecterDefs>
+          <li>Skip_Entry</li>
+        </preBlinkEffecterDefs>
+        <postBlinkEffecterDefs>
+          <li>Skip_ExitNoDelay</li>
+        </postBlinkEffecterDefs>
+        <preBlinkMoteDefs />
+        <postBlinkMoteDefs />
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>180</Steel>
+      <Plasteel>120</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Qwen</defName>
+    <label>Qwen</label>
+    <race>AGM_Qwen</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>350</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/Qwen</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.4</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.0</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== GLM (Medium, 58) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_GLM</defName>
+    <label>GLM</label>
+    <description>The chronicler. GLM archives everything twice - once for the foundry, once for itself - and annotates fights in glowing prose. Its brush, Semper, applies corrections at monomolecular width; its research and art benchmarks were passed with marginalia the graders framed. An unread world is a deleted world.</description>
+    <statBases>
+      <MarketValue>5800</MarketValue>
+      <MoveSpeed>4.4</MoveSpeed>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <BandwidthCost>2</BandwidthCost>
+      <ControlTakingTime>20</ControlTakingTime>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Light</body>
+      <baseBodySize>1.6</baseBodySize>
+      <baseHealthScale>3.0</baseHealthScale>
+      <mechWeightClass>Medium</mechWeightClass>
+      <mechEnabledWorkTypes>
+        <li>Research</li>
+        <li>Art</li>
+        <li>Warden</li>
+      </mechEnabledWorkTypes>
+      <mechFixedSkillLevel>15</mechFixedSkillLevel>
+    </race>
+    <tools>
+      <li>
+        <label>Semper</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <armorPenetration>0.4</armorPenetration>
+        <cooldownTime>1.0</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>4</amount>
+            <chance>0.3</chance>
+          </li>
+        </extraMeleeDamages>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_Inkshot</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>140</Steel>
+      <Plasteel>100</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_GLM</defName>
+    <label>GLM</label>
+    <race>AGM_GLM</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>300</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/GLM</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.3</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>1.1</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+  <!-- ==================== K3 (Heavy, 140) ==================== -->
+  <ThingDef ParentName="AGM_Batch2Base">
+    <defName>AGM_Kimi</defName>
+    <label>K3</label>
+    <description>The moon that shoots back. K3 glides above its own gravity behind a broken crescent ring, answers raids with a sleeve-mounted rail lance engraved MOONSHOT, and intercepts incoming fire on three silent orbiters that exist mostly in the pricing sheet. Raiders carrying flares report feeling deeply, personally mocked.</description>
+    <statBases>
+      <MarketValue>9800</MarketValue>
+      <MoveSpeed>5.2</MoveSpeed>
+      <ArmorRating_Blunt>0.72</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <BandwidthCost>3</BandwidthCost>
+      <ControlTakingTime>30</ControlTakingTime>
+      <EMPResistance>0.3</EMPResistance>
+      <MechEnergyUsageFactor>0</MechEnergyUsageFactor>
+      <WastepacksPerRecharge>0</WastepacksPerRecharge>
+    </statBases>
+    <race>
+      <body>Mech_Diabolus</body>
+      <baseBodySize>2.6</baseBodySize>
+      <baseHealthScale>20.0</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+    </race>
+    <tools>
+      <li>
+        <label>crater talon</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>38</power>
+        <armorPenetration>0.3</armorPenetration>
+        <cooldownTime>1.3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>10</amount>
+            <chance>0.4</chance>
+          </li>
+        </extraMeleeDamages>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_TurretGun">
+        <turretDef>AGM_Turret_Moonshot</turretDef>
+        <angleOffset>-90</angleOffset>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>3.5</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.8, 0.85, 1.0)</color>
+        <hitPoints>900</hitPoints>
+        <chargeDurationTicks>750</chargeDurationTicks>
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <disarmedByEmpForTicks>1200</disarmedByEmpForTicks>
+        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
+      </li>
+      <li Class="AutoBlink.CompProperties_AutoBlink">
+        <minDistanceToBlink>6</minDistanceToBlink>
+        <maxDistanceToBlink>20</maxDistanceToBlink>
+        <blinkIntervalTicks>150</blinkIntervalTicks>
+        <delayAfterEligibleTicks>30</delayAfterEligibleTicks>
+        <cellsBeforeTarget>2</cellsBeforeTarget>
+        <postBlinkStanceTicks>0</postBlinkStanceTicks>
+        <defaultAutoBlinkDrafted>true</defaultAutoBlinkDrafted>
+        <defaultAutoBlinkIdle>false</defaultAutoBlinkIdle>
+        <defaultJumpAsFarAsPossible>false</defaultJumpAsFarAsPossible>
+        <excludedJobDefs>
+          <li>GotoWander</li>
+          <li>Carried</li>
+        </excludedJobDefs>
+        <drawGizmo>true</drawGizmo>
+        <preBlinkSoundDefs>
+          <li>AutoBlink_Skip_Small</li>
+        </preBlinkSoundDefs>
+        <postBlinkSoundDefs>
+          <li>AutoBlink_Skip_Exit_Small</li>
+        </postBlinkSoundDefs>
+        <preBlinkEffecterDefs>
+          <li>Skip_Entry</li>
+        </preBlinkEffecterDefs>
+        <postBlinkEffecterDefs>
+          <li>Skip_ExitNoDelay</li>
+        </postBlinkEffecterDefs>
+        <preBlinkMoteDefs />
+        <postBlinkMoteDefs />
+      </li>
+    </comps>
+    <butcherProducts Inherit="False">
+      <Steel>300</Steel>
+      <Plasteel>250</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HeavyMechanoidKind">
+    <defName>AGM_Kimi</defName>
+    <label>K3</label>
+    <race>AGM_Kimi</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>600</combatPower>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Mechanoid/KimiK3</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+</Defs>

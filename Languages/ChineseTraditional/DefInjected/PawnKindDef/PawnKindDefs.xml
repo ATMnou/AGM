@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Astra.label>阿斯特拉</AGM_Astra.label>
+  <AGM_Mythos.label>神話</AGM_Mythos.label>
+  <AGM_Fable.label>寓言</AGM_Fable.label>
+  <AGM_Fable.labelPlural>寓言</AGM_Fable.labelPlural>
+  <AGM_Sol.label>索爾</AGM_Sol.label>
+  <AGM_Opus.label>作品</AGM_Opus.label>
+  <AGM_Opus.labelPlural>作品</AGM_Opus.labelPlural>
+  <AGM_Argon.label>氬</AGM_Argon.label>
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+  <AGM_Luna.label>露娜</AGM_Luna.label>
+  <AGM_Sonnet.label>十四行詩</AGM_Sonnet.label>
+  <AGM_Sonnet.labelPlural>十四行詩</AGM_Sonnet.labelPlural>
+  <AGM_Flash.label>閃光</AGM_Flash.label>
+  <AGM_Pareto.label>帕累托</AGM_Pareto.label>
+  <AGM_MuseSpark.label>繆斯之火</AGM_MuseSpark.label>
+  <AGM_Qwen.label>通義千問</AGM_Qwen.label>
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+  <AGM_Haiku.label>俳句</AGM_Haiku.label>
+  <AGM_Haiku.labelPlural>俳句</AGM_Haiku.labelPlural>
+  <AGM_Terminus.label>終點</AGM_Terminus.label>
+  <AGM_CommandA.label>指揮官 A+</AGM_CommandA.label>
+  <AGM_Mimo.label>米莫</AGM_Mimo.label>
+  <AGM_Mercury.label>水星</AGM_Mercury.label>
+  <AGM_Solar.label>索拉</AGM_Solar.label>
+  <AGM_Shellsplitter.label>裂殼蛛</AGM_Shellsplitter.label>
+  <AGM_Shellsplitter.labelPlural>裂殼蛛</AGM_Shellsplitter.labelPlural>
+  <AGM_KnightEmpress.label>液壓騎士</AGM_KnightEmpress.label>
+  <AGM_KnightEmpress.labelPlural>液壓騎士</AGM_KnightEmpress.labelPlural>
+  <AGM_KnightWarlord.label>龍騎士</AGM_KnightWarlord.label>
+  <AGM_KnightWarlord.labelPlural>龍騎士</AGM_KnightWarlord.labelPlural>
+  <AGM_Urchin.label>鐮刀海膽</AGM_Urchin.label>
+  <AGM_Urchin.labelPlural>鐮刀海膽</AGM_Urchin.labelPlural>
+  <AGM_CommandDrone.label>指揮無人機</AGM_CommandDrone.label>
+  <AGM_Exaone.label>EXAONE</AGM_Exaone.label>
+
+</LanguageData>

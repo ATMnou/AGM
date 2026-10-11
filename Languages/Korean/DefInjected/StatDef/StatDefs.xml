@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <AGM_HeatNullNaniteResistance.label>열계 나노봇 내성</AGM_HeatNullNaniteResistance.label>
-  <AGM_HeatNullNaniteEnvironmentResistance.label>열계 나노봇 환경 내성</AGM_HeatNullNaniteEnvironmentResistance.label>
-  <AGM_ColdNullNaniteResistance.label>한랭 나노봇 내성</AGM_ColdNullNaniteResistance.label>
-  <AGM_ColdNullNaniteEnvironmentResistance.label>한랭 나노봇 환경 내성</AGM_ColdNullNaniteEnvironmentResistance.label>
-  <AGM_RadiationResistance.label>방사선 내성</AGM_RadiationResistance.label>
-  <AGM_RadiationEnvironmentResistance.label>방사선 환경 내성</AGM_RadiationEnvironmentResistance.label>
-  <AGM_AntiOrgToxinResistance.label>대유기물 독소 내성</AGM_AntiOrgToxinResistance.label>
-  <AGM_AntiOrgToxinEnvironmentResistance.label>대유기물 독소 환경 내성</AGM_AntiOrgToxinEnvironmentResistance.label>
-  <AGM_RageVirusResistance.label>광기 바이러스 내성</AGM_RageVirusResistance.label>
-  <AGM_RageVirusEnvironmentResistance.label>광기 바이러스 환경 내성</AGM_RageVirusEnvironmentResistance.label>
+  <!-- 열 무효화 나노봇 -->
+  <AGM_HeatNullNaniteResistance.label>열 무효화 나노봇 저항</AGM_HeatNullNaniteResistance.label>
+  <AGM_HeatNullNaniteResistance.description>이 생물이 열을 무효화하는 나노봇에 얼마나 잘 저항하는지를 나타냅니다.</AGM_HeatNullNaniteResistance.description>
+  <AGM_HeatNullNaniteEnvironmentResistance.label>열 무효화 환경 저항</AGM_HeatNullNaniteEnvironmentResistance.label>
+  <AGM_HeatNullNaniteEnvironmentResistance.description>이 생물이 환경에 퍼진 열 무효화 나노봇의 영향에 얼마나 잘 저항하는지를 나타냅니다. 냉기에 대한 저항을 무효화하는 나노봇을 풀어놓는 극심한 한파로부터 보호합니다.</AGM_HeatNullNaniteEnvironmentResistance.description>
+
+  <!-- 냉기 무효화 나노봇 -->
+  <AGM_ColdNullNaniteResistance.label>냉기 무효화 나노봇 저항</AGM_ColdNullNaniteResistance.label>
+  <AGM_ColdNullNaniteResistance.description>이 생물이 냉기를 무효화하는 나노봇에 얼마나 잘 저항하는지를 나타냅니다.</AGM_ColdNullNaniteResistance.description>
+  <AGM_ColdNullNaniteEnvironmentResistance.label>냉기 무효화 나노봇 환경 저항</AGM_ColdNullNaniteEnvironmentResistance.label>
+  <AGM_ColdNullNaniteEnvironmentResistance.description>이 생물이 환경에 퍼진 냉기 무효화 나노봇의 영향에 얼마나 잘 저항하는지를 나타냅니다. 열에 대한 저항을 무효화하는 나노봇을 풀어놓는 극심한 폭염으로부터 보호합니다.</AGM_ColdNullNaniteEnvironmentResistance.description>
+
+  <!-- 방사선 -->
+  <AGM_RadiationResistance.label>방사선 저항</AGM_RadiationResistance.label>
+  <AGM_RadiationResistance.description>이 생물이 방사선 중독에 얼마나 잘 저항하는지를 나타냅니다.</AGM_RadiationResistance.description>
+  <AGM_RadiationEnvironmentResistance.label>방사선 환경 저항</AGM_RadiationEnvironmentResistance.label>
+  <AGM_RadiationEnvironmentResistance.description>이 생물이 환경 속 방사선 중독의 영향에 얼마나 잘 저항하는지를 나타냅니다.</AGM_RadiationEnvironmentResistance.description>
+
+  <!-- 대유기체 독소 -->
+  <AGM_AntiOrgToxinResistance.label>대유기체 독소 저항</AGM_AntiOrgToxinResistance.label>
+  <AGM_AntiOrgToxinResistance.description>이 생물이 대유기체 독소에 얼마나 잘 저항하는지를 나타냅니다.</AGM_AntiOrgToxinResistance.description>
+  <AGM_AntiOrgToxinEnvironmentResistance.label>대유기체 독소 환경 저항</AGM_AntiOrgToxinEnvironmentResistance.label>
+  <AGM_AntiOrgToxinEnvironmentResistance.description>이 생물이 환경 속 대유기체 독소 중독의 영향에 얼마나 잘 저항하는지를 나타냅니다.</AGM_AntiOrgToxinEnvironmentResistance.description>
+
+  <!-- 분노 바이러스 -->
+  <AGM_RageVirusResistance.label>분노 바이러스 저항</AGM_RageVirusResistance.label>
+  <AGM_RageVirusResistance.description>이 생물이 분노 바이러스에 얼마나 잘 저항하는지를 나타냅니다.</AGM_RageVirusResistance.description>
+  <AGM_RageVirusEnvironmentResistance.label>분노 바이러스 환경 저항</AGM_RageVirusEnvironmentResistance.label>
+  <AGM_RageVirusEnvironmentResistance.description>이 생물이 환경 속 바이러스 감염의 영향에 얼마나 잘 저항하는지를 나타냅니다.</AGM_RageVirusEnvironmentResistance.description>
 
 </LanguageData>

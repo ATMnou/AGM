@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AGM_Astra.label>アストラ</AGM_Astra.label>
+  <AGM_Mythos.label>ミュートス</AGM_Mythos.label>
+  <AGM_Fable.label>フェーブル</AGM_Fable.label>
+  <AGM_Fable.labelPlural>フェーブル</AGM_Fable.labelPlural>
+  <AGM_Sol.label>ソル</AGM_Sol.label>
+  <AGM_Opus.label>オーパス</AGM_Opus.label>
+  <AGM_Opus.labelPlural>オーパス</AGM_Opus.labelPlural>
+  <AGM_Argon.label>アルゴン</AGM_Argon.label>
+  <AGM_Kimi.label>K3</AGM_Kimi.label>
+  <AGM_Luna.label>ルナ</AGM_Luna.label>
+  <AGM_Sonnet.label>ソネット</AGM_Sonnet.label>
+  <AGM_Sonnet.labelPlural>ソネット</AGM_Sonnet.labelPlural>
+  <AGM_Flash.label>フラッシュ</AGM_Flash.label>
+  <AGM_Pareto.label>パレート</AGM_Pareto.label>
+  <AGM_MuseSpark.label>ミューズスパーク</AGM_MuseSpark.label>
+  <AGM_Qwen.label>Qwen</AGM_Qwen.label>
+  <AGM_GLM.label>GLM</AGM_GLM.label>
+  <AGM_Haiku.label>ハイク</AGM_Haiku.label>
+  <AGM_Haiku.labelPlural>ハイク</AGM_Haiku.labelPlural>
+  <AGM_Terminus.label>ターミナス</AGM_Terminus.label>
+  <AGM_CommandA.label>コマンド A+</AGM_CommandA.label>
+  <AGM_Mimo.label>ミモ</AGM_Mimo.label>
+  <AGM_Mercury.label>マーキュリー</AGM_Mercury.label>
+  <AGM_Solar.label>ソラ</AGM_Solar.label>
+  <AGM_Shellsplitter.label>シェルスプリッター</AGM_Shellsplitter.label>
+  <AGM_Shellsplitter.labelPlural>シェルスプリッター</AGM_Shellsplitter.labelPlural>
+  <AGM_KnightEmpress.label>油圧ナイト</AGM_KnightEmpress.label>
+  <AGM_KnightEmpress.labelPlural>油圧ナイト</AGM_KnightEmpress.labelPlural>
+  <AGM_KnightWarlord.label>ドラゴンナイト</AGM_KnightWarlord.label>
+  <AGM_KnightWarlord.labelPlural>ドラゴンナイト</AGM_KnightWarlord.labelPlural>
+  <AGM_Urchin.label>シザーウーニュ</AGM_Urchin.label>
+  <AGM_Urchin.labelPlural>シザーウーニュ</AGM_Urchin.labelPlural>
+  <AGM_CommandDrone.label>コマンドドローン</AGM_CommandDrone.label>
+  <AGM_Exaone.label>EXAONE</AGM_Exaone.label>
+
+</LanguageData>

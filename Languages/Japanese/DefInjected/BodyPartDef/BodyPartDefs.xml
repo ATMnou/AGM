@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MechanicalDragonBodyFirstRing.label>第一胴体リング</MechanicalDragonBodyFirstRing.label>
+  <MechanicalDragonBodyFirstRing.labelShort>胴体リング</MechanicalDragonBodyFirstRing.labelShort>
+  <MechanicalDragonBodySecondRing.label>第二胴体リング</MechanicalDragonBodySecondRing.label>
+  <MechanicalDragonBodySecondRing.labelShort>胴体リング</MechanicalDragonBodySecondRing.labelShort>
+  <MechanicalDragonBodyThirdRing.label>第三胴体リング</MechanicalDragonBodyThirdRing.label>
+  <MechanicalDragonBodyThirdRing.labelShort>胴体リング</MechanicalDragonBodyThirdRing.labelShort>
+  <MechanicalDragonBodyFourthRing.label>第四胴体リング</MechanicalDragonBodyFourthRing.label>
+  <MechanicalDragonBodyFourthRing.labelShort>胴体リング</MechanicalDragonBodyFourthRing.labelShort>
+  <MechanicalDragonBodyFifthRing.label>第五胴体リング</MechanicalDragonBodyFifthRing.label>
+  <MechanicalDragonBodyFifthRing.labelShort>胴体リング</MechanicalDragonBodyFifthRing.labelShort>
+  <DragonCapacitor.label>ドラゴンコンデンサ</DragonCapacitor.label>
+  <HydraulicEmpressBodyFirstRing.label>第一胴体リング</HydraulicEmpressBodyFirstRing.label>
+  <HydraulicEmpressBodyFirstRing.labelShort>胴体リング</HydraulicEmpressBodyFirstRing.labelShort>
+  <HydraulicEmpressBodySecondRing.label>第二胴体リング</HydraulicEmpressBodySecondRing.label>
+  <HydraulicEmpressBodySecondRing.labelShort>胴体リング</HydraulicEmpressBodySecondRing.labelShort>
+  <HydraulicEmpressBodyThirdRing.label>第三胴体リング</HydraulicEmpressBodyThirdRing.label>
+  <HydraulicEmpressBodyThirdRing.labelShort>胴体リング</HydraulicEmpressBodyThirdRing.labelShort>
+  <HydraulicEmpressBodyFourthRing.label>第四胴体リング</HydraulicEmpressBodyFourthRing.label>
+  <HydraulicEmpressBodyFourthRing.labelShort>胴体リング</HydraulicEmpressBodyFourthRing.labelShort>
+  <HydraulicEmpressBodyFifthRing.label>第五胴体リング</HydraulicEmpressBodyFifthRing.label>
+  <HydraulicEmpressBodyFifthRing.labelShort>胴体リング</HydraulicEmpressBodyFifthRing.labelShort>
+  <HydraulicEmpressFormingPod.label>エンプレス育成ポッド</HydraulicEmpressFormingPod.label>
+  <AGM_GiantMechanicalJoint.label>コロッサス関節</AGM_GiantMechanicalJoint.label>
+  <AGM_GiantMechanicalLeg.label>コロッサス脚</AGM_GiantMechanicalLeg.label>
+  <AGM_Sol_DeepLogic_NeuronCore.label>深層論理コア</AGM_Sol_DeepLogic_NeuronCore.label>
+  <AGM_Sol_Turret_Mount.label>反粒子タレットマウント</AGM_Sol_Turret_Mount.label>
+  <AGM_Sol_AntiParticleEmitter.label>反粒子エミッター</AGM_Sol_AntiParticleEmitter.label>
+  <AGM_Sol_Hatch_Module.label>シェルスプリッター孵化室</AGM_Sol_Hatch_Module.label>
+  <AGM_Sol_Sensor_Cluster.label>前方センサーアレイ</AGM_Sol_Sensor_Cluster.label>
+  <AGM_Sol_FireControlModule.label>射撃統制調整モジュール</AGM_Sol_FireControlModule.label>
+  <AGM_Sol_LimbCluster.label>多爪推進ユニット</AGM_Sol_LimbCluster.label>
+  <AGM_Sol_Dorsal_First.label>第一背殻節</AGM_Sol_Dorsal_First.label>
+  <AGM_Sol_Dorsal_First.labelShort>背殻節</AGM_Sol_Dorsal_First.labelShort>
+  <AGM_Sol_Dorsal_Second.label>第二背殻節</AGM_Sol_Dorsal_Second.label>
+  <AGM_Sol_Dorsal_Second.labelShort>背殻節</AGM_Sol_Dorsal_Second.labelShort>
+  <AGM_Sol_Dorsal_Third.label>第三背殻節</AGM_Sol_Dorsal_Third.label>
+  <AGM_Sol_Dorsal_Third.labelShort>背殻節</AGM_Sol_Dorsal_Third.labelShort>
+  <AGM_Sol_Dorsal_Fourth.label>第四背殻節</AGM_Sol_Dorsal_Fourth.label>
+  <AGM_Sol_Dorsal_Fourth.labelShort>背殻節</AGM_Sol_Dorsal_Fourth.labelShort>
+  <AGM_Luna_ThermalSensor.label>熱感アレイ</AGM_Luna_ThermalSensor.label>
+  <AGM_Luna_GreekFireNozzle.label>ギリシャ火ノズル</AGM_Luna_GreekFireNozzle.label>
+  <AGM_Luna_HydraulicCrusher.label>油圧クラッシャー</AGM_Luna_HydraulicCrusher.label>
+  <AGM_Luna_FusionReactor.label>核融合リアクター</AGM_Luna_FusionReactor.label>
+  <AGM_Luna_PhaseShieldCore.label>位相シールドコア</AGM_Luna_PhaseShieldCore.label>
+  <AGM_Luna_RootJoint.label>根の関節</AGM_Luna_RootJoint.label>
+  <AGM_Luna_InfernoEmitter.label>インフェルノエミッター</AGM_Luna_InfernoEmitter.label>
+  <AGM_Luna_IronbarkCanopy.label>鉄木樹冠</AGM_Luna_IronbarkCanopy.label>
+  <AGM_Luna_IronbarkCore.label>鉄木コア</AGM_Luna_IronbarkCore.label>
+  <AGM_Luna_IronbarkTrunk.label>鉄木幹</AGM_Luna_IronbarkTrunk.label>
+  <AGM_Luna_IronbarkTrunk.labelShort>鉄木幹</AGM_Luna_IronbarkTrunk.labelShort>
+  <AGM_Luna_IronbarkMidTrunk.label>鉄木中間節</AGM_Luna_IronbarkMidTrunk.label>
+  <AGM_Luna_IronbarkMidTrunk.labelShort>鉄木幹</AGM_Luna_IronbarkMidTrunk.labelShort>
+  <AGM_Luna_IronbarkLowerTrunk.label>鉄木下部節</AGM_Luna_IronbarkLowerTrunk.label>
+  <AGM_Luna_IronbarkLowerTrunk.labelShort>鉄木幹</AGM_Luna_IronbarkLowerTrunk.labelShort>
+  <AGM_Luna_IronbarkBaseTrunk.label>鉄木基部節</AGM_Luna_IronbarkBaseTrunk.label>
+  <AGM_Luna_IronbarkBaseTrunk.labelShort>鉄木幹</AGM_Luna_IronbarkBaseTrunk.labelShort>
+  <AGM_Luna_IronbarkRootHub.label>根ハブ</AGM_Luna_IronbarkRootHub.label>
+  <AGM_Luna_IronbarkRootHub.labelShort>鉄木幹</AGM_Luna_IronbarkRootHub.labelShort>
+
+</LanguageData>
